@@ -3,7 +3,7 @@ import type { Context } from "hono";
 export interface Env {
   // Vars (from wrangler.jsonc)
   LEITURA_DB_URL: string;
-  // Secrets (wrangler secret put / .dev.vars) — never commit to the repo
+  // Secrets (wrangler secret put / .dev.vars)
   CF_ACCESS_CLIENT_ID: string;
   CF_ACCESS_CLIENT_SECRET: string;
 }

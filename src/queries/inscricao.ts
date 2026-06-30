@@ -1,8 +1,7 @@
 import { dboab } from "../db/client";
 
 /**
- * Registration data for a lawyer by OAB number. Type-safe: table/column typos
- * fail at `yarn typecheck`. Mirrors the v3 `GET /portal/dados-inscricao` source.
+ * Registration data for a lawyer by OAB number.
  */
 export function dadosInscricaoQuery(oab: string) {
   return dboab
