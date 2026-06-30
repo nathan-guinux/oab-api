@@ -1,2 +1,5 @@
 CF_ACCESS_CLIENT_ID=
 CF_ACCESS_CLIENT_SECRET=
+
+# Just for validation (api.oabpr.org.br/v3), not used in runtime.
+OAB_API_TOKEN=

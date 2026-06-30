@@ -1,60 +1,60 @@
-# OAB API — Regras para o Claude
+# OAB API — Rules for Claude
 
-API de dados central da OAB-PR. Um **Cloudflare Worker** independente, escrito em **TypeScript**
-com **Hono + cloudflare/chanfana + Zod**, cuja única função é **ler o banco legado da OAB pelo
-gateway `leitura-db`** e expor isso como uma API limpa e versionada para os **demais sistemas**
+OAB-PR's central data API. A standalone **Cloudflare Worker**, written in **TypeScript**
+with **Hono + cloudflare/chanfana + Zod**, whose sole job is to **read OAB's legacy database
+through the `leitura-db` gateway** and expose it as a clean, versioned API for the **other systems**
 (`oab-portal`, `oab-esa`, etc.).
 
-> Este worker **substitui a `api.oabpr.org.br/v3`** (a "v3 do advogado"). Os apps consumidores não
-> falam mais com a API de terceiros — falam com este worker, mantendo **o mesmo contrato**.
+> This worker **replaces `api.oabpr.org.br/v3`** (the "lawyer v3"). Consumer apps no longer
+> talk to the third-party API — they talk to this worker, keeping **the same contract**.
 
-## Objetivo (a grande ideia)
+## Goal (the big idea)
 
-- Hoje os sistemas dependem da **`api.oabpr.org.br/v3`** (API de terceiros) que lê o SQL Server.
-- Vamos **reimplementar essa API como Worker próprio**, que lê o `DBOAB`/`OAB_DW`/`DBIMG` pelo
-  gateway `leitura-db` — em vez de chamar terceiros, e **sem nunca colar SQL direto no banco**.
-- **Centraliza**: o SQL e o service token vivem **só aqui**. Os apps consumidores só trocam a URL
-  base; o JSON de resposta continua igual.
-- É a peça da migração **strangler** (substituir o legado módulo a módulo, sem big-bang).
+- Today the systems depend on **`api.oabpr.org.br/v3`** (a third-party API) that reads SQL Server.
+- We will **reimplement that API as our own Worker**, reading `DBOAB`/`OAB_DW`/`DBIMG` through the
+  `leitura-db` gateway — instead of calling third parties, and **never gluing SQL directly to the database**.
+- **Centralizes**: the SQL and the service token live **only here**. Consumer apps just swap the base
+  URL; the response JSON stays the same.
+- It's the piece of the **strangler** migration (replacing the legacy system module by module, no big-bang).
 
-## O que este worker NÃO é
+## What this worker is NOT
 
-- **Não** é o `oab-sso` — autenticação de pessoa (cookie `sso_token`) continua sendo dele. Este
-  worker é **só dados**. (Decisão: worker **separado, fora do oab-sso**.)
-- **Não** tem UI/páginas. É API pura (por isso Worker puro, não Next/OpenNext).
-- **Não** escreve no legado **na fase atual** (somente leitura). A escrita virá depois, por um
-  **gateway de escrita dedicado** (separado do `leitura-db`), least-privilege — ver "Escrita (futuro)".
+- It is **not** `oab-sso` — person authentication (the `sso_token` cookie) still belongs to it. This
+  worker is **data only**. (Decision: a **separate** worker, outside `oab-sso`.)
+- It has **no** UI/pages. It's a pure API (hence a pure Worker, not Next/OpenNext).
+- It does **not** write to the legacy system **in the current phase** (read-only). Writes come later, via a
+  **dedicated write gateway** (separate from `leitura-db`), least-privilege — see "Writes (future)".
 
 ## Stack
 
-- **Runtime:** Cloudflare Workers (V8 isolate). NestJS **não** roda aqui (precisa de Node completo);
-  por isso Hono.
+- **Runtime:** Cloudflare Workers (V8 isolate). NestJS does **not** run here (it needs full Node);
+  that's why Hono.
 - **Framework:** [Hono](https://hono.dev) + [`cloudflare/chanfana`](https://github.com/cloudflare/chanfana)
-  — endpoints **class-based** (estilo controller) com validação **Zod** e **OpenAPI/Swagger gerado
-  automaticamente** (importante: outros sistemas consomem esta API).
-- **Linguagem:** TypeScript, sempre.
-- **Gerenciador de pacotes:** **yarn**, exclusivamente. Nunca `npm`/`pnpm`.
-- **Dados próprios (quando precisar):** D1 (SQL), KV (cache/rate-limit), R2 (arquivos) — mesmo
-  padrão do `oab-portal`.
+  — **class-based** endpoints (controller style) with **Zod** validation and **auto-generated
+  OpenAPI/Swagger** (important: other systems consume this API).
+- **Language:** TypeScript, always.
+- **Package manager:** **yarn**, exclusively. Never `npm`/`pnpm`.
+- **Own data (when needed):** D1 (SQL), KV (cache/rate-limit), R2 (files) — same
+  pattern as `oab-portal`.
 
-## Como o dado trafega
+## How the data flows
 
 ```
-oab-portal / oab-esa / outros          ← apps consumidores (trocam só a URL base)
-        │  HTTPS (contrato igual ao da v3)
+oab-portal / oab-esa / others          ← consumer apps (swap only the base URL)
+        │  HTTPS (same contract as v3)
         ▼
-oab-api  (ESTE worker)                  ← monta o SQL, guarda o service token
+oab-api  (THIS worker)                  ← builds the SQL, holds the service token
         │  POST /query  + headers CF-Access-Client-Id / CF-Access-Client-Secret
         ▼
-leitura-db.oabpr.org.br                 ← gateway read-only (Access → Tunnel → adaptador Node → SQL)
-        │  SELECT parametrizado, auditado
+leitura-db.oabpr.org.br                 ← read-only gateway (Access → Tunnel → Node adapter → SQL)
+        │  parameterized, audited SELECT
         ▼
-SQL Server interno (DBOAB / OAB_DW / DBIMG · login db_datareader · sem IP público)
+internal SQL Server (DBOAB / OAB_DW / DBIMG · db_datareader login · no public IP)
 ```
 
-## Contrato do gateway `leitura-db`
+## The `leitura-db` gateway contract
 
-Único endpoint de leitura. Sempre **parametrizado** (o gateway recusa DML/DDL/multi-statement):
+The single read endpoint. Always **parameterized** (the gateway rejects DML/DDL/multi-statement):
 
 ```bash
 POST https://leitura-db.oabpr.org.br/query
@@ -62,79 +62,98 @@ Headers: CF-Access-Client-Id, CF-Access-Client-Secret, content-type: application
 Body: { "db": "DBOAB", "sql": "SELECT ... WHERE Nic = @nic", "params": { "nic": 22076 } }
 ```
 
-- **Nunca** concatenar valores no `sql` — todo dinâmico vai em `params` com `@nome` (anti-SQLi).
-- O service token (`CF_ACCESS_CLIENT_ID` / `CF_ACCESS_CLIENT_SECRET`) é **secret do worker**
-  (`wrangler secret put`), nunca no repo. `.dev.vars` é só local.
-- Tabelas-chave no `DBOAB`: `Advogado` (`Nic` = chave interna, `Nr_Inscricao` = OAB, `CPF`,
+- **Never** concatenate values into the `sql` — everything dynamic goes in `params` with `@name` (anti-SQLi).
+- The service token (`CF_ACCESS_CLIENT_ID` / `CF_ACCESS_CLIENT_SECRET`) is a **worker secret**
+  (`wrangler secret put`), never in the repo. `.dev.vars` is local only.
+- Key tables in `DBOAB`: `Advogado` (`Nic` = internal key, `Nr_Inscricao` = OAB number, `CPF`,
   `Dt_Nascimento`, `Cd_SubSecao`…), `Advogado_Senha`, `Advogado_Cargo`/`Cargo`,
   `Advogado_Comissao`/`Comissao`, `Inscricao`, `Tab_*`.
 
-## Endpoints a reimplementar (contrato igual ao da v3)
+## Endpoints to reimplement (same contract as v3)
 
-| Endpoint | Para quê | Status de migração |
+| Endpoint | Purpose | Migration status |
 |---|---|---|
-| `GET /advogado/me`, `/perfil`, `/advogado`, `/cargos` | dados/perfil do advogado | **reads — migram primeiro** |
-| `GET /portal/dados-inscricao` | inscrição | read — migra primeiro |
-| `GET /portal/penalidade-disciplinar`, `/portal/auxilio-maternidade` | benefícios/penalidades | read — fase 2 |
-| `POST /advogado/login-portal` (sem senha: `nrInscricao+cpf+dtNascimento`) | validação de identidade | migra fácil (compara no `Advogado`) |
-| `POST /advogado/login-portal` (com senha) | login com senha | **fica delegado à v3/oab-sso** até o algoritmo de hash de `Advogado_Senha` ser confirmado em homologação. **Não migrar agora.** |
+| `GET /advogado/me`, `/perfil`, `/advogado`, `/cargos` | lawyer data/profile | **reads — migrate first** |
+| `GET /portal/dados-inscricao` | registration | read — migrate first |
+| `GET /portal/penalidade-disciplinar`, `/portal/auxilio-maternidade` | benefits/penalties | read — phase 2 |
+| `POST /advogado/login-portal` (no password: `nrInscricao+cpf+dtNascimento`) | identity validation | easy migration (compares against `Advogado`) |
+| `POST /advogado/login-portal` (with password) | password login | **stays delegated to v3/oab-sso** until the `Advogado_Senha` hash algorithm is confirmed in staging. **Do not migrate now.** |
 
-## Estratégia de migração (strangler, por endpoint)
+## Migration strategy (strangler, per endpoint)
 
-1. **Espelho:** o worker responde o endpoint **repassando pra v3** (zero mudança).
-2. **Sombra:** por baixo, monta a resposta via `leitura-db` e **compara** com a v3 até bater 100%.
-3. **Cutover:** passa a servir do `leitura-db`; a v3 fica como **fallback**.
-4. **Desligar** a dependência da v3 quando todos os endpoints baterem.
+1. **Mirror:** the worker answers the endpoint by **forwarding to v3** (zero change).
+2. **Shadow:** underneath, it builds the response via `leitura-db` and **compares** with v3 until a 100% match.
+3. **Cutover:** it starts serving from `leitura-db`; v3 becomes the **fallback**.
+4. **Turn off** the v3 dependency once all endpoints match.
 
-Cada passo é **reversível**. A v3 permanece viva como rede de segurança durante a transição.
+Each step is **reversible**. v3 stays alive as a safety net during the transition.
 
-## Escrita (futuro — gateway dedicado)
+## Validating against v3 (shadow phase)
 
-A escrita no legado **não** passará pelo `leitura-db`. Haverá um **gateway de escrita separado**,
-espelho do de leitura, mas com travas próprias:
+To confirm an endpoint reproduces v3's **exact contract**, hit the third-party legacy API and
+compare the raw JSON with our response. v3 requires a system Bearer — the `OAB_API_TOKEN`
+(the same token `oab-portal` uses for the `/v3/portal/*` and `/v3/advogado/cargos` routes).
 
-- Credencial com **GRANT mínimo por tabela** (só as tabelas da operação; ex.: registrar análise =
-  `INSERT` em `PGE_Requerimento_Status` + `UPDATE` em `Pge_Requerimento`), via **operação nomeada**
-  que aplica a regra de negócio — nunca SQL livre de escrita.
-- Padrão **outbox**: a app grava primeiro no **D1** (instantâneo, auditável) e um **reconciliador**
-  aplica no legado com **idempotência** e **kill-switch**.
-- Entra só após cutover de leitura validado e com aprovação. Quando chegar, mora aqui também (este
-  worker passa a expor as operações de escrita), mas apontando para o **gateway de escrita**, não o
-  de leitura.
+- Put the token in `.dev.vars` as `OAB_API_TOKEN` (see `.dev.vars.example`). It is **for validation
+  only** — not used at runtime; in production it's `leitura-db` that talks to the database.
+- Reference call (e.g., `dados-inscricao`):
 
-## Convenções de código
+  ```bash
+  curl -s "https://api.oabpr.org.br/v3/portal/dados-inscricao?oab=69091&tipo=A" \
+    -H "Authorization: Bearer $OAB_API_TOKEN" | jq
+  ```
 
-- Estrutura: `src/endpoints/` (classes chanfana = controllers), `src/services/` (regra +
-  `queryGateway` + mappers DB→contrato), `src/queries/` (**funções builder Kysely**, tipadas),
-  `src/schemas/` (Zod), `src/db/` (acesso tipado ao banco). OpenAPI montado no entrypoint.
-- **Acesso ao banco é tipado, não SQL cru.** As queries usam **Kysely** sobre o schema **gerado**
-  (`src/db/schema.ts`) e são **compiladas** (`.compile()`, nunca executadas localmente) para
-  `{ sql, params }`. Tabela/coluna inexistente = **erro de compilação** (`yarn typecheck`).
-  - `src/db/schema.ts` é **gerado** por `yarn gen:schema` (lê o `INFORMATION_SCHEMA` pelo gateway) —
-    **nunca editar à mão**; regenerar quando o banco mudar.
-  - `src/db/client.ts` expõe o builder `dboab` e `execute(env, db, query)` — compila e chama o
-    gateway preservando o tipo do resultado (`InferResult`), renomeando os params para `@p1, @p2…`.
-  - `src/db/dialect.ts`: dialeto compile-only (`DummyDriver`) — Kysely só monta/compila, nunca conecta.
-- **Um helper único** (`queryGateway`) fala com o `leitura-db` e injeta o service token; nenhum
-  endpoint chama `fetch` no gateway direto. O `execute` do `client.ts` é o único que chama `queryGateway`.
-- Toda entrada e saída validada com **Zod**; o **mapper** (em `src/services/`) traduz a linha do banco
-  (nomes legados, ex.: `Nr_Inscricao`, `Dt_Inscricao`) para o **shape da v3** (`oab`, `dataInscricao`…).
-- Validar local: `yarn dev` + `yarn typecheck`.
+- Compare field by field with our endpoint's output — **same keys, same order, same format**
+  (e.g., `dataInscricao` is a full datetime `"2013-12-09T00:00:00"`, not a truncated date).
+  Shape mismatches are fixed in the `mapper`/`schema`/`query` until it's a **100% match**.
 
-## Segurança / LGPD
+## Writes (future — dedicated gateway)
 
-- **Zero Trust:** sem service token válido → 403 na borda; o banco nunca é exposto (sem IP público).
-- **Read-only + parametrizado** por padrão (anti-SQLi vem do guard do gateway, mas montamos certo).
-- **PII** (`CPF`, `Dt_Nascimento`): reads escopados e auditados; **senha nunca trafega** por aqui.
+Writes to the legacy system will **not** go through `leitura-db`. There will be a **separate write
+gateway**, mirroring the read one but with its own locks:
 
-## Idioma
+- A credential with **minimal per-table GRANT** (only the tables of the operation; e.g., recording an
+  analysis = `INSERT` into `PGE_Requerimento_Status` + `UPDATE` on `Pge_Requerimento`), via a **named
+  operation** that applies the business rule — never free-form write SQL.
+- **Outbox** pattern: the app writes first to **D1** (instant, auditable) and a **reconciler**
+  applies it to the legacy system with **idempotency** and a **kill-switch**.
+- It only comes in after the read cutover is validated and approved. When it arrives, it lives here too
+  (this worker starts exposing the write operations), but pointing at the **write gateway**, not the
+  read one.
 
-- **Código em inglês**: identificadores (funções, variáveis, tipos, arquivos) e comentários sempre em
-  inglês. Comentários **só quando realmente necessários** — para explicar lógica complexa ou regra de
-  negócio (ex.: o porquê de uma decisão), nunca para narrar o óbvio que o código já diz.
-- **Conteúdo visível ao consumidor da API em português** com acentuação correta: mensagens de erro e
-  `summary`/`description`/`tags` do OpenAPI. O contrato/resposta da v3 é preservado como está.
+## Code conventions
+
+- Structure: `src/endpoints/` (chanfana classes = controllers), `src/services/` (logic +
+  `queryGateway` + DB→contract mappers), `src/queries/` (**typed Kysely builder functions**),
+  `src/schemas/` (Zod), `src/db/` (typed database access). OpenAPI is mounted at the entrypoint.
+- **Database access is typed, not raw SQL.** Queries use **Kysely** over the **generated** schema
+  (`src/db/schema.ts`) and are **compiled** (`.compile()`, never executed locally) into
+  `{ sql, params }`. A nonexistent table/column = a **compile error** (`yarn typecheck`).
+  - `src/db/schema.ts` is **generated** by `yarn gen:schema` (it reads `INFORMATION_SCHEMA` through the
+    gateway) — **never edit by hand**; regenerate when the database changes.
+  - `src/db/client.ts` exposes the `dboab` builder and `execute(env, db, query)` — it compiles and calls
+    the gateway preserving the result type (`InferResult`), renaming params to `@p1, @p2…`.
+  - `src/db/dialect.ts`: a compile-only dialect (`DummyDriver`) — Kysely only builds/compiles, never connects.
+- **A single helper** (`queryGateway`) talks to `leitura-db` and injects the service token; no
+  endpoint calls `fetch` on the gateway directly. `client.ts`'s `execute` is the only caller of `queryGateway`.
+- Every input and output is validated with **Zod**; the **mapper** (in `src/services/`) translates the
+  database row (legacy names, e.g., `Nr_Inscricao`, `Dt_Inscricao`) into the **v3 shape** (`oab`, `dataInscricao`…).
+- Validate locally: `yarn dev` + `yarn typecheck`.
+
+## Security / LGPD
+
+- **Zero Trust:** no valid service token → 403 at the edge; the database is never exposed (no public IP).
+- **Read-only + parameterized** by default (anti-SQLi comes from the gateway guard, but we build it right too).
+- **PII** (`CPF`, `Dt_Nascimento`): scoped, audited reads; **passwords never travel** through here.
+
+## Language
+
+- **Code in English**: identifiers (functions, variables, types, files) and comments always in
+  English. Comments **only when truly necessary** — to explain complex logic or a business rule
+  (e.g., the why behind a decision), never to narrate the obvious that the code already states.
+- **Content visible to the API consumer in Portuguese** with correct accentuation: error messages and
+  OpenAPI `summary`/`description`/`tags`. The v3 contract/response is preserved as-is.
 
 ---
-*Padrão de referência já em produção: **Dativa OAB-PR** (Workers + D1 + `leitura-db` + oab-sso).
-Plano completo: `PLANO_MIGRACAO_CLOUDFLARE.md` e `PLANO_MIGRACAO_APIS_V3.md`.*
+*Reference pattern already in production: **Dativa OAB-PR** (Workers + D1 + `leitura-db` + oab-sso).
+Full plan: `PLANO_MIGRACAO_CLOUDFLARE.md` and `PLANO_MIGRACAO_APIS_V3.md`.*
