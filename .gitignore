@@ -4,9 +4,3 @@ node_modules
 dist
 *.log
 .DS_Store
-
-# Yarn 4 (node-modules linker)
-.yarn/*
-!.yarn/patches
-!.yarn/releases
-.pnp.*
