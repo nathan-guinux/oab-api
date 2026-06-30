@@ -3,6 +3,7 @@ import { fromHono } from "chanfana";
 import { HTTPException } from "hono/http-exception";
 import type { Env } from "./types/env";
 import { HealthCheck } from "./endpoints/health";
+import { DadosInscricaoEndpoint } from "./endpoints/portal/dadosInscricao";
 
 const app = new Hono<{ Bindings: Env }>();
 
@@ -20,6 +21,7 @@ const openapi = fromHono(app, {
 });
 
 openapi.get("/health", HealthCheck);
+openapi.get("/portal/dados-inscricao", DadosInscricaoEndpoint);
 
 app.onError((err, c) => {
   if (err instanceof HTTPException) return err.getResponse();

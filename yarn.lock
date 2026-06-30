@@ -479,6 +479,11 @@ kleur@^4.1.5:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-4.1.5.tgz#95106101795f7050c6c650f350c683febddb1780"
   integrity sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==
 
+kysely@^0.29.2:
+  version "0.29.2"
+  resolved "https://registry.yarnpkg.com/kysely/-/kysely-0.29.2.tgz#4a07da18db3bba2911693c2b3bd4af415104a85f"
+  integrity sha512-s6WVJyEZrbm6jhBpiKHsGHyePMrVQKJ85wZCFCr9W4QHv6WTjWIrdvTmO9hDEA3bNK0xkrE2DqrHsXMLWuZpQg==
+
 miniflare@4.20260625.0:
   version "4.20260625.0"
   resolved "https://registry.yarnpkg.com/miniflare/-/miniflare-4.20260625.0.tgz#22d2a9494b6c8f52f64ba40fb65e254933491ed4"

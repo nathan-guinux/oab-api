@@ -1,0 +1,14667 @@
+// AUTO-GERADO por scripts/gen-schema.mjs — NÃO EDITAR À MÃO.
+// Regenere com: yarn gen:schema
+// Fonte: leitura-db / INFORMATION_SCHEMA do banco DBOAB (1153 tabelas).
+/* eslint-disable */
+
+export interface DBOAB {
+  __MigrationHistory: __MigrationHistory;
+  "'Table 1$'": _Table_1$_;
+  "'Table_Lilian$'": _Table_Lilian$_;
+  Acesso_Salas: Acesso_Salas;
+  ACOMSMS_1: ACOMSMS_1;
+  acon_adv_atualizacao: acon_adv_atualizacao;
+  ACRFaculdade_NMS: ACRFaculdade_NMS;
+  Advogado: Advogado;
+  Advogado_Atuacao: Advogado_Atuacao;
+  Advogado_CadastroCampanha: Advogado_CadastroCampanha;
+  Advogado_CadastroEspecial: Advogado_CadastroEspecial;
+  Advogado_Cargo: Advogado_Cargo;
+  Advogado_Cnpj: Advogado_Cnpj;
+  Advogado_Comissao: Advogado_Comissao;
+  Advogado_Conjuge: Advogado_Conjuge;
+  Advogado_ContaBancaria: Advogado_ContaBancaria;
+  Advogado_Curriculo: Advogado_Curriculo;
+  Advogado_Dados_Complementares: Advogado_Dados_Complementares;
+  Advogado_Dativo_2016_1: Advogado_Dativo_2016_1;
+  Advogado_Dativo_2016_2: Advogado_Dativo_2016_2;
+  Advogado_Dativo_2017_1: Advogado_Dativo_2017_1;
+  Advogado_Dativo_2017_1_duplicado: Advogado_Dativo_2017_1_duplicado;
+  Advogado_Dativo_2017_2: Advogado_Dativo_2017_2;
+  Advogado_Dativo_Comarca_2016_1: Advogado_Dativo_Comarca_2016_1;
+  Advogado_Dativo_Comarca_2016_2: Advogado_Dativo_Comarca_2016_2;
+  Advogado_Dativo_Comarca_2017_1: Advogado_Dativo_Comarca_2017_1;
+  Advogado_Dativo_Comarca_2017_2: Advogado_Dativo_Comarca_2017_2;
+  Advogado_Dativo_Comarca_Vigente: Advogado_Dativo_Comarca_Vigente;
+  Advogado_Dativo_Exclusao_2016_1: Advogado_Dativo_Exclusao_2016_1;
+  Advogado_Dativo_Exclusao_2016_2: Advogado_Dativo_Exclusao_2016_2;
+  Advogado_Dativo_Exclusao_2017_1: Advogado_Dativo_Exclusao_2017_1;
+  Advogado_Dativo_Exclusao_2017_2: Advogado_Dativo_Exclusao_2017_2;
+  Advogado_Dativo_Nomeacao_2016_2: Advogado_Dativo_Nomeacao_2016_2;
+  Advogado_Dativo_Nomeacao_2017_1: Advogado_Dativo_Nomeacao_2017_1;
+  Advogado_Dativo_Nomeacao_Vigente: Advogado_Dativo_Nomeacao_Vigente;
+  Advogado_Dativo_Nomeacao_Vigente_2017_2: Advogado_Dativo_Nomeacao_Vigente_2017_2;
+  Advogado_Deficiencia: Advogado_Deficiencia;
+  Advogado_Doc: Advogado_Doc;
+  Advogado_DuplaFiliacao: Advogado_DuplaFiliacao;
+  Advogado_eleicao_2018: Advogado_eleicao_2018;
+  Advogado_eleicao_2018_situacao: Advogado_eleicao_2018_situacao;
+  Advogado_Email: Advogado_Email;
+  Advogado_Estatistica: Advogado_Estatistica;
+  Advogado_everest: Advogado_everest;
+  Advogado_everest_new: Advogado_everest_new;
+  advogado_forca_cna: advogado_forca_cna;
+  advogado_forca_compromisso: advogado_forca_compromisso;
+  Advogado_Fronteira: Advogado_Fronteira;
+  Advogado_FuncaoNomeacao: Advogado_FuncaoNomeacao;
+  Advogado_InformacaoSite: Advogado_InformacaoSite;
+  Advogado_Justica_Esporte: Advogado_Justica_Esporte;
+  Advogado_Log_ContaBancaria: Advogado_Log_ContaBancaria;
+  Advogado_NIC_6457: Advogado_NIC_6457;
+  Advogado_Pcd: Advogado_Pcd;
+  advogado_pin: advogado_pin;
+  advogado_raca: advogado_raca;
+  Advogado_Raca20210503: Advogado_Raca20210503;
+  Advogado_Senha: Advogado_Senha;
+  Advogado_Senha_ATUALIZAR: Advogado_Senha_ATUALIZAR;
+  Advogado_Social: Advogado_Social;
+  Advogado_Social_Log: Advogado_Social_Log;
+  advogado_ticket: advogado_ticket;
+  Advogado_Token: Advogado_Token;
+  advogado_token_aasp: advogado_token_aasp;
+  Advogado_Token_Lote: Advogado_Token_Lote;
+  advogado_token_lote_6ano: advogado_token_lote_6ano;
+  advogado_token_lote_aasp: advogado_token_lote_aasp;
+  advogado_token_lote_bkp_adrieli: advogado_token_lote_bkp_adrieli;
+  AdvogadoEnderecoPR: AdvogadoEnderecoPR;
+  Advogadoes: Advogadoes;
+  Advogados_Permitidos: Advogados_Permitidos;
+  Agenda: Agenda;
+  Agenda_Anexos: Agenda_Anexos;
+  AGENDA_CAMPANHA: AGENDA_CAMPANHA;
+  AGENDA_CONTROLE: AGENDA_CONTROLE;
+  Agenda_Email: Agenda_Email;
+  Agenda_Permissao: Agenda_Permissao;
+  Agenda_Replicar: Agenda_Replicar;
+  AGENDA_USUARIO: AGENDA_USUARIO;
+  ajustes0001: ajustes0001;
+  AListaFaltante$: AListaFaltante$;
+  allloyal_aasp: allloyal_aasp;
+  ALLOYAL_AASP: ALLOYAL_AASP;
+  Alloyal_Aasp_abril_26: Alloyal_Aasp_abril_26;
+  Alloyal_AASP_dez_2025: Alloyal_AASP_dez_2025;
+  Alloyal_AASP_jan_2025_mar_2026: Alloyal_AASP_jan_2025_mar_2026;
+  Alloyal_AASP_maio_2026: Alloyal_AASP_maio_2026;
+  alloyal_aasp2: alloyal_aasp2;
+  Alloyal_JusBrasil: Alloyal_JusBrasil;
+  Alloyal_Jusbrasil_abril_2026: Alloyal_Jusbrasil_abril_2026;
+  ALLOYAL_JUSBRASIL_DEZ_2025: ALLOYAL_JUSBRASIL_DEZ_2025;
+  Alloyal_Jusbrasil_jan_2025_fev_2026: Alloyal_Jusbrasil_jan_2025_fev_2026;
+  ALLOYAL_JUSBRASIL_maio_2026: ALLOYAL_JUSBRASIL_maio_2026;
+  Almoxarifado_Estoque: Almoxarifado_Estoque;
+  Almoxarifado_Material: Almoxarifado_Material;
+  Almoxarifado_Movimentacao: Almoxarifado_Movimentacao;
+  alvo: alvo;
+  Andamento_Interno: Andamento_Interno;
+  Andamento_SemEfeito: Andamento_SemEfeito;
+  Aniversario: Aniversario;
+  Assinatura: Assinatura;
+  Assinatura_Partes: Assinatura_Partes;
+  Assinatura_Testemunhas: Assinatura_Testemunhas;
+  Auditoria: Auditoria;
+  Auditoria_Nova: Auditoria_Nova;
+  autenticacao_documentos: autenticacao_documentos;
+  Autor: Autor;
+  Banco: Banco;
+  BI_TED_Representantes: BI_TED_Representantes;
+  Biblioteca_Acervo: Biblioteca_Acervo;
+  Biblioteca_Acervo_Tombo: Biblioteca_Acervo_Tombo;
+  Biblioteca_Aquisicao: Biblioteca_Aquisicao;
+  Biblioteca_Autor_Tipo: Biblioteca_Autor_Tipo;
+  Biblioteca_Local: Biblioteca_Local;
+  Biblioteca_Material_Tipo: Biblioteca_Material_Tipo;
+  Biblioteca_Repositorio: Biblioteca_Repositorio;
+  BlitzIndex_Mode2: BlitzIndex_Mode2;
+  Boleto_Mutua: Boleto_Mutua;
+  Bonjur_SP: Bonjur_SP;
+  Bonnjur_CadastroAdvogado: Bonnjur_CadastroAdvogado;
+  Bonnjur_LoteCadastro: Bonnjur_LoteCadastro;
+  Bonnjur_LoteEnvio: Bonnjur_LoteEnvio;
+  btnExclusaoFire_Log: btnExclusaoFire_Log;
+  CAA1: CAA1;
+  CAA2: CAA2;
+  CAA3: CAA3;
+  Cadastro_Conferencia: Cadastro_Conferencia;
+  CadastroCampanha: CadastroCampanha;
+  CadastroPRP: CadastroPRP;
+  CadastroPRP_Log: CadastroPRP_Log;
+  Caixa_Agendar: Caixa_Agendar;
+  Caixa_Agendar_Controle: Caixa_Agendar_Controle;
+  Caixa_Agendar_Controle_CWBLOTE2: Caixa_Agendar_Controle_CWBLOTE2;
+  Caixa_Agendar_Controle_MARINGA: Caixa_Agendar_Controle_MARINGA;
+  Caixa_Agendar_CWBLOTE2: Caixa_Agendar_CWBLOTE2;
+  Caixa_Agendar_Maringa: Caixa_Agendar_Maringa;
+  Caixa_Agendas: Caixa_Agendas;
+  Caixa_Agendas_Envios: Caixa_Agendas_Envios;
+  Caixa_Agendas_Estoque: Caixa_Agendas_Estoque;
+  Caixa_Bandeira: Caixa_Bandeira;
+  Caixa_Beneficio: Caixa_Beneficio;
+  Caixa_Cidade: Caixa_Cidade;
+  Caixa_Clinica: Caixa_Clinica;
+  Caixa_Consulta: Caixa_Consulta;
+  Caixa_Consulta_Log: Caixa_Consulta_Log;
+  Caixa_ConsultasLiberadas: Caixa_ConsultasLiberadas;
+  Caixa_Especializacao: Caixa_Especializacao;
+  Caixa_Filial: Caixa_Filial;
+  Caixa_Fisioterapia: Caixa_Fisioterapia;
+  Caixa_Fisioterapia_Bonus: Caixa_Fisioterapia_Bonus;
+  Caixa_Hospital_Prontuario: Caixa_Hospital_Prontuario;
+  Caixa_Hospital_Valor: Caixa_Hospital_Valor;
+  Caixa_Medico: Caixa_Medico;
+  Caixa_Medico_Especializacao: Caixa_Medico_Especializacao;
+  Caixa_Tipo_Venda: Caixa_Tipo_Venda;
+  Caixa_TipoAssociado: Caixa_TipoAssociado;
+  Caixa_TipoBeneficio: Caixa_TipoBeneficio;
+  Caixa_TipoConsulta: Caixa_TipoConsulta;
+  Caixa_TipoConsultaSubsecao: Caixa_TipoConsultaSubsecao;
+  Caixa_TipoTratamento: Caixa_TipoTratamento;
+  Caixa_Tratamento: Caixa_Tratamento;
+  Caixa_Venda: Caixa_Venda;
+  Caixa_Venda_Detalhe: Caixa_Venda_Detalhe;
+  Calendario_Anual: Calendario_Anual;
+  carga_relatorio: carga_relatorio;
+  Cargo: Cargo;
+  cargo_candidato: cargo_candidato;
+  cargo_candidato_arquivos: cargo_candidato_arquivos;
+  cargo_candidato_observacoes: cargo_candidato_observacoes;
+  cargo_candidato_periodos: cargo_candidato_periodos;
+  cargo_candidato_periodos_comissoes: cargo_candidato_periodos_comissoes;
+  cargo_funcionario: cargo_funcionario;
+  Cargo_LicenciadoIndicado: Cargo_LicenciadoIndicado;
+  cargo_portaria: cargo_portaria;
+  Carne: Carne;
+  CarneDebito: CarneDebito;
+  CarneMensagem: CarneMensagem;
+  CarneParametro: CarneParametro;
+  Carteiras_Anotadas_Artigos: Carteiras_Anotadas_Artigos;
+  Carteiras_Anotadas_Cargos: Carteiras_Anotadas_Cargos;
+  Carteiras_Anotadas_Orgaos: Carteiras_Anotadas_Orgaos;
+  Cartorios_Parana: Cartorios_Parana;
+  Cartorios_Parana_Token: Cartorios_Parana_Token;
+  CEP: CEP;
+  Certidao: Certidao;
+  Certidao_Liberacao: Certidao_Liberacao;
+  Certidao_PE: Certidao_PE;
+  Certidao_Sociedade_Site: Certidao_Sociedade_Site;
+  Certidao_Web: Certidao_Web;
+  CF_AdvogadoImpedimentoPR: CF_AdvogadoImpedimentoPR;
+  CF_Atualizacao: CF_Atualizacao;
+  cf_cidade: cf_cidade;
+  CF_CIDADE_ATUALIZADO: CF_CIDADE_ATUALIZADO;
+  CF_Continente: CF_Continente;
+  CF_Deficiencia: CF_Deficiencia;
+  CF_EstadoCivil: CF_EstadoCivil;
+  CF_Faculdade: CF_Faculdade;
+  CF_Impedimento: CF_Impedimento;
+  CF_Pais: CF_Pais;
+  CF_Pais_Nova: CF_Pais_Nova;
+  CF_Regiao: CF_Regiao;
+  CF_StatusAdvogado: CF_StatusAdvogado;
+  CF_TipoDoador: CF_TipoDoador;
+  CF_TipoDocumento: CF_TipoDocumento;
+  CF_TipoEndereco: CF_TipoEndereco;
+  CF_TipoInscricaoOab: CF_TipoInscricaoOab;
+  CF_TipoPedido: CF_TipoPedido;
+  CF_Uf: CF_Uf;
+  CF_Uf_Nova: CF_Uf_Nova;
+  chapa1: chapa1;
+  chapa2: chapa2;
+  checkcidade: checkcidade;
+  Cidade_NMS: Cidade_NMS;
+  Circunscricao: Circunscricao;
+  Clientes: Clientes;
+  CNA_PUBLICAR_DADOS: CNA_PUBLICAR_DADOS;
+  Comissao: Comissao;
+  Comissao_Carteira: Comissao_Carteira;
+  Comissoes_Motivo: Comissoes_Motivo;
+  Compromisso: Compromisso;
+  Compromisso_Email: Compromisso_Email;
+  Compromisso_JusBrasil: Compromisso_JusBrasil;
+  Compromisso_Log: Compromisso_Log;
+  Consentimento_JusBrasil: Consentimento_JusBrasil;
+  Contrato: Contrato;
+  Controle_Entrega: Controle_Entrega;
+  Correios_Bloqueio: Correios_Bloqueio;
+  Correios_Devolucao: Correios_Devolucao;
+  Correios_Diversos: Correios_Diversos;
+  Correios_Parametro_Bloqueio: Correios_Parametro_Bloqueio;
+  Correios_Tab_Motivo: Correios_Tab_Motivo;
+  Correios_Tab_Remessa: Correios_Tab_Remessa;
+  Correios_Temp_Devolucao: Correios_Temp_Devolucao;
+  Corresp_Acordao: Corresp_Acordao;
+  Corresp_Destinatarios_not: Corresp_Destinatarios_not;
+  Corresp_Destinatarios_Ofi: Corresp_Destinatarios_Ofi;
+  Corresp_Enderecos_Not: Corresp_Enderecos_Not;
+  Corresp_Enderecos_Ofi: Corresp_Enderecos_Ofi;
+  Corresp_hist_not: Corresp_hist_not;
+  Corresp_Hist_Ofi: Corresp_Hist_Ofi;
+  corresp_juizes: corresp_juizes;
+  Corresp_Notificacao: Corresp_Notificacao;
+  Corresp_Notificacao_Prazo: Corresp_Notificacao_Prazo;
+  Corresp_NotificacaoXAndamento: Corresp_NotificacaoXAndamento;
+  Corresp_Oficio: Corresp_Oficio;
+  Corresp_Sessao: Corresp_Sessao;
+  Corresp_Tab_Tipo_Autos: Corresp_Tab_Tipo_Autos;
+  Corridalegal: Corridalegal;
+  cpf_ativos: cpf_ativos;
+  Credencial_Portador: Credencial_Portador;
+  Credencial_Selo: Credencial_Selo;
+  Curriculo_Area: Curriculo_Area;
+  Curriculo_consulta_log: Curriculo_consulta_log;
+  Curriculo_consulta_termo: Curriculo_consulta_termo;
+  Dashboard_Eventos: Dashboard_Eventos;
+  Dativo_Advogado: Dativo_Advogado;
+  Dativo_Advogado_Comarca: Dativo_Advogado_Comarca;
+  Dativo_Advogado_Especialidade: Dativo_Advogado_Especialidade;
+  Dativo_Advogado_Nomeacao: Dativo_Advogado_Nomeacao;
+  Dativo_Advogado_Penalidade: Dativo_Advogado_Penalidade;
+  Dativo_Advogado_Plantao: Dativo_Advogado_Plantao;
+  Dativo_Cursos: Dativo_Cursos;
+  Dativo_Cursos_Esmafe: Dativo_Cursos_Esmafe;
+  Dativo_Especialidade: Dativo_Especialidade;
+  Dativo_Especialidade_Cursos: Dativo_Especialidade_Cursos;
+  Dativo_Modulo: Dativo_Modulo;
+  Dativo_Penalidade: Dativo_Penalidade;
+  Dativo_Periodo: Dativo_Periodo;
+  Dativo_Plantao: Dativo_Plantao;
+  Dativo_Plantao_Data: Dativo_Plantao_Data;
+  Dativo_Recadastro: Dativo_Recadastro;
+  DD_Advogado_Dativo: DD_Advogado_Dativo;
+  DD_Advogado_Dativo_Comarca: DD_Advogado_Dativo_Comarca;
+  DD_Advogado_Dativo_Comarca_Vigente: DD_Advogado_Dativo_Comarca_Vigente;
+  DD_Advogado_Dativo_Controle: DD_Advogado_Dativo_Controle;
+  DD_Advogado_Dativo_Exclusao: DD_Advogado_Dativo_Exclusao;
+  DD_Advogado_Dativo_Nomeacao_Vigente: DD_Advogado_Dativo_Nomeacao_Vigente;
+  DD_Advogado_Dativo_Vigente: DD_Advogado_Dativo_Vigente;
+  DD_Especialidade: DD_Especialidade;
+  DD_Log_Advogado_Dativo: DD_Log_Advogado_Dativo;
+  DD_Log_Advogado_Dativo_Comarca: DD_Log_Advogado_Dativo_Comarca;
+  DD_Log_Advogado_Dativo_Comarca_Vigente: DD_Log_Advogado_Dativo_Comarca_Vigente;
+  DD_Log_Advogado_Dativo_Exclusao: DD_Log_Advogado_Dativo_Exclusao;
+  DD_Log_Advogado_Dativo_Nomeacao_Vigente: DD_Log_Advogado_Dativo_Nomeacao_Vigente;
+  DD_Log_Advogado_Dativo_Vigente: DD_Log_Advogado_Dativo_Vigente;
+  DD_Plantao: DD_Plantao;
+  DD_PlantaoAdv: DD_PlantaoAdv;
+  DD_PlantaoAdvAceite: DD_PlantaoAdvAceite;
+  DD_PlantaoDatas: DD_PlantaoDatas;
+  DEBEXP_EVEREST: DEBEXP_EVEREST;
+  DEBEXP_EVEREST_ELEICAO_2018: DEBEXP_EVEREST_ELEICAO_2018;
+  Debexp_Protheus: Debexp_Protheus;
+  Decurso_Lote: Decurso_Lote;
+  Decurso_Prazo: Decurso_Prazo;
+  Decurso_Prazo_Edital: Decurso_Prazo_Edital;
+  Dependente: Dependente;
+  Devolucao_Remessa: Devolucao_Remessa;
+  Documento_Acordao: Documento_Acordao;
+  Documento_Acordao_Editor: Documento_Acordao_Editor;
+  Documento_Acordao_Editor_Historico: Documento_Acordao_Editor_Historico;
+  Documento_Acordo: Documento_Acordo;
+  Documento_Andamento: Documento_Andamento;
+  Documento_Andamento_Log: Documento_Andamento_Log;
+  Documento_Apensado: Documento_Apensado;
+  Documento_Atualizacoes_CI: Documento_Atualizacoes_CI;
+  Documento_Carga: Documento_Carga;
+  Documento_Cobranca: Documento_Cobranca;
+  Documento_Cobranca_Execucao: Documento_Cobranca_Execucao;
+  Documento_Consulta: Documento_Consulta;
+  Documento_Custas: Documento_Custas;
+  Documento_Distribuicao: Documento_Distribuicao;
+  Documento_Edital: Documento_Edital;
+  Documento_Emissao: Documento_Emissao;
+  Documento_Etiqueta: Documento_Etiqueta;
+  Documento_Etiqueta_Recad: Documento_Etiqueta_Recad;
+  Documento_Execucao: Documento_Execucao;
+  Documento_Fase: Documento_Fase;
+  Documento_Imagem: Documento_Imagem;
+  Documento_Instrucao: Documento_Instrucao;
+  Documento_Integracao_Correios: Documento_Integracao_Correios;
+  Documento_Julgamento: Documento_Julgamento;
+  Documento_Lista: Documento_Lista;
+  Documento_Minuta: Documento_Minuta;
+  Documento_Movimentacao: Documento_Movimentacao;
+  Documento_Movimentacao_Audit: Documento_Movimentacao_Audit;
+  Documento_Movimentacao_Exclusao: Documento_Movimentacao_Exclusao;
+  Documento_Movimentacao_quadros: Documento_Movimentacao_quadros;
+  Documento_Objeto: Documento_Objeto;
+  Documento_Organizador: Documento_Organizador;
+  Documento_Organizador_Hist: Documento_Organizador_Hist;
+  Documento_Organizador_Log: Documento_Organizador_Log;
+  Documento_Organizador_Memo: Documento_Organizador_Memo;
+  Documento_Orgao: Documento_Orgao;
+  Documento_OrgaoTipo: Documento_OrgaoTipo;
+  Documento_Pautas_Editor: Documento_Pautas_Editor;
+  Documento_Pautas_Editor_Historico: Documento_Pautas_Editor_Historico;
+  Documento_Prioridade: Documento_Prioridade;
+  Documento_Processo: Documento_Processo;
+  documento_processo_defensor_dativo: documento_processo_defensor_dativo;
+  Documento_Protocolo: Documento_Protocolo;
+  documento_protocolo_acompanhamento: documento_protocolo_acompanhamento;
+  documento_protocolo_getnet: documento_protocolo_getnet;
+  documento_protocolo_sigilo: documento_protocolo_sigilo;
+  Documento_Relacionado: Documento_Relacionado;
+  Documento_Relator: Documento_Relator;
+  Documento_Representado: Documento_Representado;
+  Documento_ResultadoTipo: Documento_ResultadoTipo;
+  Documento_Selo: Documento_Selo;
+  Documento_Setor: Documento_Setor;
+  Documento_Subsecao: Documento_Subsecao;
+  Documento_Texto_Minuta: Documento_Texto_Minuta;
+  Documento_Validade: Documento_Validade;
+  Documento_Vinculado: Documento_Vinculado;
+  DocumentoPRP: DocumentoPRP;
+  dtproperties: dtproperties;
+  economizometro_extrato: economizometro_extrato;
+  ECT: ECT;
+  ECT_CONTROLE: ECT_CONTROLE;
+  editais_inscricao_status: editais_inscricao_status;
+  Eleicao_Apuracao: Eleicao_Apuracao;
+  Eleicao_Apuracao_Mensagem: Eleicao_Apuracao_Mensagem;
+  Eleicao_Apuracao_Painel: Eleicao_Apuracao_Painel;
+  Eleicao_Apuracao_Sec: Eleicao_Apuracao_Sec;
+  Eleicao_Apuracao_Sec_2015: Eleicao_Apuracao_Sec_2015;
+  Eleicao_Apuracao_Sub: Eleicao_Apuracao_Sub;
+  Eleicao_Apuracao_Sub_2015: Eleicao_Apuracao_Sub_2015;
+  Eleicao_Apuracao_Urnas: Eleicao_Apuracao_Urnas;
+  Eleicao_Apuracao_Urnas_2015: Eleicao_Apuracao_Urnas_2015;
+  Eleicao_Arquivos: Eleicao_Arquivos;
+  Eleicao_Banca: Eleicao_Banca;
+  Eleicao_Boleto: Eleicao_Boleto;
+  Eleicao_Cargo: Eleicao_Cargo;
+  Eleicao_Chapa: Eleicao_Chapa;
+  Eleicao_Chapabk: Eleicao_Chapabk;
+  Eleicao_Convite: Eleicao_Convite;
+  eleicao_distribuicao: eleicao_distribuicao;
+  Eleicao_Financeiro: Eleicao_Financeiro;
+  eleicao_listavotacao: eleicao_listavotacao;
+  eleicao_listavotacao_2015: eleicao_listavotacao_2015;
+  Eleicao_LocalVotacao: Eleicao_LocalVotacao;
+  Eleicao_LocalVotacao_2015: Eleicao_LocalVotacao_2015;
+  Eleicao_MunicipioTRE: Eleicao_MunicipioTRE;
+  Eleicao_Mural: Eleicao_Mural;
+  Eleicao_penalidade: Eleicao_penalidade;
+  Eleicao_Periodo: Eleicao_Periodo;
+  Eleicao_Recursiva: Eleicao_Recursiva;
+  Eleicao_RedirLocal: Eleicao_RedirLocal;
+  Eleicao_Resultado: Eleicao_Resultado;
+  Eleicao_Siafi: Eleicao_Siafi;
+  Eleicao_Subsecao_2021: Eleicao_Subsecao_2021;
+  Eleicao_Subsecao_2024: Eleicao_Subsecao_2024;
+  Eleicao_SubsecaoAdv: Eleicao_SubsecaoAdv;
+  Eleicao_Temp_Distribuicao: Eleicao_Temp_Distribuicao;
+  Eleicao_TempoInscricao: Eleicao_TempoInscricao;
+  Eleicao_Vagas: Eleicao_Vagas;
+  Eleicoes_2024_Protheus: Eleicoes_2024_Protheus;
+  EMAIL_BLACKLIST_INEXISTENTES: EMAIL_BLACKLIST_INEXISTENTES;
+  Email_Diversos: Email_Diversos;
+  Email_Envio: Email_Envio;
+  Email_Envio_Status: Email_Envio_Status;
+  Email_Erro: Email_Erro;
+  Email_Interno: Email_Interno;
+  Email_lista: Email_lista;
+  Email_OAB: Email_OAB;
+  Email_Recebimento: Email_Recebimento;
+  Email_Retorno: Email_Retorno;
+  Email_Teste: Email_Teste;
+  Email_tmp: Email_tmp;
+  Email_Vip: Email_Vip;
+  EmailMktEnvioSp: EmailMktEnvioSp;
+  emails_errados: emails_errados;
+  Emkt_Black_List: Emkt_Black_List;
+  Emkt_Imagens: Emkt_Imagens;
+  Emkt_Informativo: Emkt_Informativo;
+  Emkt_Informativo_bkp: Emkt_Informativo_bkp;
+  Emkt_Informativo_Cursos_Link: Emkt_Informativo_Cursos_Link;
+  Emkt_Informativo_Noticia: Emkt_Informativo_Noticia;
+  Emkt_Lista: Emkt_Lista;
+  Emkt_Mensagem: Emkt_Mensagem;
+  Endereco: Endereco;
+  Endereco_Alternativo: Endereco_Alternativo;
+  Endereco_log: Endereco_log;
+  Endereco_Proibido: Endereco_Proibido;
+  EnderecoT: EnderecoT;
+  Enquete: Enquete;
+  ENVIA_DIARIO_OFICIAL: ENVIA_DIARIO_OFICIAL;
+  Envio_CF: Envio_CF;
+  envio_correios: envio_correios;
+  envio_correios_andamentos: envio_correios_andamentos;
+  Equipamento: Equipamento;
+  errata_recorte: errata_recorte;
+  Erro_CNA: Erro_CNA;
+  ERRO_CNA_COMPROMISSO: ERRO_CNA_COMPROMISSO;
+  Erro_CNS: Erro_CNS;
+  Erro_protheus: Erro_protheus;
+  ESA_ABDCONST: ESA_ABDCONST;
+  ESA_Aluno: ESA_Aluno;
+  Esa_Aluno_Acompanhantes: Esa_Aluno_Acompanhantes;
+  ESA_Aluno_Curso: ESA_Aluno_Curso;
+  Esa_Aluno_Curso_Liberacao: Esa_Aluno_Curso_Liberacao;
+  Esa_Aluno_Saida: Esa_Aluno_Saida;
+  ESA_Aluno_Tipo: ESA_Aluno_Tipo;
+  ESA_AtualizacaoSite: ESA_AtualizacaoSite;
+  Esa_Certificado_Historico: Esa_Certificado_Historico;
+  ESA_Cheque: ESA_Cheque;
+  ESA_Contrato: ESA_Contrato;
+  ESA_Curso: ESA_Curso;
+  Esa_Curso_Certificado: Esa_Curso_Certificado;
+  Esa_Curso_Link: Esa_Curso_Link;
+  ESA_Curso_Modalidade: ESA_Curso_Modalidade;
+  Esa_Curso_Tipo: Esa_Curso_Tipo;
+  ESA_Curso_Vagas: ESA_Curso_Vagas;
+  ESA_Deposito: ESA_Deposito;
+  ESA_Devolucao: ESA_Devolucao;
+  Esa_Disciplina: Esa_Disciplina;
+  ESA_Disciplina_Tema: ESA_Disciplina_Tema;
+  ESA_EmailConfirmacao: ESA_EmailConfirmacao;
+  ESA_Frequencia: ESA_Frequencia;
+  ESA_Frequencia2: ESA_Frequencia2;
+  ESA_IAP: ESA_IAP;
+  ESA_IAP_16_02_2020: ESA_IAP_16_02_2020;
+  ESA_IBDP: ESA_IBDP;
+  ESA_Manutencao: ESA_Manutencao;
+  ESA_Mensalidade: ESA_Mensalidade;
+  ESA_Oabprev: ESA_Oabprev;
+  ESA_Oabprev_05_07_2018: ESA_Oabprev_05_07_2018;
+  ESA_Oabprev_05_09_2018: ESA_Oabprev_05_09_2018;
+  ESA_Oabprev_05_10_2018: ESA_Oabprev_05_10_2018;
+  ESA_Oabprev_12_07_2019: ESA_Oabprev_12_07_2019;
+  ESA_Oabprev_14_06_2019: ESA_Oabprev_14_06_2019;
+  ESA_Oabprev_16_02_2021: ESA_Oabprev_16_02_2021;
+  ESA_Observacao: ESA_Observacao;
+  ESA_Pesquisa_Dados: ESA_Pesquisa_Dados;
+  ESA_Pesquisa_Informacoes: ESA_Pesquisa_Informacoes;
+  ESA_Pesquisa_Respostas: ESA_Pesquisa_Respostas;
+  ESA_Pesquisa_Sugestoes: ESA_Pesquisa_Sugestoes;
+  ESA_Plano_Pagamento: ESA_Plano_Pagamento;
+  Esa_Plantonista: Esa_Plantonista;
+  ESA_Portaria: ESA_Portaria;
+  ESA_Prazos: ESA_Prazos;
+  ESA_Professor: ESA_Professor;
+  ESA_Professor_Curso: ESA_Professor_Curso;
+  ESA_Professor_Disciplina: ESA_Professor_Disciplina;
+  ESA_Programacao: ESA_Programacao;
+  ESA_Programacao_Data: ESA_Programacao_Data;
+  ESA_Recebimento: ESA_Recebimento;
+  ESA_Recibo: ESA_Recibo;
+  ESA_Recomenda: ESA_Recomenda;
+  ESA_Retorno: ESA_Retorno;
+  ESA_Retorno_BB: ESA_Retorno_BB;
+  ESA_Retorno_Registro: ESA_Retorno_Registro;
+  ESA_Retorno_Registro_BB: ESA_Retorno_Registro_BB;
+  ESA_Site_Artigos: ESA_Site_Artigos;
+  Esa_Site_Dvd: Esa_Site_Dvd;
+  Esa_Site_Fotos: Esa_Site_Fotos;
+  ESA_Site_Links: ESA_Site_Links;
+  ESA_Taxas: ESA_Taxas;
+  ESA_Vip: ESA_Vip;
+  ESA_W_Material: ESA_W_Material;
+  ESA_W_Secao: ESA_W_Secao;
+  ESAF_Financeiro: ESAF_Financeiro;
+  ESAF_Financeiro_BB: ESAF_Financeiro_BB;
+  ESAF_Tab_Tipo_Lancamento: ESAF_Tab_Tipo_Lancamento;
+  ESAX_Deposito: ESAX_Deposito;
+  ESAX_Deposito_Parcelado: ESAX_Deposito_Parcelado;
+  ESAX_Despesa: ESAX_Despesa;
+  ESAX_Despesa_Parcelado: ESAX_Despesa_Parcelado;
+  ESAX_Mensalidade: ESAX_Mensalidade;
+  ESAX_Reembolso: ESAX_Reembolso;
+  ESAX_Retorno_Duplicidade: ESAX_Retorno_Duplicidade;
+  estorno: estorno;
+  Evento: Evento;
+  Evento_Agenda: Evento_Agenda;
+  Evento_Boleto: Evento_Boleto;
+  evento_boleto_bkp: evento_boleto_bkp;
+  Evento_Cadastro: Evento_Cadastro;
+  evento_cartao: evento_cartao;
+  Evento_Certificado_Historico: Evento_Certificado_Historico;
+  Evento_Declaracao_Historico: Evento_Declaracao_Historico;
+  Evento_Frequencia: Evento_Frequencia;
+  Evento_Lugar: Evento_Lugar;
+  Evento_Mesa: Evento_Mesa;
+  Evento_Mesa_Reserva: Evento_Mesa_Reserva;
+  Evento_Opcoes: Evento_Opcoes;
+  Evento_Opcoes_Grupo: Evento_Opcoes_Grupo;
+  Evento_Opcoes_Log: Evento_Opcoes_Log;
+  Evento_Pagamento: Evento_Pagamento;
+  Evento_Participante: Evento_Participante;
+  Evento_Participante_Aux: Evento_Participante_Aux;
+  Evento_Participante_Temp: Evento_Participante_Temp;
+  Evento_Plano: Evento_Plano;
+  Evento_Plano_Palestrante: Evento_Plano_Palestrante;
+  Evento_PlanoXLugar_Reserva: Evento_PlanoXLugar_Reserva;
+  Evento_Retorno: Evento_Retorno;
+  Evento_Retorno_Duplicidade: Evento_Retorno_Duplicidade;
+  Evento_Retorno_Registro: Evento_Retorno_Registro;
+  Evento_Tab_TipoAcompanhante: Evento_Tab_TipoAcompanhante;
+  Evento_Tab_TipoEvento: Evento_Tab_TipoEvento;
+  Evento_Vip: Evento_Vip;
+  Eventos_Forma_Pagamento: Eventos_Forma_Pagamento;
+  Eventos_Fotos: Eventos_Fotos;
+  Eventos_Geral: Eventos_Geral;
+  Eventos_Log_Auditoria: Eventos_Log_Auditoria;
+  Eventos_Pedido: Eventos_Pedido;
+  Eventos_Pedido_Items: Eventos_Pedido_Items;
+  Eventos_Perfil: Eventos_Perfil;
+  Eventos_Tabela_Preco: Eventos_Tabela_Preco;
+  Exame_Candidato: Exame_Candidato;
+  Exame_Escola: Exame_Escola;
+  Exame_Inscricao_Cespe: Exame_Inscricao_Cespe;
+  Exame_Local: Exame_Local;
+  Exame_Nota: Exame_Nota;
+  Exame_Status: Exame_Status;
+  EXO_NC_CANDIDATO: EXO_NC_CANDIDATO;
+  EXO_NC_ESCOLAS: EXO_NC_ESCOLAS;
+  EXO_NC_LOCAIS: EXO_NC_LOCAIS;
+  EXO_NC_NOTA: EXO_NC_NOTA;
+  EXO_NC_STATUS: EXO_NC_STATUS;
+  Exportar_NMS: Exportar_NMS;
+  falta_2018: falta_2018;
+  Faq: Faq;
+  Fichario: Fichario;
+  Fichario_Presidencia: Fichario_Presidencia;
+  FormsPrerrogativas: FormsPrerrogativas;
+  Formulario: Formulario;
+  Foto: Foto;
+  Ftp_Log: Ftp_Log;
+  Ftp_Permissao: Ftp_Permissao;
+  Funcao: Funcao;
+  funcao_controller: funcao_controller;
+  Funcao_v3: Funcao_v3;
+  Funcionario: Funcionario;
+  Funcionario_BcoBrasil: Funcionario_BcoBrasil;
+  Funcionario_Cargo: Funcionario_Cargo;
+  Funcionario_Eleicao: Funcionario_Eleicao;
+  Funcionario_Setor: Funcionario_Setor;
+  Funcionarios_BB_RH: Funcionarios_BB_RH;
+  Hist_Advogado: Hist_Advogado;
+  Hist_Advogado_Cnpj: Hist_Advogado_Cnpj;
+  Hist_Advogado_Social: Hist_Advogado_Social;
+  Hist_Carteira: Hist_Carteira;
+  Hist_Chamado: Hist_Chamado;
+  Hist_Compromisso: Hist_Compromisso;
+  Hist_Debito: Hist_Debito;
+  Hist_Debito_Processo: Hist_Debito_Processo;
+  Hist_Email: Hist_Email;
+  Hist_Endereco: Hist_Endereco;
+  Hist_Impedimento: Hist_Impedimento;
+  Hist_Interforum: Hist_Interforum;
+  Hist_Pedido_Documento: Hist_Pedido_Documento;
+  Hist_Requerimento_Ato_Societario: Hist_Requerimento_Ato_Societario;
+  Hist_Situacao: Hist_Situacao;
+  Hist_Sociedade: Hist_Sociedade;
+  Hist_Tesouraria_Relatorio: Hist_Tesouraria_Relatorio;
+  HUBOAB_Foto: HUBOAB_Foto;
+  HUBOAB_Requerimento: HUBOAB_Requerimento;
+  HUBOAB_Requerimento_Status: HUBOAB_Requerimento_Status;
+  Imagem_Arquivo: Imagem_Arquivo;
+  Impedimento: Impedimento;
+  import_ASSAI: import_ASSAI;
+  importa_seccional: importa_seccional;
+  importacao_documentos_ted: importacao_documentos_ted;
+  Inadimplencia_Log: Inadimplencia_Log;
+  Inscricao: Inscricao;
+  Inscricao_Reserva: Inscricao_Reserva;
+  Inscricao_Reserva_Especial: Inscricao_Reserva_Especial;
+  integracao_AASP: integracao_AASP;
+  Integracao_Amplo: Integracao_Amplo;
+  Integracao_Atualizacao: Integracao_Atualizacao;
+  Integrante_Comissao: Integrante_Comissao;
+  Interforum: Interforum;
+  Interforum_notas: Interforum_notas;
+  invheader: invheader;
+  IP_Acesso: IP_Acesso;
+  Ip_Bloqueado: Ip_Bloqueado;
+  IP_Liberado: IP_Liberado;
+  Jornal_Cancelado: Jornal_Cancelado;
+  Jornal_Cidade: Jornal_Cidade;
+  Jornal_Recebimento: Jornal_Recebimento;
+  Julgamento_Cumulado: Julgamento_Cumulado;
+  Julgamento_MotivoDaDecisao: Julgamento_MotivoDaDecisao;
+  JuntaComercial_Candidato: JuntaComercial_Candidato;
+  JuntaComercial_Conselheiro: JuntaComercial_Conselheiro;
+  JuntaComercial_Eleito: JuntaComercial_Eleito;
+  JuntaComercial_Evento: JuntaComercial_Evento;
+  JuntaComercial_Log: JuntaComercial_Log;
+  JuntaComercial_Votacao: JuntaComercial_Votacao;
+  Justificativa_Eleicao: Justificativa_Eleicao;
+  Lembrete_Cadastro: Lembrete_Cadastro;
+  Lista_Advogado: Lista_Advogado;
+  Lista_Completa_Esmafe$: Lista_Completa_Esmafe$;
+  Lista_Sociedade: Lista_Sociedade;
+  Local_Votacao_2018: Local_Votacao_2018;
+  Log_Acesso: Log_Acesso;
+  Log_Acesso_Lista_Sextupla: Log_Acesso_Lista_Sextupla;
+  Log_Advogado_Situacao: Log_Advogado_Situacao;
+  Log_Consulta: Log_Consulta;
+  Log_Documento: Log_Documento;
+  Log_ESA_Curso: Log_ESA_Curso;
+  Log_Exclusao_Cargo: Log_Exclusao_Cargo;
+  Log_Exclusao_Pedido: Log_Exclusao_Pedido;
+  Log_Exclusao_Renovacao: Log_Exclusao_Renovacao;
+  Log_Inadimplencia_Import_Doc: Log_Inadimplencia_Import_Doc;
+  Log_Mensagem: Log_Mensagem;
+  Log_Nota_Disciplinar: Log_Nota_Disciplinar;
+  Log_Pagina: Log_Pagina;
+  Log_Pagina_documento: Log_Pagina_documento;
+  Log_Recorte: Log_Recorte;
+  Log_Recorte_CanceladoTes: Log_Recorte_CanceladoTes;
+  Log_RemessaCEF: Log_RemessaCEF;
+  logBonjur: logBonjur;
+  Login_Suporte_Log: Login_Suporte_Log;
+  LoteExecucao: LoteExecucao;
+  LoteExecucaoLog: LoteExecucaoLog;
+  Lugar: Lugar;
+  Lugar_Cor: Lugar_Cor;
+  Lugar_Imagem: Lugar_Imagem;
+  Lugar_Reserva: Lugar_Reserva;
+  Lugar_Reserva_Grupo: Lugar_Reserva_Grupo;
+  Lugar_Reserva_Memo: Lugar_Reserva_Memo;
+  lugar_reserva_relacao: lugar_reserva_relacao;
+  Mens_Boleto: Mens_Boleto;
+  Mensagem: Mensagem;
+  Mensagem_Intranet: Mensagem_Intranet;
+  Mensagem_Intranet_Log: Mensagem_Intranet_Log;
+  mensagem_usuario: mensagem_usuario;
+  MIGRAR_Eleicoes_ListaVotacao: MIGRAR_Eleicoes_ListaVotacao;
+  MIGRAR_Eleicoes_Municipio_LocalVotacao: MIGRAR_Eleicoes_Municipio_LocalVotacao;
+  MIGRAR_Eleicoes_Siafi: MIGRAR_Eleicoes_Siafi;
+  MIGRAR_Eleicoes_SubcomissoesEleitorais: MIGRAR_Eleicoes_SubcomissoesEleitorais;
+  MIGRAR_Eleicoes_Tab_LocalVotacao: MIGRAR_Eleicoes_Tab_LocalVotacao;
+  MIGRAR_Eleicoes2006_LocalVotacao: MIGRAR_Eleicoes2006_LocalVotacao;
+  MIGRAR_Eleicoes2006_NaoVotantes: MIGRAR_Eleicoes2006_NaoVotantes;
+  Minuta_Automatica: Minuta_Automatica;
+  Modelo_Notificacao_X_Documento: Modelo_Notificacao_X_Documento;
+  motivo_exclusao_relator_instrutor: motivo_exclusao_relator_instrutor;
+  NIC: NIC;
+  NMS_Boleto_Outros: NMS_Boleto_Outros;
+  NMS_Cadastro: NMS_Cadastro;
+  NMS_Cidade: NMS_Cidade;
+  NMS_EnviosRealTime: NMS_EnviosRealTime;
+  NMS_Erro_Atualizacao: NMS_Erro_Atualizacao;
+  NMS_Importar: NMS_Importar;
+  NMS_Nao_Atualizar: NMS_Nao_Atualizar;
+  NMS_ParcelaUnica: NMS_ParcelaUnica;
+  NMS_Rel_Cadastro: NMS_Rel_Cadastro;
+  NMS_Situacao: NMS_Situacao;
+  Nota: Nota;
+  Nota_Disciplinar_Infracao: Nota_Disciplinar_Infracao;
+  Noticia: Noticia;
+  NS_Notificacao: NS_Notificacao;
+  NS_Publicacao: NS_Publicacao;
+  NS_Status: NS_Status;
+  OAB_Cidadania_Advogado_Atuacao: OAB_Cidadania_Advogado_Atuacao;
+  OAB_Cidadania_Advogado_Atuacao_Inscricao: OAB_Cidadania_Advogado_Atuacao_Inscricao;
+  OAB_Cidadania_Usuario_Acesso: OAB_Cidadania_Usuario_Acesso;
+  OAB_Escola_Inscricao: OAB_Escola_Inscricao;
+  OABCidadania_ForcaTarefa: OABCidadania_ForcaTarefa;
+  OABEscolas_Insc_Advogado: OABEscolas_Insc_Advogado;
+  Obituario: Obituario;
+  Oficio: Oficio;
+  oficio_corresp_notificacao: oficio_corresp_notificacao;
+  ordena: ordena;
+  Parametro_Blq: Parametro_Blq;
+  Parte: Parte;
+  Parte_Deliberativos: Parte_Deliberativos;
+  PE_Cadastro: PE_Cadastro;
+  PE_Documento_Pauta: PE_Documento_Pauta;
+  PE_Email: PE_Email;
+  PE_Link_Visualizacao: PE_Link_Visualizacao;
+  PE_Log_Visualizacao: PE_Log_Visualizacao;
+  PE_Orgao_Pauta: PE_Orgao_Pauta;
+  PE_Pauta: PE_Pauta;
+  pe_pauta_presenca: pe_pauta_presenca;
+  PE_Pauta_Ted: PE_Pauta_Ted;
+  PE_Pauta_Ted_Doc: PE_Pauta_Ted_Doc;
+  PE_Pauta_Tipo: PE_Pauta_Tipo;
+  PE_SemEmail: PE_SemEmail;
+  Pedido_Documento: Pedido_Documento;
+  Pedido_Documento_Erro: Pedido_Documento_Erro;
+  Pedido_Documento_Lembrete: Pedido_Documento_Lembrete;
+  Pega_Ladrao: Pega_Ladrao;
+  Pergunta: Pergunta;
+  Pergunta_Bool: Pergunta_Bool;
+  Pergunta_Check_Opt: Pergunta_Check_Opt;
+  Pergunta_Enum_Opt: Pergunta_Enum_Opt;
+  Pergunta_Texto: Pergunta_Texto;
+  Permissao: Permissao;
+  Permissao_Perfil: Permissao_Perfil;
+  Permissao_Usuario: Permissao_Usuario;
+  Permissao_Usuario_Acesso: Permissao_Usuario_Acesso;
+  Permissao_Usuario_Perfil: Permissao_Usuario_Perfil;
+  Permissao_v3: Permissao_v3;
+  PesquisaResposta_MulherAdvogada: PesquisaResposta_MulherAdvogada;
+  Pge_Ato: Pge_Ato;
+  Pge_Cedente: Pge_Cedente;
+  Pge_Duvida_Requerimento: Pge_Duvida_Requerimento;
+  Pge_Hist_Ato: Pge_Hist_Ato;
+  Pge_Prioridade: Pge_Prioridade;
+  Pge_Processos: Pge_Processos;
+  Pge_Referencia: Pge_Referencia;
+  Pge_Requerimento: Pge_Requerimento;
+  PGE_Requerimento_Status: PGE_Requerimento_Status;
+  Pge_Reu: Pge_Reu;
+  PGE_Status: PGE_Status;
+  Pge_TipoAto: Pge_TipoAto;
+  Planilha1$: Planilha1$;
+  PlanilhaAcom$: PlanilhaAcom$;
+  Pre_Dependente: Pre_Dependente;
+  Pre_Inscricao: Pre_Inscricao;
+  pre_inscricao_bkp_20200429: pre_inscricao_bkp_20200429;
+  Pre_Inscricao_Declaracoes: Pre_Inscricao_Declaracoes;
+  Pre_Inscricao_Log: Pre_Inscricao_Log;
+  pre_inscricao_log_bkp_20200429: pre_inscricao_log_bkp_20200429;
+  Pre_Insricao_Boleto: Pre_Insricao_Boleto;
+  Prerrogativas_Anexos: Prerrogativas_Anexos;
+  Prerrogativas_Autorizadores: Prerrogativas_Autorizadores;
+  Prerrogativas_Autorizados: Prerrogativas_Autorizados;
+  processo: processo;
+  Processos_Exclusao: Processos_Exclusao;
+  Processos_Execucao_Lote: Processos_Execucao_Lote;
+  Processos_Inadimplencia: Processos_Inadimplencia;
+  Processos_Inadimplencia2: Processos_Inadimplencia2;
+  processos_movimentacao: processos_movimentacao;
+  Projudi: Projudi;
+  PropostaCategoriaServico: PropostaCategoriaServico;
+  PropostaEvento: PropostaEvento;
+  PropostaEventoArquivo: PropostaEventoArquivo;
+  PropostaEventoOds: PropostaEventoOds;
+  PropostaEventoPessoal: PropostaEventoPessoal;
+  PropostaEventoServico: PropostaEventoServico;
+  PropostaEventoVisual: PropostaEventoVisual;
+  PropostaOds: PropostaOds;
+  PropostaProtocolo: PropostaProtocolo;
+  PropostaSalas: PropostaSalas;
+  PropostaServico: PropostaServico;
+  PropostaTipo: PropostaTipo;
+  PropostaTipoServico: PropostaTipoServico;
+  Protocolo_Parte_Delib: Protocolo_Parte_Delib;
+  RabbitMQ_Fila_Status: RabbitMQ_Fila_Status;
+  Recibo_Advogado: Recibo_Advogado;
+  Recorte_Cancelado: Recorte_Cancelado;
+  Recorte_Email: Recorte_Email;
+  redirecionamento_nova_intranet: redirecionamento_nova_intranet;
+  redirecionamento_nova_intranet_relacao: redirecionamento_nova_intranet_relacao;
+  Rel_Andamento_Responsavel: Rel_Andamento_Responsavel;
+  Rel_Assinatura: Rel_Assinatura;
+  Rel_Autor_Destinatario: Rel_Autor_Destinatario;
+  Rel_Compromisso_Subsecao: Rel_Compromisso_Subsecao;
+  Rel_Corresp_Destinatario: Rel_Corresp_Destinatario;
+  Rel_Instrutor_Advogado: Rel_Instrutor_Advogado;
+  rel_instrutor_advogado_historico: rel_instrutor_advogado_historico;
+  Rel_Orgao_Andamento: Rel_Orgao_Andamento;
+  Rel_Orgao_Decisao: Rel_Orgao_Decisao;
+  Rel_Orgao_Fase: Rel_Orgao_Fase;
+  Rel_Orgao_Setor: Rel_Orgao_Setor;
+  Rel_Req_Usu: Rel_Req_Usu;
+  Rel_Setor_Sistemas_DOL: Rel_Setor_Sistemas_DOL;
+  Rel_Tipo_Classe: Rel_Tipo_Classe;
+  Rel_TipoOficio_campo: Rel_TipoOficio_campo;
+  Rel_Usuario_Setor: Rel_Usuario_Setor;
+  RELACAO_ESA_LEDZ: RELACAO_ESA_LEDZ;
+  relator_instrutor_motivo_exclusao: relator_instrutor_motivo_exclusao;
+  relator_instrutor_peso: relator_instrutor_peso;
+  relatorio_Processo_Auditoria: relatorio_Processo_Auditoria;
+  relatorio_Processo_Auditoria_bkp: relatorio_Processo_Auditoria_bkp;
+  Req_Dativo_Analise_Pdf: Req_Dativo_Analise_Pdf;
+  Req_Dativo_Analise_Pdf_Adv: Req_Dativo_Analise_Pdf_Adv;
+  Req_Dativo_Analise_Pdf_Curador: Req_Dativo_Analise_Pdf_Curador;
+  Req_Dativo_Analise_Pdf_Data: Req_Dativo_Analise_Pdf_Data;
+  Req_Dativo_Analise_Pdf_Defensor: Req_Dativo_Analise_Pdf_Defensor;
+  Req_Dativo_Analise_Pdf_Juiz: Req_Dativo_Analise_Pdf_Juiz;
+  Req_Dativo_Analise_Pdf_Outros_Processos: Req_Dativo_Analise_Pdf_Outros_Processos;
+  Req_Dativo_Analise_Pdf_Procurador: Req_Dativo_Analise_Pdf_Procurador;
+  Req_Dativo_Analise_Pdf_Revisao: Req_Dativo_Analise_Pdf_Revisao;
+  Req_Dativo_Analise_Pdf_Valor: Req_Dativo_Analise_Pdf_Valor;
+  Req_Dativo_Analise_Pdf_Valor_Requerido: Req_Dativo_Analise_Pdf_Valor_Requerido;
+  Requerimento_Ato_Societario: Requerimento_Ato_Societario;
+  Resposta_Bool: Resposta_Bool;
+  Resposta_Check_Opt: Resposta_Check_Opt;
+  Resposta_Enum: Resposta_Enum;
+  Resposta_Texto: Resposta_Texto;
+  Restricao_Protocolo: Restricao_Protocolo;
+  Restricao_Usuarios_Protocolo: Restricao_Usuarios_Protocolo;
+  resultados$: resultados$;
+  Retorno_Correios: Retorno_Correios;
+  Rh_Funcionario_Endereco: Rh_Funcionario_Endereco;
+  RH_Funcionario_Endereco_2007: RH_Funcionario_Endereco_2007;
+  Rh_Funcionario_PIS: Rh_Funcionario_PIS;
+  RH_Funcionario_PIS_2007: RH_Funcionario_PIS_2007;
+  rpt_0001: rpt_0001;
+  Salas_Acesso: Salas_Acesso;
+  Salas_Acesso_Atendente: Salas_Acesso_Atendente;
+  Salas_Acesso_Log: Salas_Acesso_Log;
+  Setor_Acesso: Setor_Acesso;
+  setor_excecao: setor_excecao;
+  Setor_TipoDocumento: Setor_TipoDocumento;
+  Sicoob_Pix: Sicoob_Pix;
+  Site_Arquivo_Log: Site_Arquivo_Log;
+  Site_Arquivo_Permissao: Site_Arquivo_Permissao;
+  Site_Campanha: Site_Campanha;
+  Site_Exame_Concurso: Site_Exame_Concurso;
+  Site_Exame_Concurso_Aviso: Site_Exame_Concurso_Aviso;
+  Site_Exame_Concurso_Item: Site_Exame_Concurso_Item;
+  Situacao: Situacao;
+  Situacao_Cobranca: Situacao_Cobranca;
+  socidades_PB: socidades_PB;
+  Sociedade_Certidao: Sociedade_Certidao;
+  Sociedade_Csa: Sociedade_Csa;
+  Sociedade_Email: Sociedade_Email;
+  Sociedade_Filial: Sociedade_Filial;
+  Sociedade_Livro: Sociedade_Livro;
+  Sociedade_Ocorrencia: Sociedade_Ocorrencia;
+  Sociedade_Oficio: Sociedade_Oficio;
+  Sociedade_Selo: Sociedade_Selo;
+  Socio: Socio;
+  SSO_Token: SSO_Token;
+  Suplementar: Suplementar;
+  sysdiagrams: sysdiagrams;
+  Tab_Acordao: Tab_Acordao;
+  Tab_Agenda: Tab_Agenda;
+  Tab_Agenda_Compromisso: Tab_Agenda_Compromisso;
+  Tab_Andamento: Tab_Andamento;
+  Tab_Andamento_Responsavel: Tab_Andamento_Responsavel;
+  Tab_Anuidade: Tab_Anuidade;
+  Tab_AreaAtuacao: Tab_AreaAtuacao;
+  Tab_Assinatura: Tab_Assinatura;
+  Tab_Assinatura_Oficio: Tab_Assinatura_Oficio;
+  Tab_BoletoConta: Tab_BoletoConta;
+  Tab_BoletoTaxa: Tab_BoletoTaxa;
+  Tab_CadernoVotacao: Tab_CadernoVotacao;
+  Tab_CadernoVotacaoAdv: Tab_CadernoVotacaoAdv;
+  Tab_Cargo: Tab_Cargo;
+  Tab_Cert_Julgamento: Tab_Cert_Julgamento;
+  Tab_ClasseProcesso: Tab_ClasseProcesso;
+  Tab_ClasseSetor: Tab_ClasseSetor;
+  Tab_Comarca: Tab_Comarca;
+  Tab_Comarca_Cidades: Tab_Comarca_Cidades;
+  Tab_ComarcaTeste: Tab_ComarcaTeste;
+  Tab_Compromisso: Tab_Compromisso;
+  Tab_Controle_Entrega: Tab_Controle_Entrega;
+  Tab_Corresp_Status: Tab_Corresp_Status;
+  Tab_Corresp_Tratamento: Tab_Corresp_Tratamento;
+  Tab_Corresp_Turmas: Tab_Corresp_Turmas;
+  Tab_Corresp_Txt_Not: Tab_Corresp_Txt_Not;
+  Tab_Correspondencia: Tab_Correspondencia;
+  Tab_Decisao: Tab_Decisao;
+  Tab_Deficiencia: Tab_Deficiencia;
+  Tab_Dicionario_DOL: Tab_Dicionario_DOL;
+  Tab_Doc_Lembrete_Log: Tab_Doc_Lembrete_Log;
+  Tab_Doc_Notificacao: Tab_Doc_Notificacao;
+  Tab_Documento_Corresp: Tab_Documento_Corresp;
+  Tab_DocumentoSetor: Tab_DocumentoSetor;
+  Tab_Edital: Tab_Edital;
+  Tab_Email: Tab_Email;
+  Tab_Enquete: Tab_Enquete;
+  Tab_Equipamento: Tab_Equipamento;
+  Tab_ErroCarteira: Tab_ErroCarteira;
+  Tab_Esa_Desistencia: Tab_Esa_Desistencia;
+  Tab_Escolaridade: Tab_Escolaridade;
+  Tab_EstadoCivil: Tab_EstadoCivil;
+  Tab_ExameOrdem: Tab_ExameOrdem;
+  Tab_Faculdade: Tab_Faculdade;
+  tab_Faculdade_Nova: tab_Faculdade_Nova;
+  tab_faculdade_nova3: tab_faculdade_nova3;
+  tab_faculdade_nova4: tab_faculdade_nova4;
+  Tab_Faculdade_old: Tab_Faculdade_old;
+  Tab_Fase: Tab_Fase;
+  Tab_Feriado: Tab_Feriado;
+  Tab_Formulario_Documento: Tab_Formulario_Documento;
+  Tab_Fornecedor: Tab_Fornecedor;
+  Tab_FuncaoNomeacao: Tab_FuncaoNomeacao;
+  Tab_GrupoCerimonial: Tab_GrupoCerimonial;
+  Tab_Hist_Anexo_Corresp: Tab_Hist_Anexo_Corresp;
+  Tab_Hist_Padrao_Corresp: Tab_Hist_Padrao_Corresp;
+  Tab_Impedimento: Tab_Impedimento;
+  Tab_Infracao: Tab_Infracao;
+  Tab_Infracao_NEW: Tab_Infracao_NEW;
+  Tab_Instrutor: Tab_Instrutor;
+  Tab_Lista_Advogado: Tab_Lista_Advogado;
+  Tab_Lista_Sociedade: Tab_Lista_Sociedade;
+  Tab_Lote_Corresp: Tab_Lote_Corresp;
+  Tab_Modelo_Notificacao: Tab_Modelo_Notificacao;
+  Tab_Modelo_Oficio: Tab_Modelo_Oficio;
+  Tab_Motivo: Tab_Motivo;
+  Tab_Motivo_Afastamento: Tab_Motivo_Afastamento;
+  Tab_Motivo_Projudi: Tab_Motivo_Projudi;
+  Tab_MotivoDecisao: Tab_MotivoDecisao;
+  Tab_MotivoLevantamento: Tab_MotivoLevantamento;
+  Tab_Municipio: Tab_Municipio;
+  Tab_Nacionalidade: Tab_Nacionalidade;
+  Tab_Niveis_DOL: Tab_Niveis_DOL;
+  Tab_Nota_Disciplinar: Tab_Nota_Disciplinar;
+  Tab_Notificacao: Tab_Notificacao;
+  Tab_Notificacao_Corresp: Tab_Notificacao_Corresp;
+  Tab_Numeracao_Corresp: Tab_Numeracao_Corresp;
+  Tab_Objeto: Tab_Objeto;
+  Tab_Oferta_Tac: Tab_Oferta_Tac;
+  Tab_Oficio_Corresp: Tab_Oficio_Corresp;
+  Tab_Organizador: Tab_Organizador;
+  Tab_Orgao: Tab_Orgao;
+  Tab_Penalidade: Tab_Penalidade;
+  Tab_Processador: Tab_Processador;
+  Tab_ProcessoSetor: Tab_ProcessoSetor;
+  Tab_Recesso: Tab_Recesso;
+  Tab_Relator: Tab_Relator;
+  Tab_Relator_TED: Tab_Relator_TED;
+  tab_relator_ted_backup: tab_relator_ted_backup;
+  Tab_Remessa: Tab_Remessa;
+  Tab_Requerimento: Tab_Requerimento;
+  Tab_Resultado: Tab_Resultado;
+  Tab_ResultadoJulgamento: Tab_ResultadoJulgamento;
+  Tab_Seccionais: Tab_Seccionais;
+  Tab_Setor: Tab_Setor;
+  Tab_Sistema: Tab_Sistema;
+  Tab_Sistemas_DOL: Tab_Sistemas_DOL;
+  Tab_Situacao: Tab_Situacao;
+  Tab_SituacaoCobranca: Tab_SituacaoCobranca;
+  Tab_SituacaoDocumento: Tab_SituacaoDocumento;
+  Tab_SituacaoSociedade: Tab_SituacaoSociedade;
+  Tab_Sociedade: Tab_Sociedade;
+  Tab_Sociedade_Associada: Tab_Sociedade_Associada;
+  tab_sociedades_aux: tab_sociedades_aux;
+  Tab_Sorteio: Tab_Sorteio;
+  Tab_Sorteio2: Tab_Sorteio2;
+  Tab_Sorteio3: Tab_Sorteio3;
+  Tab_Sorteio4: Tab_Sorteio4;
+  Tab_Status: Tab_Status;
+  Tab_SubClasseProcesso: Tab_SubClasseProcesso;
+  Tab_SubOrgao: Tab_SubOrgao;
+  Tab_SuborgaoBI: Tab_SuborgaoBI;
+  Tab_SubSecao: Tab_SubSecao;
+  Tab_SubTipoDocumento: Tab_SubTipoDocumento;
+  Tab_SubTipoInscricao: Tab_SubTipoInscricao;
+  Tab_SustentacaoOral: Tab_SustentacaoOral;
+  Tab_SustentacaoOral_Log: Tab_SustentacaoOral_Log;
+  tab_SustentacaoOralObservacao: tab_SustentacaoOralObservacao;
+  Tab_Tarefas_Agendadas: Tab_Tarefas_Agendadas;
+  Tab_Tesouraria_TpLancamento: Tab_Tesouraria_TpLancamento;
+  Tab_Tipo_Envio_Corresp: Tab_Tipo_Envio_Corresp;
+  Tab_TipoCompromisso: Tab_TipoCompromisso;
+  Tab_TipoDependente: Tab_TipoDependente;
+  Tab_TipoDocumento: Tab_TipoDocumento;
+  Tab_TipoInscricao: Tab_TipoInscricao;
+  Tab_TipoLugar: Tab_TipoLugar;
+  Tab_TipoMovimentacao: Tab_TipoMovimentacao;
+  Tab_TipoOcorrencia: Tab_TipoOcorrencia;
+  Tab_TipoOficio: Tab_TipoOficio;
+  Tab_TipoOficio_campo: Tab_TipoOficio_campo;
+  Tab_TipoOrgao: Tab_TipoOrgao;
+  Tab_TipoPedidoDocumento: Tab_TipoPedidoDocumento;
+  Tab_TipoPrioridade: Tab_TipoPrioridade;
+  Tab_TipoProcesso: Tab_TipoProcesso;
+  Tab_TipoProcesso_bkp: Tab_TipoProcesso_bkp;
+  Tab_TipoRegistroSociedade: Tab_TipoRegistroSociedade;
+  Tab_TipoRelacionado: Tab_TipoRelacionado;
+  Tab_TipoSubOrgao: Tab_TipoSubOrgao;
+  Tab_UF: Tab_UF;
+  Tab_Vara: Tab_Vara;
+  Table_1: Table_1;
+  Tamanho_Camisa: Tamanho_Camisa;
+  Tarefa: Tarefa;
+  Taxas_Protheus: Taxas_Protheus;
+  TB_CAIXA: TB_CAIXA;
+  tb_notas: tb_notas;
+  TB_VENDAS: TB_VENDAS;
+  tblLinksUteis: tblLinksUteis;
+  tbx: tbx;
+  Tela_Bloqueio: Tela_Bloqueio;
+  Temp_Advogado: Temp_Advogado;
+  temp_Ana: temp_Ana;
+  Temp_BI: Temp_BI;
+  Temp_BiometricoCF: Temp_BiometricoCF;
+  Temp_CargaGeralCF: Temp_CargaGeralCF;
+  Temp_Carteira_Compromisso: Temp_Carteira_Compromisso;
+  temp_cidadesCF: temp_cidadesCF;
+  Temp_CNSA1: Temp_CNSA1;
+  Temp_CNSA2: Temp_CNSA2;
+  Temp_Debexp: Temp_Debexp;
+  Temp_Debexp_Protheus: Temp_Debexp_Protheus;
+  Temp_Debexp_Roberto: Temp_Debexp_Roberto;
+  Temp_Debito: Temp_Debito;
+  Temp_Distribuicao: Temp_Distribuicao;
+  Temp_Documento_Renovacao: Temp_Documento_Renovacao;
+  Temp_Email_Envio: Temp_Email_Envio;
+  Temp_Endereco: Temp_Endereco;
+  Temp_Envio_CF: Temp_Envio_CF;
+  Temp_EnvioCF: Temp_EnvioCF;
+  temp_esa: temp_esa;
+  Temp_Esa_Informativo: Temp_Esa_Informativo;
+  Temp_ESA_Informativo_Cursos: Temp_ESA_Informativo_Cursos;
+  Temp_Estatistica_Processos: Temp_Estatistica_Processos;
+  Temp_Etiqueta_Processo: Temp_Etiqueta_Processo;
+  Temp_Etiquetas_Corresp: Temp_Etiquetas_Corresp;
+  Temp_ExameOrdem: Temp_ExameOrdem;
+  Temp_Execucao: Temp_Execucao;
+  Temp_Execucao2: Temp_Execucao2;
+  TEMP_IMPORTA_DADOS_ESA_CREDITO: TEMP_IMPORTA_DADOS_ESA_CREDITO;
+  TEMP_IMPORTA_DADOS_ESA_CREDITO_2: TEMP_IMPORTA_DADOS_ESA_CREDITO_2;
+  TEMP_IMPORTA_DADOS_ESA_CURSO: TEMP_IMPORTA_DADOS_ESA_CURSO;
+  temp_inss: temp_inss;
+  Temp_Interforum: Temp_Interforum;
+  Temp_Lista_Nic: Temp_Lista_Nic;
+  Temp_Movimentacao: Temp_Movimentacao;
+  Temp_Movimentacao_Audit: Temp_Movimentacao_Audit;
+  temp_movimentacao_bkp: temp_movimentacao_bkp;
+  temp_nic_NMS: temp_nic_NMS;
+  Temp_NrSeguranca: Temp_NrSeguranca;
+  Temp_NS: Temp_NS;
+  Temp_Organizadores: Temp_Organizadores;
+  Temp_Pagamento: Temp_Pagamento;
+  Temp_PasseLivre_Interforum: Temp_PasseLivre_Interforum;
+  Temp_Pena: Temp_Pena;
+  Temp_Session: Temp_Session;
+  Temp_Session_BKP: Temp_Session_BKP;
+  Temp_SextoAno_Bloqueio: Temp_SextoAno_Bloqueio;
+  Temp_Socios_Inativos: Temp_Socios_Inativos;
+  temp_suplementar: temp_suplementar;
+  Temp_Tipopena: Temp_Tipopena;
+  Temp_TpDocumento_DePara: Temp_TpDocumento_DePara;
+  TempNota: TempNota;
+  temporario_email_mkt: temporario_email_mkt;
+  temporario_email_mkt2: temporario_email_mkt2;
+  Tesouraria_Relatorio: Tesouraria_Relatorio;
+  Tesouraria_RemessaCEF: Tesouraria_RemessaCEF;
+  Tesouraria_Tabela: Tesouraria_Tabela;
+  Tipo_Requerimento_Ato_Societario: Tipo_Requerimento_Ato_Societario;
+  tmp_acom2: tmp_acom2;
+  tmp_advogado_cpf: tmp_advogado_cpf;
+  tmp_advogado_senha: tmp_advogado_senha;
+  tmp_cred_esa: tmp_cred_esa;
+  tmp_cred_esa_2: tmp_cred_esa_2;
+  tmp_email_envio: tmp_email_envio;
+  TMP_EMAIL_MKT2: TMP_EMAIL_MKT2;
+  TMP_EMAIL_MKT3: TMP_EMAIL_MKT3;
+  TMP_OAB_RESOLVE: TMP_OAB_RESOLVE;
+  tmp_roberto: tmp_roberto;
+  TMPBOLETO: TMPBOLETO;
+  TMPBOLETOLOG: TMPBOLETOLOG;
+  TMPBOLETOSESSION: TMPBOLETOSESSION;
+  Totvs_correcao: Totvs_correcao;
+  Totvs_Ibge: Totvs_Ibge;
+  Unidades_Concedentes: Unidades_Concedentes;
+  Unidades_Concedentes_Assinaturas: Unidades_Concedentes_Assinaturas;
+  Unidades_Concedentes_Convite: Unidades_Concedentes_Convite;
+  Unidades_Concedentes_Estagiarios: Unidades_Concedentes_Estagiarios;
+  Unidades_Concedentes_Estagiarios_Senha: Unidades_Concedentes_Estagiarios_Senha;
+  Unidades_Concedentes_Tipo: Unidades_Concedentes_Tipo;
+  Unidades_Concedentes_Tipo_Documento: Unidades_Concedentes_Tipo_Documento;
+  Unidades_Concedentes_Transferencia: Unidades_Concedentes_Transferencia;
+  URNA: URNA;
+  Usuario: Usuario;
+  Usuario_Afastamento: Usuario_Afastamento;
+  Usuario_Complementar: Usuario_Complementar;
+  usuario_complementar_tipo: usuario_complementar_tipo;
+  Usuario_Distribuicao: Usuario_Distribuicao;
+  Usuario_Excluido: Usuario_Excluido;
+  Usuario_Juiz: Usuario_Juiz;
+  Usuario_Suporte: Usuario_Suporte;
+  Usuario_Vip: Usuario_Vip;
+  Votacao: Votacao;
+  Votacao_Arquivos: Votacao_Arquivos;
+  Votacao_Confirmacao: Votacao_Confirmacao;
+  Votacao_Desempate: Votacao_Desempate;
+  Votacao_OpcoesVoto: Votacao_OpcoesVoto;
+  Votacao_OrgaoSub: Votacao_OrgaoSub;
+  Votacao_PlenarioQuorum: Votacao_PlenarioQuorum;
+  Votacao_Rodada: Votacao_Rodada;
+  Votacao_RodadaOpcoes: Votacao_RodadaOpcoes;
+  Votacao_TipoEncerramento: Votacao_TipoEncerramento;
+  Votacao_TipoLista: Votacao_TipoLista;
+  Votacao_TipoSituacao: Votacao_TipoSituacao;
+  Votacao_TipoVotacao: Votacao_TipoVotacao;
+  Votacao_Votos: Votacao_Votos;
+  vox_municipios: vox_municipios;
+  vw_ultima_fase_BI_TED: vw_ultima_fase_BI_TED;
+  Web_NomeJornal: Web_NomeJornal;
+  Web_Salas: Web_Salas;
+  Web_Salas_Area: Web_Salas_Area;
+  Web_Vagas: Web_Vagas;
+  Web_Vagas_Area: Web_Vagas_Area;
+  Web_Vagas_Email: Web_Vagas_Email;
+  WebApi: WebApi;
+  Wellhub_Advogados: Wellhub_Advogados;
+  XDD_Advogado_Dativo: XDD_Advogado_Dativo;
+  XDD_Advogado_Dativo_Comarca: XDD_Advogado_Dativo_Comarca;
+  XDD_Advogado_Dativo_Comarca_VigenteEXCLUIR: XDD_Advogado_Dativo_Comarca_VigenteEXCLUIR;
+  XDD_Advogado_Dativo_Controle: XDD_Advogado_Dativo_Controle;
+  XDD_Advogado_Dativo_Exclusao: XDD_Advogado_Dativo_Exclusao;
+  XDD_Advogado_Dativo_Nomeacao: XDD_Advogado_Dativo_Nomeacao;
+  XDD_Advogado_Dativo_VigenteEXCLUIR: XDD_Advogado_Dativo_VigenteEXCLUIR;
+  XDD_Advogado_Qtd: XDD_Advogado_Qtd;
+  XDD_Competencia: XDD_Competencia;
+  XDD_EspecialidadeEXCLUIR: XDD_EspecialidadeEXCLUIR;
+  XDD_Log_Advogado_Dativo: XDD_Log_Advogado_Dativo;
+  XDD_Log_Advogado_Dativo_Comarca: XDD_Log_Advogado_Dativo_Comarca;
+  XDD_Log_Advogado_Dativo_Comarca_VigenteEXCLUIR: XDD_Log_Advogado_Dativo_Comarca_VigenteEXCLUIR;
+  XDD_Log_Advogado_Dativo_Exclusao: XDD_Log_Advogado_Dativo_Exclusao;
+  XDD_Log_Advogado_Dativo_Nomeacao: XDD_Log_Advogado_Dativo_Nomeacao;
+  XDD_Log_Advogado_Dativo_VigenteEXCLUIR: XDD_Log_Advogado_Dativo_VigenteEXCLUIR;
+  XDD_Log_Usuario: XDD_Log_Usuario;
+  XDD_Log_UsuarioJuiz: XDD_Log_UsuarioJuiz;
+  XDD_Plantao: XDD_Plantao;
+  XDD_PlantaoAdv: XDD_PlantaoAdv;
+  XDD_PlantaoAdvAceite: XDD_PlantaoAdvAceite;
+  XDD_PLANTAODATAS: XDD_PLANTAODATAS;
+  XDD_Usuario: XDD_Usuario;
+  XDD_UsuarioJuiz: XDD_UsuarioJuiz;
+  xFaixa: xFaixa;
+  xSimulacao: xSimulacao;
+  xSimulacaoP: xSimulacaoP;
+  xTabela: xTabela;
+  xTabelaP: xTabelaP;
+}
+
+export interface __MigrationHistory {
+  MigrationId: string;
+  ContextKey: string;
+  Model: string;
+  ProductVersion: string;
+}
+
+export interface _Table_1$_ {
+  F1: string | null;
+}
+
+export interface _Table_Lilian$_ {
+  F1: string | null;
+}
+
+export interface Acesso_Salas {
+  Ind: number;
+  Nic: number;
+  Dt_Acesso: string;
+  Sala: string | null;
+}
+
+export interface ACOMSMS_1 {
+  NIC: number;
+}
+
+export interface acon_adv_atualizacao {
+  nic: number;
+  dt_atualizacao: string;
+}
+
+export interface ACRFaculdade_NMS {
+  cd_faculdade: number;
+  descricao: string;
+  sigla: string;
+  cep: string;
+  endereco: string;
+  complemento: string | null;
+  bairro: string;
+  cd_cidade: number;
+  fone: string | null;
+  fax: string | null;
+  email: string | null;
+  site: string | null;
+  mantenedor: string;
+  diretor: string;
+  chefe_depto: string;
+  coordenador: string;
+  email_coord: string;
+}
+
+export interface Advogado {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string | null;
+  Tp_Inscricao: string | null;
+  Uf_Origem: string | null;
+  Nr_Seguranca: number | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_SubSecao: string | null;
+  Cd_Municipio: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Passaporte: string | null;
+  Nr_TE: string | null;
+  Zn_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Dt_Formatura: string | null;
+  Dt_Inscricao: string | null;
+  Dt_Registro: string | null;
+  Nr_LivroRegistro: string | null;
+  Nr_Registro: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  In_Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Id_Usuario: string | null;
+  Origem: string | null;
+  Informativo: number | null;
+  Disponivel: number | null;
+  Web: string | null;
+  Dt_Atualizacao: string;
+  CodiPais: number;
+  CodiUF: number | null;
+  CodiCidd: number | null;
+  Dt_InscOriginal: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+  Tem_Deficiencia: boolean | null;
+}
+
+export interface Advogado_Atuacao {
+  Ind: number;
+  Nic: number;
+  Cd_Area: number;
+}
+
+export interface Advogado_CadastroCampanha {
+  Ind: number;
+  Ind_Campanha: number;
+  Nic: number;
+  Cd_Situacao: string | null;
+  Dt_Insercao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Advogado_CadastroEspecial {
+  Ind: number;
+  Nic: number;
+  Nr_Documento: number;
+  Dt_Solicitacao: string | null;
+  Tp_Campo: number;
+  Vl_Campo: string;
+  Tp_Situacao: number | null;
+  Id_Usuario: string | null;
+  Dt_Aprovacao: string | null;
+}
+
+export interface Advogado_Cargo {
+  Ind: number;
+  Nic: number;
+  Cargo: string;
+}
+
+export interface Advogado_Cnpj {
+  Ind: number;
+  Nic: number;
+  Cnpj: string;
+}
+
+export interface Advogado_Comissao {
+  Ind: number;
+  Nic: number;
+  Nm_Integrante: string;
+  Cd_Comissao: number;
+  Cd_Cargo: number;
+  Nic_Indicacao: number | null;
+  Telefone: string | null;
+  Celular: string | null;
+  Email: string | null;
+  Observacao: string | null;
+}
+
+export interface Advogado_Conjuge {
+  ind: number;
+  nic: number | null;
+  nr_inscricao: number | null;
+  nome: string | null;
+}
+
+export interface Advogado_ContaBancaria {
+  Ind: number;
+  Ind_Banco: number;
+  Nic: number;
+  Agencia: string;
+  Digito: string | null;
+  Conta_Corrente: string;
+  Dt_Cadastro: string;
+}
+
+export interface Advogado_Curriculo {
+  Ind: number;
+  Id_Curriculo: number;
+  Nic: number;
+  Tp_Curriculo: string | null;
+  Cd_Faculdade: number | null;
+  Nm_Faculdade: string | null;
+  Ano_Conclusao: string | null;
+  Periodo_Atual: number | null;
+  Empresa1: string | null;
+  Periodo1: string | null;
+  Descricao1: string | null;
+  Empresa2: string | null;
+  Periodo2: string | null;
+  Descricao2: string | null;
+  Empresa3: string | null;
+  Periodo3: string | null;
+  Descricao3: string | null;
+  Foto: string | null;
+  Pretensao: string | null;
+  Prazo: string | null;
+  Dt_Cadastro: string | null;
+  Dt_Alteracao: string | null;
+  id_usuario_cadastro: string | null;
+  CaracteristicaVaga: string | null;
+}
+
+export interface Advogado_Dados_Complementares {
+  Ind: number;
+  CPF: string | null;
+  Nome: string | null;
+  Nome_Mae: string | null;
+  Dt_Nascimento: string | null;
+  Politicamente_Exposta: string | null;
+  Email_1: string | null;
+  Email_2: string | null;
+  Email_3: string | null;
+  Tipo_Logradouro_1: string | null;
+  Logradouro_1: string | null;
+  Numero_1: string | null;
+  Complemento_1: string | null;
+  Bairro_1: string | null;
+  Cep_1: string | null;
+  Cidade_1: string | null;
+  UF_1: string | null;
+  Tipo_Endereco_2: string | null;
+  Tipo_Logradouro_2: string | null;
+  Logradouro_2: string | null;
+  Numero_2: string | null;
+  Complemento_2: string | null;
+  Bairro_2: string | null;
+  Cep_2: string | null;
+  UF_2: string | null;
+  Tipo_Endereco_3: string | null;
+  Tipo_Logradouro_3: string | null;
+  Logradouro_3: string | null;
+  Numero_3: string | null;
+  Complemento_3: string | null;
+  Bairro_3: string | null;
+  Cep_3: string | null;
+  Cidade_3: string | null;
+  UF_3: string | null;
+  Tipo_Endereco_4: string | null;
+  Tipo_Logradouro_4: string | null;
+  Logradouro_4: string | null;
+  Numero_4: string | null;
+  Complemento_4: string | null;
+  Bairro_4: string | null;
+  Cep_4: string | null;
+  Cidade_4: string | null;
+  UF_4: string | null;
+  Tipo_Endereco_5: string | null;
+  Tipo_Logradouro_5: string | null;
+  Logradouro_5: string | null;
+  Numero_5: string | null;
+  Complemento_5: string | null;
+  Bairro_5: string | null;
+  Cep_5: string | null;
+  Cidade_5: string | null;
+  UF_5: string | null;
+  Tipo_Tel_1: string | null;
+  DDD_1: string | null;
+  Numero_Tel_1: string | null;
+  Tipo_Tel_2: string | null;
+  DDD_2: string | null;
+  Numero_Tel_2: string | null;
+  Tipo_Tel_3: string | null;
+  DDD_3: string | null;
+  Numero_Tel_3: string | null;
+  Tipo_Tel_4: string | null;
+  DDD_4: string | null;
+  Numero_Tel_4: string | null;
+  Tipo_Tel_5: string | null;
+  DDD_5: string | null;
+  Numero_Tel_5: string | null;
+}
+
+export interface Advogado_Dativo_2016_1 {
+  Ind: number | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+}
+
+export interface Advogado_Dativo_2016_2 {
+  Ind: number;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Violencia_Mulher: string | null;
+}
+
+export interface Advogado_Dativo_2017_1 {
+  Ind: number;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+}
+
+export interface Advogado_Dativo_2017_1_duplicado {
+  Ind: number | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+}
+
+export interface Advogado_Dativo_2017_2 {
+  Ind: number;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+}
+
+export interface Advogado_Dativo_Comarca_2016_1 {
+  Ind: number | null;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+}
+
+export interface Advogado_Dativo_Comarca_2016_2 {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+}
+
+export interface Advogado_Dativo_Comarca_2017_1 {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+}
+
+export interface Advogado_Dativo_Comarca_2017_2 {
+  Ind: number | null;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+}
+
+export interface Advogado_Dativo_Comarca_Vigente {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+}
+
+export interface Advogado_Dativo_Exclusao_2016_1 {
+  Ind: number | null;
+  Nic: number;
+  Dt_Exclusao: string;
+  IP: string;
+}
+
+export interface Advogado_Dativo_Exclusao_2016_2 {
+  Ind: number | null;
+  Nic: number;
+  Dt_Exclusao: string;
+  IP: string;
+}
+
+export interface Advogado_Dativo_Exclusao_2017_1 {
+  Ind: number;
+  Nic: number;
+  Dt_Exclusao: string;
+  IP: string;
+}
+
+export interface Advogado_Dativo_Exclusao_2017_2 {
+  Ind: number | null;
+  Nic: number;
+  Dt_Exclusao: string;
+  IP: string;
+}
+
+export interface Advogado_Dativo_Nomeacao_2016_2 {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Vara: string;
+  Dt_Nomeacao: string;
+  Nr_Autos: string;
+  Tp_Processo: string;
+  Obs: string;
+  Id_UsuarioJ: string;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Advogado_Dativo_Nomeacao_2017_1 {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Vara: string;
+  Dt_Nomeacao: string;
+  Nr_Autos: string;
+  Tp_Processo: string;
+  Obs: string;
+  Id_UsuarioJ: string;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Advogado_Dativo_Nomeacao_Vigente {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Vara: string;
+  Dt_Nomeacao: string;
+  Nr_Autos: string;
+  Tp_Processo: string;
+  Obs: string;
+  Id_UsuarioJ: string;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Advogado_Dativo_Nomeacao_Vigente_2017_2 {
+  Ind: number | null;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Vara: string | null;
+  Dt_Nomeacao: string | null;
+  Nr_Autos: string | null;
+  Tp_Processo: string | null;
+  Obs: string | null;
+  Id_UsuarioJ: string | null;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Advogado_Deficiencia {
+  ind: number;
+  nic: number;
+  cd_deficiencia: string;
+}
+
+export interface Advogado_Doc {
+  ind: number;
+  nic: number | null;
+  dt_cadastro: string | null;
+  nome_doc: string | null;
+  cadastro_aprovado: number | null;
+}
+
+export interface Advogado_DuplaFiliacao {
+  ind: number;
+  nic: number | null;
+  Tp_filiacao: string | null;
+  Nm_filiacao: string | null;
+}
+
+export interface Advogado_eleicao_2018 {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string | null;
+  Tp_Inscricao: string | null;
+  Uf_Origem: string | null;
+  Nr_Seguranca: number | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_SubSecao: string | null;
+  Cd_Municipio: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Passaporte: string | null;
+  Nr_TE: string | null;
+  Zn_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Dt_Formatura: string | null;
+  Dt_Inscricao: string | null;
+  Dt_Registro: string | null;
+  Nr_LivroRegistro: string | null;
+  Nr_Registro: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  In_Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Id_Usuario: string | null;
+  Origem: string | null;
+  Informativo: number | null;
+  Disponivel: number | null;
+  Web: string | null;
+  Dt_Atualizacao: string;
+  CodiPais: number;
+  CodiUF: number | null;
+  CodiCidd: number | null;
+  Dt_InscOriginal: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+}
+
+export interface Advogado_eleicao_2018_situacao {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string | null;
+  Tp_Inscricao: string | null;
+  Uf_Origem: string | null;
+  Nr_Seguranca: number | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_SubSecao: string | null;
+  Cd_Municipio: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Passaporte: string | null;
+  Nr_TE: string | null;
+  Zn_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Dt_Formatura: string | null;
+  Dt_Inscricao: string | null;
+  Dt_Registro: string | null;
+  Nr_LivroRegistro: string | null;
+  Nr_Registro: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  In_Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Id_Usuario: string | null;
+  Origem: string | null;
+  Informativo: number | null;
+  Disponivel: number | null;
+  Web: string | null;
+  Dt_Atualizacao: string;
+  CodiPais: number;
+  CodiUF: number | null;
+  CodiCidd: number | null;
+  Dt_InscOriginal: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+}
+
+export interface Advogado_Email {
+  Nic: number;
+  Nr_Inscricao: string;
+  Nome: string;
+  Email: string;
+  In_Email: string;
+  Informativo: number;
+  Cd_Situacao: string;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Tp_Inscricao: string;
+  Dt_Atualizacao: string;
+}
+
+export interface Advogado_Estatistica {
+  Ind: number;
+  Data: string;
+  Adv_AMais3: number;
+  Adv_AMenos3: number;
+  Adv_AMais5: number | null;
+  Adv_AMenos5: number | null;
+  Adv_SMais3: number;
+  Adv_SMenos3: number;
+  Adv_Isentos: number;
+  Adv_Licenciados: number;
+  Adv_Cancelados: number;
+  Adv_Falecidos: number;
+  Est_Ativos: number;
+  Est_Cancelados: number;
+}
+
+export interface Advogado_everest {
+  nome: string | null;
+  nr_oab: string | null;
+  nic: number | null;
+  dt_solicitacao: string | null;
+  dt_solicitante: string | null;
+}
+
+export interface Advogado_everest_new {
+  nome: string | null;
+  nr_oab: string | null;
+  nic: number | null;
+}
+
+export interface advogado_forca_cna {
+  Ind: number;
+  Nic: number | null;
+  Dt_Insercao: string | null;
+}
+
+export interface advogado_forca_compromisso {
+  Ind: number;
+  Nic: number | null;
+  Dt_Insercao: string | null;
+}
+
+export interface Advogado_Fronteira {
+  ind: number;
+  Nic: number | null;
+  Nr_Documento: number | null;
+  Dt_Recebimento: string | null;
+  Id_usuario: string | null;
+  Dt_Alteracao: string | null;
+  Id_Cancelamento: string | null;
+  Dt_Cancelamento: string | null;
+  Motivo_Cancelamento: string | null;
+}
+
+export interface Advogado_FuncaoNomeacao {
+  Ind: number;
+  Nic: number;
+  Cd_FuncaoNomeacao: number;
+  Cd_Subsecao: string;
+  Observacao: string | null;
+  Data_Ini: string | null;
+  Data_Fim: string | null;
+  Portaria: string | null;
+  ArquivoPDF: string | null;
+}
+
+export interface Advogado_InformacaoSite {
+  ind: number;
+  nic: number | null;
+  informacao: string | null;
+}
+
+export interface Advogado_Justica_Esporte {
+  Ind: number;
+  Nic: number | null;
+  Dt_inscricao: string | null;
+  Dt_Alteracao: string | null;
+  Id_Status: boolean | null;
+  Id_Usuario: string | null;
+}
+
+export interface Advogado_Log_ContaBancaria {
+  Ind: number;
+  Ind_Banco: number;
+  Nic: number;
+  Agencia: string;
+  Digito: string | null;
+  Conta_Corrente: string;
+  Dt_Cadastro: string;
+}
+
+export interface Advogado_NIC_6457 {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string | null;
+  Tp_Inscricao: string | null;
+  Uf_Origem: string | null;
+  Nr_Seguranca: number | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_SubSecao: string | null;
+  Cd_Municipio: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Passaporte: string | null;
+  Nr_TE: string | null;
+  Zn_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Dt_Formatura: string | null;
+  Dt_Inscricao: string | null;
+  Dt_Registro: string | null;
+  Nr_LivroRegistro: string | null;
+  Nr_Registro: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  In_Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Id_Usuario: string | null;
+  Origem: string | null;
+  Informativo: number | null;
+  Disponivel: number | null;
+  Web: string | null;
+  Dt_Atualizacao: string;
+  CodiPais: number;
+  CodiUF: number | null;
+  CodiCidd: number | null;
+  Dt_InscOriginal: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+  Tem_Deficiencia: boolean | null;
+}
+
+export interface Advogado_Pcd {
+  ind: number;
+  nic: number | null;
+  desconto_pcd: boolean | null;
+}
+
+export interface advogado_pin {
+  ind: number;
+  nic: number;
+  b_pin: boolean;
+  dt_requisicao: string;
+}
+
+export interface advogado_raca {
+  Ind: number;
+  Nome: string | null;
+}
+
+export interface Advogado_Raca20210503 {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string | null;
+  Tp_Inscricao: string | null;
+  Uf_Origem: string | null;
+  Nr_Seguranca: number | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_SubSecao: string | null;
+  Cd_Municipio: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Passaporte: string | null;
+  Nr_TE: string | null;
+  Zn_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Dt_Formatura: string | null;
+  Dt_Inscricao: string | null;
+  Dt_Registro: string | null;
+  Nr_LivroRegistro: string | null;
+  Nr_Registro: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  In_Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Id_Usuario: string | null;
+  Origem: string | null;
+  Informativo: number | null;
+  Disponivel: number | null;
+  Web: string | null;
+  Dt_Atualizacao: string;
+  CodiPais: number;
+  CodiUF: number | null;
+  CodiCidd: number | null;
+  Dt_InscOriginal: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+}
+
+export interface Advogado_Senha {
+  Ind: number;
+  Nic: number;
+  Dt_Senha: string | null;
+  Ip: string | null;
+  Senha: string | null;
+  Acesso: string | null;
+  Dt_Expiracao: string | null;
+  Dt_Alteracao: string | null;
+  bAcessoAtivo: number | null;
+  UltimaAlteracao: string | null;
+}
+
+export interface Advogado_Senha_ATUALIZAR {
+  Ind: number;
+  Nic: number;
+  Dt_Senha: string | null;
+  Ip: string | null;
+  Senha: string | null;
+  Acesso: string | null;
+  Dt_Expiracao: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Advogado_Social {
+  Ind: number;
+  Ind_Req: number;
+  Ind_Adv: number;
+  Nome: string;
+  Tp_Registro: string;
+  Dt_Status: string;
+  St_Status: string;
+  Id_Usuario: string;
+}
+
+export interface Advogado_Social_Log {
+  Ind: number;
+  Ind_Req: number;
+  Ind_Adv: number;
+  Nome: string | null;
+  Tp_Registro: string;
+  Dt_Status: string;
+  St_Status: string;
+  Id_Usuario: string;
+}
+
+export interface advogado_ticket {
+  Ind: number;
+  Nic: number | null;
+  Nr_Ticket: string | null;
+  Dt_Envio: string | null;
+  Nr_Documento: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Obs: string | null;
+  excluir: number | null;
+}
+
+export interface Advogado_Token {
+  Ind: number;
+  Nic: number | null;
+  Nr_Token: string | null;
+  Dt_Token: string | null;
+  Id_Usuario: string | null;
+  Dt_Anotacao: string | null;
+  Obs: string | null;
+}
+
+export interface advogado_token_aasp {
+  Ind: number;
+  Nic: number | null;
+  Nr_Token: string | null;
+  Dt_Token: string | null;
+  Id_Usuario: string | null;
+  Dt_Anotacao: string | null;
+  Obs: string | null;
+}
+
+export interface Advogado_Token_Lote {
+  ind: number;
+  Nr_Lote: number | null;
+  Nr_Token: string | null;
+  Cd_Subsecao: string | null;
+  In_vendido: boolean | null;
+  Nr_Documento: number | null;
+  dt_lote: string | null;
+}
+
+export interface advogado_token_lote_6ano {
+  ind: number;
+  Nr_Lote: number | null;
+  Nr_Token: string | null;
+  id_usuario: string | null;
+  In_vendido: boolean | null;
+  Nic_advogado: number | null;
+  dt_lote: string | null;
+}
+
+export interface advogado_token_lote_aasp {
+  ind: number;
+  Nr_Lote: number | null;
+  Nr_Token: string | null;
+  Cd_Subsecao: string | null;
+  In_vendido: boolean | null;
+  Nr_Documento: number | null;
+  dt_lote: string | null;
+  aasp: string | null;
+}
+
+export interface advogado_token_lote_bkp_adrieli {
+  ind: number;
+  Nr_Lote: number | null;
+  Nr_Token: string | null;
+  Cd_Subsecao: string | null;
+  In_vendido: boolean | null;
+  Nr_Documento: number | null;
+  dt_lote: string | null;
+}
+
+export interface AdvogadoEnderecoPR {
+  Cpf: string;
+  SeccUf: string;
+  CodiTipoEnde: number;
+  Logr: string;
+  Bair: string | null;
+  CodiCidd: number;
+  NumrEnde: string | null;
+  Comp: string | null;
+  NumrCep: string;
+  NumrDDD: string | null;
+  NumrTelf: string | null;
+  NumrDDDFax: string | null;
+  NumrTelfFax: string | null;
+  NumrDDDCel: string | null;
+  NumrTelfCel: string | null;
+  Email: string | null;
+  BitDivuEnde: boolean;
+  BitEnviEmal: boolean;
+  DatAtualizacao: string | null;
+  flagimportado: boolean | null;
+}
+
+export interface Advogadoes {
+  nr_inscricao: number;
+  senha: string | null;
+}
+
+export interface Advogados_Permitidos {
+  Nic: number | null;
+}
+
+export interface Agenda {
+  Ind: number;
+  Id_Agenda: number;
+  Dt_Cadastro: string;
+  Cidade: string | null;
+  Tp_Compromisso: string;
+  Dt_Compromisso: string | null;
+  Descricao: string;
+  Compromisso: string;
+  Lugar: string | null;
+  Contato: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  In_Avisar: number | null;
+  Dt_Exclusao: string | null;
+  Dt_CompromissoFim: string | null;
+  Pendente: boolean | null;
+  Confirmado: boolean | null;
+  Presenca: boolean | null;
+  Representante: string | null;
+  chPalavra: boolean | null;
+  chConhecimento: boolean | null;
+  chCompromisso: boolean | null;
+  chParticipacao: boolean | null;
+  chAnotacoes: boolean | null;
+  chAusencia: boolean | null;
+  Anotacoes: string | null;
+  chAnalise: boolean | null;
+  ConfirmadoA: boolean | null;
+}
+
+export interface Agenda_Anexos {
+  ind: number;
+  id_agenda: number | null;
+  ind_compromisso: number | null;
+  Arquivo: string | null;
+  Id_Usuario: string | null;
+  dt_envio: string | null;
+}
+
+export interface AGENDA_CAMPANHA {
+  Ind: number;
+  Nome: string;
+  AU_Chave: string;
+  Dt_Inicio: string | null;
+  Dt_Final: string | null;
+  Msg_Inicio: string | null;
+  Msg_Final: string | null;
+  Dt_Inclusao: string | null;
+  Dt_Atualizacao: string | null;
+  Dt_Exclusao: string | null;
+  Ativa: number | null;
+  Chave: string | null;
+}
+
+export interface AGENDA_CONTROLE {
+  Ind: number;
+  AC_Chave: string;
+  Dt_Agenda: string;
+  QtdTotal: number;
+  Qtd: number | null;
+  Local_: string | null;
+  Dt_Inclusao: string | null;
+  Dt_Atualizacao: string | null;
+  Dt_Exclusao: string | null;
+  Ativa: number | null;
+  Chave: string | null;
+  Hr_Inicio: number | null;
+  Hr_Final: number | null;
+  Qtd_X_Hr: number | null;
+  Fracionado: number;
+}
+
+export interface Agenda_Email {
+  Ind: number;
+  Id_Agenda: number;
+  Nome: string;
+  Email: string;
+}
+
+export interface Agenda_Permissao {
+  Ind: number;
+  Id_Agenda: number;
+  Id_Usuario: string;
+  Permissao: string | null;
+}
+
+export interface Agenda_Replicar {
+  Ind: number;
+  Ind_Agenda: number;
+  Id_Agenda: number;
+  Dt_Exclusao: string | null;
+}
+
+export interface AGENDA_USUARIO {
+  IND: number;
+  NOME: string;
+  EMAIL: string;
+  FONE: string | null;
+  SENHA: string;
+  DT_INCLUSAO: string | null;
+  DT_ATUALIZACAO: string | null;
+  DT_EXCLUSAO: string | null;
+  ATIVA: number | null;
+  CHAVE: string | null;
+}
+
+export interface ajustes0001 {
+  CPF: string | null;
+  NOMES: string | null;
+}
+
+export interface AListaFaltante$ {
+  tipo: string | null;
+  numero: number | null;
+  nome: string | null;
+  cd_curso: number | null;
+  nome_curso: string | null;
+  minutos: number | null;
+  origem: string | null;
+  dt_atualizacao: string | null;
+}
+
+export interface allloyal_aasp {
+  Nome: string;
+  Nr_Inscricao: number;
+  DDD_Celular: number | null;
+  Nr_celular: number | null;
+  Email: string | null;
+  Dt_Inscricao: string;
+}
+
+export interface ALLOYAL_AASP {
+  Nome: string;
+  Nr_Inscricao: number;
+  DDD_Celular: number | null;
+  Nr_celular: number | null;
+  Email: string | null;
+  Dt_Inscricao: string;
+}
+
+export interface Alloyal_Aasp_abril_26 {
+  Nome: string;
+  Numero_CPF: string;
+  Email: string;
+  "Número_OAB": number;
+  Data_de_Compromisso_OAB: string;
+  Inicio: string;
+  "Término_do_benefício": string;
+  "Vinculado_à_parceria": string;
+}
+
+export interface Alloyal_AASP_dez_2025 {
+  Nome: string | null;
+  "Número_OAB": number | null;
+  "Inclusão_Contrato": string | null;
+}
+
+export interface Alloyal_AASP_jan_2025_mar_2026 {
+  Nome: string;
+  Numero_CPF: number;
+  Email: string;
+  "Número_OAB": number;
+  Data_de_Compromisso_OAB: string;
+  "Início_do_benefício": string;
+  "Término_do_benefício": string;
+  "Vinculado_à_parceria": string;
+}
+
+export interface Alloyal_AASP_maio_2026 {
+  Nome: string | null;
+  Numero_CPF: string | null;
+  Email: string | null;
+  "Número_OAB": number | null;
+  Data_de_Compromisso_OAB: string | null;
+  "Início_do_benefício": string | null;
+  "Término_do_benefício": string | null;
+  "Vinculado_à_parceria": string | null;
+}
+
+export interface alloyal_aasp2 {
+  Nome: string | null;
+  Email: string | null;
+  Data_de_Compromisso_OAB: string | null;
+  "Inclusão_na_AASP": string | null;
+  "Data_término_benefício_AASP": string | null;
+}
+
+export interface Alloyal_JusBrasil {
+  Nome: string;
+  Nr_Inscricao: number;
+  DDD_Celular: number | null;
+  Nr_celular: string | null;
+  Email: string | null;
+  Dt_Inscricao: string;
+}
+
+export interface Alloyal_Jusbrasil_abril_2026 {
+  Nome: string;
+  e_mail: string;
+  Referencia: string;
+  Link_do_convite: string;
+  Data_de_aceite: string;
+}
+
+export interface ALLOYAL_JUSBRASIL_DEZ_2025 {
+  Nome: string;
+  e_mail: string;
+  Referencia: string;
+  column4: string | null;
+  column5: string | null;
+  column6: string | null;
+  column7: string | null;
+  column8: string | null;
+}
+
+export interface Alloyal_Jusbrasil_jan_2025_fev_2026 {
+  invite_id: string;
+  accepted_by_profile_id: number;
+  email: string;
+  benefit_started_at: string;
+  last_active_date: string;
+}
+
+export interface ALLOYAL_JUSBRASIL_maio_2026 {
+  Nome: string;
+  e_mail: string;
+  Data_de_envio_do_convite: string;
+  Link_do_convite: string;
+  Data_de_aceite: string;
+}
+
+export interface Almoxarifado_Estoque {
+  Ind: number;
+  Cd_Material: number;
+  Estoque: string | null;
+  Saldo: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Almoxarifado_Material {
+  Ind: number;
+  Cd_Material: number;
+  Descricao: string | null;
+  Embalagem: string | null;
+  Valor: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string;
+}
+
+export interface Almoxarifado_Movimentacao {
+  Ind: number;
+  Cd_Material: number | null;
+  Entrada: number | null;
+  Saida: number | null;
+  Descricao: string | null;
+  Id_Usuario: string | null;
+  Data: string | null;
+}
+
+export interface alvo {
+  Ind: number;
+  Nr_Documento: number;
+  Nr_DocAnexo: number;
+  Dt_DocAnexo: string | null;
+  Dt_Documento: string | null;
+  Dt_Original: string | null;
+  Nr_Original: string | null;
+  Nr_Correio: string | null;
+  Cidade: string | null;
+  Uf: string | null;
+  Tp_Documento: number | null;
+  Sub_TpDocumento: number | null;
+  Ano_Protocolo: number | null;
+  Nr_Protocolo: number | null;
+  Id_Protocolo: string;
+  Dt_Protocolo: string | null;
+  Dt_Cancelamento: string | null;
+  Id_Cancelamento: string | null;
+  Hist_Cancelamento: string | null;
+  Cd_Resultado: number | null;
+  Hist_Resultado: string | null;
+  Cd_Subsecao: string | null;
+  Id_Usuario: string | null;
+  Dt_Lancamento: string | null;
+  Descricao: string | null;
+  Lembrete: string | null;
+  Dt_Alteracao: string | null;
+  Nota: string | null;
+}
+
+export interface Andamento_Interno {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Andamento: number;
+  Dt_Inclusao: string;
+  Id_UsuarioInc: string;
+  Dt_Exclusao: string | null;
+  Id_UsuarioExc: string | null;
+}
+
+export interface Andamento_SemEfeito {
+  Ind: number;
+  Id_Andamento: number;
+  Dt_SemEfeito: string;
+  Id_Usuario: string;
+}
+
+export interface Aniversario {
+  Ind: number;
+  Nome: string;
+  Setor: string;
+  Dt_Nascimento: string;
+}
+
+export interface Assinatura {
+  Ind: number;
+  Nr_Documento: string | null;
+  Url_Documento: string | null;
+  Id_Usuario: string | null;
+  Id_Documento_Ext: string | null;
+  Dt_Assinatura: string | null;
+  Dt_Insercao: string;
+  Dt_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Nome_Documento: string | null;
+  Dt_Publicacao: string | null;
+  Dt_EnvioPublicacao: string | null;
+}
+
+export interface Assinatura_Partes {
+  Ind: number;
+  Nome: string | null;
+  Email: string | null;
+  Id_Assinatura: string | null;
+  Id_Usuario: string | null;
+  Dt_Assinatura: string | null;
+  Dt_Insercao: string;
+  Dt_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+}
+
+export interface Assinatura_Testemunhas {
+  Ind: number;
+  Nome: string | null;
+  Email: string | null;
+  Id_Assinatura: string | null;
+  Id_Usuario: string | null;
+  Dt_Assinatura: string | null;
+  Dt_Insercao: string;
+  Dt_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+}
+
+export interface Auditoria {
+  rownumber: number;
+  eventSource: number | null;
+  eventDate: string | null;
+  eventDescription: string | null;
+}
+
+export interface Auditoria_Nova {
+  RowNumber: number;
+  EventClass: number | null;
+  TextData: string | null;
+  ApplicationName: string | null;
+  NTUserName: string | null;
+  LoginName: string | null;
+  CPU: number | null;
+  Reads: number | null;
+  Writes: number | null;
+  Duration: number | null;
+  ClientProcessID: number | null;
+  SPID: number | null;
+  StartTime: string | null;
+  EndTime: string | null;
+  BinaryData: string | null;
+}
+
+export interface autenticacao_documentos {
+  Ind: number;
+  Ind_Andamento: number | null;
+  Nr_Documento: string | null;
+  Numero_Autenticacao: string | null;
+  Id_Usuario: string | null;
+  Dt_Autenticacao: string | null;
+}
+
+export interface Autor {
+  Ind: number;
+  Nr_Documento: number | null;
+  Autor: string | null;
+  Tp_Autor: string | null;
+}
+
+export interface Banco {
+  Ind: number;
+  Codigo: string;
+  Nome: string;
+  Sequencia: number | null;
+}
+
+export interface BI_TED_Representantes {
+  ind: number;
+  representante: string | null;
+  Nr_Documento: number | null;
+}
+
+export interface Biblioteca_Acervo {
+  Ind: number;
+  Cd_Acervo: number;
+  Cd_Local: number;
+  Tp_Material: string;
+  Tp_Autor: string;
+  Autor: string | null;
+  Autor_Secundario: string | null;
+  Titulo: string | null;
+  Responsabilidade: string | null;
+  Isbn: string | null;
+  ISSN: string | null;
+  Classificacao: string | null;
+  Notacao: string | null;
+  Volume: string | null;
+  Edicao: string | null;
+  Lugar_Publicacao: string | null;
+  Editor: string | null;
+  Mes_Publicacao: number | null;
+  Ano_Publicacao: string | null;
+  Paginas: string | null;
+  Assunto: string | null;
+  Sumario: string | null;
+  Notas_Gerais: string | null;
+  Serie: string | null;
+  Dt_Aquisicao: string | null;
+  Processo_Aquisicao: string | null;
+  Doador: string | null;
+  Id_Usuario: string | null;
+  Dt_Insercao: string | null;
+  Id_Usuario_Alteracao: string | null;
+  Dt_Alteracao: string | null;
+  Img: string | null;
+}
+
+export interface Biblioteca_Acervo_Tombo {
+  Ind: number;
+  Cd_Acervo: number;
+  Nr_Tombo: number;
+  Dt_cadastro: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Biblioteca_Aquisicao {
+  Ind: number;
+  Dt_Publicacao: string;
+  Titulo: string;
+  Doador: string | null;
+  Autor: string;
+  Editora: string | null;
+  Edicao: string | null;
+  Dt_Insercao: string | null;
+  Resumo: string | null;
+  Id_Usuario: string;
+  Arquivo: string | null;
+  cd_local: number;
+}
+
+export interface Biblioteca_Autor_Tipo {
+  Ind: number;
+  Tp_Autor: string;
+  Descricao: string;
+}
+
+export interface Biblioteca_Local {
+  Cd_Local: number;
+  Nome: string | null;
+}
+
+export interface Biblioteca_Material_Tipo {
+  Ind: number;
+  Tp_Material: string;
+  Descricao: string;
+}
+
+export interface Biblioteca_Repositorio {
+  Descricao: string;
+  Link: string;
+  Obs: string | null;
+  Ind: number;
+}
+
+export interface BlitzIndex_Mode2 {
+  ID: number;
+  ServerName: string;
+  CheckDate: string;
+  DatabaseName: string | null;
+  SchemaName: string | null;
+  TableName: string | null;
+  IndexName: string | null;
+  IndexId: number | null;
+  ObjectType: string | null;
+  IndexDefinition: string | null;
+  KeyColumnNamesWithSort: string | null;
+  CountKeyColumns: number | null;
+  IncludeColumnNames: string | null;
+  CountIncludedColumns: number | null;
+  SecretColumns: string | null;
+  CountSecretColumns: number | null;
+  PartitionKeyColumnName: string | null;
+  FilterDefinition: string | null;
+  IsIndexedView: boolean | null;
+  IsPrimaryKey: boolean | null;
+  IsXML: boolean | null;
+  IsSpatial: boolean | null;
+  IsNCColumnstore: boolean | null;
+  IsCXColumnstore: boolean | null;
+  IsDisabled: boolean | null;
+  IsHypothetical: boolean | null;
+  IsPadded: boolean | null;
+  FillFactor: number | null;
+  IsReferencedByForeignKey: boolean | null;
+  LastUserSeek: string | null;
+  LastUserScan: string | null;
+  LastUserLookup: string | null;
+  LastUserUpdate: string | null;
+  TotalReads: number | null;
+  UserUpdates: number | null;
+  ReadsPerWrite: number | null;
+  IndexUsageSummary: string | null;
+  PartitionCount: number | null;
+  TotalRows: number | null;
+  TotalReservedMB: number | null;
+  TotalReservedLOBMB: number | null;
+  TotalReservedRowOverflowMB: number | null;
+  IndexSizeSummary: string | null;
+  TotalRowLockCount: number | null;
+  TotalRowLockWaitCount: number | null;
+  TotalRowLockWaitInMs: number | null;
+  AvgRowLockWaitInMs: number | null;
+  TotalPageLockCount: number | null;
+  TotalPageLockWaitCount: number | null;
+  TotalPageLockWaitInMs: number | null;
+  AvgPageLockWaitInMs: number | null;
+  TotalIndexLockPromotionAttemptCount: number | null;
+  TotalIndexLockPromotionCount: number | null;
+  DataCompressionDesc: string | null;
+  PageLatchWaitCount: number | null;
+  PageLatchWaitInMs: number | null;
+  PageIoLatchWaitCount: number | null;
+  PageIoLatchWaitInMs: number | null;
+  CreateDate: string | null;
+  ModifyDate: string | null;
+  MoreInfo: string | null;
+  DisplayOrder: number | null;
+}
+
+export interface Boleto_Mutua {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string | null;
+  Nr_Controle: string;
+  Dt_Emissao: string;
+  Dt_Vencimento: string;
+  Dt_Pagamento: string | null;
+  Id_Usuario: string;
+  Codagenc: string | null;
+  Num_CC: string | null;
+  Convenio: string | null;
+  Lista: number | null;
+}
+
+export interface Bonjur_SP {
+  NOME: string | null;
+  OAB: string | null;
+  UF_OAB: string | null;
+  NUM_PROC: string | null;
+}
+
+export interface Bonnjur_CadastroAdvogado {
+  idCadastro: number;
+  Nome: string;
+  Nr_inscricao: string;
+  CPF: string;
+  Email: string;
+  Dt_Inscricao: string;
+  Dt_Atualizacao: string;
+  Status: number;
+  Projudi: number;
+  Recorte: number;
+  Tipo: string;
+  Dt_Registro: string;
+}
+
+export interface Bonnjur_LoteCadastro {
+  idLoteCadastro: number;
+  idLote: number;
+  idCadastro: number;
+}
+
+export interface Bonnjur_LoteEnvio {
+  idLote: number;
+  Lote: string;
+  Dt_Cadastro: string;
+  Dt_Envio: string | null;
+  Sucesso: string | null;
+  Mensagem: string | null;
+  Conteudo: string | null;
+}
+
+export interface btnExclusaoFire_Log {
+  Ind: number;
+  Ind_Excluido: number;
+  Modulo: string;
+  Id_Usuario: string;
+  Dt_Exclusao: string | null;
+}
+
+export interface CAA1 {
+  Data: string | null;
+  Clinica_ou_Medico: string | null;
+  Especialidade: string | null;
+  Quant: string | null;
+  Inscricao: string | null;
+  Advogado: string | null;
+  Dependente: number | null;
+  NomeDependente: string | null;
+  Nr_Consulta: number;
+  Valor_Pago: number | null;
+  Valor_Pago_Associado: number | null;
+  Valor_Pago_Caixa: number | null;
+  Nic: number | null;
+}
+
+export interface CAA2 {
+  Data: string | null;
+  Clinica_ou_Medico: string | null;
+  Especialidade: string | null;
+  Quant: string | null;
+  Inscricao: string | null;
+  Advogado: string | null;
+  Dependente: number | null;
+  NomeDependente: string | null;
+  Nr_Consulta: number;
+  Valor_Pago: number | null;
+  Valor_Pago_Associado: number | null;
+  Valor_Pago_Caixa: number | null;
+  Nic: number | null;
+}
+
+export interface CAA3 {
+  Data: string | null;
+  Clinica_ou_Medico: string | null;
+  Especialidade: string | null;
+  Quant: string | null;
+  Inscricao: string | null;
+  Advogado: string | null;
+  Dependente: number | null;
+  NomeDependente: string | null;
+  Nr_Consulta: number;
+  Valor_Pago: number | null;
+  Valor_Pago_Associado: number | null;
+  Valor_Pago_Caixa: number | null;
+  Nic: number | null;
+}
+
+export interface Cadastro_Conferencia {
+  Ind: number;
+  Nic: number;
+  Id_Usuario: string;
+  Dt_Conferencia: string | null;
+}
+
+export interface CadastroCampanha {
+  Ind: number;
+  Dt_Ini: string | null;
+  Dt_Fim: string | null;
+  Descricao: string | null;
+  Id_Usuario: string | null;
+  Dt_Atualizacao: string | null;
+}
+
+export interface CadastroPRP {
+  Ind: number;
+  Nome: string;
+  CPF: string | null;
+  RG: string | null;
+  Nm_Mae: string | null;
+  Nm_Pai: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Email: string | null;
+  Seccional: string | null;
+  Nr_Protocolo: number | null;
+  Ano_Protocolo: number | null;
+  Dt_Nascimento: string | null;
+  Cd_PaisNaturalidade: number | null;
+  Cd_UfNaturalidade: number | null;
+  Cd_CiddNaturalidade: number | null;
+  Nr_TE: string | null;
+  Nr_Militar: string | null;
+  Redes_Sociais: string | null;
+  Motivo: string | null;
+  Endereco_R_Ext: number | null;
+  CEP_R: string | null;
+  UF_R: string | null;
+  Cidade_R: string | null;
+  Bairro_R: string | null;
+  Logradouro_R: string | null;
+  Numero_R: string | null;
+  Complemento_R: string | null;
+  codiPais_R: number | null;
+  codiUf_R: number | null;
+  codiCidd_R: number | null;
+  Endereco_C_Ext: number | null;
+  CEP_C: string | null;
+  UF_C: string | null;
+  Cidade_C: string | null;
+  Bairro_C: string | null;
+  Logradouro_C: string | null;
+  Numero_C: string | null;
+  Complemento_C: string | null;
+  codiPais_C: number | null;
+  codiUf_C: number | null;
+  codiCidd_C: number | null;
+  idUsuarioCadastro: string;
+  dt_cadastro: string;
+  idUsuarioAlteracao: string | null;
+  dt_alteracao: string | null;
+  Ativo: number;
+}
+
+export interface CadastroPRP_Log {
+  Ind: number;
+  Nome: string;
+  CPF: string | null;
+  RG: string | null;
+  Nm_Mae: string | null;
+  Nm_Pai: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Email: string | null;
+  Seccional: string | null;
+  Nr_Protocolo: number | null;
+  Ano_Protocolo: number | null;
+  Dt_Nascimento: string | null;
+  Cd_PaisNaturalidade: number | null;
+  Cd_UfNaturalidade: number | null;
+  Cd_CiddNaturalidade: number | null;
+  Nr_TE: string | null;
+  Nr_Militar: string | null;
+  Redes_Sociais: string | null;
+  Motivo: string | null;
+  Endereco_R_Ext: number | null;
+  CEP_R: string | null;
+  UF_R: string | null;
+  Cidade_R: string | null;
+  Bairro_R: string | null;
+  Logradouro_R: string | null;
+  Numero_R: string | null;
+  Complemento_R: string | null;
+  codiPais_R: number | null;
+  codiUf_R: number | null;
+  codiCidd_R: number | null;
+  Endereco_C_Ext: number | null;
+  CEP_C: string | null;
+  UF_C: string | null;
+  Cidade_C: string | null;
+  Bairro_C: string | null;
+  Logradouro_C: string | null;
+  Numero_C: string | null;
+  Complemento_C: string | null;
+  codiPais_C: number | null;
+  codiUf_C: number | null;
+  codiCidd_C: number | null;
+  idUsuarioCadastro: string;
+  dt_cadastro: string;
+  idUsuarioAlteracao: string | null;
+  dt_alteracao: string | null;
+  Ativo: number;
+}
+
+export interface Caixa_Agendar {
+  Ind: number;
+  Nic: number;
+  Dt_Agenda: string;
+  Qtd: number;
+  Cd_SubSecao: string;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+  Dt: string | null;
+}
+
+export interface Caixa_Agendar_Controle {
+  Ind: number;
+  Cd_SubSecao: string;
+  Dt_Agenda: string;
+  Hora: number | null;
+  QtdTotal: number;
+  Qtd: number;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+  Dt: string | null;
+}
+
+export interface Caixa_Agendar_Controle_CWBLOTE2 {
+  Ind: number | null;
+  Cd_SubSecao: string;
+  Dt_Agenda: string;
+  Hora: number | null;
+  QtdTotal: number;
+  Qtd: number;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+  Dt: string | null;
+}
+
+export interface Caixa_Agendar_Controle_MARINGA {
+  Ind: number | null;
+  Cd_SubSecao: string | null;
+  Dt_Agenda: string | null;
+  Hora: number | null;
+  QtdTotal: number | null;
+  Qtd: number | null;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+}
+
+export interface Caixa_Agendar_CWBLOTE2 {
+  Ind: number | null;
+  Nic: number | null;
+  Dt_Agenda: string | null;
+  Qtd: number | null;
+  Cd_SubSecao: string | null;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+  Dt: string | null;
+}
+
+export interface Caixa_Agendar_Maringa {
+  Ind: number | null;
+  Nic: number | null;
+  Dt_Agenda: string | null;
+  Qtd: number | null;
+  Cd_SubSecao: string | null;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+}
+
+export interface Caixa_Agendas {
+  Ind: number;
+  Nic: number | null;
+  Nome: string | null;
+  Nr_Recibo: number | null;
+  Dt_venda: string | null;
+  Tp_Venda: string | null;
+  Qtde: number | null;
+  Vl_Unitario: number | null;
+  Vl_Total: number | null;
+  Id_Usuario: string | null;
+}
+
+export interface Caixa_Agendas_Envios {
+  Ind: number;
+  Cd_Subsecao: string | null;
+  Dt_Envio: string | null;
+  Qtde: number | null;
+  Cd_Tipo: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Caixa_Agendas_Estoque {
+  Ind: number;
+  Dt_estoque: string | null;
+  Cd_Tipo: string | null;
+  Qtde: number | null;
+  Id_Usuario: string | null;
+}
+
+export interface Caixa_Bandeira {
+  Ind: number;
+  Cd_Bandeira: number;
+  Descricao: string;
+}
+
+export interface Caixa_Beneficio {
+  Ind: number;
+  NIC: number | null;
+  Data: string | null;
+  Tp_Beneficio: string | null;
+  Nr_Processo: string | null;
+  Valor: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Caixa_Cidade {
+  cd_cidade: number;
+  cd_pais: number;
+  cd_estado: string;
+  nome: string;
+  sigla: string | null;
+  ddd: string | null;
+}
+
+export interface Caixa_Clinica {
+  Ind: number;
+  Cd_Clinica: number;
+  Nome: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Dt_Alteracao: string | null;
+  Fisioterapeuta: string | null;
+  CNPJ: string | null;
+  Banco: string | null;
+  Agencia: string | null;
+  Conta: string | null;
+  Reg_Preferido: boolean;
+  Id_Usuario: string | null;
+  In_Ativo: boolean | null;
+  Email: string | null;
+}
+
+export interface Caixa_Consulta {
+  Ind: number;
+  Nr_Consulta: number;
+  Nic: number | null;
+  Nr_Dependente: number | null;
+  Cd_Subsecao: string | null;
+  Tp_Consulta: number | null;
+  Cd_Medico: number | null;
+  Cd_Especializacao: number | null;
+  Data: string | null;
+  Vl_Associado: number | null;
+  Vl_Medico: number | null;
+  Cd_Situacao: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Nm_Funcionario: string | null;
+  Dt_Pagamento: string | null;
+  Dt_Deposito: string | null;
+  Nic_Ref: number | null;
+}
+
+export interface Caixa_Consulta_Log {
+  Ind: number | null;
+  Nr_Consulta: number | null;
+  Nic: number | null;
+  Nr_Dependente: number | null;
+  Cd_Subsecao: string | null;
+  Tp_Consulta: number | null;
+  Cd_Medico: number | null;
+  Cd_Especializacao: number | null;
+  Data: string | null;
+  Vl_Associado: number | null;
+  Vl_Medico: number | null;
+  Cd_Situacao: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Nm_Funcionario: string | null;
+  Dt_Pagamento: string | null;
+  Dt_Deposito: string | null;
+  Nic_Ref: number | null;
+}
+
+export interface Caixa_ConsultasLiberadas {
+  Ind: number;
+  Nic: number | null;
+  Dt_Liberacao: string | null;
+}
+
+export interface Caixa_Especializacao {
+  Ind: number;
+  Cd_Especializacao: number;
+  Descricao: string | null;
+}
+
+export interface Caixa_Filial {
+  Ind: number;
+  Cd_Filial: number;
+  Descricao: string;
+}
+
+export interface Caixa_Fisioterapia {
+  Cd_Procedimento: number;
+  Nic: number | null;
+  Nr_Dependente: number;
+  Tp_Tratamento: number | null;
+  Nr_Sessoes: number | null;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Vl_Associado: number | null;
+  Vl_Clinica: number | null;
+  Dt_Autorizacao: string | null;
+  Id_Usuario: string | null;
+  Senha: number | null;
+  Cd_Clinica: number;
+  dt_deposito: string | null;
+  id_usuario_deposito: string | null;
+  Id_Alteracao: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Caixa_Fisioterapia_Bonus {
+  Ind: number;
+  Nic: number;
+  Nr_Dependente: number | null;
+  Tp_Tratamento: number | null;
+  Nr_Sessoes: number | null;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Dt_Autorizacao: string | null;
+  Id_Usuario: string | null;
+  Ano: number | null;
+}
+
+export interface Caixa_Hospital_Prontuario {
+  ind: number;
+  NF: number;
+  Nic: number;
+  Nr_Dependente: number;
+  Nr_Prontuario: string;
+  Dt_Prontuario: string;
+  Valor: number;
+  Id_Usuario: string;
+  Dt_vencimento: string | null;
+}
+
+export interface Caixa_Hospital_Valor {
+  ind: number;
+  Valor: number;
+  Dt_Inicio: string;
+  Dt_Fim: string | null;
+}
+
+export interface Caixa_Medico {
+  Ind: number;
+  Cd_Medico: number;
+  Nome: string | null;
+  CGC_CPF: string | null;
+  RG: string | null;
+  INSS: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Cd_Espec1: number | null;
+  Cd_Espec2: number | null;
+  Nr_Banco: string | null;
+  Nr_Agencia: string | null;
+  Nr_Conta: string | null;
+  Dt_Credenciado: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+  FJ: string | null;
+  Cd_Subsecao: string | null;
+  Ativo: boolean;
+  Lembrete: string | null;
+  Email: string | null;
+  VL_CAA: number | null;
+  VL_Advogado: number | null;
+  VL_Consulta: number | null;
+}
+
+export interface Caixa_Medico_Especializacao {
+  Ind: number;
+  Cd_Medico: number;
+  Cd_Especializacao: number;
+}
+
+export interface Caixa_Tipo_Venda {
+  Ind: number;
+  Tp_Venda: number;
+  Descricao: string;
+}
+
+export interface Caixa_TipoAssociado {
+  Ind: number;
+  Cd_Tipo: string;
+  Descricao: string | null;
+  Id_Ordem: number | null;
+}
+
+export interface Caixa_TipoBeneficio {
+  Tp_Beneficio: string;
+  Descricao: string;
+}
+
+export interface Caixa_TipoConsulta {
+  Ind: number;
+  Tp_Consulta: number;
+  Descricao: string | null;
+  Valor: number | null;
+  Vl_Medico: number | null;
+  Tipo: string | null;
+  In_ativo: boolean | null;
+}
+
+export interface Caixa_TipoConsultaSubsecao {
+  Tp_Consulta: number;
+  Cd_SubSecao: string;
+}
+
+export interface Caixa_TipoTratamento {
+  Ind: number;
+  Tp_Tratamento: number;
+  Descricao: string;
+  Cd_Tratamento_OLD: string | null;
+  Valor: number | null;
+  Cd_Tratamento: string | null;
+  Valor_Caixa: number | null;
+  Valor_Associado: number | null;
+  lixo: number | null;
+  Estetica: number | null;
+}
+
+export interface Caixa_Tratamento {
+  Ind: number;
+  Cd_Procedimento: number | null;
+  Tp_Tratamento: number | null;
+  Nr_Sessoes: number | null;
+}
+
+export interface Caixa_Venda {
+  Ind: number;
+  Id_Venda: number;
+  Cd_Filial: number;
+  Dt_Venda: string;
+  Tp_Venda: number;
+  Cd_Bandeira: number;
+  Id_Usuario: string;
+  Dt_Cadastro: string;
+}
+
+export interface Caixa_Venda_Detalhe {
+  Ind: number;
+  Id_Venda: number;
+  Dt_Credito: string;
+  Valor: number;
+}
+
+export interface Calendario_Anual {
+  ind: number;
+  Dt_Evento: string | null;
+  Evento: string | null;
+  In_Ativo: number | null;
+  In_Fixo: number | null;
+  Dt_Inclusao: string | null;
+  Id_Inclusao: string | null;
+  Dt_Exclusao: string | null;
+  Id_Exclusao: string | null;
+}
+
+export interface carga_relatorio {
+  nic: number | null;
+  localDesc: string;
+  compareceu: number | null;
+}
+
+export interface Cargo {
+  Ind: number;
+  Nic: number;
+  Nr_Integrante: number;
+  Cd_Cargo: number;
+  Cd_Orgao: number;
+  Cd_SubOrgao: number | null;
+  Dt_Cargo: string;
+  Dt_FimCargo: string | null;
+  Cd_SubSecao: string | null;
+  Id_Usuario: string;
+  Dt_Alteracao: string;
+  Obs: string | null;
+  In_Licenciado: number;
+  Nic_Indicacao: number | null;
+  Nm_Integrante: string | null;
+  Dt_InicioLicenciado: string | null;
+  Dt_FimLicenciado: string | null;
+}
+
+export interface cargo_candidato {
+  Ind: number;
+  Nic: number | null;
+  Cd_Cargo: number | null;
+  Cd_Orgao: number | null;
+  Cd_Suborgao: number | null;
+  Dt_Inscricao: string | null;
+  Situacao: string | null;
+  Cd_Motivo: number | null;
+  Acao: string | null;
+  Dt_Situacao: string | null;
+  Id_Usuario: string | null;
+  Ativo: boolean | null;
+  Sequencia: number | null;
+  Cd_SubSecao: string | null;
+}
+
+export interface cargo_candidato_arquivos {
+  Ind: number;
+  Arquivo_Ind: number | null;
+  Nic: number | null;
+  Periodo_Ind: number | null;
+  Cd_SubOrgao: number | null;
+  Data_Criacao: string | null;
+}
+
+export interface cargo_candidato_observacoes {
+  Ind: number;
+  Id_CargoCandidato: number | null;
+  Observacoes: string | null;
+  Usuario: string | null;
+}
+
+export interface cargo_candidato_periodos {
+  Ind: number;
+  Dt_Inicial: string | null;
+  Dt_Final: string | null;
+  Descricao: string | null;
+  Tp_Inscricao: string | null;
+  Cd_Subsecao: string | null;
+}
+
+export interface cargo_candidato_periodos_comissoes {
+  Ind: number;
+  Ind_Periodo: number | null;
+  Cd_Orgao: number | null;
+  Cd_SubOrgao: number | null;
+}
+
+export interface cargo_funcionario {
+  Ind: number;
+  Descricao: string | null;
+  Id_Usuario: string | null;
+  Dt_Criacao: string | null;
+}
+
+export interface Cargo_LicenciadoIndicado {
+  Ind: number;
+  Nic: number;
+  Nr_Integrante: number;
+  Ind_CargoIndicado: number | null;
+  Ind_Cargo: number;
+  Dt_Cargo: string;
+  Dt_FimCargo: string | null;
+  Obs: string | null;
+  Nm_Integrante: string | null;
+  Id_Usuario: string;
+  Dt_Alteracao: string;
+}
+
+export interface cargo_portaria {
+  Ind: number;
+  Ind_Cargo: number | null;
+  Portaria: string | null;
+}
+
+export interface Carne {
+  Tipo: number;
+  Debito: number;
+  Sequencia: number;
+  Linha: string;
+}
+
+export interface CarneDebito {
+  Tipo: number;
+  Debito: number;
+  Sequencia: number;
+  Linha: string | null;
+}
+
+export interface CarneMensagem {
+  Registro: string;
+  Tipo: number;
+  Linha: number;
+  Mensagem: string | null;
+}
+
+export interface CarneParametro {
+  Tipo: number;
+  ParBlc: string;
+  QtdPar: string;
+  VlrUni1: number;
+  VlrUni2: number;
+  VlrPar: number;
+  TipoAdv: string;
+  DatIni: string | null;
+  Datfim: string | null;
+}
+
+export interface Carteiras_Anotadas_Artigos {
+  Ind: number;
+  cd_artigo: number | null;
+  Descricao: string | null;
+  Texto: string | null;
+}
+
+export interface Carteiras_Anotadas_Cargos {
+  Ind: number;
+  Cd_Cargo: number;
+  Descricao: string;
+}
+
+export interface Carteiras_Anotadas_Orgaos {
+  Ind: number;
+  Cd_Orgao: number | null;
+  Junto_a_ao: string | null;
+  Descricao: string | null;
+}
+
+export interface Cartorios_Parana {
+  Ind: number;
+  Nome: string | null;
+  CNPJ: number | null;
+  Email: string | null;
+  Senha: string | null;
+}
+
+export interface Cartorios_Parana_Token {
+  Ind: number;
+  CNPJ: number | null;
+  Token: string | null;
+  Data: string | null;
+}
+
+export interface CEP {
+  Ind: number;
+  UF: string | null;
+  Cidade: string | null;
+  Bairro: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Nr_Inicio: number | null;
+  Nr_Fim: number | null;
+  Cep: string | null;
+}
+
+export interface Certidao {
+  Ind: number;
+  Nr_Documento: number;
+  Nr_Certidao: number;
+  Tp_Certidao: string;
+  Dt_Compromisso: string;
+  Dt_Emissao: string;
+  Id_Usuario: string;
+  Nic: number | null;
+  Nr_Seguranca: string | null;
+  Nr_Doc: string | null;
+  Nr_Registro: string | null;
+  Nr_Processo: number | null;
+  chave_acesso: string | null;
+  Pag_Inicial: number | null;
+  Pag_Final: number | null;
+  Nome_Pessoa: string | null;
+  Dt_Retificacao: string | null;
+}
+
+export interface Certidao_Liberacao {
+  Ind: number;
+  Nic: number;
+  Dt_Liberacao: string;
+  Id_Usuario: string;
+}
+
+export interface Certidao_PE {
+  Ind: number;
+  Nic: number | null;
+  Tp_Certidao: string | null;
+  Nr_Certidao: number | null;
+  Ano_certidao: number | null;
+  Bo: string | null;
+  Ano_Bo: string | null;
+  Dt_Certidao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Certidao_Sociedade_Site {
+  Ind: number;
+  Nr_Certidao: number;
+  Ano_Certidao: number;
+  Nic: number | null;
+  IP: string | null;
+  Dt_Emissao: string | null;
+  Nr_Seguranca: string | null;
+}
+
+export interface Certidao_Web {
+  Ind: number;
+  Nr_Certidao: string;
+  Nic: number;
+  Nr_Inscricao: string;
+  Nm_Advogado: string | null;
+  Tp_Inscricao: string;
+  Dt_Inscricao: string;
+  Impedimento: string;
+  IP: string | null;
+  Dt_Emissao: string;
+  Nr_Seguranca: string;
+  Sexo: string | null;
+}
+
+export interface CF_AdvogadoImpedimentoPR {
+  IdtAdvoImpe: number;
+  Cpf: string;
+  SeccUf: string;
+  CodiImped: number;
+  DataValidImped: string | null;
+  DatAtualizacao: string | null;
+  flagimportado: boolean | null;
+}
+
+export interface CF_Atualizacao {
+  Dt_Atualizacao: string;
+}
+
+export interface cf_cidade {
+  CodiCidd: number;
+  CodiCiddIBGE: string | null;
+  CodiUF: number | null;
+  NomeCidd: string | null;
+  NomeCiddCmpl: string | null;
+  Cep_Logradouro: string | null;
+  CodiPais: number | null;
+  Cep_Inicial: string | null;
+  Cep_Final: string | null;
+}
+
+export interface CF_CIDADE_ATUALIZADO {
+  ind: number;
+  CodiCidd: number | null;
+  CodiCiddIBGE: string | null;
+  CodiUF: number | null;
+  NomeCidd: string | null;
+  NomeCiddCmpl: string | null;
+  Cep_Logradouro: string | null;
+  CodiPais: number | null;
+  Cep_Inicial: string | null;
+  Cep_Final: string | null;
+}
+
+export interface CF_Continente {
+  CodiCntn: number;
+  NomeCntn: string | null;
+  SiglCntn: string | null;
+}
+
+export interface CF_Deficiencia {
+  CodiDefc: number;
+  descdefi: string | null;
+}
+
+export interface CF_EstadoCivil {
+  IdenEstdCivl: number;
+  EstdCivl: string;
+}
+
+export interface CF_Faculdade {
+  Cd_CF: number | null;
+  Cd_MEC: number | null;
+  Cd_PR: number | null;
+  Nome: string | null;
+}
+
+export interface CF_Impedimento {
+  CodiImpe: number;
+  AbreImpe: string | null;
+  NomeImpe: string | null;
+}
+
+export interface CF_Pais {
+  CodiPais: number;
+  CodiCntn: number | null;
+  NomePais: string;
+  NacnPais: string | null;
+  Cd_Nacionalidade: number | null;
+}
+
+export interface CF_Pais_Nova {
+  CodiPais: number;
+  CodiCntn: number;
+  NomePais: string | null;
+  NacnPais: string | null;
+}
+
+export interface CF_Regiao {
+  IdtRegi: number;
+  NomeRegi: string | null;
+}
+
+export interface CF_StatusAdvogado {
+  CodiStatAdvo: number;
+  StatAdvo: string | null;
+}
+
+export interface CF_TipoDoador {
+  IdtTipoDoad: number;
+  TipoDoad: string | null;
+}
+
+export interface CF_TipoDocumento {
+  CodiTipoDocm: number;
+  DescTipoDocm: string;
+  DescTipoDocmComp: string;
+}
+
+export interface CF_TipoEndereco {
+  CodiTipoEnde: number;
+  TipoEnde: string;
+}
+
+export interface CF_TipoInscricaoOab {
+  IdtTipoInscOab: number;
+  InscOab: string | null;
+}
+
+export interface CF_TipoPedido {
+  CodiPedi: number;
+  DescPedi: string;
+}
+
+export interface CF_Uf {
+  CodiUf: number;
+  CodiPais: number;
+  IdtRegi: number | null;
+  SiglUF: string | null;
+  NomeUF: string | null;
+}
+
+export interface CF_Uf_Nova {
+  CodiUf: number;
+  CodiPais: number;
+  IdtRegi: number | null;
+  SiglUF: string | null;
+  NomeUF: string | null;
+}
+
+export interface chapa1 {
+  codigo_chapa: number | null;
+  chapa: string | null;
+  subsecao: string | null;
+  cargo: string | null;
+  OAB: string | null;
+  n_chapa: number | null;
+}
+
+export interface chapa2 {
+  cod_chapa: string | null;
+  Cargo: string | null;
+  "Município": string | null;
+  OAB: string | null;
+  Chapa: string | null;
+  Subsecao: string | null;
+  n_chapa: number | null;
+}
+
+export interface checkcidade {
+  nic: number | null;
+  nr_inscricao: number | null;
+  nome: string | null;
+  subsecao: string | null;
+  municipio: string | null;
+  onde_deve_votar: string | null;
+}
+
+export interface Cidade_NMS {
+  cd_cidade: number;
+  cd_pais: number;
+  cd_estado: string;
+  nome: string;
+  sigla: string | null;
+  ddd: string | null;
+  cd_cidade_fiscal: string | null;
+}
+
+export interface Circunscricao {
+  Ind: number;
+  Comarca: string;
+  Cidade: string;
+}
+
+export interface Clientes {
+  client_id: number;
+  Login: string | null;
+  Senha: string | null;
+  Nome: string | null;
+  Email: number;
+}
+
+export interface CNA_PUBLICAR_DADOS {
+  ind: number;
+  nic: number;
+  dados: boolean;
+  foto: boolean;
+  endereco_profissional: boolean;
+  telefone_profissional: boolean;
+  dt_criacao: string;
+  dt_alteracao: string | null;
+}
+
+export interface Comissao {
+  Ind: number;
+  Cd_Comissao: number;
+  Descricao: string;
+  Funcao: string | null;
+  Dt_Criacao: string | null;
+  Observacao: string | null;
+  In_Fechada: string | null;
+  Dt_Alteracao: string | null;
+  Cd_Subsecao: string | null;
+  Setor: string | null;
+}
+
+export interface Comissao_Carteira {
+  Ind: number;
+  Nic: number;
+  Cd_Comissao: number;
+  Dt_Nascimento: string;
+  Dt_Validade: string;
+  Nr_Inscricao: number;
+  Dt_Carteira: string;
+  Id_Usuario: string;
+}
+
+export interface Comissoes_Motivo {
+  Ind: number;
+  cd_motivo: number;
+  descricao: string | null;
+  status: boolean | null;
+  id_usuario: string | null;
+}
+
+export interface Compromisso {
+  Ind: number;
+  Id_Compromisso: number;
+  Nic: number;
+  Dt_Agendamento: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Compromisso_Email {
+  Ind: number;
+  Nic: number;
+  Dt_Inscricao: string;
+  Dt_Email: string;
+}
+
+export interface Compromisso_JusBrasil {
+  Ind: number;
+  Compromisso_Id: number;
+  Was_Sent: boolean;
+  Dt_Inclusao: string;
+  Tipo: string;
+}
+
+export interface Compromisso_Log {
+  Ind: number;
+  Id_Compromisso: number;
+  Dt_Compromisso: string;
+  Lugar: string | null;
+  Quant_Maxima: number;
+  In_Fechado: number | null;
+  Tp_Compromisso: string | null;
+  Endereco: string | null;
+  Horario: string | null;
+  Obs: string | null;
+  Cd_Subsecao: string | null;
+  Presencial: boolean | null;
+  id_usuario: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface Consentimento_JusBrasil {
+  Ind: number;
+  Nic: number;
+  Revogado: boolean;
+  Dt_Criacao: string;
+  Dt_Revogacao: string | null;
+  Enviado: boolean;
+}
+
+export interface Contrato {
+  Ind: number;
+  Nr_Contrato: string;
+  Empresa: string;
+  CNPJ: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  CEP: string | null;
+  Telefones: string | null;
+  Contato: string | null;
+  Resumo: string | null;
+  Vigente: boolean | null;
+  Vigencia_Ini: string | null;
+  Vigencia_Fim: string | null;
+  Obs: string | null;
+  Id_Usuario: string | null;
+  Dt_Atualizacao: string | null;
+  Nr_Documento: number | null;
+  Valor: string | null;
+  Dt_Reajuste: string | null;
+  Cd_Setor: string | null;
+}
+
+export interface Controle_Entrega {
+  Ind: number;
+  Id_Controle: number;
+  Nic: number;
+  Id_Usuario: string;
+  Dt_Entrega: string;
+}
+
+export interface Correios_Bloqueio {
+  Ind: number;
+  Nic: number;
+  Dt_Bloqueio: string;
+  Dt_Liberacao: string | null;
+  Id_Usuario: string;
+  Dt_Alteracao: string;
+}
+
+export interface Correios_Devolucao {
+  Ind: number;
+  Nic: number;
+  Cd_Remessa: number;
+  Cd_Motivo: number;
+  Id_Usuario: string;
+  Dt_Inclusao: string;
+}
+
+export interface Correios_Diversos {
+  Ind: number;
+  Nome: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  CEP: string | null;
+  UF: string | null;
+  Ativo: string | null;
+}
+
+export interface Correios_Parametro_Bloqueio {
+  Ind: number;
+  Quant_Corresp: number;
+  Id_Usuario: string;
+  Dt_Alteracao: string;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+}
+
+export interface Correios_Tab_Motivo {
+  Ind: number;
+  Cd_Motivo: number;
+  Descricao: string;
+  Id_Usuario: string;
+  Dt_Inclusao: string;
+}
+
+export interface Correios_Tab_Remessa {
+  Ind: number;
+  Cd_Remessa: number;
+  Descricao: string;
+  Dt_Remessa: string;
+  Id_Usuario: string;
+  Dt_Inclusao: string;
+}
+
+export interface Correios_Temp_Devolucao {
+  Ind: number;
+  Nic: number;
+  Cd_Remessa: number | null;
+  Cd_Motivo: number | null;
+  Id_Usuario: string;
+}
+
+export interface Corresp_Acordao {
+  Ind: number;
+  nr_documento: string;
+  Nr_Acordao: string;
+  Nr_Oficio: string;
+  Ano_Oficio: string;
+  Cd_Oficio: string;
+  Dt_Julgamento: string;
+  Destinatario: string;
+  Tratamento: string;
+  CEP: string;
+  Logradouro: string;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string;
+  Uf: string;
+  Id_Usuario: string;
+  Dt_Oficio: string;
+  CD_Turma: string | null;
+  Dt_Envio: string | null;
+  ind_reiterado: number | null;
+  In_etiqueta: boolean | null;
+  in_AR: boolean | null;
+  Cd_Tipo_Auto: number | null;
+}
+
+export interface Corresp_Destinatarios_not {
+  Not: number;
+  Destinatario: string | null;
+  Cd_tratamento: string | null;
+  Cargo: string | null;
+}
+
+export interface Corresp_Destinatarios_Ofi {
+  Nr_Oficio: number;
+  Destinatario: string | null;
+  Cd_tratamento: string | null;
+  cargo: string | null;
+}
+
+export interface Corresp_Enderecos_Not {
+  Not: number;
+  Cep: string | null;
+  Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  Uf: string | null;
+  Autor_Genero: string | null;
+  Autor_Genero_complemento: string | null;
+  Autor_envio: string | null;
+  Autor_oficio: string | null;
+  Autor_processo: string | null;
+  DocEncSEC: string | null;
+  Autor_nic: string | null;
+}
+
+export interface Corresp_Enderecos_Ofi {
+  Nr_Oficio: number;
+  Cep: string | null;
+  Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  Uf: string | null;
+  Complementar: string | null;
+}
+
+export interface Corresp_hist_not {
+  Not: number | null;
+  cd_status: string | null;
+  dt_status: string | null;
+  Responsavel: string | null;
+}
+
+export interface Corresp_Hist_Ofi {
+  Nr_Oficio: number | null;
+  cd_status: string | null;
+  dt_status: string | null;
+  Responsavel: string | null;
+}
+
+export interface corresp_juizes {
+  cd_juiz: number;
+  Nome: string | null;
+  nm_logradouro: string | null;
+  numero: string | null;
+  complemento: string | null;
+  bairro: string | null;
+  cidade: string | null;
+  uf: string | null;
+  cep: string | null;
+}
+
+export interface Corresp_Notificacao {
+  Nr_documento: number;
+  Not: number;
+  Ano: string;
+  Setor: string;
+  Notificacao: string | null;
+  Dia: string | null;
+  Local: string | null;
+  Anexos: string | null;
+  Responsavel: string;
+  Cd_status: string | null;
+  dt_status: string | null;
+  not_origem: number | null;
+  Reiterado: number | null;
+  Decurso_prazo: string | null;
+  dt_emitida: string | null;
+  Not_CO1: number | null;
+}
+
+export interface Corresp_Notificacao_Prazo {
+  Ind: number;
+  Nr_documento: number;
+  Not: number;
+  Dt_Inicio: string;
+  Dt_Fim: string;
+  Id_Usuario: string;
+  Dt_Exclusao: string | null;
+  NaoEnviado: number | null;
+}
+
+export interface Corresp_NotificacaoXAndamento {
+  Ind: number;
+  Nr_documento: number;
+  Not: number;
+  Id_Andamento: number | null;
+  Ano: number | null;
+  Dt_Inclusao: string | null;
+  Tipo: string | null;
+}
+
+export interface Corresp_Oficio {
+  Nr_documento: number;
+  Nr_Oficio: number;
+  Ano: string;
+  Setor: string;
+  Responsavel: string;
+  Cd_status: string | null;
+  dt_status: string | null;
+  not_origem: number | null;
+  Reiterado: number | null;
+  Referencia: string | null;
+  decurso_prazo: string | null;
+}
+
+export interface Corresp_Sessao {
+  Ind: number;
+  Nr_Documento: string | null;
+  Nr_Oficio: string | null;
+  Ano_Oficio: string | null;
+  Cd_Turma: string | null;
+  Dt_Sessao: string | null;
+  Cd_Oficio: string | null;
+  Tratamento: string | null;
+  Destinatario: string | null;
+  Complemento: string | null;
+  CEP: string | null;
+  Logradouro: string | null;
+  Numero: string | null;
+  Bairro: string | null;
+  UF: string | null;
+  Cidade: string | null;
+  Dt_Oficio: string | null;
+  Dt_Envio: string | null;
+  Ind_Reiterado: number | null;
+  In_Etiqueta: boolean | null;
+  Id_Usuario: string | null;
+  Tipo_Sessao: string | null;
+  Dt_SessaoAnt: string | null;
+  Qualificacao: string | null;
+}
+
+export interface Corresp_Tab_Tipo_Autos {
+  Ind: number;
+  Cd_Tipo_Auto: number;
+  Descricao: string;
+  Id_Usuario: string;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Corridalegal {
+  Ind: number;
+  cpf: string | null;
+  funcionario: string | null;
+  nome: string | null;
+}
+
+export interface cpf_ativos {
+  cpf: string | null;
+}
+
+export interface Credencial_Portador {
+  Ind: number;
+  Nic: number;
+  Tp_Doc: string;
+  Portando: string;
+  Dt_atualizacao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Credencial_Selo {
+  Ind: number;
+  Nic: number;
+  Nr_Selo: number;
+  Dt_Inclusao: string;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+  Id_Exclusao: string | null;
+}
+
+export interface Curriculo_Area {
+  Ind: number;
+  Id_Curriculo: number;
+  Cd_Area: number;
+}
+
+export interface Curriculo_consulta_log {
+  ind: number;
+  id_Curriculo: number;
+  nic: number;
+  IP_consulta: string;
+  dt_consulta: string | null;
+}
+
+export interface Curriculo_consulta_termo {
+  ind: number;
+  nic: number;
+  IP_termo: string;
+  dt_termo: string | null;
+}
+
+export interface Dashboard_Eventos {
+  Ind: number;
+  Nome_Evento: string;
+  Comissao: string;
+  Cidade: string;
+  Receita: number | null;
+  Despesa: number | null;
+  Resultado: number | null;
+  Publico: number | null;
+  Data_Evento: string;
+  Patrocinio: number | null;
+  Inscricoes: number | null;
+  Coffee_Break: number | null;
+  Alimentacao: number | null;
+  Passagens: number | null;
+  Hospedagem: number | null;
+  Terceiros: number | null;
+  Outros_Servicos: number | null;
+  Modalidade: string;
+  Perfil: string;
+  Ano: number;
+  Tipo: string | null;
+  Porte: string | null;
+}
+
+export interface Dativo_Advogado {
+  Ind: number;
+  Nic: number;
+  Ind_Dativo_Periodo: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Motivo: string | null;
+}
+
+export interface Dativo_Advogado_Comarca {
+  Ind: number;
+  Ind_Dativo_Advogado: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Sequencia: number;
+  Motivo: string | null;
+}
+
+export interface Dativo_Advogado_Especialidade {
+  Ind: number;
+  Ind_Dativo_Advogado_Comarca: number;
+  Ind_Dativo_Especialidade: number;
+  Processo: boolean;
+  Plantao: boolean;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Motivo: string | null;
+  Dt_Insercao_Processo: string | null;
+  Dt_Insercao_Plantao: string | null;
+  Dt_Exclusao_Processo: string | null;
+  Dt_Exclusao_Plantao: string | null;
+}
+
+export interface Dativo_Advogado_Nomeacao {
+  Ind: number;
+  Ind_Dativo_Advogado_Especialidade: number;
+  Ind_Usuario_Juiz: number;
+  Ind_Vara: number;
+  Nr_Autos: string;
+  Obs: string;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Motivo: string | null;
+  Telefone: string | null;
+}
+
+export interface Dativo_Advogado_Penalidade {
+  Ind: number;
+  Nic: number;
+  Dt_Inicio: string;
+  Dt_Final: string;
+  Ind_Penalidade: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+}
+
+export interface Dativo_Advogado_Plantao {
+  Ind: number;
+  Ind_Dativo_Advogado_Especialidade: number;
+  Ind_Dativo_Plantao: number;
+  Ind_Convite: number;
+  Ind_Dativo_Plantao_Data: number | null;
+  Dt_Prazo: string;
+  Dt_Confirmacao: string | null;
+  Ip_Confirmacao: string | null;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Situacao: number | null;
+  Motivo: string | null;
+}
+
+export interface Dativo_Cursos {
+  Ind: number;
+  Tipo: string;
+  Numero: string;
+  Nome: string;
+  Cd_Curso: number;
+  Nome_Curso: string;
+  Minutos: number;
+  Origem: string;
+  Dt_Atualizacao: string;
+}
+
+export interface Dativo_Cursos_Esmafe {
+  Ind: number;
+  Tipo: string;
+  Numero: string;
+  Nome: string;
+  Cd_Curso: number;
+  Nome_Curso: string;
+  Minutos: number;
+  Origem: string;
+  Dt_Atualizacao: string;
+}
+
+export interface Dativo_Especialidade {
+  Ind: number;
+  Nome: string;
+  Ativo: boolean;
+}
+
+export interface Dativo_Especialidade_Cursos {
+  Ind_Especialidade: number;
+  Cd_Curso: number;
+  Nome_Curso: string;
+  Tipo: number;
+  Link: string;
+  Minutos: number;
+  Dt_Atualizacao: string;
+}
+
+export interface Dativo_Modulo {
+  Ind: number;
+  Modulo: string | null;
+}
+
+export interface Dativo_Penalidade {
+  Ind: number;
+  Penalidade: string;
+  Meses: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Ativo: number;
+}
+
+export interface Dativo_Periodo {
+  Ind: number;
+  Ind_Modulo: number;
+  Ano: number | null;
+  Semestre: number | null;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Ativo: number | null;
+}
+
+export interface Dativo_Plantao {
+  Ind: number;
+  Ind_Dativo_Especialidade: number;
+  Ind_Usuario: number;
+  Ind_Vara: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Mensagem: string | null;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Motivo: string | null;
+}
+
+export interface Dativo_Plantao_Data {
+  Ind: number;
+  Ind_Dativo_Plantao: number;
+  Ind_Convite: number;
+  Dt_Convite: string;
+  Dt_Plantao: string;
+  Vagas: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Motivo: string | null;
+}
+
+export interface Dativo_Recadastro {
+  Ind: number;
+  Nic: number;
+  Ind_Dativo_Periodo: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+}
+
+export interface DD_Advogado_Dativo {
+  Ind: number;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+}
+
+export interface DD_Advogado_Dativo_Comarca {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+}
+
+export interface DD_Advogado_Dativo_Comarca_Vigente {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+}
+
+export interface DD_Advogado_Dativo_Controle {
+  Ind: number;
+  Ind_DD_Advogado_Dativo: number;
+  Nic: number;
+  Ano: number | null;
+  Semestre: number | null;
+}
+
+export interface DD_Advogado_Dativo_Exclusao {
+  Ind: number;
+  Nic: number;
+  Dt_Exclusao: string;
+  IP: string;
+}
+
+export interface DD_Advogado_Dativo_Nomeacao_Vigente {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Vara: string;
+  Dt_Nomeacao: string;
+  Nr_Autos: string;
+  Tp_Processo: string;
+  Obs: string;
+  Id_UsuarioJ: string;
+  Dt_Atualizacao: string | null;
+}
+
+export interface DD_Advogado_Dativo_Vigente {
+  Ind: number;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+}
+
+export interface DD_Especialidade {
+  Ind: number;
+  Tp: string | null;
+  Nome: string | null;
+  Ativo: string | null;
+}
+
+export interface DD_Log_Advogado_Dativo {
+  Ind: number | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number | null;
+  Dt_Insercao: string | null;
+  Ip_Insercao: string | null;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface DD_Log_Advogado_Dativo_Comarca {
+  Ind: number | null;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface DD_Log_Advogado_Dativo_Comarca_Vigente {
+  Ind: number | null;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface DD_Log_Advogado_Dativo_Exclusao {
+  Ind: number | null;
+  Nic: number | null;
+  Dt_Exclusao: string | null;
+  IP: string | null;
+  Tg_Action: string | null;
+  Dt: string;
+}
+
+export interface DD_Log_Advogado_Dativo_Nomeacao_Vigente {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Vara: string;
+  Dt_Nomeacao: string;
+  Nr_Autos: string;
+  Tp_Processo: string;
+  Obs: string;
+  Id_UsuarioJ: string;
+  Dt_Atualizacao: string | null;
+  Tg_Action: string | null;
+  Dt: string;
+}
+
+export interface DD_Log_Advogado_Dativo_Vigente {
+  Ind: number | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Tg_Action: string | null;
+  Dt: string;
+}
+
+export interface DD_Plantao {
+  Ind: number;
+  Descricao: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Vagas: number | null;
+  Dt_: string;
+  Dt_Exclusao: string | null;
+  VagasTotal: number | null;
+  Mensagem: string | null;
+}
+
+export interface DD_PlantaoAdv {
+  Ind: number;
+  Ind_Plantao: number;
+  Ind_PlantaoDatas: number | null;
+  Nic: number;
+  Chave: string;
+  Confirmou: number | null;
+  Dt_Exclusao: string | null;
+  Dt_: string | null;
+  Ip: string | null;
+}
+
+export interface DD_PlantaoAdvAceite {
+  Ind: number;
+  Nic: number;
+  QtdIndicacao: number | null;
+  QtdAceite: number | null;
+}
+
+export interface DD_PlantaoDatas {
+  Ind: number;
+  Ind_Plantao: number | null;
+  Dt_: string | null;
+  Vagas: number | null;
+  Dt_Exclusao: string | null;
+  VagasTotal: number | null;
+}
+
+export interface DEBEXP_EVEREST {
+  ID_TITULO: number;
+  NIC: number;
+  COD_REC: string | null;
+  ANO: number;
+  NUM_PAR: string;
+  PARCELA: string;
+  VALOR_ORI: number | null;
+  VALOR_ATU: number;
+  VCTO: string;
+  ACRESC: number;
+  TIP_INSCRI: string;
+  NUM_INSCRI: string;
+  SITUACAO: string;
+  COMARCA: string;
+  REPARC: boolean;
+  DIFERENCA: boolean;
+  TIPO: string | null;
+  DT_ATUALIZACAO: string | null;
+  VL_DESCONTOS: number | null;
+  VL_JUROS: number | null;
+  VL_MULTA: number | null;
+  VL_CORRECAO: number | null;
+}
+
+export interface DEBEXP_EVEREST_ELEICAO_2018 {
+  ID_TITULO: number;
+  NIC: number;
+  COD_REC: string | null;
+  ANO: number;
+  NUM_PAR: string;
+  PARCELA: string;
+  VALOR_ORI: number | null;
+  VALOR_ATU: number;
+  VCTO: string;
+  ACRESC: number;
+  TIP_INSCRI: string;
+  NUM_INSCRI: string;
+  SITUACAO: string;
+  COMARCA: string;
+  REPARC: boolean;
+  DIFERENCA: boolean;
+  Tipo: string | null;
+  dt_atualizacao: string | null;
+}
+
+export interface Debexp_Protheus {
+  ind: number;
+  ID_TITULO: string | null;
+  NIC: number | null;
+  COD_REC: string | null;
+  ANO: number | null;
+  NUM_PAR: string | null;
+  PARCELA: string | null;
+  VALOR_ORI: number | null;
+  VALOR_ATU: number | null;
+  VCTO: string | null;
+  ACRESC: number | null;
+  TIP_INSCRI: string | null;
+  NUM_INSCRI: string | null;
+  SITUACAO: string | null;
+  COMARCA: string | null;
+  REPARC: boolean | null;
+  DIFERENCA: boolean | null;
+  TIPO: string | null;
+  DT_ATUALIZACAO: string | null;
+  VL_DESCONTOS: number | null;
+  VL_JUROS: number | null;
+  VL_MULTA: number | null;
+  VL_CORRECAO: number | null;
+  CD_CARIMBO: string | null;
+  NR_SERIE: string | null;
+  NR_TITULO: string | null;
+  CD_BANCOCONTA_BOLETO: string | null;
+  CD_BANCOCONTA_CARTAO: string | null;
+}
+
+export interface Decurso_Lote {
+  Ind: number;
+  Id_lote: number | null;
+  Nr_documento: number | null;
+  Ind_Andamento: number | null;
+  Dt_Andamento: string | null;
+  Id_Usuario: string | null;
+  Cd_setor: string | null;
+}
+
+export interface Decurso_Prazo {
+  ind: number;
+  Cd_Orgao: number | null;
+  Cd_Andamento: number | null;
+  Prazo: number | null;
+  In_Ativo: number | null;
+  Id_Usuario: string | null;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Decurso_Prazo_Edital {
+  ind: number;
+  Cd_Andamento: number | null;
+  Prazo: number | null;
+  In_Ativo: number | null;
+  Id_Usuario: string | null;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Dependente {
+  Ind: number;
+  Nic: number | null;
+  Nr_Dependente: number | null;
+  Nome: string | null;
+  Tp_Dependente: string | null;
+  Dt_Nascimento: string | null;
+  Dt_Validade: string | null;
+  Sexo: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+  Obs: string | null;
+}
+
+export interface Devolucao_Remessa {
+  Ind: number;
+  Cd_Remessa: number;
+  Nic: number;
+  Ds_Motivo: string;
+  Id_Usuario: string;
+  Dt_Inclusao: string | null;
+}
+
+export interface Documento_Acordao {
+  Ind: number;
+  Nr_Acordao: number;
+  Ano_Acordao: number;
+  Nr_Documento: number | null;
+  Assunto: string | null;
+  Titulo: string | null;
+  Ementa: string | null;
+  Cd_Orgao: number;
+  Processo: string | null;
+  Ano_Processo: number | null;
+  Nic: number;
+  Relator: string | null;
+  Dt_Julgamento: string | null;
+  Tp_Decisao: string | null;
+  Cd_Subsecao: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+  Cd_Suborgao: number | null;
+  Nic_Presidente: number | null;
+  Presidente_Turma: string | null;
+  Nic_Relator_Acordao: number | null;
+  Relator_Acordao: string | null;
+  Nic_Revisor: number | null;
+  Revisor: string | null;
+  Status_Publicacao: string | null;
+}
+
+export interface Documento_Acordao_Editor {
+  id: number;
+  id_usuario: number | null;
+  id_acordao: number | null;
+  nome_documento: string | null;
+  documento_html: string | null;
+  criado_em: string | null;
+  atualizado_em: string | null;
+}
+
+export interface Documento_Acordao_Editor_Historico {
+  id: number;
+  id_documento: number | null;
+  id_usuario: number | null;
+  id_acordao: number | null;
+  nome_documento: string | null;
+  documento_html: string | null;
+  criado_em: string | null;
+}
+
+export interface Documento_Acordo {
+  Ind: number;
+  Nr_Documento: number;
+  Valor_Acordo: number | null;
+  Percentual_Honorario: number | null;
+  Valor_Honorario: number | null;
+  Custas: number | null;
+  Percentual_Entrada: number | null;
+  Valor_Entrada: number | null;
+  Dt_Venc_Entrada: string;
+  Saldo_Parcelado_vezes: number | null;
+  Id_Usuario: string;
+  Dt_Lancamento: string;
+}
+
+export interface Documento_Andamento {
+  Ind: number;
+  Nr_Documento: number;
+  Dt_Andamento: string;
+  Dt_FimPrazo: string | null;
+  Cd_Andamento: number;
+  Complemento: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+  Cd_Setor: string | null;
+}
+
+export interface Documento_Andamento_Log {
+  Ind: number;
+  Id_Andamento: number;
+  Nr_Documento: number;
+  Cd_Andamento: number;
+  Dt_Andamento: string;
+  Complemento: string;
+  Id_Exclusao: string;
+  Dt_Exclusao: string;
+}
+
+export interface Documento_Apensado {
+  Ind: number;
+  Nr_Documento_Principal: number | null;
+  Nr_Documento_Secundario: number | null;
+  Id_Usuario: string | null;
+  Dt_Apensado: string | null;
+}
+
+export interface Documento_Atualizacoes_CI {
+  id_atualizacoes: number;
+  num_chamado: number;
+  desc_atualizacao: string | null;
+  dt_implantacao: string;
+  ind_ativo: number | null;
+  dt_inclusao: string | null;
+  Id_Usuario_inclusao: string | null;
+  dt_atualizacao: string | null;
+  Id_Usuario_atualizacao: string | null;
+  titulo_atualizacao: string | null;
+  sigla_setor: string | null;
+  link_implementacao: string | null;
+}
+
+export interface Documento_Carga {
+  Ind: number;
+  Nr_Carga: number | null;
+  Nr_Documento: number | null;
+  Dt_Retirada: string | null;
+  Dt_Devolucao: string | null;
+  Folhas: number | null;
+  Nic: number | null;
+  Obs: string | null;
+  Autorizacao: string | null;
+  Dt_Retorno: string | null;
+  Id_Usuario: string | null;
+  autorizacao_nome: string | null;
+  autorizacao_doc: string | null;
+  autorizacao_endereco: string | null;
+  autorizacao_telefone: string | null;
+  autorizacao_celular: string | null;
+}
+
+export interface Documento_Cobranca {
+  Ind: number;
+  Nic: number;
+  Id_Titulo: string;
+  Nr_Documento: number;
+  NEG_Everest: string | null;
+}
+
+export interface Documento_Cobranca_Execucao {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Titulo: number;
+  Data: string;
+  Tp_Movimento: string;
+}
+
+export interface Documento_Consulta {
+  Ind: number;
+  Nr_Documento: number;
+  Pagina: string;
+  Id_Usuario: string;
+  Data: string;
+}
+
+export interface Documento_Custas {
+  Ind: number;
+  Nr_Documento: number;
+  Descricao: string;
+  Custas: number;
+  Data: string;
+  Id_Usuario: string;
+}
+
+export interface Documento_Distribuicao {
+  Ind: number;
+  Nr_Documento: number;
+  Tipo_Distribuicao: string;
+  Impedidos: string;
+  Motivo_Redist: string;
+  Id_Usuario: string;
+  Dt_Distribuicao: string;
+}
+
+export interface Documento_Edital {
+  ind: number;
+  Nr_documento: number | null;
+  Cd_Andamento: number | null;
+  Dt_InicioPrazo: string | null;
+}
+
+export interface Documento_Emissao {
+  Nr_Seguranca: number | null;
+  Dt_Emissao: string | null;
+}
+
+export interface Documento_Etiqueta {
+  Ind: number;
+  Nr_Documento: number;
+  Dt_Impressao: string | null;
+  Id_Usuario: string;
+}
+
+export interface Documento_Etiqueta_Recad {
+  Ind: number;
+  Controle: number;
+  Etiqueta: string;
+  Impressa: string | null;
+  Dt_Impressao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Documento_Execucao {
+  Ind: number;
+  Nr_Documento: number;
+  Nr_Lote: number | null;
+  Autos: string | null;
+  Vara: string | null;
+  Juizo: string | null;
+  Valor_Causa: number | null;
+  Custas: number | null;
+  Dt_Distribuicao: string | null;
+  Id_Usuario: string;
+  Dt_Lancamento: string;
+  Dt_Citacao: string | null;
+  Tipo_Citacao: string | null;
+  Evento_Processual: string | null;
+  Embargos_Execucao: string | null;
+  temEmbargos_Execucao: boolean;
+  Custas_Adicionais: number | null;
+}
+
+export interface Documento_Fase {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Fase: number;
+  Dt_Fase: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Documento_Imagem {
+  Ind: number;
+  Nr_Documento: number;
+}
+
+export interface Documento_Instrucao {
+  ind: number;
+  Nr_Documento: number | null;
+  nic: number | null;
+  Id_Representado: number | null;
+  Dt_Admissibilidade: string | null;
+  Dt_NotificacaoValida: string | null;
+  Dt_PrazoInstrucao: string | null;
+  Dt_decisao: string | null;
+  Tp_Decisao: string | null;
+  Cd_MotivoDecisao: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Documento_Integracao_Correios {
+  Ind: number;
+  Id_Andamento: number | null;
+  Id_Pdf: number | null;
+  Nr_Documento: number | null;
+  TipoRegistro: number | null;
+  NumeroLote: number | null;
+  CartaoPostagem: number | null;
+  NumeroContrato: number | null;
+  ServicoAdicional: string | null;
+  NomeArquivoComplementar: string | null;
+  CodigoObjetoCliente: string | null;
+  ConteudoCampo: string | null;
+  Entrega_Nome: string | null;
+  Entrega_Endereco: string | null;
+  Entrega_Numero: string | null;
+  Entrega_Complemento: string | null;
+  Entrega_Bairro: string | null;
+  Entrega_Cidade: string | null;
+  Entrega_UF: string | null;
+  Entrega_CEP: string | null;
+  CodigoRastreio: string | null;
+  Status: string | null;
+}
+
+export interface Documento_Julgamento {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Orgao: number;
+  Cd_Subsecao: string | null;
+  Id_Representado: number | null;
+  In_Procedente: number | null;
+  Cd_Pena: number | null;
+  Tp_Pena: number | null;
+  Dt_Julgamento: string | null;
+  In_Recurso: number | null;
+  Dt_Transito: string | null;
+  Dt_Aplicacao: string | null;
+  Dt_FimPrazo: string | null;
+  Tp_Prazo: string | null;
+  Dias_Prazo: number | null;
+  Condicao: string | null;
+  Cd_ResultadoJulgamento: number | null;
+  Observacao: string | null;
+  Cd_Motivo: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Cd_Multa: number | null;
+  Cd_MotivoLevantamento: number | null;
+  Decisao_recurso: string | null;
+  in_recursoEmbargo: number | null;
+  in_procedenteEmbargo: number | null;
+  tp_penaEmbargo: number | null;
+  dt_julgamentoEmbargo: string | null;
+  in_recursoEmbargo2: number | null;
+  dt_julgamentoEmbargo2: string | null;
+  tp_penaEmbargo2: number | null;
+  in_procedenteEmbargo2: number | null;
+  in_recursoEmbargo3: number | null;
+  dt_julgamentoEmbargo3: string | null;
+  tp_penaEmbargo3: number | null;
+  in_procedenteEmbargo3: number | null;
+  Cd_OrgaoRecurso: number | null;
+  Cd_SubsecaoRespRecurso: string | null;
+  dt_julgamentoRecurso: string | null;
+  in_recurso2: number | null;
+  decisao_recurso2: string | null;
+  Cd_OrgaoRecurso2: number | null;
+  Cd_SubsecaoRespRecurso2: string | null;
+  dt_julgamentoRecurso2: string | null;
+  in_recurso3: number | null;
+  decisao_recurso3: string | null;
+  Cd_OrgaoRecurso3: number | null;
+  Cd_SubsecaoRespRecurso3: string | null;
+  dt_julgamentoRecurso3: string | null;
+  in_reabilitacao: number | null;
+  processo: string | null;
+  fundamento: string | null;
+  dt_reabilitacao: string | null;
+  in_recursoEmbargo11: number | null;
+  dt_julgamentoEmbargo11: string | null;
+  tp_penaEmbargo11: number | null;
+  in_procedenteEmbargo11: number | null;
+  in_recursoEmbargo22: number | null;
+  dt_julgamentoEmbargo22: string | null;
+  tp_penaEmbargo22: number | null;
+  in_procedenteEmbargo22: number | null;
+  in_recursoEmbargo33: number | null;
+  dt_julgamentoEmbargo33: string | null;
+  tp_penaEmbargo33: number | null;
+  in_procedenteEmbargo33: number | null;
+}
+
+export interface Documento_Lista {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Usuario: string;
+}
+
+export interface Documento_Minuta {
+  Ind: number;
+  Nr_Documento: number;
+  Minuta: string;
+  Id_Usuario: string;
+  Dt_Minuta: string;
+  Dt_Exclusao: string | null;
+}
+
+export interface Documento_Movimentacao {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Setor: string;
+  Localizador: string | null;
+  Nic: number | null;
+  Cd_SetorOrigem: string | null;
+  Id_Envio: string | null;
+  Dt_Envio: string | null;
+  Id_Recebimento: string | null;
+  Historico: string | null;
+  Tp_Movimentacao: number | null;
+  Dt_Devolucao: string | null;
+  Dt_Movimentacao: string;
+  In_Setor: number | null;
+}
+
+export interface Documento_Movimentacao_Audit {
+  Ind: number | null;
+  Nr_Documento: number | null;
+  Cd_Setor: string | null;
+  Localizador: string | null;
+  Nic: number | null;
+  Cd_SetorOrigem: string | null;
+  Id_Envio: string | null;
+  Dt_Envio: string | null;
+  Id_Recebimento: string | null;
+  Historico: string | null;
+  Tp_Movimentacao: number | null;
+  Dt_Devolucao: string | null;
+  Dt_Movimentacao: string;
+  In_Setor: number | null;
+  operacao: string | null;
+  data_operacao: string | null;
+  detalhes_operacao: string | null;
+  rowwnumber: number;
+}
+
+export interface Documento_Movimentacao_Exclusao {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Setor: string;
+  Localizador: string | null;
+  Nic: number | null;
+  Cd_SetorOrigem: string | null;
+  Id_Envio: string | null;
+  Dt_Envio: string | null;
+  Id_Recebimento: string | null;
+  Historico: string | null;
+  Tp_Movimentacao: number | null;
+  Dt_Devolucao: string | null;
+  Dt_Movimentacao: string;
+  In_Setor: number | null;
+  Id_Usuario: string;
+  Dt_Exclusao: string | null;
+}
+
+export interface Documento_Movimentacao_quadros {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Setor: string;
+  Localizador: string | null;
+  Nic: number | null;
+  Cd_SetorOrigem: string | null;
+  Id_Envio: string | null;
+  Dt_Envio: string | null;
+  Id_Recebimento: string | null;
+  Historico: string | null;
+  Tp_Movimentacao: number | null;
+  Dt_Devolucao: string | null;
+  Dt_Movimentacao: string;
+  In_Setor: number | null;
+}
+
+export interface Documento_Objeto {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Objeto: number;
+}
+
+export interface Documento_Organizador {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Organizador: number;
+  Dt_Organizador: string;
+  Id_Usuario: string;
+}
+
+export interface Documento_Organizador_Hist {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Organizador: number;
+  Dt_Organizador: string;
+  Id_Usuario: string;
+  Acao: string | null;
+  Dt_Acao: string | null;
+}
+
+export interface Documento_Organizador_Log {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Organizador: number;
+  Dt_Exclusao: string;
+  Id_Usuario: string;
+}
+
+export interface Documento_Organizador_Memo {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Organizador: number;
+  Dt_Organizador: string;
+  Id_Usuario: string;
+}
+
+export interface Documento_Orgao {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Orgao: number;
+  Cd_SubOrgao: number;
+  Cd_Subsecao: string;
+  Tp_Processo: number | null;
+  Cl_Processo: string | null;
+  Sub_ClProcesso: string | null;
+  Data: string | null;
+  In_Orgao: number | null;
+}
+
+export interface Documento_OrgaoTipo {
+  Ind: number;
+  Tp_Documento: number;
+  Cd_Orgao: number;
+}
+
+export interface Documento_Pautas_Editor {
+  id: number;
+  id_usuario: number | null;
+  id_pauta: number | null;
+  nome_documento: string | null;
+  documento_html: string | null;
+  criado_em: string | null;
+  atualizado_em: string | null;
+}
+
+export interface Documento_Pautas_Editor_Historico {
+  id: number;
+  id_documento: number | null;
+  id_usuario: number | null;
+  id_pauta: number | null;
+  nome_documento: string | null;
+  documento_html: string | null;
+  criado_em: string | null;
+}
+
+export interface Documento_Prioridade {
+  Ind: number;
+  Nr_Documento: number;
+  Prioridade: number;
+  Dt_Inclusao: string;
+  Id_Usuario: string;
+  Dt_Exclusao: string | null;
+  Id_UsuarioEx: string | null;
+  Motivo: string | null;
+}
+
+export interface Documento_Processo {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Orgao: number;
+  Nr_Processo: number;
+  Dt_Processo: string;
+  Descricao: string;
+  Tp_Processo: number;
+  Cl_Processo: number;
+  Sub_ClProcesso: number;
+  Cd_Objeto: number;
+  Comp_Objeto: string;
+  Id_Usuario: string;
+  Custas: number;
+}
+
+export interface documento_processo_defensor_dativo {
+  Ind: number;
+  Nr_Documento: number | null;
+  Nic: number | null;
+  Motivo: string | null;
+  Dt_Inclusao: string | null;
+  Dt_Exclusao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Documento_Protocolo {
+  Ind: number;
+  Nr_Documento: number;
+  Nr_DocAnexo: number;
+  Dt_DocAnexo: string | null;
+  Dt_Documento: string | null;
+  Dt_Original: string | null;
+  Nr_Original: string | null;
+  Nr_Correio: string | null;
+  Cidade: string | null;
+  Uf: string | null;
+  Tp_Documento: number | null;
+  Sub_TpDocumento: number | null;
+  Ano_Protocolo: number | null;
+  Nr_Protocolo: number | null;
+  Id_Protocolo: string;
+  Dt_Protocolo: string | null;
+  Dt_Cancelamento: string | null;
+  Id_Cancelamento: string | null;
+  Hist_Cancelamento: string | null;
+  Cd_Resultado: number | null;
+  Hist_Resultado: string | null;
+  Cd_Subsecao: string | null;
+  Id_Usuario: string | null;
+  Dt_Lancamento: string | null;
+  Descricao: string | null;
+  Lembrete: string | null;
+  Dt_Alteracao: string | null;
+  Nota: string | null;
+}
+
+export interface documento_protocolo_acompanhamento {
+  Ind: number;
+  Nr_Documento: number | null;
+  Tipo: string | null;
+  Usuario: string | null;
+  Setor: string | null;
+}
+
+export interface documento_protocolo_getnet {
+  Ind: number;
+  nr_documento: number | null;
+  payment_type: string | null;
+  customer_id: number | null;
+  order_id: number | null;
+  payment_id: string | null;
+  amount: number | null;
+  status: string | null;
+  number_installments: number | null;
+  acquirer_transaction_id: string | null;
+  authorization_timestamp: string | null;
+  brand: string | null;
+  terminal_nsu: string | null;
+  authorization_code: string | null;
+  custom_values: string | null;
+}
+
+export interface documento_protocolo_sigilo {
+  Ind: number;
+  Nr_Documento: number | null;
+  Tipo: string | null;
+  Usuario: string | null;
+  Setor: string | null;
+  Data_Sigilo: string | null;
+  Id_Usuario_Sigilo: string | null;
+  Ativo: boolean | null;
+}
+
+export interface Documento_Relacionado {
+  Ind: number;
+  Nr_Documento: number;
+  Nic: number | null;
+  Nome: string | null;
+  Dt_Integracao: string | null;
+  Dt_Fim: string | null;
+  Tp_Relacionado: string | null;
+}
+
+export interface Documento_Relator {
+  Ind: number;
+  Nr_Documento: number;
+  Nic: number | null;
+  Dt_Nomeacao: string | null;
+  Dt_Fim: string | null;
+  Tp_Processo: number | null;
+  Tp_Relator: string | null;
+}
+
+export interface Documento_Representado {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Representado: number;
+  Representado: string;
+  Tp_Representado: string;
+}
+
+export interface Documento_ResultadoTipo {
+  Ind: number;
+  Tp_Documento: number;
+  Cd_Resultado: number;
+}
+
+export interface Documento_Selo {
+  Ind: number;
+  Nr_Documento: number;
+  Nr_Selo: number;
+  Dt_Selo: string;
+  Id_Usuario: string;
+  Dt_Cancelamento: string | null;
+  Id_UsuarioCancelamento: string | null;
+}
+
+export interface Documento_Setor {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_Setor: string;
+  Data: string;
+  Id_Usuario: string;
+}
+
+export interface Documento_Subsecao {
+  Ind: number;
+  Nr_Documento: number | null;
+  Cd_Subsecao: string | null;
+  Nic: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Documento_Texto_Minuta {
+  ind: number;
+  cl_processo: number | null;
+  tp_processo: number | null;
+  Cd_andamento: number | null;
+  Texto_Opcao: string | null;
+  Texto_Minuta: string | null;
+}
+
+export interface Documento_Validade {
+  Nic: number | null;
+  Nr_Seguranca: number | null;
+  Nr_Inscricao: string | null;
+  Tp_Inscricao: string | null;
+  Dt_Emissao: string | null;
+  Dt_Validade: string | null;
+  Dt_Renovacao: string | null;
+}
+
+export interface Documento_Vinculado {
+  Ind: number;
+  Id_Grupo: number;
+  Nr_Documento: number;
+  Id_Usuario: string;
+  Dt_Vinculado: string;
+}
+
+export interface DocumentoPRP {
+  Ind: number;
+  Ind_PRP: number;
+  Nr_Protocolo: number;
+  Ano_Protocolo: number;
+  Match: string | null;
+  Ativo: number;
+  id_usuario: string;
+  dt_alteracao: string | null;
+}
+
+export interface dtproperties {
+  id: number;
+  objectid: number | null;
+  property: string;
+  value: string | null;
+  uvalue: string | null;
+  lvalue: string | null;
+  version: number;
+}
+
+export interface economizometro_extrato {
+  Ind: number;
+  Data: string | null;
+  CPF: string | null;
+  Valor_Sem_Desconto: number | null;
+  Valor_Com_Desconto: number | null;
+  Desconto_Fixo: number | null;
+  Marca: string | null;
+  Erros: string | null;
+  sent_at: string | null;
+  created_at: string | null;
+  Id_Requisicao_Importacao: number | null;
+  batch_importacao: string | null;
+}
+
+export interface ECT {
+  Ind: number;
+  TpReg: string | null;
+  CodCli: number | null;
+  NumLote: number | null;
+  CartPost: string | null;
+  NumContrat: string | null;
+  ServAdic: string | null;
+  IdSpool: string | null;
+  NmSpool: string | null;
+  IdArqComp: string | null;
+  NmArqComp: string | null;
+  Nome: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Comp: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  Nic: number | null;
+  IdReg: string | null;
+  Data: string | null;
+  DtExclusao: string | null;
+  Not: number | null;
+  NmPasta: string | null;
+}
+
+export interface ECT_CONTROLE {
+  Ind: number;
+  Nr_Documento: number | null;
+  Not_: number | null;
+  Dt: string | null;
+  DtExclusao: string | null;
+}
+
+export interface editais_inscricao_status {
+  Ind: number;
+  Id_processo: number | null;
+  Status: string | null;
+}
+
+export interface Eleicao_Apuracao {
+  Ind: number;
+  Cd_Subsecao: string;
+  cd_municipio: string | null;
+  Cd_Chapa: number;
+  Urna: number;
+  Validos: number;
+}
+
+export interface Eleicao_Apuracao_Mensagem {
+  Ind: number;
+  Titulo: string;
+  Mensagem: string;
+}
+
+export interface Eleicao_Apuracao_Painel {
+  Ind: number;
+  Subsecao: string;
+  Descricao: string;
+  Valor: string | null;
+}
+
+export interface Eleicao_Apuracao_Sec {
+  Ind: number;
+  Nr_Urna: number;
+  Cd_Chapa: number;
+  Votos: number;
+  cd_subsecao: number | null;
+}
+
+export interface Eleicao_Apuracao_Sec_2015 {
+  Ind: number;
+  Nr_Urna: number;
+  Cd_Chapa: number;
+  Votos: number;
+  cd_subsecao: number | null;
+}
+
+export interface Eleicao_Apuracao_Sub {
+  Ind: number;
+  Cd_Subsecao: string;
+  Cd_Chapa: number;
+  Votos: number;
+  Tp_Voto: string;
+}
+
+export interface Eleicao_Apuracao_Sub_2015 {
+  Ind: number;
+  Cd_Subsecao: string;
+  Cd_Chapa: number;
+  Votos: number;
+  Tp_Voto: string;
+}
+
+export interface Eleicao_Apuracao_Urnas {
+  Ind: number;
+  Cd_Subsecao: string;
+  Urnas_Total: number;
+  Urnas_Apuradas: number;
+}
+
+export interface Eleicao_Apuracao_Urnas_2015 {
+  Ind: number;
+  Cd_Subsecao: string;
+  Urnas_Total: number;
+  Urnas_Apuradas: number;
+}
+
+export interface Eleicao_Arquivos {
+  Ind: number;
+  Cd_Chapa: number;
+  Nic: number | null;
+  Tp_Arquivo: number;
+  Dt_Exclusao: string | null;
+}
+
+export interface Eleicao_Banca {
+  Ind: number;
+  Cd_Chapa: number;
+  Nic: number;
+  Tp_Opcao: number;
+  Motivo: string | null;
+  Dt_Opcao: string;
+  Id_Usuario: string;
+  Liberar: number | null;
+}
+
+export interface Eleicao_Boleto {
+  NIC: number | null;
+  razao: string | null;
+  Endereco: string | null;
+  Complemento: string | null;
+  bairro: string | null;
+  Cidade: string | null;
+  Estado: string | null;
+  CEP: number | null;
+  Valor: string | null;
+  "Nosso numero": string | null;
+}
+
+export interface Eleicao_Cargo {
+  Ind: number;
+  Ano: number;
+  Cd_Subsecao: string;
+  Cd_Chapa: number;
+  Cd_Cargo: number;
+  Nic: number;
+  nic_inclusao: string | null;
+  dt_inclusao: string | null;
+  ip: string | null;
+  adm: boolean;
+}
+
+export interface Eleicao_Chapa {
+  Ind: number;
+  Ano: number;
+  Cd_Chapa: number;
+  Cd_Subsecao: string | null;
+  Descricao: string;
+  Nic: number;
+  Dt_Cadastro: string;
+  IP: string;
+  In_Fechada: boolean;
+  Nr_Documento: number | null;
+  Nr_Chapa: string | null;
+  Situacao: string | null;
+  Link_Despacho: string | null;
+  Vencedora: boolean | null;
+}
+
+export interface Eleicao_Chapabk {
+  Ind: number;
+  Ano: number;
+  Cd_Chapa: number;
+  Cd_Subsecao: string | null;
+  Descricao: string;
+  Nic: number;
+  Dt_Cadastro: string;
+  IP: string;
+  In_Fechada: boolean;
+  Nr_Documento: number | null;
+  Nr_Chapa: string | null;
+  Situacao: string | null;
+  Link_Despacho: string | null;
+  Vencedora: boolean | null;
+}
+
+export interface Eleicao_Convite {
+  ind: number;
+  nic: number | null;
+  cd_chapa: number | null;
+  ano: number | null;
+  email: string | null;
+  dt_envio: string | null;
+  hash: string | null;
+  situacao: number | null;
+  dt_situacao: string | null;
+  tp_convite: number | null;
+  dt_exclusao: string | null;
+  motivo: string | null;
+}
+
+export interface eleicao_distribuicao {
+  municipio: string | null;
+  total_votantes: number | null;
+  n_urna: number | null;
+  seq_urna_tre: number | null;
+}
+
+export interface Eleicao_Financeiro {
+  Nic: number;
+  Nr_Inscricao: string | null;
+  Nome: string | null;
+}
+
+export interface eleicao_listavotacao {
+  Ind: number;
+  Nic: number;
+  Ano: number;
+  Cd_Local: number;
+  Urna: number;
+  Mesario: number;
+  Obs: string;
+  Compareceu: number;
+  Justificou: number;
+  data_alteracao: string | null;
+  Id_Usuario_alteracao: string | null;
+  lote: number | null;
+}
+
+export interface eleicao_listavotacao_2015 {
+  Ind: number;
+  Nic: number;
+  Ano: number;
+  Cd_Local: number;
+  Urna: number;
+  Mesario: number;
+  Obs: string;
+  Compareceu: number;
+  Justificou: number;
+}
+
+export interface Eleicao_LocalVotacao {
+  Ind: number;
+  Cd_Local: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string | null;
+  Cd_Siafi: number | null;
+  Nm_Subsecao: string;
+  Descricao: string;
+  Endereco: string;
+  Cidade: string;
+  Qt_Urnas: number;
+  Confirmado: boolean;
+}
+
+export interface Eleicao_LocalVotacao_2015 {
+  Ind: number;
+  Cd_Local: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string | null;
+  Cd_Siafi: number | null;
+  Nm_Subsecao: string;
+  Descricao: string;
+  Endereco: string;
+  Cidade: string;
+  Qt_Urnas: number;
+  Confirmado: boolean;
+}
+
+export interface Eleicao_MunicipioTRE {
+  Ind: number;
+  Cd_TRE: number;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Municipio: string;
+  Disponivel: boolean;
+}
+
+export interface Eleicao_Mural {
+  Ind: number;
+  Nic: number;
+  Cd_Local: number;
+  Urna: number;
+}
+
+export interface Eleicao_penalidade {
+  cd_pena: number;
+}
+
+export interface Eleicao_Periodo {
+  Ind: number;
+  Modulo: number;
+  Ano: number;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Ativo: number | null;
+}
+
+export interface Eleicao_Recursiva {
+  Ind: number;
+  Cd_Chapa: number;
+  Nic: number;
+  Dt_Agenda: string | null;
+  Id_Cadastro: string;
+  Dt_Cadastro: string;
+  Id_Liberar: string | null;
+  Dt_Liberar: string | null;
+  Liberar: number | null;
+  Id_Usuario: string;
+  Tp_Opcao: number | null;
+  Motivo: string | null;
+  Dt_Opcao: string | null;
+}
+
+export interface Eleicao_RedirLocal {
+  Ind: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Cd_Local: number | null;
+}
+
+export interface Eleicao_Resultado {
+  Ind: number;
+  Ano: number;
+  Cd_Subsecao: string;
+  Nm_Subsecao: string;
+  Qt_Chapas: number;
+  Cd_Chapa: number;
+  Nr_Chapa: number;
+  Nm_Chapa: string;
+  Vt_Validos: number;
+  Id_Ordem: number;
+}
+
+export interface Eleicao_Siafi {
+  Ind: number;
+  Cd_Siafi: number;
+  Nome: string;
+  UF: string;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+}
+
+export interface Eleicao_Subsecao_2021 {
+  nic: number;
+  nr_inscricao: string | null;
+  nome: string | null;
+  cd_subsecao: string | null;
+  subsecao: string;
+  situacao: string;
+}
+
+export interface Eleicao_Subsecao_2024 {
+  nic: number;
+  nr_inscricao: string | null;
+  nome: string | null;
+  cd_subsecao: string | null;
+  subsecao: string;
+  cd_situacao: string | null;
+  situacao: string;
+  confirmado: number | null;
+}
+
+export interface Eleicao_SubsecaoAdv {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+}
+
+export interface Eleicao_Temp_Distribuicao {
+  Nic: number;
+  Ano: number;
+  Cd_Local: number;
+  Urna: number;
+  Mesario: number;
+  Obs: string;
+  Compareceu: number;
+  Justificou: number;
+}
+
+export interface Eleicao_TempoInscricao {
+  cd_cargo: number;
+  tempo: number | null;
+}
+
+export interface Eleicao_Vagas {
+  Ind: number;
+  Cd_Subsecao: string;
+  Cd_Cargo: number;
+  Quantidade: number;
+  Obrigatorio: boolean | null;
+}
+
+export interface Eleicoes_2024_Protheus {
+  Ind: number;
+  Codigo_Protheus: number | null;
+  Nic: number | null;
+  Data_Importacao: string | null;
+  Apto: string | null;
+  Motivo: string | null;
+}
+
+export interface EMAIL_BLACKLIST_INEXISTENTES {
+  Email: string | null;
+}
+
+export interface Email_Diversos {
+  Ind: number;
+  Email: string;
+  Adv: string;
+  Dt_Cadastro: string;
+  IP: string;
+}
+
+export interface Email_Envio {
+  Ind: number;
+  Email: string | null;
+  Assunto: string | null;
+  Dt_Envio: string | null;
+  Id_Mensagem: number | null;
+}
+
+export interface Email_Envio_Status {
+  Ind: number;
+  Ind_Envio: number;
+  Status: boolean;
+  Dt_Atualizacao: string;
+}
+
+export interface Email_Erro {
+  Ind: number;
+  Dt_Email: string | null;
+  Assunto: string | null;
+  Email: string | null;
+  Erro: string | null;
+}
+
+export interface Email_Interno {
+  Ind: number;
+  Nome: string | null;
+  Email: string | null;
+  Responsavel: string | null;
+}
+
+export interface Email_lista {
+  ind_emkt: number | null;
+  email: string | null;
+}
+
+export interface Email_OAB {
+  Ind: number;
+  Nome: string;
+  Email: string;
+  Senha: string;
+}
+
+export interface Email_Recebimento {
+  Ind: number;
+  Id_Mensagem: number;
+  Email: string;
+  IP: string;
+  Data: string;
+}
+
+export interface Email_Retorno {
+  Ind: number;
+  Email: string;
+  Dt_Retorno: string;
+}
+
+export interface Email_Teste {
+  Ind: number;
+  Email: string;
+  Entidade: string;
+  Nome: string | null;
+}
+
+export interface Email_tmp {
+  email: string | null;
+}
+
+export interface Email_Vip {
+  Ind: number;
+  Email: string;
+  In_Geral: number;
+}
+
+export interface EmailMktEnvioSp {
+  Ind: number;
+  Ind_Emkt_Mensagem: number;
+  Para: string;
+  Enviado: number | null;
+  Status_Servidor: string | null;
+  Dt_Inclusao: string | null;
+}
+
+export interface emails_errados {
+  email: string | null;
+}
+
+export interface Emkt_Black_List {
+  Ind: number;
+  Email: string | null;
+}
+
+export interface Emkt_Imagens {
+  Ind: number;
+  Nm_Imagem: string;
+  Cd_Setor: string;
+  Dt_Insercao: string | null;
+}
+
+export interface Emkt_Informativo {
+  Ind: number;
+  Nr_Informativo: number;
+  Assunto: string | null;
+  Periodo_de: string;
+  Periodo_ate: string;
+  EsaCurso_P: string | null;
+  EsaCurso_T: string | null;
+  EsaCurso_G: string | null;
+  EsaCurso_O: string | null;
+  Nm_Remetente: string | null;
+  Email_Remetente: string | null;
+  Dt_Envio: string;
+  Dt_Cadastro: string;
+  Id_Usuario: string;
+  Tp_Layout: string;
+  In_Finalizado: string | null;
+  Html: string | null;
+  Cd_Lista_Destino: number;
+  Dt_Enviado: string | null;
+  Total_Enviado: number | null;
+}
+
+export interface Emkt_Informativo_bkp {
+  Ind: number;
+  Nr_Informativo: number;
+  Assunto: string | null;
+  Periodo_de: string;
+  Periodo_ate: string;
+  EsaCurso_P: string | null;
+  EsaCurso_T: string | null;
+  EsaCurso_G: string | null;
+  EsaCurso_O: string | null;
+  Nm_Remetente: string | null;
+  Email_Remetente: string | null;
+  Dt_Envio: string;
+  Dt_Cadastro: string;
+  Id_Usuario: string;
+  Tp_Layout: string;
+  In_Finalizado: string | null;
+  Html: string | null;
+  Cd_Lista_Destino: number;
+  Dt_Enviado: string | null;
+  Total_Enviado: number | null;
+}
+
+export interface Emkt_Informativo_Cursos_Link {
+  Ind: number;
+  Nr_Informativo: number;
+  Link: string | null;
+  TipoCurso: string | null;
+  Ind_Informativo: number;
+}
+
+export interface Emkt_Informativo_Noticia {
+  Ind: number;
+  Ind_Informativo: number;
+  Gravata: string;
+  Manchete: string;
+  Texto: string;
+  Leia_Mais: string | null;
+  Dt_Cadastro: string;
+  Id_usuario: string;
+  Id_Ordem: number | null;
+}
+
+export interface Emkt_Lista {
+  Ind: number;
+  Nm_Arquivo: string;
+  Id_Usuario: string;
+  Data: string;
+}
+
+export interface Emkt_Mensagem {
+  Ind: number;
+  Assunto: string;
+  Nm_Remetente: string;
+  Email_Remetente: string;
+  Para: string | null;
+  Email_Layout: number;
+  Texto: string | null;
+  Situacao: string;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+  Cd_Setor: string;
+  Id_UsuarioAtualizacao: string | null;
+  Dt_Atualizacao: string | null;
+  Dt_Envio: string;
+  Dt_Enviado: string | null;
+}
+
+export interface Endereco {
+  Ind: number;
+  Nic: number;
+  Tp_Endereco: string;
+  Dt_Endereco: string;
+  In_Corresp: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Id_Usuario: string | null;
+  In_Consulta: string | null;
+  CodiCidd: number | null;
+  CodiUF: number | null;
+  CodiPais: number | null;
+  ddd_tel2: string | null;
+  tel2: string | null;
+}
+
+export interface Endereco_Alternativo {
+  Ind: number;
+  Nic: number;
+  Tp_Endereco: string;
+  Dt_Endereco: string;
+  In_Corresp: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Id_Usuario: string | null;
+  Dt_Lancamento: string | null;
+  Origem: string | null;
+}
+
+export interface Endereco_log {
+  Ind: number;
+  Nic: number;
+  Tp_Endereco: string;
+  Dt_Endereco: string;
+  In_Corresp: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Id_Usuario: string | null;
+  In_Consulta: string | null;
+  CodiCidd: number | null;
+  CodiUF: number | null;
+  CodiPais: number | null;
+  Tel2: string | null;
+  DDD_Tel2: string | null;
+  usuario_banco: string | null;
+}
+
+export interface Endereco_Proibido {
+  Ind: number;
+  Cep: string;
+  Numero: string;
+  Obs: string;
+}
+
+export interface EnderecoT {
+  Ind: number;
+  Nic: number;
+  Tp_Endereco: string;
+  Dt_Endereco: string;
+  In_Corresp: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Id_Usuario: string | null;
+  In_Consulta: string | null;
+  CodiCidd: number | null;
+  CodiUF: number | null;
+  CodiPais: number | null;
+  Tel2: string | null;
+  DDD_Tel2: string | null;
+}
+
+export interface Enquete {
+  Ind: number;
+  Id_Enquete: number;
+  Resposta: string;
+  IP: string;
+  Hora: string;
+}
+
+export interface ENVIA_DIARIO_OFICIAL {
+  Ind: number;
+  Nr_Inscricao: string | null;
+  Data: string | null;
+  Enviado: string | null;
+  Obs: string | null;
+}
+
+export interface Envio_CF {
+  Nic: string;
+  CodBarras: string | null;
+  Seccional: string | null;
+  SubSecao: string | null;
+  Comarca: string | null;
+  TpDocumento: number | null;
+  TpInscricao: string | null;
+  NrSeguranca: string | null;
+  NrInscricao: string | null;
+  Nome: string | null;
+  NmPai: string | null;
+  NmMae: string | null;
+  Naturalidade: string | null;
+  UFNaturalidade: string | null;
+  Nacionalidade: string | null;
+  DtNascimento: string | null;
+  DtColacao: string | null;
+  DtCompromisso: string | null;
+  NrRg: string | null;
+  DtRg: string | null;
+  EmissorRg: string | null;
+  CPF: string | null;
+  NrEleitor: string | null;
+  ZonaEleitor: string | null;
+  SecaoEleitor: string | null;
+  MunicipioEleitor: string | null;
+  UFEleitor: string | null;
+  NrMilitar: string | null;
+  ExpMilitar: string | null;
+  EstCivil: string | null;
+  Sexo: string | null;
+  EndRes: string | null;
+  BairroRes: string | null;
+  CidadeRes: string | null;
+  EstadoRes: string | null;
+  CepRes: string | null;
+  TelRes: string | null;
+  EndCom: string | null;
+  BairroCom: string | null;
+  CidadeCom: string | null;
+  EstadoCom: string | null;
+  CepCom: string | null;
+  TelCom: string | null;
+  TelCelular: string | null;
+  Email: string | null;
+  Universidade: string | null;
+  Deficiencia: string | null;
+  Doador: string | null;
+  Sociedade: string | null;
+  NrInscSociedade: string | null;
+  QualifSociedade: string | null;
+  Impedimentos: string | null;
+  DtArquivo: string | null;
+}
+
+export interface envio_correios {
+  Ind: number;
+  Ind_Andamento: number | null;
+  Ind_Pdf: number | null;
+  Nr_Documento: number | null;
+  Id_Usuario: string | null;
+  Dt_Solicitacao: string | null;
+}
+
+export interface envio_correios_andamentos {
+  Ind: number;
+  Cd_Andamento: number | null;
+  Id_Usuario: string | null;
+  Dt_Inclusao: string | null;
+}
+
+export interface Equipamento {
+  Ind: number;
+  Cd_Equipamento: number | null;
+  Tp_Equipamento: string;
+  Marca: string | null;
+  Modelo: string | null;
+  Nr_Serie: string | null;
+  Id_Fornecedor: string | null;
+  NF: string | null;
+  Nr_Patrimonio: string | null;
+  Dt_Aquisicao: string | null;
+  Dt_Garantia: string | null;
+  Dt_Envio: string | null;
+  Cd_Lugar: number | null;
+  Obs: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Processador: string | null;
+  Clock: number | null;
+  HD: number | null;
+  Memoria: number | null;
+  Rede: number | null;
+  Modem: number | null;
+  Som: number | null;
+  Drive144: number | null;
+  CD: number | null;
+  CDR: number | null;
+  DVD: number | null;
+  Teclado: number | null;
+  Mouse: number | null;
+  In_Funcionando: string | null;
+  Nota: number | null;
+  IP: string | null;
+  Excluido: number;
+}
+
+export interface errata_recorte {
+  email: string | null;
+}
+
+export interface Erro_CNA {
+  Ind: number;
+  Nic: number;
+  Erro: string;
+  Dt_Erro: string;
+}
+
+export interface ERRO_CNA_COMPROMISSO {
+  Ind: number;
+  Nic: number | null;
+  Erro: string | null;
+  Dt_Erro: string | null;
+}
+
+export interface Erro_CNS {
+  Ind: number;
+  Nic: number;
+  Erro: string;
+  Dt_Erro: string;
+}
+
+export interface Erro_protheus {
+  ind: number;
+  nic: number;
+  Nr_inscricao: string;
+  Nome: string;
+  Retorno: string;
+  dt_registro: string;
+  Tp_Registro: string | null;
+  body: string | null;
+}
+
+export interface ESA_ABDCONST {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Aluno {
+  Ind: number;
+  Cd_Aluno: number;
+  Nic: number;
+  Nome: string | null;
+  CPF: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  Tel_Res: string | null;
+  Tel_Com: string | null;
+  Tel_Contato: string | null;
+  Celular: string | null;
+  Email: string | null;
+  Cd_EstCivil: string | null;
+  RG: string | null;
+  Emissor_RG: string | null;
+  Cd_Nacionalidade: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Dt_Inscricao: string | null;
+  Desistente: boolean;
+}
+
+export interface Esa_Aluno_Acompanhantes {
+  Ind: number;
+  Cd_Aluno_P: number | null;
+  Cd_Aluno_A: number | null;
+}
+
+export interface ESA_Aluno_Curso {
+  Ind: number;
+  Cd_Aluno: number;
+  Cd_Curso: number;
+  Dt_Inscricao: string | null;
+  Frequencia: number | null;
+  Nota: number | null;
+  Dt_Alteracao: string | null;
+  Desistencia: number;
+  Desistencia_Obs: string | null;
+  Dt_Desistencia: string | null;
+  Id_Usuario: string | null;
+  Tp_Aluno: string | null;
+  Tp_Obs: string | null;
+  Dt_Contrato: string;
+  Cd_Subsecao: string | null;
+  Senha: string | null;
+  Desconto_Vip: string | null;
+  Desconto_Total: string | null;
+}
+
+export interface Esa_Aluno_Curso_Liberacao {
+  Ind: number;
+  Cd_curso: number;
+  Cd_aluno: number;
+  Justificativa: string;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface Esa_Aluno_Saida {
+  Ind: number;
+  Cd_Aluno: number;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+}
+
+export interface ESA_Aluno_Tipo {
+  Ind: number;
+  Tp_Aluno: string;
+  Descricao: string;
+}
+
+export interface ESA_AtualizacaoSite {
+  Atualizacao: number | null;
+  Cd_Curso: number | null;
+  Libera_Site: number | null;
+  Link_Inscricao: number | null;
+  Dt_Site: string | null;
+  Link_Oab: number | null;
+  Dt_Oab: string | null;
+}
+
+export interface Esa_Certificado_Historico {
+  Ind: number;
+  Cd_Curso: number;
+  Cd_Aluno: number;
+  Codigo: string;
+  Dt_Certificado: string;
+  Ip: string;
+}
+
+export interface ESA_Cheque {
+  Ind: number;
+  Cheque_ID: number;
+  Valor: number;
+  Cheque_Nome: string | null;
+  Cheque_Banco: number;
+  Cheque_Nr: string;
+  Cheque_Agencia: string;
+  Cheque_CC: string;
+  Cheque_Data: string | null;
+  Cheque_RG: string | null;
+  Cheque_Nacionalidade: number | null;
+  Cheque_Profissao: string | null;
+  Cheque_EstCivil: string | null;
+  Cheque_Endereco: string | null;
+  CPF_CNPJ: string | null;
+  Nr_Parcela: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Cd_Curso_Relacao: number | null;
+}
+
+export interface ESA_Contrato {
+  Ind: number;
+  Nr_Contrato: number | null;
+  Nr_Recibo: number | null;
+  Valor: number | null;
+  Dt_Contrato: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface ESA_Curso {
+  Ind: number;
+  Cd_Curso: number;
+  Situacao: string;
+  Tp_Curso: string;
+  Cd_Tipo: number | null;
+  Ano: number | null;
+  Nm_Completo: string | null;
+  Nm_Reduzido: string | null;
+  Descricao: string | null;
+  Objetivo: string | null;
+  Ementa: string | null;
+  Coordenacao: string | null;
+  Dt_IniInsc: string | null;
+  Dt_FimInsc: string | null;
+  Dt_Ini: string | null;
+  Dt_Fim: string | null;
+  Nr_Aulas: number | null;
+  Horarios: string | null;
+  Carga_Horaria: string | null;
+  Nr_vagas: number | null;
+  Nr_Vagas_Complemento: string | null;
+  Nr_Vagas_Outros: number | null;
+  Valor: number | null;
+  Valor_Advogado: number | null;
+  Nr_Parcelas: number | null;
+  Valor_Parcela: number;
+  Lugar: string | null;
+  Informacoes: string | null;
+  Obs: string | null;
+  In_Restrito: string | null;
+  Cd_Subsecao: string | null;
+  Id_Usuario: string | null;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+  Dt_Cancelamento: string | null;
+  Clausula: string | null;
+  Desc_Avista: number | null;
+  Desc_Iniciantes: number | null;
+  Desc_ExAluno: number | null;
+  Desc_Oabprev: number | null;
+  Palestra: boolean;
+  In_Gratuito: number;
+  In_Certificado: string;
+  Ativo: number;
+  Libera_Site: number;
+  Dt_Site: string | null;
+  Link_Inscricao: number;
+  Link_Oab: number;
+  Dt_Oab: string | null;
+  Dt_Link: string | null;
+  Tp_Inscricao: string;
+  In_LocalSeccional: number | null;
+  Desc_Ibdp: number | null;
+  Desc_Iap: number | null;
+  Desc_ABDconst: number | null;
+  Apoio: string | null;
+  Realizacao: string | null;
+  Parceria: string | null;
+  Patrocinio: string | null;
+  Docente: string | null;
+  Publico_Privado: string | null;
+  Nota_Recibo: string | null;
+  Inscritos: number | null;
+  Participantes: number | null;
+  Receita: number | null;
+  Cd_Esmafe: number | null;
+  Desc_SextoAno: number | null;
+  Desc_NaoAdvogado: number | null;
+  Desc_EstagiarioOab: number | null;
+  Desc_Dativo: number | null;
+  Desc_Plantonista: number | null;
+  Arrecadacao: number | null;
+}
+
+export interface Esa_Curso_Certificado {
+  Ind: number;
+  Cd_Curso: number;
+  Tp_Cabecalho: number;
+  Programa: string | null;
+  Qtde_Coluna: string;
+}
+
+export interface Esa_Curso_Link {
+  Ind: number;
+  Cd_Curso: number;
+  Link: string;
+  Cd_Subsecao: string;
+}
+
+export interface ESA_Curso_Modalidade {
+  Ind: number;
+  Tp_Curso: string;
+  Descricao: string | null;
+}
+
+export interface Esa_Curso_Tipo {
+  Ind: number;
+  Cd_Tipo: number;
+  Descricao: string;
+  Preposicao: string | null;
+}
+
+export interface ESA_Curso_Vagas {
+  Ind: number;
+  Cd_Curso: number;
+  Cd_Subsecao: string;
+  Nr_Vagas: number | null;
+  Nr_Vagas_Outros: number | null;
+  Lugar: string | null;
+}
+
+export interface ESA_Deposito {
+  Ind: number;
+  Deposito_ID: number;
+  Deposito_Nr: string;
+  Deposito_Nome: string | null;
+  Deposito_Dt: string;
+  Valor: number;
+  Cd_Curso_Relacao: number | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string;
+}
+
+export interface ESA_Devolucao {
+  Ind: number;
+  Cd_Curso: number;
+  Cd_Aluno: number;
+  Dt_Devolucao: string;
+  Valor: number;
+  Desistencia_DevolucaoNome: string | null;
+  Dt_Alteracao: string;
+  Id_Usuario: string;
+}
+
+export interface Esa_Disciplina {
+  Ind: number;
+  Descricao: string;
+  Dt_Insercao: string;
+  Id_Usuario: string;
+  Id_UsuarioAtualizacao: string | null;
+  Dt_Atualizacao: string | null;
+}
+
+export interface ESA_Disciplina_Tema {
+  Ind: number;
+  Ind_Disciplina: number;
+  Descricao: string;
+  Dt_Atualizacao: string | null;
+  Id_UsuarioAtualizacao: string | null;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESA_EmailConfirmacao {
+  Ind: number;
+  Cd_Aluno: number;
+  Cd_Curso: number;
+  Email: string | null;
+  Dt_Envio: string;
+  Id_Usuario: string;
+}
+
+export interface ESA_Frequencia {
+  Ind: number;
+  Cd_Curso: number;
+  Cd_Professor: number;
+  Cd_Aluno: number;
+  Dt_Frequencia: string;
+  Id_Usuario: string;
+}
+
+export interface ESA_Frequencia2 {
+  Ind: number;
+  Cd_Curso: number;
+  Cd_Professor: string | null;
+  Cd_Aluno: number;
+  Dt_Frequencia: string;
+  Id_Usuario: string;
+}
+
+export interface ESA_IAP {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+  Nr_Inscricao: string | null;
+  desconto: number | null;
+}
+
+export interface ESA_IAP_16_02_2020 {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+  Nr_Inscricao: string | null;
+  desconto: number | null;
+}
+
+export interface ESA_IBDP {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+  email: string | null;
+  desconto: number | null;
+}
+
+export interface ESA_Manutencao {
+  Ind: number;
+  In_Manutencao: number | null;
+  Nm_Modulo: string | null;
+}
+
+export interface ESA_Mensalidade {
+  Ind: number;
+  Cd_Aluno: number;
+  Cd_Curso: number | null;
+  Nr_Recibo: number | null;
+  Sub_Nr: number;
+  Forma_Pagamento: string;
+  Valor: number;
+  Valor_Pago: number | null;
+  Cheque_ID: number | null;
+  Cheque_Nome: string | null;
+  Cheque_Banco: number | null;
+  Cheque_Nr: string | null;
+  Cheque_Agencia: string | null;
+  Cheque_Data: string | null;
+  Dt_Pagamento: string | null;
+  Cheque_RG: string | null;
+  Cheque_Nacionalidade: number | null;
+  Cheque_Profissao: string | null;
+  Cheque_EstCivil: string | null;
+  Cheque_Endereco: string | null;
+  Deposito_ID: number | null;
+  Deposito_Nr: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string;
+  CPF_CNPJ: string | null;
+  Nr_Parcela: number | null;
+  Obs: string | null;
+  Desistencia: number;
+  Nr_ReciboVelho: number | null;
+}
+
+export interface ESA_Oabprev {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Oabprev_05_07_2018 {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Oabprev_05_09_2018 {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Oabprev_05_10_2018 {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Oabprev_12_07_2019 {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Oabprev_14_06_2019 {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Oabprev_16_02_2021 {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Observacao {
+  Ind: number;
+  Cd_Aluno: number;
+  Cd_Curso: number;
+  Obs: string;
+}
+
+export interface ESA_Pesquisa_Dados {
+  Ind: number;
+  Nic: number;
+  Campo: string;
+  Valor: string | null;
+}
+
+export interface ESA_Pesquisa_Informacoes {
+  Ind: number;
+  Nic: number;
+  Dt_Respostas: string | null;
+  Util_Dados: string | null;
+}
+
+export interface ESA_Pesquisa_Respostas {
+  Ind: number;
+  Nic: number;
+  Id_Pergunta: number;
+  Resposta: string | null;
+}
+
+export interface ESA_Pesquisa_Sugestoes {
+  Ind: number;
+  Nic: number;
+  Sugestao: string;
+}
+
+export interface ESA_Plano_Pagamento {
+  Ind: number;
+  Cd_Curso: number;
+  Cd_Plano: number;
+  Descricao: string | null;
+  Valor_Parcela: number | null;
+  Nr_Parcelas: number | null;
+}
+
+export interface Esa_Plantonista {
+  Ind: number;
+  cpf: string | null;
+  nome: string | null;
+}
+
+export interface ESA_Portaria {
+  Ind: number;
+  Cd_Aluno: number;
+  Cd_Curso: number;
+  Nr_Seguranca: number | null;
+  Nr_Inscricao: string | null;
+  Nome: string | null;
+  CPF: string | null;
+  Dt_Cadastro: string | null;
+  Id_Usuario: string | null;
+  Manual: string | null;
+  Resumo_Presenca: string | null;
+}
+
+export interface ESA_Prazos {
+  Ind: number;
+  Cd_Curso: number;
+  Parcela: number;
+  Dt_Vencimento: string;
+  Id_Usuario: string;
+}
+
+export interface ESA_Professor {
+  Ind: number;
+  Cd_Professor: number;
+  Nic: number | null;
+  Nome: string | null;
+  Cidade: string | null;
+  AdvOutroEstadoCidade: string | null;
+  Titulacao: string | null;
+  Cargo: string | null;
+  Curriculo: string | null;
+  Avaliacao: string | null;
+  Endereco_Com: string | null;
+  Tel_Com: string | null;
+  Endereco_Res: string | null;
+  Tel_Res: string | null;
+  Ddd_Celular: string | null;
+  Nr_Celular: string | null;
+  Nm_Secretaria: string | null;
+  Email: string | null;
+  Email_Professor: string | null;
+  Dt_Nascimento: string | null;
+  Rg: string | null;
+  Emissor_Rg: string | null;
+  Dt_Rg: string | null;
+  CPF: string | null;
+  Nr_Dependentes: number | null;
+  INSS: string | null;
+  INSS_Outra: number | null;
+  INSS_Valor: number | null;
+  Dt_Declaracao: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  PIS: string | null;
+  NF_RPA: string | null;
+  Anotacoes: string | null;
+  Dados_Bancarios: string | null;
+  Dados_Veiculo: string | null;
+  Dt_Insercao: string | null;
+  Id_UsuarioAlteracao: string | null;
+  Genero: string | null;
+}
+
+export interface ESA_Professor_Curso {
+  Ind: number;
+  Cd_Professor: number;
+  Cd_Curso: number;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface ESA_Professor_Disciplina {
+  Ind: number;
+  Ind_Disciplina: number;
+  Ind_Tema: number;
+  Cd_Professor: number;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESA_Programacao {
+  Ind: number;
+  Descricao: string;
+  Professores: string;
+  Investimento: number | null;
+  Id_Usuario: string;
+  Dt_Cadastro: string;
+  Id_UsuarioAlteracao: string | null;
+  Dt_Alteracao: string | null;
+  Situacao: string;
+}
+
+export interface ESA_Programacao_Data {
+  Ind: number;
+  Id_Programacao: number;
+  Data: string;
+  Dt_Limite: string;
+  Id_UsuarioSolicitacao: string | null;
+  Cd_Subsecao: string | null;
+  Dt_Solicitacao: string | null;
+  Id_UsuarioCadastro: string;
+  Dt_Cadastro: string;
+  Id_UsuarioAlteracao: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface ESA_Recebimento {
+  Ind: number;
+  Cd_Aluno: number;
+  Cd_Curso: number;
+  Nr_Parcela: number | null;
+  Dt_Vencimento: string | null;
+  Valor_Parcela: number | null;
+  Tp_Pagamento: string | null;
+  Dt_Pagamento: string | null;
+  Vlr_Dinheiro: number | null;
+  Vlr_Cheque: number | null;
+  Tp_Cheque: string | null;
+  Nr_Banco: number | null;
+  Nr_Agencia: string | null;
+  Nr_Conta: string | null;
+  Destino: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface ESA_Recibo {
+  Ind: number;
+  Nr_Recibo: number | null;
+  Sub_Nr: number;
+  Valor: number | null;
+  Cd_Aluno: number | null;
+  Cd_Curso: string | null;
+  Nr_Parcela: number | null;
+  Id_Usuario: string | null;
+  Dt_Recibo: string | null;
+  Valor_Estorno: number | null;
+  Dt_Estorno: string | null;
+  Desistencia: number;
+  Nr_ReciboVelho: number | null;
+}
+
+export interface ESA_Recomenda {
+  Ind: number;
+  Descricao: string;
+  Lugar: string;
+  Data: string;
+  Dt_InicioPublicacao: string;
+  Dt_FimPublicacao: string;
+  Link: string | null;
+  Dt_Atualizacao: string | null;
+  Id_UsuarioAtualizacao: string | null;
+  Dt_Insercao: string;
+  Id_Usuario: string;
+}
+
+export interface ESA_Retorno {
+  Ind: number;
+  Banco: string;
+  Nr_Retorno: string | null;
+  Arquivo: string;
+  Registros: number;
+  Dt_Carga: string;
+  Id_Usuario: string;
+}
+
+export interface ESA_Retorno_BB {
+  Ind: number | null;
+  Banco: string | null;
+  Nr_Retorno: string | null;
+  Arquivo: string | null;
+  Registros: number | null;
+  Dt_Carga: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface ESA_Retorno_Registro {
+  Ind: number;
+  Banco: string;
+  Nr_Retorno: string;
+  Nr_Registro: string;
+  NossoNumero: string;
+  Cd_Aluno: number;
+  Cd_Curso: number;
+  Valor_Pago: number;
+  Dt_Pagamento: string;
+  Dt_Retorno: string;
+  RegistroBoleto: string;
+}
+
+export interface ESA_Retorno_Registro_BB {
+  Ind: number | null;
+  Banco: string | null;
+  Nr_Retorno: string | null;
+  Nr_Registro: string | null;
+  NossoNumero: string | null;
+  Cd_Aluno: number | null;
+  Cd_Curso: number | null;
+  Valor_Pago: number | null;
+  Dt_Pagamento: string | null;
+  Dt_Retorno: string | null;
+  RegistroBoleto: string | null;
+}
+
+export interface ESA_Site_Artigos {
+  Ind: number;
+  Autor: string | null;
+  Titulo: string;
+  Arquivo: string | null;
+  Url: string | null;
+  Id_UsuarioAtualizacao: string | null;
+  Dt_Atualizacao: string | null;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface Esa_Site_Dvd {
+  Ind: number;
+  Nr_Dvd: number | null;
+  Dt_Palestra: string | null;
+  Nm_Palestra: string | null;
+  Tema_Palestra: string | null;
+  Palestrante: string | null;
+  Id_Usuario: string | null;
+  Dt_Insercao: string | null;
+  Id_UsuarioAtualizacao: string | null;
+  Dt_Atualizacao: string | null;
+}
+
+export interface Esa_Site_Fotos {
+  Ind: number;
+  Cd_Curso: number;
+  Professor: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Dt_Inicio: string;
+  Dt_Fim: string;
+  Nm_Arquivo: string;
+  Dt_Atualizacao: string | null;
+  Id_UsuarioAtualizacao: string | null;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESA_Site_Links {
+  Ind: number;
+  Descricao: string | null;
+  Url: string;
+  Id_UsuarioAtualizacao: string | null;
+  Dt_Atualizacao: string | null;
+  Id_Usuario: string;
+  DT_Insercao: string;
+}
+
+export interface ESA_Taxas {
+  Ind: number;
+  Contador: number;
+  Cd_Curso: number;
+  Cd_Aluno: number;
+  Dt_Vencimento: string;
+  Valor: number;
+  Valor_Pago: number | null;
+  Id_Usuario: string;
+  Dt_Pagamento: string | null;
+  RegistroBoleto: string | null;
+  NossoNumero: string | null;
+  Dt_Baixa: string | null;
+}
+
+export interface ESA_Vip {
+  Ind: number;
+  Nome: string;
+  Cpf: string;
+  Percentual_Desconto: number;
+  Observacao: string | null;
+  Id_Usuario: string;
+  Ip: string;
+  Dt_Insercao: string;
+}
+
+export interface ESA_W_Material {
+  Ind: number;
+  Id_Secao: number;
+  Descricao: string;
+  Tp_Material: number;
+  Nm_Arquivo_Alterado: string | null;
+  Nm_Arquivo_Original: string | null;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESA_W_Secao {
+  Ind: number;
+  Descricao: string;
+  Cd_Curso: number;
+  Dt_Insercao: string;
+  Id_Usuario: string;
+}
+
+export interface ESAF_Financeiro {
+  Ind: number;
+  Cd_Aluno: number | null;
+  Cd_Curso: number;
+  Nr_Parcela: number | null;
+  Total_Parcela: number | null;
+  NossoNumero: string | null;
+  Valor: number;
+  Juro: number | null;
+  Multa: number | null;
+  Dt_Lancamento: string;
+  Dt_Vencimento: string | null;
+  Descricao: string;
+  In_DC: number;
+  Tp_Lancamento: number;
+  In_Fechado: boolean;
+  Id_Usuario: string;
+  Dt_Cancelamento: string | null;
+  Id_Usuario_Cancelamento: string | null;
+  Ind_Referencia: number | null;
+  Nr_Retorno: string | null;
+  Nr_Registro: string | null;
+}
+
+export interface ESAF_Financeiro_BB {
+  Ind: number | null;
+  Cd_Aluno: number | null;
+  Cd_Curso: number | null;
+  Nr_Parcela: number | null;
+  Total_Parcela: number | null;
+  NossoNumero: string | null;
+  Valor: number | null;
+  Juro: number | null;
+  Multa: number | null;
+  Dt_Lancamento: string | null;
+  Dt_Vencimento: string | null;
+  Descricao: string | null;
+  In_DC: number | null;
+  Tp_Lancamento: number | null;
+  In_Fechado: boolean | null;
+  Id_Usuario: string | null;
+  Dt_Cancelamento: string | null;
+  Id_Usuario_Cancelamento: string | null;
+  Ind_Referencia: number | null;
+  Nr_Retorno: string | null;
+  Nr_Registro: string | null;
+}
+
+export interface ESAF_Tab_Tipo_Lancamento {
+  Ind: number;
+  Tp_Lancamento: number;
+  Descricao: string;
+  In_Contabil: boolean;
+  In_Dc: number;
+  In_Usuario: boolean;
+}
+
+export interface ESAX_Deposito {
+  Ind: number;
+  Valor: number;
+  Data: string;
+  Nr_Documento: string | null;
+  Banco: string | null;
+  Obs: string | null;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESAX_Deposito_Parcelado {
+  Ind: number;
+  cd_deposito: number;
+  cd_curso: number;
+  Cd_Aluno: number;
+  Valor: number;
+  Detalhes: string | null;
+  id_usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESAX_Despesa {
+  Ind: number;
+  Data: string;
+  Nr_Nfiscal: string;
+  Empresa: string;
+  Valor: number;
+  Id_Usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESAX_Despesa_Parcelado {
+  Ind: number;
+  cd_despesa: number;
+  cd_curso: number;
+  Descricao: string | null;
+  Valor: number;
+  id_usuario: string;
+  Dt_Insercao: string;
+}
+
+export interface ESAX_Mensalidade {
+  Ind: number;
+  Cd_Curso: number;
+  Cd_Aluno: number;
+  Contador: number;
+  Cd_Parcela_Deposito: number | null;
+  NossoNumero: string;
+  Valor: number;
+  Valor_Pago: number | null;
+  Dt_Baixa: string | null;
+  Dt_Pagamento: string | null;
+  Dt_Vencimento: string;
+  Dt_Cancelamento: string | null;
+  Parcela: string;
+  Num_Parcela: string;
+  Nr_Recibo: number | null;
+  Nr_Contrato: number | null;
+  Recisao: boolean;
+  Cancelado: boolean;
+  Id_Usuario: string;
+  Desconto: number;
+  Desc_Avista: boolean | null;
+  Desc_Iniciantes: boolean | null;
+  Desc_ExAluno: boolean | null;
+  Desc_Outros: number | null;
+  Desc_Oabprev: number | null;
+  RegistroBoleto: string | null;
+  Dt_Lancamento: string | null;
+}
+
+export interface ESAX_Reembolso {
+  Ind: number;
+  Data: string;
+  Motivo: string | null;
+  Observacao: string | null;
+  Cd_Aluno: number;
+  Cd_Curso: number;
+  Valor: number;
+  Id_Usuario: string | null;
+  Dt_Insercao: string | null;
+}
+
+export interface ESAX_Retorno_Duplicidade {
+  Ind: number;
+  Arquivo: string;
+  Dt_Baixa: string;
+  Registro: string;
+}
+
+export interface estorno {
+  nr_processo: number | null;
+}
+
+export interface Evento {
+  Ind: number;
+  Cd_Lugar: number;
+  Hora_Inicial: string;
+  Hora_Final: string | null;
+  Evento: string | null;
+  Obs: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Evento_Agenda {
+  Ind: number;
+  Id_Evento: number;
+  Tp_Evento: number;
+  Total_Participantes: number | null;
+  Total_Vagas_Site: number | null;
+  Descricao: string | null;
+  Cronograma: string | null;
+  Regulamento: string | null;
+  Dt_Inicio_Evento: string | null;
+  Dt_Fim_Evento: string | null;
+  Dt_Inicio_Inscricoes: string | null;
+  Dt_Fim_Inscricoes: string | null;
+  Dt_Inicio_Publicacao: string | null;
+  Dt_Fim_Publicacao: string | null;
+  Dt_Inicio_Inscricoes_Site: string | null;
+  Dt_Fim_Inscricoes_Site: string | null;
+  In_Acompanhante: number;
+  In_Debito: number | null;
+  In_Email_Responsavel: number | null;
+  Responsavel: string | null;
+  Nr_Parcela: number | null;
+  Dt_Ultima_Parcela: string | null;
+  Dias_Vencimento: number;
+  Email: string | null;
+  Imagem: string | null;
+  Banner: string | null;
+  Texto: string | null;
+  Status: string;
+  Texto_Certificado: string | null;
+  Verso_Certificado: string | null;
+  Verso_Qtde_Colunas: number | null;
+  In_Libera_Certificado: number;
+  Dt_Emissao_Certificado: string | null;
+  In_Restrito: string | null;
+  Dt_Cadastro: string | null;
+  Id_Usuario: string | null;
+  Preco_Tp_Inscricao_A: number | null;
+  Preco_Tp_Inscricao_E: number | null;
+  Preco_Tp_Inscricao_O: number | null;
+  CIELO_Tp_Inscricao_A: number | null;
+  CIELO_Tp_Inscricao_E: number | null;
+  CIELO_Tp_Inscricao_O: number | null;
+  MaxEventoPorCPF: number | null;
+  Preco_Tp_Inscricao_S: number | null;
+  CIELO_Tp_Inscricao_S: number | null;
+  TP_Pagamento: number | null;
+  LinkImgP: string | null;
+  strLink_Youtube: string | null;
+  Total_dias: number | null;
+}
+
+export interface Evento_Boleto {
+  Ind: number;
+  Id_Evento: number | null;
+  Id_Participante: number | null;
+  Nr_Parcela: number | null;
+  Total_Parcelas: number | null;
+  Nosso_Numero: string;
+  Dt_Emissao: string | null;
+  Dt_Vencimento: string | null;
+  Valor_Boleto: number | null;
+  Dt_Pagamento: string | null;
+  Dt_Baixa: string | null;
+  Valor_Pago: number | null;
+  Nome: string | null;
+  CPF: string | null;
+  Nr_Convenio: number | null;
+  Cd_Conta: string | null;
+  IP_Emissao: string | null;
+  RegistroBoleto: string | null;
+  Email_Confirmacao: string | null;
+}
+
+export interface evento_boleto_bkp {
+  Ind: number;
+  Id_Evento: number | null;
+  Id_Participante: number | null;
+  Nr_Parcela: number | null;
+  Total_Parcelas: number | null;
+  Nosso_Numero: string;
+  Dt_Emissao: string | null;
+  Dt_Vencimento: string | null;
+  Valor_Boleto: number | null;
+  Dt_Pagamento: string | null;
+  Dt_Baixa: string | null;
+  Valor_Pago: number | null;
+  Nome: string | null;
+  CPF: string | null;
+  Nr_Convenio: number | null;
+  Cd_Conta: string | null;
+  IP_Emissao: string | null;
+  RegistroBoleto: string | null;
+  Email_Confirmacao: string | null;
+}
+
+export interface Evento_Cadastro {
+  Ind: number;
+  Id_Participante: number;
+  Nic: number;
+  Nome: string | null;
+  Nome_Cracha: string | null;
+  Dt_Nascimento: string | null;
+  Empresa: string | null;
+  CPF: string;
+  RG: string | null;
+  Emissor_RG: string | null;
+  CNPJ: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Cel: string | null;
+  Celular: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Email: string | null;
+  IP: string | null;
+  Dt_Cadastro: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface evento_cartao {
+  Ind: number;
+  Id_evento: number | null;
+  Id_participante: number | null;
+  Nome: string | null;
+  CPF: string | null;
+  dt_pedido: string | null;
+  valor: number | null;
+  qtd: number | null;
+  CSRF: string | null;
+  codigo_retorno_gateway: number | null;
+  msg_retorno_gateway: string | null;
+  data_retorno_gateway: string | null;
+  data_timeout_gateway: string | null;
+}
+
+export interface Evento_Certificado_Historico {
+  Ind: number;
+  Id_Evento: number;
+  Id_Participante: number;
+  Codigo: string;
+  Dt_Certificado: string;
+  Ip: string;
+}
+
+export interface Evento_Declaracao_Historico {
+  Ind: number;
+  Id_Participante: number;
+  Codigo: string;
+  Dt_Emissao: string;
+  Ip: string;
+}
+
+export interface Evento_Frequencia {
+  Ind: number;
+  Id_Evento: number;
+  Id_Participante: number;
+  Dt_Frequencia: string;
+  Dt_Insercao: string;
+  Id_Usuario: string;
+}
+
+export interface Evento_Lugar {
+  Ind: number;
+  Cd_Lugar: number;
+  Id_Evento: number;
+  Dt_Inicio: string;
+  Dt_Fim: string;
+  Id_Usuario: string | null;
+  Dt_Cadastro: string | null;
+}
+
+export interface Evento_Mesa {
+  Nr_Mesa: number;
+  Nr_lugares: number | null;
+}
+
+export interface Evento_Mesa_Reserva {
+  Ind: number;
+  Id_Evento: number;
+  Id_Participante: number;
+  Nr_Mesa: number;
+  Qtd: number;
+  Dt_Reserva: string;
+  finalizado: number;
+}
+
+export interface Evento_Opcoes {
+  Ind: number;
+  Id_Evento: number;
+  Id_Opcao: number;
+  Cd_Grupo: number | null;
+  Descricao: string | null;
+  In_Participante: string | null;
+  In_Acompanhante: string | null;
+  Tp_Acompanhante: number | null;
+  Valor: number | null;
+  Obrigatorio: string | null;
+  In_Desconto: string | null;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Dt_Cadastro: string | null;
+  Id_Usuario: string | null;
+  In_Estagiario: string | null;
+}
+
+export interface Evento_Opcoes_Grupo {
+  Ind: number;
+  Cd_Grupo: number;
+  Id_Evento: number;
+  Descricao: string;
+}
+
+export interface Evento_Opcoes_Log {
+  Ind: number | null;
+  Id_Evento: number | null;
+  Id_Opcao: number | null;
+  Cd_Grupo: number | null;
+  Descricao: string | null;
+  In_Participante: string | null;
+  In_Acompanhante: string | null;
+  Tp_Acompanhante: number | null;
+  Valor: number | null;
+  Obrigatorio: string | null;
+  In_Desconto: string | null;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Dt_Cadastro: string | null;
+  Id_Usuario: string | null;
+  Id_Exclusao: string | null;
+  "Dt_Exclusão": string | null;
+}
+
+export interface Evento_Pagamento {
+  Ind: number;
+  Id_Participante: number;
+  Id_Evento: number;
+  Valor: number;
+  Cd_Pagamento: string;
+  Obs: string | null;
+  Dt_Insercao: string;
+  Id_Usuario: string | null;
+}
+
+export interface Evento_Participante {
+  Ind: number;
+  Id_Evento: number;
+  Id_Opcao: number;
+  Id_Participante: number;
+  Id_Responsavel: number;
+  In_Libera_Certificado: number;
+  In_Pagseguro: number | null;
+  Id_Usuario_Certificado: string | null;
+  Tp_Acompanhante: number | null;
+  Dt_Cadastro: string | null;
+  IP: string | null;
+  TP_Pagamento: number | null;
+  id_perfil: string | null;
+}
+
+export interface Evento_Participante_Aux {
+  Ind: number;
+  Id_Evento: number;
+  Id_Opcao: number;
+  Id_Participante: number;
+  Id_Responsavel: number;
+  In_Libera_Certificado: number;
+  In_Pagseguro: number | null;
+  Id_Usuario_Certificado: string | null;
+  Tp_Acompanhante: number | null;
+  Dt_Cadastro: string | null;
+  IP: string | null;
+  TP_Pagamento: number | null;
+  id_perfil: string | null;
+}
+
+export interface Evento_Participante_Temp {
+  Ind: number;
+  Id_Acompanhante: number;
+  Id_Responsavel: number;
+  Id_Evento: number;
+  Tp_Acompanhante: number | null;
+  Ip: string;
+  Dt_cadastro: string | null;
+  id_perfil: number | null;
+}
+
+export interface Evento_Plano {
+  Ind: number;
+  Id_Evento: number | null;
+  Tp_Capacitacao: number | null;
+  Tp_Reuniao: number | null;
+  Tp_Seminario: number | null;
+  Tp_Congresso: number | null;
+  Tp_Palestra: number | null;
+  Tp_Debate: number | null;
+  Tp_Outro: number | null;
+  Tp_Outro_Desc: string | null;
+  Nome_Evento: string | null;
+  Cd_Comissao: number | null;
+  Dt_Inicio_Evento: string | null;
+  Dt_Fim_Evento: string | null;
+  Hr_Inicio: string | null;
+  Hr_Fim: string | null;
+  Cd_Lugar: number | null;
+  Publico_Alvo: string | null;
+  Pv_Banner: number | null;
+  Pv_Emkt: number | null;
+  Pv_Cartaz: number | null;
+  Pv_Folder: number | null;
+  Pv_Outro: number | null;
+  Pv_Outro_Desc: string | null;
+  Txt_Divulgacao: string | null;
+  Mat_Pastas: number | null;
+  Mat_Papel: number | null;
+  Mat_Caneta: number | null;
+  Mat_DataShow: number | null;
+  Mat_Microfone: number | null;
+  Mat_Pc: number | null;
+  Mat_Outro: number | null;
+  Mat_Outro_Desc: string | null;
+  Patrocinado: number | null;
+  Patrocinadores: string | null;
+  Recepcao: number | null;
+  Recepsionistas: string | null;
+  Transporte: number | null;
+  Transportadoras: string | null;
+  Outro: number | null;
+  Outros: string | null;
+  Taxa_de_Inscricao: number | null;
+  Taxa_de_Inscricao_Valor: string | null;
+  Taxa_de_Inscricao_Doacao: string | null;
+  Gratuidade_Vip: number | null;
+  Gratuidade_Vip_Desc: string | null;
+  Certificado: number | null;
+  Certificado_Horas: string | null;
+  Alimentacao: number | null;
+  Alimentacao_Desc: string | null;
+  Observacao: string | null;
+  Aceite: number | null;
+  Dt_Cadastro: string | null;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+  Baixado: number | null;
+  Ultimo_Status: string | null;
+  Nr_Documento: number | null;
+  Chave: string | null;
+  Tp_Ambito: number | null;
+}
+
+export interface Evento_Plano_Palestrante {
+  Ind: number;
+  Id_Evento: number | null;
+  Nome: string | null;
+  Email: string | null;
+  Tel: string | null;
+  Dt_Cadastro: string | null;
+  Id_Usuario: string | null;
+  Dt_Exclusao: string | null;
+}
+
+export interface Evento_PlanoXLugar_Reserva {
+  Ind: number;
+  Id_Evento: number;
+  Ind_Lugar_Reserva: number;
+  Dt_Exclusao: string | null;
+}
+
+export interface Evento_Retorno {
+  Ind: number;
+  Nr_Retorno: string | null;
+  Arquivo: string;
+  Registros: number;
+  Baixas: number | null;
+  Dt_Carga: string;
+  Id_Usuario: string;
+}
+
+export interface Evento_Retorno_Duplicidade {
+  Ind: number;
+  Arquivo: string;
+  Dt_Baixa: string;
+  Registro: string;
+}
+
+export interface Evento_Retorno_Registro {
+  Ind: number;
+  Nr_Retorno: string;
+  Nr_Registro: string;
+  NossoNumero: string;
+  Id_Participante: number;
+  Id_Evento: number;
+  Valor_Pago: number;
+  Dt_Pagamento: string;
+  Dt_Retorno: string;
+  RegistroBoleto: string;
+}
+
+export interface Evento_Tab_TipoAcompanhante {
+  Ind: number;
+  Tp_Acompanhante: number;
+  Descricao: string;
+}
+
+export interface Evento_Tab_TipoEvento {
+  Ind: number;
+  Tp_Evento: number;
+  Descricao: string;
+}
+
+export interface Evento_Vip {
+  Ind: number;
+  Cpf: string;
+  Nome: string;
+  Id_evento: number;
+  Desconto: string | null;
+  Valor: number | null;
+  Id_Usuario: string;
+  Ip: string;
+  Dt_Insercao: string;
+  Confirmado: number | null;
+}
+
+export interface Eventos_Forma_Pagamento {
+  ind: number;
+  id_evento: number;
+  gateway_pagamento: string | null;
+  Soft_Descriptor: string | null;
+  Dt_Cadastro: string | null;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Publicado: number | null;
+  MaxIngressoPorCPF: number | null;
+  TotalIngressosTodos_Inscricao: number | null;
+}
+
+export interface Eventos_Fotos {
+  Ind: number;
+  Evento: string | null;
+  Descricao: string | null;
+  Pasta: string | null;
+}
+
+export interface Eventos_Geral {
+  Ind: number;
+  Evento: string;
+  Nome: string;
+  Dt_Nascimento: string | null;
+  Cpf: string;
+  Ddd_Cel: string | null;
+  Nr_Cel: string | null;
+  Ddd_Tel: string | null;
+  Nr_Tel: string | null;
+  Email: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  Uf: string | null;
+  Cep: string | null;
+  Nic: number | null;
+  Opcao1: number | null;
+  Dt_cadastro: string | null;
+}
+
+export interface Eventos_Log_Auditoria {
+  Ind: number;
+  Id_Usuario: string;
+  IP: string;
+  Dt_Acesso: string;
+  Descricao: string | null;
+  User_Agent: string | null;
+}
+
+export interface Eventos_Pedido {
+  ind: number;
+  CSRF: string | null;
+  id_forma_pagamento: number;
+  CPF: string | null;
+  data_pedido: string | null;
+  valor_frete: number | null;
+  codigo_retorno_gateway: number | null;
+  msg_retorno_gateway: string | null;
+  data_retorno_gateway: string | null;
+  Dt_TimeoutGateway_Pagamento: string | null;
+  codigo_processamento_oab: number | null;
+  msg_processamento_oab: string | null;
+  Dt_processamento_oab: string | null;
+  checkout_cielo_order_number: string | null;
+}
+
+export interface Eventos_Pedido_Items {
+  ind: number;
+  id_pedido: number;
+  id_tabela_preco: number | null;
+  qtd: number | null;
+}
+
+export interface Eventos_Perfil {
+  ind: number;
+  Descricao: string | null;
+  ExclusaoLogica: number | null;
+  TP_Inscricao: string | null;
+  SysAdmin: number | null;
+}
+
+export interface Eventos_Tabela_Preco {
+  ind: number;
+  id_forma_pagamento: number;
+  nome_regra: string;
+  Tp_Inscricao: string;
+  Preco: number | null;
+  Desconto: number | null;
+  TotalIngressosPorTP_Inscricao: number | null;
+  id_perfil: number | null;
+  Publicado: number | null;
+}
+
+export interface Exame_Candidato {
+  Ind: number;
+  Ano_Exame: number | null;
+  Nr_Exame: number | null;
+  Protocolo: number | null;
+  Nome: string | null;
+  RG: string | null;
+  UFRG: string | null;
+  CPF: number | null;
+  Sexo: string | null;
+  Dt_Nascimento: string | null;
+  Rua: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: number | null;
+  DDD: number | null;
+  Telefone: number | null;
+  Email: string | null;
+  Canhoto: string | null;
+  Dt_Formatura: string | null;
+  Escola: number | null;
+  Area_Opcao: string | null;
+  Local_Exame: string | null;
+  Local_Realizacao: number | null;
+  Dt_Realizacao: string | null;
+  Nec_Esp: string | null;
+  Nec_Outra: string | null;
+  Dt_Inscricao: string | null;
+  Inscricao: number | null;
+  Obs: string | null;
+  Turma: number | null;
+  Status: number | null;
+  Forma_Participacao: string | null;
+  Ano_Recurso: number | null;
+  Exame_Recurso: number | null;
+  Turma_Fase2: number | null;
+}
+
+export interface Exame_Escola {
+  Ind: number;
+  Cdigo: number;
+  Escola: string | null;
+}
+
+export interface Exame_Inscricao_Cespe {
+  Ind: number;
+  Nr_Exame: number;
+  Ano_Exame: number;
+  CodBarras: string;
+  Tipo: string;
+  Id_Usuario: string;
+  Nr_Lote: number;
+  Dt_Registro: string;
+}
+
+export interface Exame_Local {
+  Ind: number;
+  Codigo: number | null;
+  Seccional: string | null;
+}
+
+export interface Exame_Nota {
+  Ind: number;
+  Ano_Exame: number | null;
+  Nr_Exame: number | null;
+  Protocolo: number | null;
+  Prova: number | null;
+  Nota: number | null;
+}
+
+export interface Exame_Status {
+  Ind: number;
+  Status: number | null;
+  Descricao: string | null;
+}
+
+export interface EXO_NC_CANDIDATO {
+  ANO_EXAME: number | null;
+  NUMERO_EXAME: number | null;
+  PROTOCOLO: number | null;
+  NOME: string | null;
+  RG: string | null;
+  UFRG: string | null;
+  CPF: number | null;
+  SEXO: string | null;
+  NASCIMENTO: string | null;
+  RUA: string | null;
+  NUMERO: string | null;
+  COMPLEMENTO: string | null;
+  BAIRRO: string | null;
+  CIDADE: string | null;
+  UF: string | null;
+  CEP: number | null;
+  DDD: number | null;
+  TELEFONE: number | null;
+  EMAIL: string | null;
+  CANHOTO: string | null;
+  FORMATURA: string | null;
+  ESCOLA: number | null;
+  AREA_OPCAO: string | null;
+  LOCAL_EXAME: number | null;
+  LOCAL_REALIZ: number | null;
+  DATA_REALIZ: string | null;
+  NEC_ESP: string | null;
+  NEC_OUTRA: string | null;
+  DATAINSC: string | null;
+  INSCRICAO: number | null;
+  OBSERVACAO: string | null;
+  TURMA: number | null;
+  STATUS: number | null;
+  FORMA_PARTICIPACAO: string | null;
+  ANO_RECURSO: number | null;
+  EXAME_RECURSO: number | null;
+  TURMA_2FASE: number | null;
+}
+
+export interface EXO_NC_ESCOLAS {
+  CODIGO: number | null;
+  ESCOLA: string | null;
+  HABILITADO: number | null;
+}
+
+export interface EXO_NC_LOCAIS {
+  CODIGO: number | null;
+  SECCIONAL: string | null;
+  CIDADE_SAP: number | null;
+  HABILITADO: number | null;
+}
+
+export interface EXO_NC_NOTA {
+  ANO_EXAME: number | null;
+  NUMERO_EXAME: number | null;
+  PROTOCOLO: number | null;
+  PROVA: number | null;
+  NOTA: number | null;
+}
+
+export interface EXO_NC_STATUS {
+  STATUS: number | null;
+  DESCRICAO: string | null;
+  CANDIDATOS: number | null;
+}
+
+export interface Exportar_NMS {
+  Inscrito: number | null;
+  Titulo: number | null;
+  Parcela: number | null;
+  NossoNumero: string | null;
+  Valor_Atu: string | null;
+  Vcto: string | null;
+}
+
+export interface falta_2018 {
+  nic: number | null;
+  localDesc: string;
+  compareceu: number | null;
+  Cd_Local: number | null;
+}
+
+export interface Faq {
+  Ind: number;
+  Palavra_Chave: string | null;
+  Descricao: string | null;
+}
+
+export interface Fichario {
+  Ind: number;
+  Id_Usuario: string | null;
+  Nome: string | null;
+  Contato: string | null;
+  Tel: string | null;
+  Celular: string | null;
+  Fax: string | null;
+  Email: string | null;
+  Endereco: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  Obs: string | null;
+  In_Consulta: number | null;
+  Dt_Alteracao: string;
+}
+
+export interface Fichario_Presidencia {
+  Ind: number;
+  Id_Usuario: string | null;
+  Tratamento: string | null;
+  Nome: string | null;
+  Cargo: string | null;
+  Contato: string | null;
+  Tel: string | null;
+  Celular: string | null;
+  Fax: string | null;
+  Email: string | null;
+  Endereco: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  Obs: string | null;
+  In_Consulta: number | null;
+  Cd_Grupo: number | null;
+  Dt_Alteracao: string;
+}
+
+export interface FormsPrerrogativas {
+  ind: number;
+  cd_tipoForm: number;
+  uf_advAssistido: string;
+  nr_advAssistido: number;
+  nome_advAssistido: string;
+  local: string | null;
+  horario_chegada: string | null;
+  horario_termino: string | null;
+  tipo_prisao: string | null;
+  autos: string | null;
+  vara: string | null;
+  comarca: string | null;
+  autoridade: string | null;
+  nr_advRepresentante: string;
+  nome_advRepresentante: string;
+  q1: string | null;
+  q2: string | null;
+  q3: string | null;
+  q4: string | null;
+  q5: string | null;
+  q6: string | null;
+  q7: string | null;
+  q8: string | null;
+  q9: string | null;
+  q10: string | null;
+  q11: string | null;
+  q12: string | null;
+  q13: string | null;
+  nic_inclusao: number;
+  dt_inclusao: string;
+  localidade: string;
+  nr_documento: string | null;
+  bExcluido: number;
+}
+
+export interface Formulario {
+  Ind: number;
+  Titulo: string;
+  Descricao: string | null;
+  Versao: number;
+  Ativo: boolean;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+}
+
+export interface Foto {
+  Nic: number;
+  Foto: string;
+}
+
+export interface Ftp_Log {
+  Ind: number;
+  Id_Usuario: string;
+  Acao: string;
+  Pasta: string | null;
+  Arquivo: string | null;
+  Dt_Log: string;
+}
+
+export interface Ftp_Permissao {
+  Ind: number;
+  Id_Usuario: string;
+  Pasta: string;
+}
+
+export interface Funcao {
+  Ind: number;
+  Cd_Funcao: string;
+  Nm_Funcao: string;
+  Pagina: string;
+  In_Menu: string;
+}
+
+export interface funcao_controller {
+  Ind: number;
+  Cd_Funcao: string | null;
+  Controller: string | null;
+}
+
+export interface Funcao_v3 {
+  Ind: number;
+  Cd_Funcao: string;
+  Nm_Funcao: string;
+  Pagina: string;
+  In_Menu: string;
+}
+
+export interface Funcionario {
+  Ind: number;
+  Matricula: string;
+  Cd_Subsecao: string;
+  Cd_Lugar: number | null;
+  Nome: string;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Endereco: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  Cep: string | null;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Celular: string | null;
+  Celular: string | null;
+  Dt_Nascimento: string | null;
+  CTPS: string | null;
+  Cd_EstCivil: string | null;
+  Cd_Escolaridade: number | null;
+  Sexo: string | null;
+  Cd_Nacionalidade: number | null;
+  Dt_Admissao: string | null;
+  Salario_Inicial: number | null;
+  Salario_Atual: number | null;
+  Gratificacao: number | null;
+  Encargos: number | null;
+  Carga_Semanal: number | null;
+  Id_Usuario: string | null;
+}
+
+export interface Funcionario_BcoBrasil {
+  Ind: number;
+  Nome: string | null;
+  Tipo_CPF: string | null;
+  CPF: string | null;
+  DDD_Res: string | null;
+  Tel_Res: string | null;
+  Tel_Com: string | null;
+  Tel_Cel: string | null;
+  Cd_Subsecao: string | null;
+  Setor: string | null;
+  Nr_Agencia: string | null;
+  Nr_Conta: string | null;
+  Cd_EstCivil: string | null;
+  Nm_Conjuge: string | null;
+  Cd_Escolaridade: number | null;
+  Curso: string | null;
+  Dt_Curso: string | null;
+  Residencia: string | null;
+  Dt_Residencia: string | null;
+  Nm_Referencia: string | null;
+  Tel_Referencia: string | null;
+  Dt_Nascimento: string | null;
+  Logradouro: string | null;
+  Bairro: string | null;
+  CEP: string | null;
+}
+
+export interface Funcionario_Cargo {
+  Ind: number;
+  Cd_Cargo: number;
+  Descricao: string | null;
+}
+
+export interface Funcionario_Eleicao {
+  Ind: number;
+  Id_Eleicao: number;
+  Matricula: number;
+  Id_Usuario: string;
+  Matricula_Eleitor: number;
+  Dt_Voto: string;
+  IP: string;
+}
+
+export interface Funcionario_Setor {
+  Ind: number;
+  Matricula: string;
+  Cd_Cargo: string;
+  Cd_Setor: string;
+  Id_usuario: string;
+}
+
+export interface Funcionarios_BB_RH {
+  IND: number | null;
+  Matricula: number | null;
+  Nome: string | null;
+  R_End: string | null;
+  R_Nr: string | null;
+  Cidade: string | null;
+  CEP: string | null;
+  Nascimento: string | null;
+  CPF: string | null;
+  nr_conta: string | null;
+  nr_agencia: string | null;
+}
+
+export interface Hist_Advogado {
+  Nic: number | null;
+  Nr_Inscricao: string | null;
+  Tp_Inscricao: string | null;
+  Uf_Origem: string | null;
+  Nr_Seguranca: number | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_SubSecao: string | null;
+  Cd_Municipio: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Passaporte: string | null;
+  Nr_TE: string | null;
+  Zn_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Dt_Formatura: string | null;
+  Dt_Inscricao: string | null;
+  Dt_Registro: string | null;
+  Nr_LivroRegistro: string | null;
+  Nr_Registro: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  In_Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Dt_Alteracao: string | null;
+  Tp_Alteracao: string | null;
+  Id_Usuario: string | null;
+  Informativo: number | null;
+  Dt_InscOriginal: string | null;
+  Tem_Deficiencia: boolean | null;
+}
+
+export interface Hist_Advogado_Cnpj {
+  Ind: number;
+  Nic: number;
+  Cnpj: string;
+  Status: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Hist_Advogado_Social {
+  Ind: number;
+  Ind_Req: number | null;
+  Ind_Adv: number | null;
+  Nome: string;
+  Tp_Registro: string;
+  Dt_Status: string;
+  St_Status: string;
+  Id_Usuario: string;
+}
+
+export interface Hist_Carteira {
+  Ind: number;
+  Nic: number;
+  Cd_Formulario: string;
+  Cd_Situacao: string;
+  Dt_Situacao: string;
+  Id_Usuario: string;
+  Ss_Usuario: string;
+}
+
+export interface Hist_Chamado {
+  Ind: number;
+  Cd_Chamado: number;
+  Dt_Andamento: string;
+  Descricao: string;
+  Tp_Chamado: number;
+  Urgencia: number;
+  Id_Usuario: string;
+}
+
+export interface Hist_Compromisso {
+  Ind: number;
+  Id_Compromisso: number;
+  Nic: number;
+  Dt_Agendamento: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Hist_Debito {
+  Ind: number;
+  Nic: number;
+  Data: string;
+  Valor: number;
+}
+
+export interface Hist_Debito_Processo {
+  Ind: number;
+  Nic: number;
+  Nr_Documento: number;
+  Data: string;
+  Total: number;
+}
+
+export interface Hist_Email {
+  Ind: number;
+  Cd_Email: number;
+  Nic: number;
+  End_Email: string;
+  Dt_Email: string;
+  In_Receb: string | null;
+  Dt_Receb: string | null;
+  In_Retorno: string | null;
+}
+
+export interface Hist_Endereco {
+  Ind: number;
+  Nic: number | null;
+  Tp_Endereco: string | null;
+  Dt_Endereco: string | null;
+  In_Corresp: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  CodiCidd: number | null;
+  CodiUF: number | null;
+  CodiPais: number | null;
+}
+
+export interface Hist_Impedimento {
+  Ind: number;
+  Nic: number;
+  Cd_Impedimento: number;
+  Dt_Impedimento: string;
+  Dt_Levantamento: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Hist_Interforum {
+  Ind: number;
+  Nr_Credencial: number;
+  Nic: number | null;
+  Nm_Usuario: string | null;
+  RG_Usuario: string;
+  CPF_Usuario: string | null;
+  Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  Dt_Emissao: string | null;
+  Dt_Vencimento: string | null;
+  Nr_Via: number;
+  Id_Usuario: string;
+}
+
+export interface Hist_Pedido_Documento {
+  Ind: number;
+  Cd_Pedido: number | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Observacao: string | null;
+  Id_usuario: string | null;
+}
+
+export interface Hist_Requerimento_Ato_Societario {
+  Ind: number;
+  Nr_Requerimento: number;
+  Nr_Sociedade: string | null;
+  Nic_Sociedade: number | null;
+  Cnpj: string | null;
+  Nome: string;
+  Email: string;
+  Cep: string;
+  Cd_Pais: number;
+  Cd_UF: number;
+  Cd_Cidade: number;
+  Bairro: string;
+  Tp_Logradouro: string;
+  Nm_Logradouro: string;
+  Numero: string | null;
+  Complemento: string | null;
+  Ddd_Fone: string | null;
+  Telefone: string | null;
+  Nic_Socio: number;
+  Tp_Requerimento_Ato_Societario: number;
+  Livro_Diario: string | null;
+  Livro_Razao: string | null;
+  Livro_Diverso: string | null;
+  Nr_Livro: string | null;
+  Ano_Livro: string | null;
+  Ds_Averbacao_Diversa: string | null;
+  Declaracao_Ciencia: string | null;
+  Declaracao_Taxa: string | null;
+  Declaracao_Entrega: string | null;
+  Dt_Atualizacao: string;
+  Id_Usuario: string;
+  Id_Operacao: string | null;
+  Nr_Protocolo: number | null;
+  Ano_Protocolo: number | null;
+}
+
+export interface Hist_Situacao {
+  Nic: number | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+  Dt_Historico: string | null;
+}
+
+export interface Hist_Sociedade {
+  Ind: number;
+  Nic: number | null;
+  Nr_Sociedade: string | null;
+  Nr_Filial: number | null;
+  Nome: string | null;
+  Nr_Processo: string | null;
+  Dt_Averbacao: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  CNPJ: string | null;
+  Email: string | null;
+  Cd_Situacao: string | null;
+  Id_Usuario: string | null;
+  Complemento: string | null;
+  UF_Matriz: string | null;
+  Nr_Matriz: string | null;
+  Nr_Seguranca: number | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Hist_Tesouraria_Relatorio {
+  Ind: number;
+  Tp_Lancamento: string | null;
+  Descricao: string | null;
+  Valor: number;
+  Id_Ordem: number | null;
+  Dt_Alteracao: string;
+}
+
+export interface HUBOAB_Foto {
+  Ind: number;
+  Nic: number;
+  Foto: string | null;
+  FotoTipo: string | null;
+  Dt_Cadastro: string | null;
+}
+
+export interface HUBOAB_Requerimento {
+  Ind: number;
+  Cd_Requerimento: number;
+  Descricao: string;
+  Setor: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  In_Ativo: number | null;
+  Valor: number;
+  URL_Req: string | null;
+}
+
+export interface HUBOAB_Requerimento_Status {
+  Ind: number;
+  Nic: number | null;
+  Cd_Requerimento: number | null;
+  Nome: string | null;
+  Valor: string | null;
+  Cd_Status: string | null;
+  Dt_Insercao: string | null;
+  Dt_Exclusao: string | null;
+}
+
+export interface Imagem_Arquivo {
+  Ind: number;
+  Cd_Imagem: number;
+  Nm_Arquivo: string;
+  Nm_Arquivo_Original: string;
+  Assunto: string | null;
+  Titulo: string | null;
+  Keywords: string | null;
+  Comentarios: string | null;
+  Data: string | null;
+  Autor: string | null;
+  Direitos: string | null;
+  Dt_Insercao: string;
+  Id_UsuarioInsercao: string;
+  Ip: string;
+  In_Processado: string;
+  Dt_Processado: string | null;
+  Downloads: number;
+}
+
+export interface Impedimento {
+  Ind: number;
+  Nic: number;
+  Cd_Impedimento: number;
+  Dt_Impedimento: string;
+  Dt_Levantamento: string | null;
+  Obs: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Dt_Prev_Levan: string | null;
+}
+
+export interface import_ASSAI {
+  "SUBSEÇÃO ASSAI ": string | null;
+  Nr_Inscricao: number | null;
+  nic: number | null;
+}
+
+export interface importa_seccional {
+  "Cidade ": string | null;
+  Advogado: string | null;
+  Nr_Inscricao: number | null;
+  F4: string | null;
+  F5: string | null;
+  F6: string | null;
+  F7: string | null;
+  F8: string | null;
+  F9: string | null;
+  nic: number | null;
+}
+
+export interface importacao_documentos_ted {
+  Ind: number;
+  Nr_Documento: number | null;
+  Name: string | null;
+  Processo: string | null;
+  HiperLink: string | null;
+  Ind_Lote: number | null;
+  Usuario: string | null;
+  Status: string | null;
+  Ativo: boolean | null;
+  DataImportacao: string | null;
+}
+
+export interface Inadimplencia_Log {
+  Ind: number;
+  Nr_Documento: number | null;
+  Descri: string | null;
+}
+
+export interface Inscricao {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string;
+  Tp_Inscricao: string;
+  Dt_Inscricao: string;
+  Origem: string;
+  Dt_Alteracao: string;
+  Id_Usuario: string;
+}
+
+export interface Inscricao_Reserva {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string;
+  Tp_Inscricao: string;
+  In_Usado: number;
+}
+
+export interface Inscricao_Reserva_Especial {
+  ind: number;
+  Nic: number | null;
+  Nr_Inscricao: string | null;
+  In_Usado: number | null;
+}
+
+export interface integracao_AASP {
+  Ind: number;
+  Nic: number;
+  Id_Compromisso: number;
+  Dt_Criacao: string;
+  Dt_Conclusao: string | null;
+  Dt_Envio: string | null;
+  De_acordo: boolean | null;
+}
+
+export interface Integracao_Amplo {
+  ind: number;
+  id_compromisso: number;
+  nic: number;
+  numero_origem: string;
+  status: string;
+  dt_atualizacao: string | null;
+}
+
+export interface Integracao_Atualizacao {
+  Dt_Atualizacao: string;
+  Dt_Email: string | null;
+  Tp_Atualizacao: string | null;
+  Tipo: string | null;
+  Descricao: string | null;
+}
+
+export interface Integrante_Comissao {
+  Ind: number;
+  Nr_Integrante: number;
+  Nome: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  UF: string | null;
+  Cidade: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Cel: string | null;
+  Celular: string | null;
+  Email: string | null;
+  Obs: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Interforum {
+  Ind: number;
+  Nr_Credencial: number;
+  Nic: number | null;
+  Nm_Usuario: string | null;
+  RG_Usuario: string;
+  CPF_Usuario: string | null;
+  Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  Dt_Emissao: string | null;
+  Dt_Vencimento: string | null;
+  Nr_Via: number;
+  Cd_situacao: string | null;
+  Id_Usuario: string;
+}
+
+export interface Interforum_notas {
+  Ind: number;
+  Nic: number;
+  Nota: string | null;
+}
+
+export interface invheader {
+  invid: number;
+  invdate: string | null;
+  client_id: number | null;
+  amount: number | null;
+  tax: number | null;
+  total: number | null;
+  note: string | null;
+}
+
+export interface IP_Acesso {
+  Ind: number;
+  IP: string;
+  Id_Usuario: string | null;
+  Data: string;
+}
+
+export interface Ip_Bloqueado {
+  Ind: number;
+  IP: string | null;
+  Dt_Bloqueio: string | null;
+}
+
+export interface IP_Liberado {
+  Ind: number;
+  IP: string;
+  Data: string;
+}
+
+export interface Jornal_Cancelado {
+  Ind: number;
+  Nic: number;
+  Dt_Inclusao: string;
+}
+
+export interface Jornal_Cidade {
+  Ind: number;
+  Nm_Cidade: string;
+}
+
+export interface Jornal_Recebimento {
+  Ind: number;
+  Nic: number;
+  In_Receber: number;
+  Dt_Insercao: string;
+  Ip: string | null;
+}
+
+export interface Julgamento_Cumulado {
+  ind: number;
+  Nr_Documento: number | null;
+  Ind_Julgamento: number | null;
+  Nr_DocumentoCumulado: number | null;
+}
+
+export interface Julgamento_MotivoDaDecisao {
+  ind: number;
+  Nr_Documento: number | null;
+  Cd_Motivo: number | null;
+  Ind_Julgamento: number | null;
+}
+
+export interface JuntaComercial_Candidato {
+  Ind: number;
+  Id_Evento: number;
+  Id_Escr: number;
+  Nic: number;
+  Dt_Auditoria: string | null;
+  Ordem: number | null;
+}
+
+export interface JuntaComercial_Conselheiro {
+  Ind: number;
+  Id_Evento: number;
+  Nic: number;
+  Cd_Cargo: number;
+  Cd_Situacao: number;
+  Dt_Auditoria: string | null;
+}
+
+export interface JuntaComercial_Eleito {
+  Ind: number;
+  Nic: number;
+  Id_Evento: number;
+  Id_Escr: number;
+  Votos: number;
+  Dt_Auditoria: string | null;
+}
+
+export interface JuntaComercial_Evento {
+  Ind: number;
+  Id_Evento: number;
+  Id_Escr: number;
+  Vagas: number;
+  Dt_Evento: string | null;
+  Descricao: string;
+  Dt_Auditoria: string | null;
+}
+
+export interface JuntaComercial_Log {
+  Ind: number;
+  Id_Evento: number;
+  Id_Escr: number;
+  Id_Usuario: number;
+  Acao: string;
+  Dt_Acao: string;
+}
+
+export interface JuntaComercial_Votacao {
+  Ind: number;
+  Id_Evento: number;
+  Id_Escr: number;
+  Nic_Conselheiro: number;
+  Nic_Candidato: number;
+  Apurado: number;
+  Dt_Auditoria: string | null;
+}
+
+export interface Justificativa_Eleicao {
+  Ind: number;
+  Nic: number;
+  Texto: string;
+  Arquivo: string;
+  Nome_Arquivo: string | null;
+  MIME: string | null;
+  Ip: string | null;
+  Dt_Inclusao: string;
+  Ano_Pleito: number | null;
+}
+
+export interface Lembrete_Cadastro {
+  Ind: number;
+  Nic: number;
+  Nota: string;
+  Dt_Alteracao: string;
+  Id_Usuario: string;
+  Cd_Setor: string;
+}
+
+export interface Lista_Advogado {
+  Ind: number;
+  Cd_Lista: number;
+  Nic: number;
+}
+
+export interface Lista_Completa_Esmafe$ {
+  tipo: string | null;
+  numero: number | null;
+  nome: string | null;
+  cd_curso: number | null;
+  nome_curso: string | null;
+  minutos: number | null;
+  origem: string | null;
+  dt_atualizacao: string | null;
+}
+
+export interface Lista_Sociedade {
+  Ind: number;
+  Cd_Lista: number;
+  Nic: number;
+}
+
+export interface Local_Votacao_2018 {
+  ind: number;
+  cd_subsecao: string | null;
+  subsecao: string | null;
+  "cd_município": string | null;
+  municipio: string | null;
+  Confere: string | null;
+  Cidade_Votacao: string | null;
+  Local_Votacao: string | null;
+  n_eleitores: number | null;
+  n_urnas: number | null;
+  ind_votacao: number | null;
+}
+
+export interface Log_Acesso {
+  Ind: number;
+  Id_Usuario: string;
+  IP: string;
+  Dt_Acesso: string;
+  User_Agent: string | null;
+}
+
+export interface Log_Acesso_Lista_Sextupla {
+  Ind: number;
+  Id_Usuario: string;
+  IP: string;
+  Dt_Acesso: string;
+  Descricao: string | null;
+  User_Agent: string | null;
+}
+
+export interface Log_Advogado_Situacao {
+  Ind: number;
+  Nic: number | null;
+  adv_Cd_Situacao: string | null;
+  adv_Dt_Situacao: string | null;
+  sit_Cd_Situacao: string | null;
+  sit_Dt_Situacao: string | null;
+  Dt: string | null;
+}
+
+export interface Log_Consulta {
+  Ind: number;
+  IP: string | null;
+  Tp_Consulta: string;
+  Argumento: string;
+  Dt_Consulta: string;
+}
+
+export interface Log_Documento {
+  Ind: number;
+  Nr_Documento: number | null;
+  Dt_Acao: string;
+  Tp_Acao: string;
+  Id_Usuario: string | null;
+  Lembrete: string | null;
+}
+
+export interface Log_ESA_Curso {
+  Cd_Curso: number | null;
+  Ano: number | null;
+  Nm_Completo: string | null;
+  Nm_Reduzido: string | null;
+  Descricao: string | null;
+  Objetivo: string | null;
+  Ementa: string | null;
+  Coordenacao: string | null;
+  Dt_IniInsc: string | null;
+  Dt_FimInsc: string | null;
+  Dt_Ini: string | null;
+  Dt_Fim: string | null;
+  Nr_Aulas: number | null;
+  Horarios: string | null;
+  Carga_Horaria: string | null;
+  Nr_vagas: number | null;
+  Nr_VagasComplemento: string | null;
+  Valor: number | null;
+  Nr_Parcelas: number | null;
+  Valor_Parcela: number | null;
+  Lugar: string | null;
+  Informacoes: string | null;
+  Obs: string | null;
+  Cd_Subsecao: string | null;
+  Id_Usuario: string | null;
+  Dt_Criacao: string | null;
+  Dt_Alteracao: string | null;
+  Dt_Cancelamento: string | null;
+  Clausula: string | null;
+  Desc_Avista: number | null;
+  Desc_Iniciantes: number | null;
+  Desc_ExAluno: number | null;
+  Palestra: boolean | null;
+  In_Gratuito: number | null;
+  Ativo: number | null;
+  Libera_Site: number | null;
+  Dt_Site: string | null;
+  Link_Inscricao: number | null;
+  Dt_Link: string | null;
+  Dt_Log: string | null;
+}
+
+export interface Log_Exclusao_Cargo {
+  Nic: number;
+  Nr_Integrante: number | null;
+  Cd_Cargo: number | null;
+  Cd_Orgao: number | null;
+  Cd_SubOrgao: number | null;
+  Dt_Cargo: string | null;
+  Dt_FimCargo: string | null;
+  Cd_SubSecao: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Obs: string | null;
+  In_Licenciado: number | null;
+  Nic_Indicacao: number | null;
+  Dt_Exclusao: string | null;
+}
+
+export interface Log_Exclusao_Pedido {
+  Ind: number;
+  Cd_Pedido: number | null;
+  Nic: number;
+  Id_Usuario: string;
+  Dt_Exclusao: string;
+  Cd_Formulario: string | null;
+}
+
+export interface Log_Exclusao_Renovacao {
+  Ind: number;
+  Nic: number;
+  Dt_Exclusao: string;
+  Id_Usuario: string;
+}
+
+export interface Log_Inadimplencia_Import_Doc {
+  Ind: number;
+  Nr_Documento: number;
+  Dt_Alteracao: string | null;
+  Nr_Inscricao: number | null;
+}
+
+export interface Log_Mensagem {
+  Ind: number | null;
+  Id_Usuario_Origem: string | null;
+  Id_Usuario_Destino: string | null;
+  Mensagem: string | null;
+  Dt_Mensagem: string | null;
+  In_Enviada: number | null;
+}
+
+export interface Log_Nota_Disciplinar {
+  ind: number;
+  cd_nota_disciplinar: number;
+  indice: string | null;
+  dt_criacao: string | null;
+  dt_aplicacao: string | null;
+  cd_penalidade: number;
+  processo: string | null;
+  observacao: string | null;
+  periodo: string | null;
+  multa: number;
+  cd_infracao: number;
+  nota_interna: boolean;
+  dt_termino: string | null;
+  Id_Usuario_Criacao: string | null;
+  Id_Usuario_Alteracao: string | null;
+  dt_Alteracao: string | null;
+  nic: number | null;
+}
+
+export interface Log_Pagina {
+  Ind: number;
+  Id_Usuario: string;
+  Pagina: string;
+  Dt_Acesso: string;
+}
+
+export interface Log_Pagina_documento {
+  Ind: number;
+  Id_Usuario: string;
+  Pagina: string;
+  PaginaAnterior: string;
+  Dt_Acesso: string;
+  IP: string;
+  Dados: string | null;
+}
+
+export interface Log_Recorte {
+  ind: number;
+  Nic: number | null;
+  Dt_Acao: string | null;
+  Acao: string | null;
+  Motivo: string | null;
+  Email: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Log_Recorte_CanceladoTes {
+  Ind: number;
+  Nic: number;
+  Data: string | null;
+  Email: string | null;
+  Motivo: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Log_RemessaCEF {
+  Ind: number;
+  Id_Usuario: string;
+  Prefix: string;
+  Arquivo: string;
+  Dt_Acesso: string;
+}
+
+export interface logBonjur {
+  nr_inscricao: string | null;
+  data: string | null;
+  tipo: string | null;
+  retorno: string | null;
+  mensagem: string | null;
+}
+
+export interface Login_Suporte_Log {
+  Ind: number;
+  UsuarioSuporte: string;
+  Nic: string;
+  IP: string;
+  Dt_Acesso: string;
+  User_Agent: string | null;
+}
+
+export interface LoteExecucao {
+  Id: string;
+  Id_Usuario: string;
+  Cd_Orgao: number;
+  Dt_Criacao: string;
+  Dt_Conclusao: string | null;
+  Status: string;
+  Total_Docs: number;
+  Total_Sucesso: number | null;
+  Total_Falha: number | null;
+  Config_JSON: string;
+}
+
+export interface LoteExecucaoLog {
+  Id: number;
+  Id_Lote: string;
+  Nr_Documento: number;
+  Cd_Andamento: number;
+  Ordem_Andamento: number;
+  Status: string;
+  Msg_Erro: string | null;
+  Dt_Processamento: string;
+}
+
+export interface Lugar {
+  Ind: number;
+  Cd_Lugar: number;
+  Nome: string;
+  Lugar: string | null;
+  Cd_Subsecao: string;
+  Cd_Municipio: string | null;
+  Endereco: string | null;
+  Complemento: string | null;
+  Cidade: string | null;
+  Bairro: string | null;
+  CEP: string | null;
+  UF: string | null;
+  Horario: string | null;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Email: string | null;
+  Cd_TipoLugar: number | null;
+  Foto: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  In_Agenda: number;
+  Capacidade: number | null;
+  Contato: string | null;
+  ddd_whats01: string | null;
+  whats01: string | null;
+  ddd_whats02: string | null;
+  whats02: string | null;
+  ddd_whats03: string | null;
+  whats03: string | null;
+  divulga_whats02: number | null;
+  divulga_whats03: number | null;
+  PublicarMultiplicaMe: boolean | null;
+  Numero: string | null;
+}
+
+export interface Lugar_Cor {
+  Ind: number;
+  Cd_Lugar: number;
+  Cor: string;
+}
+
+export interface Lugar_Imagem {
+  Ind: number;
+  Cd_Lugar: number;
+  ImagemUrl: string | null;
+}
+
+export interface Lugar_Reserva {
+  Ind: number;
+  Cd_Lugar: number;
+  Dt_Reserva_Ini: string;
+  Dt_Reserva_Fim: string;
+  Evento: string;
+  Responsavel: string | null;
+  Parceiros: string | null;
+  Palestrantes: string | null;
+  In_Confirmada: number | null;
+  Id_Usuario: string;
+  Dt_Atualizacao: string;
+  In_Cancelada: number;
+  Cd_Setor: string | null;
+  Cd_Subsecao: string | null;
+  Excluido_Por: string | null;
+  Dt_Exclusao: string | null;
+  In_Divulgar: boolean | null;
+}
+
+export interface Lugar_Reserva_Grupo {
+  Ind: number;
+  Cd_Lugar1: number;
+  Cd_Lugar2: number;
+}
+
+export interface Lugar_Reserva_Memo {
+  Ind: number;
+  Cd_Lugar: number;
+  Dt_Reserva_Ini: string;
+  Dt_Reserva_Fim: string;
+  Evento: string;
+  Responsavel: string | null;
+  Parceiros: string | null;
+  Palestrantes: string | null;
+  In_Confirmada: number | null;
+  Id_Usuario: string;
+  Dt_Atualizacao: string;
+  In_Cancelada: number;
+}
+
+export interface lugar_reserva_relacao {
+  Ind: number;
+  Id_Sala_Original: number | null;
+  Id_Sala_Hibrida: number | null;
+}
+
+export interface Mens_Boleto {
+  Ind: number;
+  Id_Mensagem: string;
+  Cd_Mensagem: string | null;
+  tipoSacado: string;
+  Linha1: string | null;
+  Linha2: string | null;
+  Linha3: string | null;
+  Linha4: string | null;
+  Linha5: string | null;
+  Linha6: string | null;
+  Linha7: string | null;
+  Linha8: string | null;
+  inDesativado: boolean;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Mensagem {
+  Ind: number;
+  Id_Usuario_Origem: string | null;
+  Id_Usuario_Destino: string | null;
+  Mensagem: string | null;
+  Dt_Mensagem: string | null;
+  In_Enviada: number | null;
+  Anonimo: boolean;
+}
+
+export interface Mensagem_Intranet {
+  Ind: number;
+  Titulo: string;
+  Descricao: string;
+  Setor: string;
+  Dt_Inicial: string;
+  Dt_Vencimento: string;
+  Id_Usuario: string;
+  Dt_Cadastro: string | null;
+  Privativo: number | null;
+  Subtitulo: string | null;
+  categoria: number | null;
+  Origem: string | null;
+  Dt_atualizacao: string | null;
+}
+
+export interface Mensagem_Intranet_Log {
+  Ind: number | null;
+  Titulo: string | null;
+  Descricao: string | null;
+  Setor: string | null;
+  Dt_Inicial: string | null;
+  Dt_Vencimento: string | null;
+  Id_Usuario: string | null;
+  Dt_Cadastro: string | null;
+  Privativo: number | null;
+  Subtitulo: string | null;
+  categoria: number | null;
+  Origem: string | null;
+  Dt_atualizacao: string | null;
+}
+
+export interface mensagem_usuario {
+  ind: number;
+  ind_mensagem: number | null;
+  id_usuario: string | null;
+  dt_visualizacao: string | null;
+}
+
+export interface MIGRAR_Eleicoes_ListaVotacao {
+  Nic: number;
+  Cd_Local: number | null;
+  Local_Votacao: string | null;
+  Urna: number | null;
+}
+
+export interface MIGRAR_Eleicoes_Municipio_LocalVotacao {
+  Ind: number;
+  Cd_Local: number | null;
+  Local_Votacao: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+}
+
+export interface MIGRAR_Eleicoes_Siafi {
+  Ind: number;
+  Cd_Siafi: number;
+  Cd_Local: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Municipio: string | null;
+  UF: string | null;
+}
+
+export interface MIGRAR_Eleicoes_SubcomissoesEleitorais {
+  ind: number;
+  cd_subsecao: string;
+  nr_inscricao: number;
+}
+
+export interface MIGRAR_Eleicoes_Tab_LocalVotacao {
+  Cd_Local: number | null;
+  Local_Votacao: string | null;
+  Quant_Mesas: number | null;
+  Urna_Eletronica: number;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+}
+
+export interface MIGRAR_Eleicoes2006_LocalVotacao {
+  Ind: number;
+  Cd_Subsecao: string | null;
+  Nome: string | null;
+  Local_Votacao: string | null;
+  Quant_Urnas: number | null;
+}
+
+export interface MIGRAR_Eleicoes2006_NaoVotantes {
+  Nr_Inscricao: number | null;
+  Nic: number | null;
+}
+
+export interface Minuta_Automatica {
+  ind: number;
+  Cd_Orgao: number | null;
+  Cd_Andamento: number | null;
+  Minuta: string | null;
+  In_Ativo: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Modelo_Notificacao_X_Documento {
+  ind: number;
+  ind_modelo: number;
+  nr_documento: number;
+  dt_tipo_modelo: string;
+  index_andamento: string | null;
+  dt_publicacao: string | null;
+  index_notificacao: number | null;
+  index_relacionado: string | null;
+  inserido: boolean;
+}
+
+export interface motivo_exclusao_relator_instrutor {
+  ind: number;
+  nome: string;
+  criado_em: string | null;
+  atualizado_em: string | null;
+  deletado_em: string | null;
+}
+
+export interface NIC {
+  Ind: number;
+  Nic: number;
+  Tp_Nic: string | null;
+}
+
+export interface NMS_Boleto_Outros {
+  Ind: number;
+  Id_Taxa: string;
+}
+
+export interface NMS_Cadastro {
+  cd_cadastro: number;
+  razao: string | null;
+  fantasia: string | null;
+  cgc_cpf: string | null;
+  inscricao_est: string | null;
+  cep: string | null;
+  endereco: string | null;
+  complemento: string | null;
+  bairro: string | null;
+  cd_cidade: number | null;
+  fone: string | null;
+  fax: string | null;
+  email: string | null;
+  inscricao_atv: string | null;
+  dt_cadastro: string | null;
+  cd_contabil: number | null;
+  situacao: string | null;
+  celular: string | null;
+  inscricao_mun: string | null;
+  site: string | null;
+  dt_formatura: string | null;
+  tipo_cadastro: string | null;
+  cd_faculdade: number | null;
+  cd_subsecao: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface NMS_Cidade {
+  Ind: number;
+  Nome: string;
+  UF: string;
+  Cd_Cidade_OAB: number;
+  Cd_Cidade_NMS: number;
+}
+
+export interface NMS_EnviosRealTime {
+  Ind: number;
+  Nic: number;
+  Tp_Nic: string;
+  dt_envio: string;
+}
+
+export interface NMS_Erro_Atualizacao {
+  Ind: number;
+  Nic: number;
+  Tp_Nic: string;
+  retorno: string | null;
+  dt_registro: string | null;
+}
+
+export interface NMS_Importar {
+  Nic: number | null;
+  Razao: string | null;
+  Cd_Nms: number | null;
+}
+
+export interface NMS_Nao_Atualizar {
+  Ind: number;
+  Nic: number;
+}
+
+export interface NMS_ParcelaUnica {
+  Ind: number;
+  Ano: number;
+  Vcto_Unica: string;
+}
+
+export interface NMS_Rel_Cadastro {
+  Cd_Nms: number;
+  Nic: number;
+}
+
+export interface NMS_Situacao {
+  Ind: number;
+  Descricao: string;
+  Cd_Situacao_OAB: string;
+  Cd_Situacao_NMS: number;
+}
+
+export interface Nota {
+  Ind: number;
+  Nic: number;
+  Nota: string;
+  Dt_Alteracao: string;
+  Id_Usuario: string;
+  Dt_Nota: string | null;
+}
+
+export interface Nota_Disciplinar_Infracao {
+  cd_nota_disciplinar: number;
+  cd_infracao: number;
+}
+
+export interface Noticia {
+  Ind: number;
+  Nr_Ordem: number;
+  Cd_Lado: string;
+  Titulo: string;
+  Subtitulo: string;
+  Chamada: string;
+  Texto: string;
+  Dt_Noticia: string;
+  Cd_Situacao: string;
+  Dt_Situacao: string;
+  Id_Usuario: string;
+  Link: number | null;
+}
+
+export interface NS_Notificacao {
+  Ind: number;
+  Nome: string;
+  Insc_Pub: string;
+  UF_Pub: string;
+  Processos: number | null;
+  Insc_PR: string | null;
+  Situacao: string | null;
+  Dt_Situacao: string | null;
+  Nm_Logradouro_Res: string | null;
+  Bairro_Res: string | null;
+  Cidade_Res: string | null;
+  UF_Res: string | null;
+  Numero_Res: string | null;
+  Complemento_Res: string | null;
+  CEP_Res: string | null;
+  Email_Res: string | null;
+  Nm_Logradouro_Com: string | null;
+  Bairro_Com: string | null;
+  Cidade_Com: string | null;
+  UF_Com: string | null;
+  Numero_Com: string | null;
+  Complemento_Com: string | null;
+  CEP_Com: string | null;
+  Email_Com: string | null;
+  Dt_Inclusao: string;
+  Status: number | null;
+  Dt_Status: string | null;
+}
+
+export interface NS_Publicacao {
+  Ind: number;
+  Adv: string | null;
+  Oab: string | null;
+  UF: string | null;
+  Processo: string | null;
+  Dt_Arquivo: string | null;
+}
+
+export interface NS_Status {
+  Ind: number;
+  Status: number;
+  Descricao: string;
+}
+
+export interface OAB_Cidadania_Advogado_Atuacao {
+  Ind: number;
+  Nic: number | null;
+  Cd_Area: number | null;
+}
+
+export interface OAB_Cidadania_Advogado_Atuacao_Inscricao {
+  Ind: number;
+  Nic: number | null;
+  Cd_Area: number | null;
+  Dt_Inscricao: string | null;
+  Dt_Deferimento: string | null;
+  Dt_Cancelamento: string | null;
+  Status: string | null;
+  Deferido: boolean | null;
+  Usuario: string | null;
+  Observacoes: string | null;
+}
+
+export interface OAB_Cidadania_Usuario_Acesso {
+  Ind: number;
+  Id_Usuario: string | null;
+  Admin: boolean | null;
+}
+
+export interface OAB_Escola_Inscricao {
+  Ind: number;
+  Nic: number | null;
+  Nome: string | null;
+  Cd_SubSecao: string | null;
+  Cd_Cargo: number | null;
+  Cd_Orgao: number | null;
+  Cd_SubOrgao: number | null;
+  Termo_Aceite: boolean | null;
+  Tem_Documento: string | null;
+  Dt_Cadastro: string | null;
+}
+
+export interface OABCidadania_ForcaTarefa {
+  Ind: number;
+  Dt_Ini: string | null;
+  Dt_Fim: string | null;
+  Nr_Entrevistas: number | null;
+  Nr_Atendimentos: number | null;
+  Nr_Peticoes: number | null;
+  Nr_ProgRegime: number | null;
+  Nr_LivCondicional: number | null;
+  Nr_SisPenitenciario: number | null;
+  Nr_Indulto: number | null;
+  Nr_Arquivados: number | null;
+  Cd_Subsecao: string | null;
+  Advogado: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface OABEscolas_Insc_Advogado {
+  Ind: number;
+  Nr_Inscricao: string;
+}
+
+export interface Obituario {
+  Ind: number;
+  Nome: string | null;
+  Dt_Falecimento: string | null;
+  Idade: number | null;
+  Profissao: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Nm_Conjuge: string | null;
+  Nr_FAF: string | null;
+  Local_Falec: string | null;
+  Local_Velorio: string | null;
+  Local_Sepult: string | null;
+  Dt_Sepult: string | null;
+  Funeraria: string | null;
+  Dt_Arquivo: string | null;
+}
+
+export interface Oficio {
+  ind_log_oficio: number;
+  ind_doc_oficio: number | null;
+  Nr_oficio: number | null;
+  Ano_oficio: number | null;
+  Id_Usuario: string | null;
+  Dt_doc_gerado: string | null;
+  texto_oficio: string | null;
+  cd_setor: string | null;
+}
+
+export interface oficio_corresp_notificacao {
+  Nr_documento: number;
+  Not: number;
+  Ano: string;
+  Setor: string;
+  Notificacao: string | null;
+  Dia: string | null;
+  Local: string | null;
+  Anexos: string | null;
+  Responsavel: string;
+  Cd_status: string | null;
+  dt_status: string | null;
+  not_origem: number | null;
+  Reiterado: number | null;
+  Decurso_prazo: string | null;
+  dt_emitida: string | null;
+  Not_CO1: number | null;
+}
+
+export interface ordena {
+  ind: number | null;
+  nr_inscricao: string | null;
+}
+
+export interface Parametro_Blq {
+  Dt_Inclusao: string;
+  Id_Usuario: string;
+  QtdDevolucao: number;
+}
+
+export interface Parte {
+  Ind: number;
+  Nic: number;
+  Nome_Razao: string;
+  CPF_CNPJ: string;
+  RG: string | null;
+  UF_RG: string | null;
+  Endereco1: string | null;
+  Endereco2: string | null;
+  Telefone: string | null;
+  Dt_Nascimento: string | null;
+  Email: string | null;
+  Rep_Legal: string | null;
+  Endereco_RL: string | null;
+  Telefone_RL: string | null;
+}
+
+export interface Parte_Deliberativos {
+  Ind: number;
+  Nome: string | null;
+  Nr_Inscricao: string | null;
+  Cargo: string | null;
+  Orgao: string | null;
+  Endereco: string | null;
+  Observacao: string | null;
+  Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+}
+
+export interface PE_Cadastro {
+  Ind: number;
+  Nic: number;
+  Nome: string;
+  CPF: string;
+  RG: string;
+  UF_RG: string;
+  Endereco: string;
+  Numero: string;
+  Complemento: string;
+  Bairro: string;
+  Cidade: string;
+  UF: string;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Cel: string | null;
+  Celular: string | null;
+  Email: string;
+  Nr_Documento: number | null;
+  Cd_Situacao: string;
+}
+
+export interface PE_Documento_Pauta {
+  Ind: number;
+  Id_Pauta: number;
+  Nr_Documento: number;
+  Id_Usuario: string;
+  Dt_Inclusao: string;
+  observacoes: string | null;
+  id_usuario_alteracao: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface PE_Email {
+  Ind: number;
+  Nr_Documento: number;
+  Destinatario: string;
+  Tipo: string;
+  Id_Andamento: number;
+  Dt_Envio: string;
+  Id_Usuario: string;
+}
+
+export interface PE_Link_Visualizacao {
+  Ind: number;
+  Nr_Documento: number;
+  Hash: string;
+  Dt_FimPrazo: string | null;
+  Destinatario: string;
+  Id_Usuario: string;
+  Cd_Setor: string;
+  Dt_Criacao: string;
+  Chave_Url: string;
+  Tp_Link: number | null;
+}
+
+export interface PE_Log_Visualizacao {
+  Ind: number;
+  Hash: string;
+  Dt_Visualizacao: string;
+  IP: string;
+}
+
+export interface PE_Orgao_Pauta {
+  Ind: number;
+  Cd_Orgao: number;
+}
+
+export interface PE_Pauta {
+  Ind: number;
+  Id_Pauta: number;
+  Descricao: string;
+  Cd_Orgao: number;
+  Cd_SubOrgao: number | null;
+  Dt_Pauta: string | null;
+  Id_Usuario: string;
+  Dt_Atualizacao: string;
+  Cd_Setor: string | null;
+  Id_Pauta_Tipo: number | null;
+  Dt_Final: string | null;
+  Str_Link: string | null;
+}
+
+export interface pe_pauta_presenca {
+  Ind: number;
+  Id_Pauta: number;
+  Nic: number;
+  Nome: string;
+  Cd_Cargo: string;
+  Cd_Orgao: string;
+  Cd_SubOrgao: string;
+  Tp_Lista: string;
+  Tp_Presenca: string;
+  Dt_Presenca: string;
+  Documento: string | null;
+}
+
+export interface PE_Pauta_Ted {
+  Ind: number;
+  Nr_Sessao: number;
+  Nr_Turma: number;
+  Dt_Pauta: string;
+  Id_Usuario: string;
+  Dt_Inclusao: string | null;
+  Cd_Orgao: number;
+}
+
+export interface PE_Pauta_Ted_Doc {
+  Ind: number;
+  Ind_Pauta_TED: number | null;
+  Nr_Documento: number;
+  Nic_Relator: number;
+  Nic_Representado: number;
+  Nic_Defensor: number;
+  Id_Usuario: string;
+  Dt_Inclusao: string | null;
+  Ind_: number | null;
+  Protocolo: string | null;
+}
+
+export interface PE_Pauta_Tipo {
+  Id_Pauta_Tipo: number;
+  Descricao: string;
+}
+
+export interface PE_SemEmail {
+  Ind: number;
+  Nic: number;
+}
+
+export interface Pedido_Documento {
+  Ind: number;
+  Cd_Pedido: number;
+  Nic: number | null;
+  Cd_Formulario: string | null;
+  Dt_Solicitacao: string | null;
+  Tp_Documento: string | null;
+  Tp_Pedido: number | null;
+  Tp_Inscricao: string | null;
+  Nr_Lote: number | null;
+  Destino: string | null;
+  Cd_Situacao: string | null;
+  Dt_Situacao: string | null;
+  Id_Usuario: string | null;
+  Biometrico: number | null;
+}
+
+export interface Pedido_Documento_Erro {
+  Ind: number;
+  Nic: number;
+  Cd_Formulario: string;
+  Erro: string;
+  Dt_Erro: string;
+}
+
+export interface Pedido_Documento_Lembrete {
+  Ind: number;
+  Nic: number;
+  Lembrete: string;
+  Id_Usuario: string;
+  Dt_Lembrete: string;
+}
+
+export interface Pega_Ladrao {
+  Ind: number;
+  Data: string | null;
+  Ip: string | null;
+}
+
+export interface Pergunta {
+  Ind: number;
+  Ind_Formulario: number;
+  Ordem: number;
+  Rotulo: string;
+  Ajuda: string | null;
+  Obrigatoria: boolean;
+  MinLength: number | null;
+  MaxLength: number | null;
+  Regex: string | null;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+}
+
+export interface Pergunta_Bool {
+  Ind_Pergunta: number;
+  Default_Valor: boolean | null;
+}
+
+export interface Pergunta_Check_Opt {
+  Ind: number;
+  Ind_Pergunta: number;
+  Valor: string;
+  Rotulo: string;
+  Ordem: number;
+  Ativo: boolean;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+}
+
+export interface Pergunta_Enum_Opt {
+  Ind: number;
+  Ind_Pergunta: number;
+  Valor: string;
+  Rotulo: string;
+  Ordem: number;
+  Ativo: boolean;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+}
+
+export interface Pergunta_Texto {
+  Ind_Pergunta: number;
+  MinLength: number | null;
+  MaxLength: number | null;
+  Regex: string | null;
+}
+
+export interface Permissao {
+  Ind: number;
+  Id_Usuario: string;
+  Cd_Funcao: string;
+}
+
+export interface Permissao_Perfil {
+  Ind: number;
+  Nome: string;
+  Dt_Exclusao: string | null;
+}
+
+export interface Permissao_Usuario {
+  Ind: number;
+  Nome: string;
+  CPF: string;
+  Senha: string;
+  Email: string | null;
+  Telefone: string | null;
+  Dt_Insercao: string;
+  Ind_Insercao: number;
+  Dt_Alteracao: string | null;
+  Ind_Alteracao: number | null;
+  Dt_Exclusao: string | null;
+  Ind_Exclusao: number | null;
+  Link: string | null;
+  Dt_Link: string | null;
+  Motivo: string | null;
+  Dt_Nascimento: string | null;
+  Acesso_Analista: number | null;
+}
+
+export interface Permissao_Usuario_Acesso {
+  Ind: number;
+  CPF: string;
+  Dt_Login: string | null;
+}
+
+export interface Permissao_Usuario_Perfil {
+  Ind: number;
+  CPF_Permissao_Usuario: string | null;
+  Ind_Permissao_Perfil: number;
+  Dt_Insercao: string;
+  Ind_Insercao: number;
+  Dt_Alteracao: string | null;
+  Ind_Alteracao: number | null;
+  Dt_Exclusao: string | null;
+  Ind_Exclusao: number | null;
+}
+
+export interface Permissao_v3 {
+  Ind: number;
+  Id_Usuario: string;
+  Cd_Funcao: string;
+}
+
+export interface PesquisaResposta_MulherAdvogada {
+  Ind: number;
+  Nic: number;
+  Pergunta: string;
+  Questao: string;
+  Resposta: string;
+  Dt_Resposta: string;
+}
+
+export interface Pge_Ato {
+  Ind: number;
+  Id_TipoAto: number;
+  Id_Ato: number;
+  Descricao: string;
+  Vl_min: number | null;
+  Vl_Max: number | null;
+  Id_lista: number | null;
+  Dt_Insercao: string | null;
+  Ip_Insercao: number | null;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: number | null;
+  Cd_Situacao: string | null;
+  Cd_Acesso: number | null;
+}
+
+export interface Pge_Cedente {
+  Ind: number;
+  Id_Requerimento: number;
+  Nic: number;
+  Dt_Insercao: string;
+  Ind_Insercao: number;
+  Dt_Exclusao: string | null;
+  Ind_Exclusao: number | null;
+}
+
+export interface Pge_Duvida_Requerimento {
+  Ind: number;
+  Cd_Requerimento: number | null;
+  Duvida: string | null;
+  Resposta: string | null;
+  Dt_Criacao: string | null;
+  Dt_Alteracao_Duvida: string | null;
+  Dt_Alteracao_Resposta: string | null;
+  Cd_Usuario_Requerente: number | null;
+  Cd_Usuario_Pge: number | null;
+  Usuario_Email: string | null;
+  Usuario_Login: string | null;
+}
+
+export interface Pge_Hist_Ato {
+  Ind: number;
+  Id_TipoAto: number;
+  Id_Ato: number;
+  Descricao: string;
+  Vl_Min: number | null;
+  Vl_Max: number | null;
+  Cd_Historico: string | null;
+  Dt_Historico: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Pge_Prioridade {
+  Ind: number;
+  Nic: number;
+  Dt_Inicio: string;
+  Dt_Final: string | null;
+  Ind_Insercao: number;
+}
+
+export interface Pge_Processos {
+  Ind: number;
+  Id_Requerimento: number;
+  Nr_Processo: string;
+  Dt_Insercao: string;
+  Ind_Insercao: number;
+  Dt_Exclusao: string | null;
+  Ind_Exclusao: number | null;
+  Motivo: string | null;
+}
+
+export interface Pge_Referencia {
+  Ind: number;
+  Dt_Ini_Referencia: string;
+  Dt_Fin_Referencia: string | null;
+  Vl_Referencia: number;
+  Id_Usuario: string | null;
+}
+
+export interface Pge_Requerimento {
+  Id_Requerimento: number;
+  Dt_Requerimento: string;
+  Nic: number;
+  Id_TipoAto: number | null;
+  Id_Ato: number;
+  Dt_Arbitrado: string;
+  Vl_Arbitrado: number;
+  Id_Comarca: number;
+  Id_Vara: number;
+  IP: string;
+  Dt_Deferido: string | null;
+  Vl_Deferido: number | null;
+  Obs: string | null;
+  Nr_Protocolo_Pge: number | null;
+  Tp_Pessoa: string | null;
+  Cnpj: string | null;
+  Cd_Situacao: string;
+  Dt_Situacao: string;
+  Assistidos: string | null;
+  Dt_Reconsideracao: string | null;
+  Vl_Reconsideracao: number | null;
+  Nr_Documento: number | null;
+  Dt_Complementar: string | null;
+  Vl_Complementar: number | null;
+  Lista_Analista: number | null;
+  Dt_Nomeacao: string | null;
+}
+
+export interface PGE_Requerimento_Status {
+  Ind: number;
+  Id_Requerimento: number;
+  Id_Status: number;
+  Dt_Status: string;
+  IP: string;
+  Razao_Indeferimento: string | null;
+  Id_AtoAnalise: number | null;
+  Id_TipoAtoAnalise: number | null;
+  Ind_Insercao: number | null;
+}
+
+export interface Pge_Reu {
+  Ind: number;
+  Id_Reu: number;
+  Id_Requerimento: number;
+  Nm_Reu: string;
+}
+
+export interface PGE_Status {
+  Ind: number;
+  Id_Status: number;
+  Descricao: string;
+  Env_Email: string | null;
+  Situacao: number | null;
+  Ordem_Analise: number | null;
+}
+
+export interface Pge_TipoAto {
+  Ind: number;
+  Id_TipoAto: number;
+  Nm_TipoAto: string;
+}
+
+export interface Planilha1$ {
+  UF: string | null;
+  OAB: number | null;
+  Complemento: string | null;
+  Nome: string | null;
+  "E-mail": string | null;
+  "Quantidade acoes": number | null;
+}
+
+export interface PlanilhaAcom$ {
+  NIC: number | null;
+  NR_OAB: string | null;
+  NOME: string | null;
+}
+
+export interface Pre_Dependente {
+  Ind: number;
+  Ind_Ficha: number;
+  Nr_Dependente: number | null;
+  Tp_Dependente: string | null;
+  Nome: string | null;
+  Dt_nascimento: string | null;
+  Validade: string | null;
+  Sexo: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Pre_Inscricao {
+  Ind: number;
+  Nr_Documento: number | null;
+  Nic: number | null;
+  Cd_Formulario: string | null;
+  Tp_Inscricao: string | null;
+  Tp_Insc_Anterior: string | null;
+  Nr_Insc_Anterior: string | null;
+  UF_Insc_Anterior: string | null;
+  Nr_Insc_Outra: string | null;
+  UF_Insc_Outra: string | null;
+  Nr_Seguranca: string | null;
+  Suplementar: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Nr_TE: string | null;
+  Zona_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Local_Exame: string | null;
+  Dt_Exame: string | null;
+  Nm_Faculdade: string | null;
+  Campus: string | null;
+  Dt_Formatura: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Tp_Logradouro_R: string | null;
+  Nm_Logradouro_R: string | null;
+  Numero_R: string | null;
+  Complemento_R: string | null;
+  Bairro_R: string | null;
+  Cidade_R: string | null;
+  UF_R: string | null;
+  CEP_R: string | null;
+  DDD_Tel_R: string | null;
+  Tel_R: string | null;
+  Tp_Logradouro_C: string | null;
+  Nm_Logradouro_C: string | null;
+  Numero_C: string | null;
+  Complemento_C: string | null;
+  Bairro_C: string | null;
+  Cidade_C: string | null;
+  UF_C: string | null;
+  CEP_C: string | null;
+  DDD_Tel_C: string | null;
+  Tel_C: string | null;
+  In_Corresp: string | null;
+  P0_Descricao: string | null;
+  P1_Descricao: string | null;
+  P2_Descricao: string | null;
+  P3_Descricao: string | null;
+  P4_Descricao: string | null;
+  P5_Descricao: string | null;
+  P6_Descricao: string | null;
+  P7_Descricao: string | null;
+  P8_Descricao: string | null;
+  P9_Descricao: string | null;
+  P10_Descricao: string | null;
+  P11_Descricao: string | null;
+  P12_Descricao: string | null;
+  P13_Descricao: string | null;
+  P14_Descricao: string | null;
+  Dt_Alteracao: string;
+  codiCidd: number | null;
+  IP: string | null;
+  CodiUF_R: number | null;
+  CodiUF_C: number | null;
+  CodiUF_E: number | null;
+  in_Inativo: boolean | null;
+  Id_Usuario: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+  Tem_Deficiencia: boolean | null;
+}
+
+export interface pre_inscricao_bkp_20200429 {
+  Ind: number;
+  Nr_Documento: number | null;
+  Nic: number | null;
+  Cd_Formulario: string | null;
+  Tp_Inscricao: string | null;
+  Tp_Insc_Anterior: string | null;
+  Nr_Insc_Anterior: string | null;
+  UF_Insc_Anterior: string | null;
+  Nr_Insc_Outra: string | null;
+  UF_Insc_Outra: string | null;
+  Nr_Seguranca: string | null;
+  Suplementar: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Nr_TE: string | null;
+  Zona_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Local_Exame: string | null;
+  Dt_Exame: string | null;
+  Nm_Faculdade: string | null;
+  Campus: string | null;
+  Dt_Formatura: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Tp_Logradouro_R: string | null;
+  Nm_Logradouro_R: string | null;
+  Numero_R: string | null;
+  Complemento_R: string | null;
+  Bairro_R: string | null;
+  Cidade_R: string | null;
+  UF_R: string | null;
+  CEP_R: string | null;
+  DDD_Tel_R: string | null;
+  Tel_R: string | null;
+  Tp_Logradouro_C: string | null;
+  Nm_Logradouro_C: string | null;
+  Numero_C: string | null;
+  Complemento_C: string | null;
+  Bairro_C: string | null;
+  Cidade_C: string | null;
+  UF_C: string | null;
+  CEP_C: string | null;
+  DDD_Tel_C: string | null;
+  Tel_C: string | null;
+  In_Corresp: string | null;
+  P0_Descricao: string | null;
+  P1_Descricao: string | null;
+  P2_Descricao: string | null;
+  P3_Descricao: string | null;
+  P4_Descricao: string | null;
+  P5_Descricao: string | null;
+  P6_Descricao: string | null;
+  P7_Descricao: string | null;
+  P8_Descricao: string | null;
+  P9_Descricao: string | null;
+  P10_Descricao: string | null;
+  P11_Descricao: string | null;
+  P12_Descricao: string | null;
+  P13_Descricao: string | null;
+  P14_Descricao: string | null;
+  Dt_Alteracao: string;
+  codiCidd: number | null;
+  IP: string | null;
+  CodiUF_R: number | null;
+  CodiUF_C: number | null;
+  CodiUF_E: number | null;
+  in_Inativo: boolean | null;
+  Id_Usuario: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+}
+
+export interface Pre_Inscricao_Declaracoes {
+  Ind: number;
+  Id_Requerimento: number;
+  Id_Questao: number;
+  Id_Item: string;
+  Resposta: string;
+}
+
+export interface Pre_Inscricao_Log {
+  Ind: number;
+  Nr_Documento: number | null;
+  Nic: number | null;
+  Cd_Formulario: string | null;
+  Tp_Inscricao: string | null;
+  Tp_Insc_Anterior: string | null;
+  Nr_Insc_Anterior: string | null;
+  UF_Insc_Anterior: string | null;
+  Nr_Insc_Outra: string | null;
+  UF_Insc_Outra: string | null;
+  Nr_Seguranca: string | null;
+  Suplementar: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Nr_TE: string | null;
+  Zona_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Local_Exame: string | null;
+  Dt_Exame: string | null;
+  Nm_Faculdade: string | null;
+  Campus: string | null;
+  Dt_Formatura: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Tp_Logradouro_R: string | null;
+  Nm_Logradouro_R: string | null;
+  Numero_R: string | null;
+  Complemento_R: string | null;
+  Bairro_R: string | null;
+  Cidade_R: string | null;
+  UF_R: string | null;
+  CEP_R: string | null;
+  DDD_Tel_R: string | null;
+  Tel_R: string | null;
+  Tp_Logradouro_C: string | null;
+  Nm_Logradouro_C: string | null;
+  Numero_C: string | null;
+  Complemento_C: string | null;
+  Bairro_C: string | null;
+  Cidade_C: string | null;
+  UF_C: string | null;
+  CEP_C: string | null;
+  DDD_Tel_C: string | null;
+  Tel_C: string | null;
+  In_Corresp: string | null;
+  P0_Descricao: string | null;
+  P1_Descricao: string | null;
+  P2_Descricao: string | null;
+  P3_Descricao: string | null;
+  P4_Descricao: string | null;
+  P5_Descricao: string | null;
+  P6_Descricao: string | null;
+  P7_Descricao: string | null;
+  P8_Descricao: string | null;
+  P9_Descricao: string | null;
+  P10_Descricao: string | null;
+  P11_Descricao: string | null;
+  P12_Descricao: string | null;
+  P13_Descricao: string | null;
+  P14_Descricao: string | null;
+  Dt_Alteracao: string;
+  codiCidd: number | null;
+  IP: string | null;
+  CodiUF_R: number | null;
+  CodiUF_C: number | null;
+  CodiUF_E: number | null;
+  in_Inativo: number | null;
+  Id_usuario: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+  Tem_Deficiencia: boolean | null;
+}
+
+export interface pre_inscricao_log_bkp_20200429 {
+  Ind: number;
+  Nr_Documento: number | null;
+  Nic: number | null;
+  Cd_Formulario: string | null;
+  Tp_Inscricao: string | null;
+  Tp_Insc_Anterior: string | null;
+  Nr_Insc_Anterior: string | null;
+  UF_Insc_Anterior: string | null;
+  Nr_Insc_Outra: string | null;
+  UF_Insc_Outra: string | null;
+  Nr_Seguranca: string | null;
+  Suplementar: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Cd_EstCivil: string | null;
+  Dt_Nascimento: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  CPF: string | null;
+  RG: string | null;
+  Dt_RG: string | null;
+  Emissor_RG: string | null;
+  Nr_TE: string | null;
+  Zona_TE: string | null;
+  Secao_TE: string | null;
+  Cid_Eleitoral: string | null;
+  UF_Eleitoral: string | null;
+  Sexo: string | null;
+  Nr_Militar: string | null;
+  Ins_Militar: string | null;
+  Cd_Faculdade: number | null;
+  Local_Exame: string | null;
+  Dt_Exame: string | null;
+  Nm_Faculdade: string | null;
+  Campus: string | null;
+  Dt_Formatura: string | null;
+  Cd_Deficiencia: string | null;
+  In_Doador: string | null;
+  Email: string | null;
+  DDD_Celular: string | null;
+  Nr_Celular: string | null;
+  Tp_Logradouro_R: string | null;
+  Nm_Logradouro_R: string | null;
+  Numero_R: string | null;
+  Complemento_R: string | null;
+  Bairro_R: string | null;
+  Cidade_R: string | null;
+  UF_R: string | null;
+  CEP_R: string | null;
+  DDD_Tel_R: string | null;
+  Tel_R: string | null;
+  Tp_Logradouro_C: string | null;
+  Nm_Logradouro_C: string | null;
+  Numero_C: string | null;
+  Complemento_C: string | null;
+  Bairro_C: string | null;
+  Cidade_C: string | null;
+  UF_C: string | null;
+  CEP_C: string | null;
+  DDD_Tel_C: string | null;
+  Tel_C: string | null;
+  In_Corresp: string | null;
+  P0_Descricao: string | null;
+  P1_Descricao: string | null;
+  P2_Descricao: string | null;
+  P3_Descricao: string | null;
+  P4_Descricao: string | null;
+  P5_Descricao: string | null;
+  P6_Descricao: string | null;
+  P7_Descricao: string | null;
+  P8_Descricao: string | null;
+  P9_Descricao: string | null;
+  P10_Descricao: string | null;
+  P11_Descricao: string | null;
+  P12_Descricao: string | null;
+  P13_Descricao: string | null;
+  P14_Descricao: string | null;
+  Dt_Alteracao: string;
+  codiCidd: number | null;
+  IP: string | null;
+  CodiUF_R: number | null;
+  CodiUF_C: number | null;
+  CodiUF_E: number | null;
+  in_Inativo: number | null;
+  Id_usuario: string | null;
+  Desc_Deficiencia: string | null;
+  Cd_Raca: string | null;
+  Desc_Raca: string | null;
+}
+
+export interface Pre_Insricao_Boleto {
+  Ind: number;
+  Ind_Pre_Inscricao: number | null;
+  Id_TituloCli: string | null;
+  Dt_Expedicao: string | null;
+  Dt_Vencimento: string | null;
+  Pago: boolean | null;
+}
+
+export interface Prerrogativas_Anexos {
+  ind: number;
+  ind_Form: number;
+  nome_arquivo: string;
+  caminho: string;
+  dt_insercao: string;
+}
+
+export interface Prerrogativas_Autorizadores {
+  Ind: number;
+  Nic: number;
+  Nr_inscricao: string;
+  Ativo: number;
+  Dt_Cadastro: string;
+  Usuario_Cadastro: string;
+  Dt_Alteracao: string | null;
+  Usuario_Alteracao: string | null;
+}
+
+export interface Prerrogativas_Autorizados {
+  Ind: number;
+  Nic: number;
+  Dt_validade: string;
+  idUsuario_cadastro: string;
+  Dt_cadastro: string;
+  Ativo: number;
+  IdUsuario_Alteracao: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface processo {
+  Nr_Inscricao: string | null;
+  Nome: string | null;
+  PROTOCOLO: string | null;
+}
+
+export interface Processos_Exclusao {
+  Ind: number;
+  Nic: number;
+  Nr_Documento: number | null;
+}
+
+export interface Processos_Execucao_Lote {
+  Ind: number;
+  Nr_Lote: number;
+  Comarca: string | null;
+  Qty_Advogados: number;
+  Dt_Autuacao: string;
+}
+
+export interface Processos_Inadimplencia {
+  Ind: number;
+  Nic: number;
+  Nr_Documento: number | null;
+  Dt_Processo: string | null;
+  In_Etiqueta: number | null;
+  In_Notificacao: number | null;
+  Tp_Endereco: string | null;
+  Exercicio: string | null;
+  Tp_Processo: string | null;
+}
+
+export interface Processos_Inadimplencia2 {
+  Ind: number | null;
+  Nic: number | null;
+  Nr_Documento: number | null;
+  Dt_Processo: string | null;
+  In_Etiqueta: number | null;
+  In_Notificacao: number | null;
+  Tp_Endereco: string | null;
+  Exercicio: string | null;
+  Tp_Processo: string | null;
+  Foi: string | null;
+}
+
+export interface processos_movimentacao {
+  Id: number;
+  Id_Lote: string;
+  Nr_Processo: string;
+  Nr_Documento: string;
+  Ano: number;
+  Descricao: string | null;
+}
+
+export interface Projudi {
+  nic: string | null;
+}
+
+export interface PropostaCategoriaServico {
+  cd_catServico: number;
+  nome: string;
+  dt_cadastro: string;
+  ordem: number | null;
+  ativo: boolean | null;
+  usuario: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface PropostaEvento {
+  cd_propEvento: number;
+  cd_tipo: number;
+  tema: string;
+  cd_comissao: number | null;
+  dt_inicio: string;
+  dt_fim: string;
+  hora_inicio: string | null;
+  hora_fim: string | null;
+  arr_salas: string;
+  publico: string;
+  nome: string;
+  nr_inscricao: string;
+  telefone: string;
+  email: string;
+  descricao: string | null;
+  passagem: number | null;
+  hospedagem: number | null;
+  transfer: number | null;
+  taxa: number | null;
+  valor: string | null;
+  gratuidade: number | null;
+  certificado: number | null;
+  horas_certificado: string | null;
+  patrocinadores: string | null;
+  observacoes: string | null;
+  termoAceite: boolean;
+  dt_cadastro: string;
+  dt_alteracao: string;
+  usuario: string;
+  ativo: number;
+  detalheData: string | null;
+  palestrante: string | null;
+  mediador: string | null;
+  transmissao: string | null;
+  foto: number | null;
+}
+
+export interface PropostaEventoArquivo {
+  cd_propArquivo: number;
+  cd_propEvento: number;
+  arquivo: string | null;
+  tipoArquivo: number | null;
+}
+
+export interface PropostaEventoOds {
+  cd_propEvento: number;
+  cd_ods: number;
+}
+
+export interface PropostaEventoPessoal {
+  cd_propEvento: number;
+  tipo: string;
+  nome: string;
+  curriculo: string;
+  passagem: number;
+  hospedagem: number;
+  transfer: number;
+}
+
+export interface PropostaEventoServico {
+  cd_propEventoServico: number;
+  cd_propEvento: number;
+  cd_PropServico: number;
+  quantidade: number | null;
+}
+
+export interface PropostaEventoVisual {
+  cd_propVisual: number;
+  cd_propEvento: number;
+  descricao: string | null;
+  info_adicional: string | null;
+  condicao: string | null;
+}
+
+export interface PropostaOds {
+  cd_ods: number;
+  ordem: number;
+  nome: string;
+  ativo: number;
+}
+
+export interface PropostaProtocolo {
+  cd_propProtocolo: number;
+  cd_propEvento: number | null;
+  nr_documento: number | null;
+}
+
+export interface PropostaSalas {
+  cd_propSala: number;
+  nome: string | null;
+  ordem: number | null;
+  ativo: boolean | null;
+  capacidade: number | null;
+  usuario: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface PropostaServico {
+  cd_propServico: number;
+  cd_catServico: number;
+  nome: string;
+  dt_cadastro: string;
+  ordem: number | null;
+  ativo: boolean | null;
+  bQtd: boolean | null;
+  usuario: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface PropostaTipo {
+  cd_tipo: number;
+  nome: string;
+  ordem: number | null;
+  ativo: boolean | null;
+  usuario: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface PropostaTipoServico {
+  cd_tipoServico: number;
+  cd_Tipo: number;
+  cd_PropServico: number;
+  disponivel: boolean | null;
+  usuario: string | null;
+  dt_alteracao: string | null;
+}
+
+export interface Protocolo_Parte_Delib {
+  Ind: number;
+  Id_Parte: number;
+  Nr_protocolo: number;
+  Ano_Protocolo: number;
+}
+
+export interface RabbitMQ_Fila_Status {
+  Ind: number;
+  EventName: string | null;
+  Data: string | null;
+  ErrorMessage: string | null;
+  TimeStamp: string | null;
+}
+
+export interface Recibo_Advogado {
+  ind: number;
+  cd_pedido: number | null;
+}
+
+export interface Recorte_Cancelado {
+  Ind: number;
+  Nic: number;
+  Dt_Cancelamento: string;
+  Email: string;
+  Motivo: string;
+}
+
+export interface Recorte_Email {
+  Ind: number;
+  Nic: number;
+  Email: string;
+  Dt_Adesao: string;
+  Dt_Alteracao: string | null;
+  IP: string;
+  DJPR: number;
+  DJUNIAO: number;
+  PRFEDERAL: number;
+}
+
+export interface redirecionamento_nova_intranet {
+  Ind: number;
+  Id_Usuario: string | null;
+  Cd_Funcao: string | null;
+}
+
+export interface redirecionamento_nova_intranet_relacao {
+  Ind: number;
+  Cd_Funcao: string | null;
+  Path: string | null;
+  Controller: string | null;
+  Pagina: string | null;
+}
+
+export interface Rel_Andamento_Responsavel {
+  Ind: number;
+  Cd_Andamento: number;
+  Cd_Responsavel: number;
+}
+
+export interface Rel_Assinatura {
+  Id: number;
+  Nr_Inscricao: string | null;
+  Nome: string | null;
+  Cargo: string | null;
+  Dt_Inicio: string | null;
+  Dt_Fim: string | null;
+  Img_Assinatura: string | null;
+}
+
+export interface Rel_Autor_Destinatario {
+  Ind: number;
+  Ind_Autor: number;
+  Cd_Dest: number;
+}
+
+export interface Rel_Compromisso_Subsecao {
+  Ind: number;
+  Cd_Subsecao: string;
+  Cd_Subsecao_Comp: string;
+}
+
+export interface Rel_Corresp_Destinatario {
+  Cd_Corresp: number;
+  Num_Corresp: number;
+  Nic: number;
+  Ind_Adv: string;
+  Ds_Logradouro: string;
+  Ds_Complemento: string;
+  Ds_Corresp: string | null;
+  Numero: string;
+  Bairro: string;
+  Id_Usuario: string | null;
+  Cidade: string;
+  Uf: string;
+  Cep: string;
+  Ds_Tratamento1: string;
+  Ds_Tratamento2: string | null;
+  Dt_Efetiva_Envio: string | null;
+  Fl_Ativo: string | null;
+  Ind: number;
+  Nr_Ano: number | null;
+}
+
+export interface Rel_Instrutor_Advogado {
+  Ind: number;
+  Id_Usuario: string;
+  Nic: number;
+}
+
+export interface rel_instrutor_advogado_historico {
+  Ind: number;
+  id_usuario: string | null;
+  nic: number | null;
+  id_alteracao: string | null;
+  dt_alteracao: string | null;
+  tp_alteracao: string | null;
+}
+
+export interface Rel_Orgao_Andamento {
+  Ind: number;
+  Cd_Orgao: number;
+  Cd_Andamento: number;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  In_Ativo: number | null;
+}
+
+export interface Rel_Orgao_Decisao {
+  Ind: number;
+  Cd_Orgao: number;
+  Cd_Pena: number;
+}
+
+export interface Rel_Orgao_Fase {
+  Ind: number;
+  Cd_Orgao: number;
+  Cd_Fase: number;
+}
+
+export interface Rel_Orgao_Setor {
+  Ind: number;
+  Cd_Orgao: number;
+  Cd_Setor: string;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  In_Ativo: number | null;
+}
+
+export interface Rel_Req_Usu {
+  Id_Usuario: string;
+  Nr_Requerimento: number;
+  Dt_Aceite: string | null;
+  Dt_Recusa: string | null;
+  Dt_Suspensao: string | null;
+  Dt_Prevista: string | null;
+  Dt_Conclusao: string | null;
+  Nr_Prazo: number;
+  Cd_Status: number;
+  Cd_Prazo: number;
+  Ind: number;
+}
+
+export interface Rel_Setor_Sistemas_DOL {
+  Cd_Sistema: number;
+  Cd_Setor: string;
+}
+
+export interface Rel_Tipo_Classe {
+  Ind: number;
+  Tp_Processo: number | null;
+  Cl_Processo: number | null;
+}
+
+export interface Rel_TipoOficio_campo {
+  ind_doc_oficio: number | null;
+  ind_doc_oficio_campo: number | null;
+}
+
+export interface Rel_Usuario_Setor {
+  Ind: number;
+  Id_Usuario: string;
+  Cd_Setor: string;
+}
+
+export interface RELACAO_ESA_LEDZ {
+  CPF: string | null;
+  VALOR: number | null;
+  ORIGEM: string | null;
+}
+
+export interface relator_instrutor_motivo_exclusao {
+  ind: number;
+  motivo_exclusao_relator_instrutor_ind: number;
+  relator_instrutor_ind: number;
+  data_inicio: string;
+  data_fim: string | null;
+  criado_em: string | null;
+  atualizado_em: string | null;
+  deletado_em: string | null;
+}
+
+export interface relator_instrutor_peso {
+  ind: number;
+  relator_instrutor_ind: number;
+  peso: number;
+  criado_em: string | null;
+  atualizado_em: string | null;
+  deletado_em: string | null;
+}
+
+export interface relatorio_Processo_Auditoria {
+  Nr_Documento: number;
+  In_Setor: number | null;
+  total: number | null;
+  Minimo: number | null;
+  Maximo: number | null;
+  dt_Movimentacao_Min: string | null;
+  dt_Movimentacao_Max: string | null;
+}
+
+export interface relatorio_Processo_Auditoria_bkp {
+  Nr_Documento: number;
+  In_Setor: number | null;
+  total: number | null;
+  Minimo: number | null;
+  Maximo: number | null;
+  dt_Movimentacao_Min: string | null;
+  dt_Movimentacao_Max: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf {
+  Ind: number;
+  Dt_Assinatura: string | null;
+  Nr_Processo: string | null;
+  Nome_Apelado: string | null;
+  Nome_Apelante: string | null;
+  Is_Assinatura_Valid: boolean | null;
+  Documento_Pdf_Ind: number | null;
+  DT_Arbitramento: string | null;
+  Tp_Documento: string | null;
+  Qtde_Assinaturas: string | null;
+  Motivo: string | null;
+  Criado_em: string | null;
+  Tp_Documento_Extracao: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Adv {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Nome: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Curador {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Nome: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Data {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Dt_Assinatura: string | null;
+  Descricao: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Defensor {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Nome: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Juiz {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Nome: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Outros_Processos {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Nr_Processo: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Procurador {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Nome: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Revisao {
+  Ind: number;
+  Dt_Assinatura: string | null;
+  Nr_Processo: string | null;
+  Nome_Apelado: string | null;
+  Nome_Apelante: string | null;
+  Is_Assinatura_Valid: boolean | null;
+  Andamento_Pdf_Ind: number | null;
+  DT_Arbitramento: string | null;
+  Tp_Documento: string | null;
+  Qtde_Assinaturas: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Valor {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Valor: number | null;
+  Descricao: string | null;
+}
+
+export interface Req_Dativo_Analise_Pdf_Valor_Requerido {
+  Ind: number;
+  Id_Req_Dativo_Analise_Pdf: number | null;
+  Valor: number | null;
+}
+
+export interface Requerimento_Ato_Societario {
+  Ind: number;
+  Nr_Requerimento: number;
+  Nr_Sociedade: string | null;
+  Nic_Sociedade: number | null;
+  Cnpj: string | null;
+  Nome: string;
+  Email: string;
+  Cep: string;
+  Cd_Pais: number;
+  Cd_UF: number;
+  Cd_Cidade: number;
+  Bairro: string;
+  Tp_Logradouro: string;
+  Nm_Logradouro: string;
+  Numero: string | null;
+  Complemento: string | null;
+  Ddd_Fone: string | null;
+  Telefone: string | null;
+  Nic_Socio: number;
+  Tp_Requerimento_Ato_Societario: number;
+  Livro_Diario: string | null;
+  Livro_Razao: string | null;
+  Livro_Diverso: string | null;
+  Nr_Livro: string | null;
+  Ano_Livro: string | null;
+  Ds_Averbacao_Diversa: string | null;
+  Declaracao_Ciencia: string | null;
+  Declaracao_Taxa: string | null;
+  Declaracao_Entrega: string | null;
+  Dt_Atualizacao: string;
+  Id_Usuario: string;
+  Id_Operacao: string | null;
+  Nr_Protocolo: number | null;
+  Ano_Protocolo: number | null;
+}
+
+export interface Resposta_Bool {
+  Ind: number;
+  Ind_Pergunta_Bool: number;
+  Ident_Respondente: string;
+  Valor: boolean;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+  Valor_Justificativa: string | null;
+}
+
+export interface Resposta_Check_Opt {
+  Ind: number;
+  Ind_Pergunta: number;
+  Ind_Check_Opt: number;
+  Ident_Respondente: string;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+  Valor_Justificativa: string | null;
+}
+
+export interface Resposta_Enum {
+  Ind: number;
+  Ind_Pergunta: number;
+  Ind_Enum_Opt: number;
+  Ident_Respondente: string;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+  Valor_Justificativa: string | null;
+}
+
+export interface Resposta_Texto {
+  Ind: number;
+  Ind_Pergunta_Texto: number;
+  Ident_Respondente: string;
+  Valor: string;
+  Dt_Criacao: string;
+  Dt_Alteracao: string | null;
+}
+
+export interface Restricao_Protocolo {
+  Ind: number;
+  Nr_Documento: number;
+  Dt_Criacao: string | null;
+  Id_Usuario_Responsavel: string | null;
+}
+
+export interface Restricao_Usuarios_Protocolo {
+  Ind: number;
+  Ind_Restricao: number;
+  Id_Usuario: string;
+}
+
+export interface resultados$ {
+  num_oab: number | null;
+  resposta: string | null;
+  respostas: string | null;
+}
+
+export interface Retorno_Correios {
+  Nic: number | null;
+  Dt_Devolucao: string | null;
+  Motivo: string | null;
+}
+
+export interface Rh_Funcionario_Endereco {
+  NOME: string | null;
+  ENDERECO: string | null;
+  NUMERO: number | null;
+  COMPLEMENTO: string | null;
+  BAIRRO: string | null;
+  CEP: number | null;
+  F7: string | null;
+  Ind: number;
+  UF: string | null;
+}
+
+export interface RH_Funcionario_Endereco_2007 {
+  NOME: string | null;
+  ENDERECO: string | null;
+  NUMERO: number | null;
+  BAIRRO: string | null;
+  CIDADE: string | null;
+  UF: string | null;
+  CEP: number | null;
+  F8: string | null;
+}
+
+export interface Rh_Funcionario_PIS {
+  NOME: string | null;
+  CIDADE: string | null;
+  Inscricao: string | null;
+  AG: string | null;
+  CONTA: string | null;
+  BANCO: string | null;
+  F7: string | null;
+  Ind: number;
+}
+
+export interface RH_Funcionario_PIS_2007 {
+  NOME: string | null;
+  INSCRICAO: string | null;
+  AG: string | null;
+  CONTA: string | null;
+  BANCO: string | null;
+  F6: string | null;
+}
+
+export interface rpt_0001 {
+  nr_documento: number;
+  nr_protocolo: number | null;
+  ano_protocolo: number | null;
+  dt_protocolo: string | null;
+  nr_processo: number;
+  tipo: string;
+  "última_fase": string;
+  "último_andamento": string;
+  representado: string | null;
+}
+
+export interface Salas_Acesso {
+  Ind: number;
+  Nr_Inscricao: string;
+  Dta_Acesso: string;
+  Sala: string;
+  Identificacao: string;
+  cpf: string | null;
+}
+
+export interface Salas_Acesso_Atendente {
+  Ind: number;
+  Nome: string;
+  Identificacao: string;
+  Senha: string;
+}
+
+export interface Salas_Acesso_Log {
+  Ind: number;
+  Dta_Acesso: string;
+  Sala: string;
+  Identificacao: string;
+}
+
+export interface Setor_Acesso {
+  Ind: number;
+  Cd_Setor: string;
+  Soma_Acesso: number;
+}
+
+export interface setor_excecao {
+  Ind: number;
+  cd_setor: string;
+  acesso_setores: string;
+  chamado: number | null;
+  dt_inclusao: string | null;
+}
+
+export interface Setor_TipoDocumento {
+  Ind: number;
+  Cd_Setor: string;
+  Tp_Documento: number;
+}
+
+export interface Sicoob_Pix {
+  Ind: number;
+  nic: number | null;
+  cpf: string;
+  criacao: string;
+  expiracao: string;
+  status: string;
+  txid: string;
+  revisao: number;
+  valor: number;
+  pago: boolean;
+  nr_documento: number | null;
+}
+
+export interface Site_Arquivo_Log {
+  Ind: number;
+  Caminho: string;
+  Acao: string;
+  Id_Usuario: string;
+  Dt_Acao: string;
+}
+
+export interface Site_Arquivo_Permissao {
+  Ind: number;
+  Pasta: string;
+  Cd_Setor: string;
+  Dt_Cadastro: string;
+}
+
+export interface Site_Campanha {
+  Ind: number;
+  Nome: string;
+  Email: string;
+  Comentario: string;
+  Dt_Aprovacao: string | null;
+  Dt_Recusado: string | null;
+  Dt_Insercao: string;
+  Ip: string;
+}
+
+export interface Site_Exame_Concurso {
+  Ind: number;
+  Descricao: string | null;
+  Id_Usuario_Alteracao: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario_Insercao: string;
+  Dt_Insercao: string;
+  In_Publicado: string;
+}
+
+export interface Site_Exame_Concurso_Aviso {
+  Ind: number;
+  Id_Concurso: number;
+  Aviso: string | null;
+  Dt_Insercao: string;
+  Id_Usuario_Insercao: string;
+  Dt_Alteracao: string | null;
+  Id_Usuario_Alteracao: string | null;
+}
+
+export interface Site_Exame_Concurso_Item {
+  Ind: number;
+  Id_Concurso: number;
+  Texto: string;
+  Link: string;
+  Id_Usuario_Insercao: string;
+  Dt_Insercao: string;
+  Ordem: number | null;
+}
+
+export interface Situacao {
+  Ind: number;
+  Nic: number;
+  Cd_Situacao: string;
+  Dt_Situacao: string;
+  Dt_Alteracao: string;
+  Dt_Vencimento: string | null;
+  Id_Usuario: string | null;
+  UF_Destino: string | null;
+  Artigos: string | null;
+}
+
+export interface Situacao_Cobranca {
+  Ind: number;
+  Nr_Documento: number;
+  Cd_SitCob: number;
+  Dt_Alteracao: string;
+  Id_Usuario: string;
+}
+
+export interface socidades_PB {
+  nic: number | null;
+}
+
+export interface Sociedade_Certidao {
+  Ind: number;
+  Id_Certidao: number;
+  Ano_Certidao: number;
+  Tipo_Certidao: string | null;
+  Nic_Sociedade: number;
+  Id_Usuario: string;
+  Dt_Impressao: string;
+  Nic: number | null;
+}
+
+export interface Sociedade_Csa {
+  Ind: number;
+  Id_Csa: number;
+  Nome_Csa: string;
+  Nic_Sociedade: number | null;
+  Id_Usuario: string;
+  Dt_Impressao: string;
+}
+
+export interface Sociedade_Email {
+  Ind: number;
+  Nr_Sociedade: string;
+  Nr_Filial: number;
+  Tp_Sociedade: string;
+  Email: string;
+  Dt_Cadastro: string;
+  Id_Usuario: string | null;
+  Cd_Situacao: string;
+}
+
+export interface Sociedade_Filial {
+  Ind: number;
+  Nr_Sociedade: string;
+  Nr_Filial: number;
+  Nome: string;
+  Dt_Averbacao: string | null;
+  Nm_Logradouro: string;
+  Numero: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string;
+  CEP: string;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  CNPJ: string | null;
+  Email: string | null;
+  Id_Usuario: string | null;
+  Complemento: string | null;
+  codiCidd: number | null;
+  codiUf: number | null;
+  codiPais: number | null;
+}
+
+export interface Sociedade_Livro {
+  Ind: number;
+  Nic: number;
+  Nr_Livro: number;
+  Nr_Folhas: number;
+  Tp_Livro: string | null;
+  Ano: number;
+  Dt_Livro: string;
+  Id_Usuario: string;
+  Dt_Alteracao: string;
+  Dt_PeriodoInicio: string | null;
+  Dt_PeriodoFinal: string | null;
+}
+
+export interface Sociedade_Ocorrencia {
+  Ind: number;
+  Nic: number;
+  Nr_Ocorrencia: number;
+  Dt_Ocorrencia: string;
+  Descricao: string | null;
+  Historico: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  Id_Tipo: number | null;
+}
+
+export interface Sociedade_Oficio {
+  Ind: number;
+  Id_Oficio: number;
+  Ano_Oficio: number;
+  Tipo_Oficio: string;
+  Nic_Sociedade: number;
+  Id_Ocorrencia: number;
+  Id_Usuario: string;
+  Dt_Impressao: string;
+}
+
+export interface Sociedade_Selo {
+  ind: number;
+  nr_selo: number;
+  dt_selo: string;
+  cd_registro: number;
+  folhas: string;
+  livro: string;
+  id_usuario: string;
+  Dt_Cancelamento: string | null;
+  Motivo_Cancelamento: string | null;
+  id_usuario_cancelou: string | null;
+}
+
+export interface Socio {
+  Ind: number;
+  Nic: number;
+  Nic_Sociedade: number;
+  Dt_Inscricao: string;
+  Dt_Fim: string | null;
+  Cd_Situacao: string | null;
+  Id_Usuario: string | null;
+  Tp_Socio: string | null;
+  Da_Nome_Sociedade: number | null;
+}
+
+export interface SSO_Token {
+  Nic: number;
+  Token: string;
+  Dt_Expiracao: string;
+  Dt_Criacao: string;
+  Dt_Atualizacao: string;
+  Parceiro: string;
+}
+
+export interface Suplementar {
+  Ind: number;
+  Nic: number;
+  Nr_Inscricao: string;
+  Uf_Inscricao: string;
+  Dt_Inscricao: string;
+  Dt_Exclusao: string | null;
+  Dt_Alteracao: string;
+  Id_Usuario: string;
+}
+
+export interface sysdiagrams {
+  name: string;
+  principal_id: number;
+  diagram_id: number;
+  version: number | null;
+  definition: string | null;
+}
+
+export interface Tab_Acordao {
+  Ind: number;
+  Assunto: string;
+}
+
+export interface Tab_Agenda {
+  Ind: number;
+  Id_Agenda: number;
+  Descricao: string;
+  Id_Ordem: number | null;
+  In_Diretoria: string | null;
+  Responsavel: string | null;
+  Email_Responsavel: string | null;
+  Ativo: boolean;
+}
+
+export interface Tab_Agenda_Compromisso {
+  Ind: number;
+  Tp_Compromisso: string;
+  Descricao: string;
+}
+
+export interface Tab_Andamento {
+  Ind: number;
+  Cd_Andamento: number;
+  Cd_Anterior: string | null;
+  Descricao: string;
+  Prazo: number | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+  In_Ativo: number | null;
+}
+
+export interface Tab_Andamento_Responsavel {
+  Ind: number;
+  Cd_Responsavel: number;
+  Nome: string;
+  Nic: number;
+}
+
+export interface Tab_Anuidade {
+  Ind: number;
+  Ano: number;
+  Tp_Inscricao: string;
+  Dt_Referencia_Ini: string;
+  Dt_Referencia_Fim: string;
+  Valor: number;
+}
+
+export interface Tab_AreaAtuacao {
+  Ind: number;
+  Cd_Area: number | null;
+  Descricao: string | null;
+}
+
+export interface Tab_Assinatura {
+  Ind: number;
+  Nome: string;
+  Cargo: string;
+}
+
+export interface Tab_Assinatura_Oficio {
+  Cd_Assinatura: number;
+  Nic: number;
+}
+
+export interface Tab_BoletoConta {
+  Ind: number;
+  Cd_Conta: string;
+  Descricao: string | null;
+  Cd_Banco: number | null;
+  Cd_Agencia: string | null;
+  Nr_Conta: string | null;
+  Convenio: string | null;
+  Valor_Taxa: number | null;
+}
+
+export interface Tab_BoletoTaxa {
+  Ind: number;
+  Cd_Recebimento: string;
+  Tp_recebimento: string | null;
+  Valor: number | null;
+  Descricao: string | null;
+}
+
+export interface Tab_CadernoVotacao {
+  nic: number | null;
+  nr_inscricao: string | null;
+  nome: string | null;
+  origem: string | null;
+  subsecao: string | null;
+  cd_subsecao: string | null;
+  municipio_local_votacao: string | null;
+  municipio_votacao: string | null;
+  municipio_tab_adv: string | null;
+  municipio_endereco_adv: string | null;
+}
+
+export interface Tab_CadernoVotacaoAdv {
+  nic: number | null;
+  nr_inscricao: string | null;
+  nome: string | null;
+  origem: string | null;
+  subsecao: string | null;
+  cd_subsecao: string | null;
+  municipio_local_votacao: string | null;
+  municipio_votacao: string | null;
+  municipio_tab_adv: string | null;
+  municipio_endereco_adv: string | null;
+}
+
+export interface Tab_Cargo {
+  Ind: number;
+  Cd_Cargo: number;
+  In_Diretoria: number;
+  Descricao: string | null;
+  Id_Usuario: string;
+  Dt_Alteracao: string;
+  Id_Ordem: number;
+  In_CAA: boolean;
+}
+
+export interface Tab_Cert_Julgamento {
+  Ind: number;
+  Campo: string | null;
+  Valor: string | null;
+  Nr_Documento: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_ClasseProcesso {
+  Ind: number;
+  Cl_Processo: number;
+  Descricao: string;
+  Cl_Anterior: string | null;
+}
+
+export interface Tab_ClasseSetor {
+  Ind: number;
+  Cd_Setor: string;
+  Cl_Processo: string;
+}
+
+export interface Tab_Comarca {
+  Ind: number;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Comarca: string | null;
+  Tp_Comarca: string | null;
+  Nr_Secao: number | null;
+  Nm_Juiz: string | null;
+  Endereco: string | null;
+  Telefone: string | null;
+  Id_UsuarioJ: string | null;
+}
+
+export interface Tab_Comarca_Cidades {
+  Comarca: string | null;
+  Cidade: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+}
+
+export interface Tab_ComarcaTeste {
+  Ind: number;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Comarca: string | null;
+  Tp_Comarca: string | null;
+  Nr_Secao: number | null;
+  Nm_Juiz: string | null;
+  Endereco: string | null;
+  Telefone: string | null;
+  Id_UsuarioJ: string | null;
+}
+
+export interface Tab_Compromisso {
+  Ind: number;
+  Id_Compromisso: number;
+  Dt_Compromisso: string;
+  Lugar: string | null;
+  Quant_Maxima: number;
+  In_Fechado: number | null;
+  Tp_Compromisso: string | null;
+  Endereco: string | null;
+  Horario: string | null;
+  Obs: string | null;
+  Cd_Subsecao: string | null;
+  Presencial: boolean | null;
+}
+
+export interface Tab_Controle_Entrega {
+  Ind: number;
+  Id_Controle: number;
+  Descricao: string;
+  Ativo: number | null;
+  restricaoAtivo: number | null;
+  restricaoDebitos: number | null;
+}
+
+export interface Tab_Corresp_Status {
+  CD_status: string;
+  Descricao: string | null;
+  Ativo: string | null;
+}
+
+export interface Tab_Corresp_Tratamento {
+  Cd_tratamento: string;
+  Tratamento: string | null;
+}
+
+export interface Tab_Corresp_Turmas {
+  Ind: number;
+  cd_turma: string | null;
+  Descricao: string;
+  Responsavel: string;
+}
+
+export interface Tab_Corresp_Txt_Not {
+  Cd_texto: number;
+  Texto: string | null;
+  setor: string | null;
+  Titulo: string | null;
+  Ativo: boolean;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_Correspondencia {
+  Ind: number;
+  Descricao: string | null;
+  Dt_Correspondencia: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_Decisao {
+  Ind: number;
+  Cd_Pena: number;
+  Descricao: string;
+  Especie: string;
+  Cd_Situacao: string | null;
+  In_Certidao: number | null;
+}
+
+export interface Tab_Deficiencia {
+  Ind: number;
+  Cd_Deficiencia: string;
+  Descricao: string;
+  Id_Usuario: string | null;
+  CodiDefc: number | null;
+}
+
+export interface Tab_Dicionario_DOL {
+  Cd_Palavra: number;
+  Cd_Nivel: number;
+  Cd_Sistema: number;
+  Ind: number;
+  Ds_Palavra: string;
+}
+
+export interface Tab_Doc_Lembrete_Log {
+  Ind: number;
+  Nr_Documento: number;
+  Id_Usuario: string | null;
+  Lembrete: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Tab_Doc_Notificacao {
+  protocolo_ano: string | null;
+  num_not: number | null;
+  ano_not: number | null;
+  id_usuario: string | null;
+  dt_doc_gerado: string | null;
+  destinatario: string | null;
+  ind_docnot: number;
+}
+
+export interface Tab_Documento_Corresp {
+  Cd_Doc: number;
+  Ds_Doc: string | null;
+  Cd_Alfa: string | null;
+  Ind: number;
+}
+
+export interface Tab_DocumentoSetor {
+  Ind: string | null;
+  Cd_Setor: string | null;
+  Tp_Documento: string | null;
+}
+
+export interface Tab_Edital {
+  Ind: number;
+  Nr_Edital: number;
+  Dt_Edital: string;
+  Dt_Validade: string;
+}
+
+export interface Tab_Email {
+  Ind: number;
+  Cd_Email: number;
+  Dt_Email: string;
+  Assunto: string;
+  Corpo: string;
+  Id_Usuario: string;
+  Ss_Usuario: string;
+}
+
+export interface Tab_Enquete {
+  Ind: number;
+  Id_Enquete: number;
+  Pergunta: string;
+  Dt_Inicio: string;
+  Dt_Fim: string;
+}
+
+export interface Tab_Equipamento {
+  Ind: number;
+  Tp_Equipamento: string;
+  Descricao: string;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Tab_ErroCarteira {
+  Ind: number;
+  Cd_Erro: string;
+  Descricao: string;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_Esa_Desistencia {
+  Desistencia: number;
+  Descricao: string;
+}
+
+export interface Tab_Escolaridade {
+  Ind: number;
+  Cd_Escolaridade: number;
+  Descricao: string | null;
+}
+
+export interface Tab_EstadoCivil {
+  Ind: number;
+  Cd_EstCivil: string;
+  Descricao: string;
+  Id_Usuario: string | null;
+  CF_idenEstdCivl: number | null;
+}
+
+export interface Tab_ExameOrdem {
+  Ind: number;
+  Nr_Exame: number;
+  Ano_Exame: number;
+  Nr_Inscricao: string;
+  Nome: string | null;
+  Sexo: string | null;
+  RG: string | null;
+  CPF: string | null;
+  Dt_Nascimento: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  Nr_Telefone: string | null;
+  Nr_Celular: string | null;
+  Email: string | null;
+  Dt_Formatura: string | null;
+  Faculdade: string | null;
+  Area: string | null;
+  Subsecao: string | null;
+  Nota_Fase1: number | null;
+  Nota_Fase2: number | null;
+  Nota_Fase2_Int: number | null;
+  Situacao_Documentos: string | null;
+  Situacao_Objetiva: string | null;
+  Situacao_Pratica: string | null;
+  Recurso_Fase1: string | null;
+  Nota_Recurso_Fase1: string | null;
+  Recurso_Fase2: string | null;
+  Nota_Recurso_Fase2: string | null;
+  Resultado: string | null;
+  Observacao: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Tab_Faculdade {
+  Ind: number;
+  Cd_Faculdade: number;
+  Nome: string;
+  UF_Faculdade: string | null;
+  Id_Usuario: string;
+  Cd_CF: number;
+}
+
+export interface tab_Faculdade_Nova {
+  Ind: number;
+  Cd_Faculdade: number;
+  Nome: string;
+  UF_Faculdade: string | null;
+  Id_Usuario: string;
+  Cd_CF: number;
+}
+
+export interface tab_faculdade_nova3 {
+  Ind: number;
+  Cd_Faculdade: number;
+  Nome: string;
+  UF_Faculdade: string | null;
+  Id_Usuario: string;
+  Cd_CF: number;
+}
+
+export interface tab_faculdade_nova4 {
+  Ind: number;
+  Cd_Faculdade: number;
+  Nome: string;
+  UF_Faculdade: string | null;
+  Id_Usuario: string;
+  Cd_CF: number;
+}
+
+export interface Tab_Faculdade_old {
+  Ind: number;
+  Cd_Faculdade: number;
+  Nome: string;
+  UF_Faculdade: string;
+  Id_Usuario: string;
+  Cd_CF: number;
+}
+
+export interface Tab_Fase {
+  Ind: number;
+  Cd_Fase: number;
+  Cd_Anterior: string;
+  Descricao: string;
+  Cd_TED: string | null;
+}
+
+export interface Tab_Feriado {
+  Data: string;
+  Descricao: string;
+}
+
+export interface Tab_Formulario_Documento {
+  Ind: number;
+  Cd_Formulario: string;
+  Nic: number | null;
+  Nr_Requerimento: number | null;
+  Tp_Documento: string | null;
+  Cd_Pedido: number | null;
+  Dt_Reserva: string | null;
+}
+
+export interface Tab_Fornecedor {
+  Ind: number;
+  Id_Fornecedor: string;
+  RazaoSocial: string | null;
+  DDD: string | null;
+  Telefone: string | null;
+  Contato: string | null;
+}
+
+export interface Tab_FuncaoNomeacao {
+  Ind: number;
+  Cd_FuncaoNomeacao: number;
+  In_Diretoria: number;
+  Nome: string | null;
+  Id_Usuario: string;
+  Dt_Alteracao: string;
+  Id_Ordem: number | null;
+  In_CAA: boolean;
+}
+
+export interface Tab_GrupoCerimonial {
+  Ind: number;
+  Cd_Grupo: number | null;
+  Nm_Grupo: string | null;
+}
+
+export interface Tab_Hist_Anexo_Corresp {
+  Cd_Hist_Anexo: number;
+  Ds_Hist_Anexo: string;
+  ind: number;
+}
+
+export interface Tab_Hist_Padrao_Corresp {
+  Cd_Hist: number;
+  Ds_Hist: string;
+  Ind: number;
+}
+
+export interface Tab_Impedimento {
+  Ind: number;
+  Cd_Anterior: number | null;
+  Cd_Impedimento: number;
+  Descricao: string | null;
+  Id_Usuario: string | null;
+  CodiImpe: number | null;
+  ind_ativo: string | null;
+}
+
+export interface Tab_Infracao {
+  cd_infracao: number;
+  ind: number;
+  descricao: string | null;
+  id_usuario: string | null;
+  ordem: string | null;
+}
+
+export interface Tab_Infracao_NEW {
+  cd_infracao: number;
+  ind: number;
+  descricao: string | null;
+  id_usuario: string | null;
+  ordem: string | null;
+}
+
+export interface Tab_Instrutor {
+  Ind: number;
+  Nic: number;
+  Dt_Inclusao: string;
+  Dt_Exclusao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_Lista_Advogado {
+  Ind: number;
+  Cd_Lista: number;
+  Nm_Lista: string;
+  Cd_Setor: string;
+  Id_Usuario: string;
+  Dt_Lista: string | null;
+}
+
+export interface Tab_Lista_Sociedade {
+  Ind: number;
+  Cd_Lista: number;
+  Nm_Lista: string;
+  Cd_Setor: string;
+  Id_Usuario: string;
+  Dt_Lista: string | null;
+}
+
+export interface Tab_Lote_Corresp {
+  Cd_Lote: number;
+  Ds_Lote: string;
+  Dt_Lote: string;
+  Id_Usuario: string;
+}
+
+export interface Tab_Modelo_Notificacao {
+  ind: number;
+  titulo: string;
+  texto: string;
+  cd_setor: string | null;
+  dt_atualizacao: string;
+  dt_inclusao: string;
+  id_usuario_inclusao: string;
+  id_usuario_atualizacao: string;
+  tipo_modelo: string;
+  status: string;
+  titulo_ted: string | null;
+  ind_assinatura: number | null;
+}
+
+export interface Tab_Modelo_Oficio {
+  Cd_Modelo: number;
+  Ds_Modelo: string;
+  Ds_Corpo: string;
+}
+
+export interface Tab_Motivo {
+  Ind: number;
+  Cd_Motivo: number;
+  Descricao: string;
+  Cd_Projudi: number;
+}
+
+export interface Tab_Motivo_Afastamento {
+  id_motivo: number;
+  motivo: string;
+  motivo_descr: string | null;
+  dt_inclusao: string | null;
+  Id_Usuario_inclusao: string | null;
+  dt_atualizacao: string | null;
+  Id_Usuario_atualizacao: string | null;
+}
+
+export interface Tab_Motivo_Projudi {
+  Ind: number;
+  Cd_Motivo: number;
+  Descricao: string;
+}
+
+export interface Tab_MotivoDecisao {
+  ind: number;
+  Cd_MotivoDecisao: number | null;
+  Descricao: string | null;
+  In_Ativo: number | null;
+}
+
+export interface Tab_MotivoLevantamento {
+  ind: number;
+  Cd_MotivoLevantamento: number | null;
+  Descricao: string | null;
+  In_Ativo: number | null;
+}
+
+export interface Tab_Municipio {
+  Ind: number;
+  Cd_SubSecao: string;
+  Cd_Municipio: string;
+  Nome: string;
+  In_Municipio: boolean | null;
+  Id_Usuario: string | null;
+  Cd_IBGE: string | null;
+}
+
+export interface Tab_Nacionalidade {
+  Ind: number;
+  Cd_Nacionalidade: number;
+  CodiCntn: number | null;
+  Nome_Pais: string;
+  Descricao: string | null;
+}
+
+export interface Tab_Niveis_DOL {
+  Cd_Nivel: number;
+  Nr_Ordem: number | null;
+  Ind: number;
+  Ds_Nivel: string;
+}
+
+export interface Tab_Nota_Disciplinar {
+  cd_nota_disciplinar: number;
+  ind: number;
+  cd_pai: number | null;
+  indice: string | null;
+  periodo: string | null;
+  multa: number;
+  processo: string | null;
+  nota_interna: boolean;
+  cd_penalidade: number;
+  dt_termino: string | null;
+  dt_criacao: string | null;
+  dt_aplicacao: string | null;
+  nic: number;
+  isSubNota: boolean;
+  observacao: string | null;
+  isProtocolo: boolean | null;
+  usuarioCriacao: string | null;
+  usuarioAlteracao: string | null;
+  dataAlteracao: string | null;
+}
+
+export interface Tab_Notificacao {
+  Ind: number;
+  Cd_Notificacao: number;
+  Descricao: string;
+  Dt_Notificacao: string;
+}
+
+export interface Tab_Notificacao_Corresp {
+  Cd_Corresp: number;
+  Num_Corresp: number;
+  Ds_Proced: string | null;
+  Data: string | null;
+  Hora: string | null;
+  Local: string | null;
+  Ds_Anexo: string | null;
+  Ds_Ref: string | null;
+  Cd_Notificacao: number;
+}
+
+export interface Tab_Numeracao_Corresp {
+  Num_Corresp: number;
+  Nr_Ano: number | null;
+  Cd_Doc: number | null;
+  Cd_Setor: string | null;
+  Numeracao: number;
+}
+
+export interface Tab_Objeto {
+  Ind: number;
+  Cd_Objeto: number;
+  Descricao: string;
+  Gravidade: string | null;
+  Ind_Ativo: number | null;
+  Cd_Setor: string | null;
+}
+
+export interface Tab_Oferta_Tac {
+  ind: number;
+  Nr_Documento: number;
+  Id_Representado: number;
+  Dt_oferta: string | null;
+  Aceite: string | null;
+  Id_Usuario: string;
+  Dt_alteracao: string;
+}
+
+export interface Tab_Oficio_Corresp {
+  Cd_Oficio: number;
+  Cd_Corresp: number;
+  Num_Corresp: number;
+  Data_Oficio: string;
+  Ds_Corpo: string;
+  Cd_Assinatura: string;
+  Ds_Cargo: string;
+}
+
+export interface Tab_Organizador {
+  Ind: number;
+  Id_Organizador: number;
+  Descricao: string;
+  Cd_Setor: string;
+  Dt_Cadastro: string;
+  Id_Usuario: string;
+}
+
+export interface Tab_Orgao {
+  Ind: number;
+  Cd_Orgao: number;
+  Cd_TipoOrgao: number;
+  Descricao: string;
+  Cd_Subordinado: number;
+  In_Processo: number | null;
+  Cd_Etiqueta: string | null;
+  Cd_Hierarquia: number | null;
+  In_Autuar: number | null;
+  In_Subsecao: number | null;
+  Funcao: string | null;
+  Dt_Criacao: string | null;
+  Observacao: string | null;
+  In_Fechada: string | null;
+  Nr_Portaria: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Tab_Penalidade {
+  Ind: number;
+  Cd_Penalidade: number;
+  Descricao: string;
+  Dt_Criacao: string;
+  Dt_Desativacao: string | null;
+  Id_Usuario_Criacao: string;
+  Id_Usuario_Desativacao: string | null;
+  Is_Subnota: boolean;
+}
+
+export interface Tab_Processador {
+  Ind: number;
+  Id_Processador: string;
+}
+
+export interface Tab_ProcessoSetor {
+  Ind: number;
+  Cd_Setor: string;
+  Tp_Processo: string;
+}
+
+export interface Tab_Recesso {
+  Data: string;
+  DiaSemana: number;
+  Feriado: number;
+}
+
+export interface Tab_Relator {
+  Ind: number;
+  Cd_Orgao: number;
+  Cd_Subsecao: string | null;
+  Nic: number;
+  Quantidade: number;
+}
+
+export interface Tab_Relator_TED {
+  Ind: number;
+  nic: number | null;
+  ex_oficio: number | null;
+  inadimplencia: number | null;
+  interessado: number | null;
+  advxadv: number | null;
+  exclusao: number | null;
+  idoniedade_moral: number | null;
+  consulta: number | null;
+  suspensao_preventiva: number | null;
+  execucao_suspeicao: number | null;
+}
+
+export interface tab_relator_ted_backup {
+  Ind: number;
+  nic: number | null;
+  ex_oficio: number | null;
+  inadimplencia: number | null;
+  interessado: number | null;
+  advxadv: number | null;
+  exclusao: number | null;
+  idoniedade_moral: number | null;
+  consulta: number | null;
+  suspensao_preventiva: number | null;
+  execucao_suspeicao: number | null;
+}
+
+export interface Tab_Remessa {
+  Ind: number;
+  Cd_Remessa: number;
+  Ds_Remessa: string;
+  Dt_Remessa: string;
+  Id_Usuario: string | null;
+  Dt_Inclusao: string | null;
+}
+
+export interface Tab_Requerimento {
+  Nr_Requerimento: number;
+  Ds_Conclusao: string | null;
+  Ds_Suspensao: string | null;
+  Ds_Requerimento: string | null;
+  Dt_Conclusao: string | null;
+  Dt_Abertura: string | null;
+  Dt_Prevista: string | null;
+  Cd_Sistema: number;
+  Id_Requerente: string | null;
+  Id_Autor: string | null;
+  Ind: number;
+  Cd_Status: number;
+}
+
+export interface Tab_Resultado {
+  Ind: number;
+  Cd_Resultado: number;
+  Descricao: string;
+}
+
+export interface Tab_ResultadoJulgamento {
+  Ind: number;
+  Cd_ResultadoJulgamento: number;
+  Cd_Anterior: string;
+  Descricao: string;
+}
+
+export interface Tab_Seccionais {
+  Cd_Seccionais: number;
+  Sede: string;
+  Endereco: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  Cep: string | null;
+  DDD_telefone: string | null;
+  Telefone: string | null;
+  DDD_celular: string | null;
+  Celular: string | null;
+  Email: string | null;
+  Presidente: string | null;
+  Vice_presidente: string | null;
+  SecretarioGeral: string | null;
+  SecretarioGeralAdjunto: string | null;
+  Tesoureiro: string | null;
+  dt_inclusao: string | null;
+  dt_atualizacao: string | null;
+  Id_Usuario_inclusao: string | null;
+  Id_Usuario_atualizacao: string | null;
+  ativo: number | null;
+  genero_oficio: string | null;
+}
+
+export interface Tab_Setor {
+  Ind: number;
+  Cd_Setor: string;
+  Descricao: string;
+  Tp_Documento: number | null;
+  Cd_Orgao: number | null;
+  In_Ativo: number | null;
+  In_Subsecao: number | null;
+  Pasta_Documentos: string | null;
+  In_Autuar: number | null;
+  Nic: number | null;
+  Telefone: string | null;
+  Email: string | null;
+  Id_Usuario: string | null;
+  Dt_Alteracao: string | null;
+}
+
+export interface Tab_Sistema {
+  Cd_Sistema: number;
+  Nm_Sistema: string;
+  Ind: number;
+}
+
+export interface Tab_Sistemas_DOL {
+  Cd_Sistema: number;
+  Nm_Sistema: string;
+  Ds_Sistema: string;
+  Nm_Analista_Resp: string;
+  Ind: number;
+  Dt_PassProd: string;
+}
+
+export interface Tab_Situacao {
+  Ind: number;
+  Cd_Situacao: string;
+  Descricao: string;
+  Id_Usuario: string | null;
+  Cd_CF: number | null;
+}
+
+export interface Tab_SituacaoCobranca {
+  Ind: number;
+  Cd_SitCob: number;
+  Descricao: string;
+}
+
+export interface Tab_SituacaoDocumento {
+  Ind: number;
+  Cd_Situacao: string;
+  Descricao: string;
+  Id_Ordem: number | null;
+  Id_Usuario: string | null;
+  Disponivel: number | null;
+}
+
+export interface Tab_SituacaoSociedade {
+  ind: number;
+  descricao: string;
+  cd_situacao: string;
+}
+
+export interface Tab_Sociedade {
+  Ind: number;
+  Nic: number;
+  Nr_Sociedade: string;
+  Nr_Filial: number;
+  Nome: string;
+  Nr_Processo: string;
+  Dt_Averbacao: string | null;
+  Nm_Logradouro: string;
+  Numero: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string;
+  CEP: string;
+  DDD_Tel: string | null;
+  Telefone: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  CNPJ: string | null;
+  Email: string | null;
+  Cd_Situacao: string | null;
+  Id_Usuario: string | null;
+  Complemento: string | null;
+  UF_Matriz: string | null;
+  Nr_Matriz: string | null;
+  Nr_Seguranca: number | null;
+  Dt_Alteracao: string;
+  Tp_Sociedade: number | null;
+  codiCidd: number | null;
+  codiUf: number | null;
+  codiPais: number | null;
+  Redesim: number | null;
+  Dt_EnvioCNSA: string | null;
+}
+
+export interface Tab_Sociedade_Associada {
+  ind: number;
+  Nic_Sociedade: number;
+  Nic_SociedadeAssociada: number;
+  Dt_Associacao: string | null;
+  Dt_AssociacaoEncerramento: string | null;
+  Id_usuario: string;
+  Dt_alteracao: string | null;
+}
+
+export interface tab_sociedades_aux {
+  Dt_Alteracao: string;
+  Nic: number;
+  idenOgan: string;
+  codSituProc: string;
+  numrProt: string | null;
+  dataAbert: string | null;
+  dataConc: string | null;
+  insc: string;
+  nomeSoci: string;
+  cnpj: string | null;
+  sociIndi: string;
+  Email: string | null;
+  website: string;
+  capi: string;
+  quot: number | null;
+  numrCep: string;
+  numrEnde: number | null;
+  numrSegu: number | null;
+  comp: string | null;
+  filiSoci: string;
+  dissCotr: string;
+  Logr: string;
+  Bair: string | null;
+  CodiUf: number | null;
+  CodiCidd: number | null;
+  CodSituSoci: string;
+}
+
+export interface Tab_Sorteio {
+  ind: number;
+  nr_inscricao: string | null;
+  nome: string | null;
+  cidade: string | null;
+  data_sorteio: string | null;
+}
+
+export interface Tab_Sorteio2 {
+  ind: number;
+  nr_inscricao: string | null;
+  nome: string | null;
+  cidade: string | null;
+  data_sorteio: string | null;
+}
+
+export interface Tab_Sorteio3 {
+  ind: number;
+  nr_inscricao: string | null;
+  nome: string | null;
+  cidade: string | null;
+  data_sorteio: string | null;
+}
+
+export interface Tab_Sorteio4 {
+  ind: number;
+  nr_inscricao: string | null;
+  nome: string | null;
+  cidade: string | null;
+  data_sorteio: string | null;
+}
+
+export interface Tab_Status {
+  Cd_Status: number;
+  Nm_Status: string;
+  Ind: number;
+}
+
+export interface Tab_SubClasseProcesso {
+  Ind: number;
+  Cl_Processo: number;
+  Sub_ClProcesso: number;
+  Descricao: string;
+  Sub_ClAnterior: string | null;
+  Desativado: number | null;
+}
+
+export interface Tab_SubOrgao {
+  Ind: number;
+  Cd_Orgao: number;
+  Cd_SubOrgao: number;
+  Descricao: string | null;
+  Tp_SubOrgao: number | null;
+  Dt_Criacao: string | null;
+  Dt_Encerramento: string | null;
+  Observacao: string | null;
+  In_Fechada: number | null;
+  Nr_Portaria: string | null;
+  Id_Usuario: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Comissao: number | null;
+  Id_Ordem: number | null;
+  Site: string | null;
+  ind_publicar: number | null;
+  Dt_Auditoria: string | null;
+  Dt_Vigencia_Ini: string | null;
+  Dt_Vigencia_Fim: string | null;
+  Nr_Max_Membros: number | null;
+  Objetivo: string | null;
+  Nr_Estagiarios: number | null;
+}
+
+export interface Tab_SuborgaoBI {
+  ind: number;
+  cd_orgao: number | null;
+  cd_suborgao: number | null;
+  dsc_suborgao: string | null;
+}
+
+export interface Tab_SubSecao {
+  Ind: number;
+  Cd_SubSecao: string;
+  Nome: string;
+  Regiao: string | null;
+  Web: string | null;
+  In_SubSecao: boolean | null;
+  Dt_Criacao: string | null;
+  Dt_Instalacao: string | null;
+  Nr_Processo: string | null;
+  Custo: number | null;
+  BB_Agencia: string | null;
+  CF_idenOgan: number | null;
+  In_Conselho: boolean | null;
+  Site: string | null;
+  Cnpj: string | null;
+}
+
+export interface Tab_SubTipoDocumento {
+  Ind: number;
+  Tp_Documento: number;
+  Sub_TpDocumento: number;
+  Descricao: string;
+  Id_Usuario: string | null;
+  Sub_TpAntrior: string | null;
+}
+
+export interface Tab_SubTipoInscricao {
+  Id_SubTipoInscricao: number;
+  nic: number;
+  SubTipo_Inscricao: string;
+}
+
+export interface Tab_SustentacaoOral {
+  Ind: number;
+  nr_documento: number;
+  nic: number;
+  tp_participacao: number;
+  prioridade: number | null;
+  dt_inscricao: string;
+  dt_alteracao: string;
+  usuario: string;
+  ind_ativo: boolean;
+  id_pauta: number | null;
+  observacoes: string | null;
+}
+
+export interface Tab_SustentacaoOral_Log {
+  Ind: number;
+  Ind_sustentacao: number;
+  nr_documento: number;
+  nic: number;
+  tp_participacao: number;
+  prioridade: number | null;
+  dt_alteracao: string;
+  usuario: string;
+  ind_ativo: boolean;
+  id_pauta: number | null;
+  observacoes: string | null;
+}
+
+export interface tab_SustentacaoOralObservacao {
+  ind: number;
+  id_pauta: number;
+  nr_documento: number;
+  observacoes: string | null;
+  dt_alteracao: string;
+  id_usuario: string;
+}
+
+export interface Tab_Tarefas_Agendadas {
+  id: number;
+  config: string | null;
+}
+
+export interface Tab_Tesouraria_TpLancamento {
+  Ind: number;
+  Tp_Lancamento: string;
+  Id_Ordem: number;
+  Descricao: string;
+}
+
+export interface Tab_Tipo_Envio_Corresp {
+  Cd_Envio: number;
+  Ds_Envio: string;
+  Ind: number;
+}
+
+export interface Tab_TipoCompromisso {
+  Ind: number;
+  Tp_Compromisso: string;
+  Descricao: string | null;
+}
+
+export interface Tab_TipoDependente {
+  Ind: number;
+  Tp_Dependente: string;
+  Descricao: string | null;
+  Idade: number | null;
+  Provisoria: string | null;
+}
+
+export interface Tab_TipoDocumento {
+  Ind: number;
+  Tp_Documento: number;
+  Tp_Anterior: string | null;
+  Descricao: string;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_TipoInscricao {
+  Ind: number;
+  Tp_Inscricao: string;
+  Descricao: string;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_TipoLugar {
+  Ind: number;
+  Cd_TipoLugar: number;
+  Descricao: string;
+  Id_Ordem: number | null;
+}
+
+export interface Tab_TipoMovimentacao {
+  Ind: number;
+  Tp_Movimentacao: number;
+  Descricao: string;
+  Prazo: number;
+  Id_Ordem: number | null;
+  Id_Usuario: string | null;
+}
+
+export interface Tab_TipoOcorrencia {
+  Ind: number;
+  Tipo: string;
+}
+
+export interface Tab_TipoOficio {
+  ind_doc_oficio: number;
+  titulo_oficio: string | null;
+  texto_oficio: string | null;
+  cd_setor: string | null;
+  numero_protocolo: number | null;
+  dt_atualizacao: string | null;
+  dt_inclusao: string | null;
+  Id_Usuario_inclusao: string | null;
+  Id_Usuario_atualizacao: string | null;
+}
+
+export interface Tab_TipoOficio_campo {
+  ind_doc_oficio_campo: number;
+  campo: string | null;
+  valorcampo: string | null;
+  descricao: string | null;
+  dt_inclusao: string | null;
+  Id_Usuario_inclusao: string | null;
+  cd_setor: string | null;
+}
+
+export interface Tab_TipoOrgao {
+  Ind: number;
+  Cd_TipoOrgao: number;
+  Descricao: string;
+}
+
+export interface Tab_TipoPedidoDocumento {
+  Ind: number;
+  Tp_Pedido: number;
+  Descricao: string;
+}
+
+export interface Tab_TipoPrioridade {
+  Ind: number;
+  Cd_TipoPrioridade: number;
+  Descricao: string | null;
+  Id_Ordem: number | null;
+  Cd_Setor: string | null;
+  Cor: string | null;
+  Ativo: boolean;
+  Cd_Nivel: number;
+}
+
+export interface Tab_TipoProcesso {
+  Ind: number;
+  Tp_Processo: number;
+  Tp_Anterior: string | null;
+  Descricao: string;
+  Tp_TED: string | null;
+}
+
+export interface Tab_TipoProcesso_bkp {
+  Ind: number;
+  Tp_Processo: number;
+  Tp_Anterior: string | null;
+  Descricao: string;
+  Tp_TED: string | null;
+}
+
+export interface Tab_TipoRegistroSociedade {
+  Ind: number;
+  Cd_registro: number;
+  Descricao: string;
+  id_usuario: string;
+  in_ativo: boolean;
+}
+
+export interface Tab_TipoRelacionado {
+  Ind: number;
+  Tp_Relacionado: string;
+  Descricao: string | null;
+  Tp_TED: string | null;
+}
+
+export interface Tab_TipoSubOrgao {
+  Ind: number;
+  Tp_Suborgao: number;
+  Descricao: string | null;
+}
+
+export interface Tab_UF {
+  UF: string;
+  Nome: string | null;
+  Id_Ordem: number | null;
+  CF_CodiUf: number | null;
+}
+
+export interface Tab_Vara {
+  Ind: number;
+  Nome: string | null;
+  Nome_juiz: string | null;
+  Genero: string | null;
+  Ddd_Telefone: string | null;
+  Telefone: string | null;
+  Email: string | null;
+  Ativo: number | null;
+}
+
+export interface Table_1 {
+  email: string | null;
+}
+
+export interface Tamanho_Camisa {
+  Ind: number;
+  Nic: number;
+  Compromisso_Id: number;
+  Tamanho: string | null;
+  Dt_Criacao: string;
+  Genero: string | null;
+  De_Acordo: boolean | null;
+}
+
+export interface Tarefa {
+  Ind: number;
+  Cd_Tarefa: number;
+  Id_UsuarioOrigem: string | null;
+  Id_UsuarioDestino: string | null;
+  Titulo: string | null;
+  Descricao: string | null;
+  Paginas: string | null;
+  Dt_Cadastro: string | null;
+  Dt_Previsao: string | null;
+  Prioridade: number | null;
+  Status: string | null;
+  Dt_Status: string | null;
+}
+
+export interface Taxas_Protheus {
+  ind: number;
+  Codigo_da_tabela: string | null;
+  Codigo_do_produto: string | null;
+  Descricao_do_produto: string | null;
+  Preco_de_venda: number | null;
+  Inicio_vigencia: string | null;
+  Fim_vigencia: string | null;
+}
+
+export interface TB_CAIXA {
+  DATA: string | null;
+  SALDO_INICIAL: number | null;
+  SALDO_FINAL: number | null;
+}
+
+export interface tb_notas {
+  Ind: number;
+  Nic: number;
+  Nota: string;
+  Dt_Alteracao: string;
+  Id_Usuario: string;
+  Dt_Nota: string | null;
+}
+
+export interface TB_VENDAS {
+  DATA: string | null;
+  CODIGO: number | null;
+  VALOR: number | null;
+}
+
+export interface tblLinksUteis {
+  ind: number;
+  strDescricao: string;
+  strLink: string;
+  ind_ativo: string;
+  strSetor: string;
+  usuario: string;
+  dt_criacao: string;
+  dt_alteracao: string | null;
+}
+
+export interface tbx {
+  nic: number | null;
+  Nr_Inscricao: number | null;
+  Nome: string | null;
+  Email: string | null;
+  valor: number | null;
+}
+
+export interface Tela_Bloqueio {
+  Ind: number;
+  IP: string;
+  Data: string;
+}
+
+export interface Temp_Advogado {
+  Ind: number;
+  Nic: number;
+  Nr_Pedido: number;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Aviso: string | null;
+  Naturalidade: string | null;
+  UF: string | null;
+  Cd_Nacionalidade: number | null;
+  Email: string | null;
+  Informativo: number | null;
+  CodiPais: number;
+  CodiUF: number | null;
+  CodiCidd: number | null;
+  Dt_Pedido: string;
+  In_Atualizado: string;
+  Link: string | null;
+}
+
+export interface temp_Ana {
+  id: number | null;
+  nome: string | null;
+}
+
+export interface Temp_BI {
+  ind: number;
+  nr_documento: number | null;
+}
+
+export interface Temp_BiometricoCF {
+  Ind: number;
+  Nic: number | null;
+  BIO: string | null;
+}
+
+export interface Temp_CargaGeralCF {
+  Nic: number | null;
+  Erro: boolean | null;
+  Msg: string | null;
+}
+
+export interface Temp_Carteira_Compromisso {
+  Ind: number;
+  Nic: number | null;
+  Nr_Certidao: number | null;
+}
+
+export interface temp_cidadesCF {
+  codicidd: number | null;
+  Nomecidd: string | null;
+  sigluf: string | null;
+}
+
+export interface Temp_CNSA1 {
+  ind: number;
+  Nr_Processo: number | null;
+  erro: number | null;
+  msg: string | null;
+}
+
+export interface Temp_CNSA2 {
+  Ind: number;
+  Nr_Processo: number | null;
+}
+
+export interface Temp_Debexp {
+  id_titulocli: number | null;
+  nr_titulo: number | null;
+  nr_parcela: string | null;
+  dt_vencimento: string | null;
+  TipoDebito: string | null;
+  vl_valor: number | null;
+  vl_original: number | null;
+  dt_lancamento: string | null;
+  nic: number | null;
+  Tipo: string | null;
+  vl_descontos: number | null;
+  vl_juros: number | null;
+  vl_multa: number | null;
+  vl_correcao: number | null;
+}
+
+export interface Temp_Debexp_Protheus {
+  id_titulocli: string | null;
+  nr_titulo: number | null;
+  nr_parcela: string | null;
+  dt_vencimento: string | null;
+  TipoDebito: string | null;
+  vl_valor: number | null;
+  vl_original: number | null;
+  dt_lancamento: string | null;
+  nic: number | null;
+  Tipo: string | null;
+  vl_descontos: number | null;
+  vl_juros: number | null;
+  vl_multa: number | null;
+  vl_correcao: number | null;
+  cd_carimbo: string | null;
+  nr_serie: string | null;
+  cd_bancoconta_boleto: string | null;
+  cd_bancoconta_cartao: string | null;
+  vl_calculado: number | null;
+}
+
+export interface Temp_Debexp_Roberto {
+  id_titulocli: number | null;
+  nr_titulo: number | null;
+  nr_parcela: string | null;
+  dt_vencimento: string | null;
+  TipoDebito: string | null;
+  vl_valor: number | null;
+  vl_original: number | null;
+  dt_lancamento: string | null;
+  nic: number | null;
+  x: string | null;
+}
+
+export interface Temp_Debito {
+  Nic: number;
+  Cod_Rec: number;
+  Num_Par: number;
+  Parcela: number;
+  Ano: number;
+  Vcto: string;
+  Valor_Atu: number;
+  Desconto: number;
+  Acrescimo: number;
+  Taxa: number | null;
+  Multa: number;
+  Juros: number;
+  Codagenc: string | null;
+  Num_CC: string | null;
+  Convenio: string | null;
+  Descricao: string | null;
+}
+
+export interface Temp_Distribuicao {
+  Ind: number;
+  Nic: number;
+  Cd_Orgao: number;
+  Cd_SubOrgao: number | null;
+  Nr_Documento: number;
+  Dt_Distribuicao: string;
+}
+
+export interface Temp_Documento_Renovacao {
+  Ind: number;
+  Nic: number | null;
+  Nr_Inscricao: string | null;
+  Nome: string | null;
+  Nm_Pai: string | null;
+  Nm_Mae: string | null;
+  Dt_Nascimento: string | null;
+  RG: string | null;
+  Emissor_RG: string | null;
+  CPF: string | null;
+  In_Doador: string | null;
+  Naturalidade: string | null;
+  Tp_Renov: string | null;
+  Entrega: string | null;
+  Email: string | null;
+  IP: string | null;
+  Dt_Alteracao: string;
+  Nosso_Numero: string | null;
+  Dt_Pagamento: string | null;
+  Cd_Pedido: number | null;
+}
+
+export interface Temp_Email_Envio {
+  ind: number;
+  email: string | null;
+}
+
+export interface Temp_Endereco {
+  Ind: number;
+  Nr_Pedido: number;
+  Nic: number;
+  Tp_Endereco: string;
+  Dt_Endereco: string;
+  In_Corresp: string | null;
+  Tp_Logradouro: string | null;
+  Nm_Logradouro: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  DDD_Tel: string | null;
+  Tel: string | null;
+  DDD_Fax: string | null;
+  Fax: string | null;
+  Id_Usuario: string | null;
+  In_Consulta: string | null;
+  In_Atualizado: string;
+  ddd_tel2: string | null;
+  tel2: string | null;
+  CodiPais: number | null;
+  CodiUf: number | null;
+  CodiCidd: number | null;
+}
+
+export interface Temp_Envio_CF {
+  ind: number;
+  NIC: number;
+  Cd_Formulario: string;
+  Id_Usuario: string;
+  Dt_Atualizacao: string;
+}
+
+export interface Temp_EnvioCF {
+  Nic: string;
+  CodBarras: string;
+  Seccional: string | null;
+  SubSecao: string | null;
+  Comarca: string | null;
+  TpDocumento: number | null;
+  TpInscricao: string | null;
+  NrSeguranca: string | null;
+  NrInscricao: string | null;
+  Nome: string | null;
+  NmPai: string | null;
+  NmMae: string | null;
+  Naturalidade: string | null;
+  UFNaturalidade: string | null;
+  Nacionalidade: string | null;
+  DtNascimento: string | null;
+  DtColacao: string | null;
+  DtCompromisso: string | null;
+  NrRg: string | null;
+  DtRg: string | null;
+  EmissorRg: string | null;
+  CPF: string | null;
+  NrEleitor: string | null;
+  ZonaEleitor: string | null;
+  SecaoEleitor: string | null;
+  MunicipioEleitor: string | null;
+  UFEleitor: string | null;
+  NrMilitar: string | null;
+  ExpMilitar: string | null;
+  EstCivil: string | null;
+  Sexo: string | null;
+  EndRes: string | null;
+  BairroRes: string | null;
+  CidadeRes: string | null;
+  EstadoRes: string | null;
+  CepRes: string | null;
+  TelRes: string | null;
+  EndCom: string | null;
+  BairroCom: string | null;
+  CidadeCom: string | null;
+  EstadoCom: string | null;
+  CepCom: string | null;
+  TelCom: string | null;
+  TelCelular: string | null;
+  Email: string | null;
+  Universidade: string | null;
+  Deficiencia: string | null;
+  Doador: string | null;
+  Sociedade: string | null;
+  NrInscSociedade: string | null;
+  QualifSociedade: string | null;
+  Impedimentos: string | null;
+  DtArquivo: string | null;
+}
+
+export interface temp_esa {
+  cpf: string;
+}
+
+export interface Temp_Esa_Informativo {
+  Ind: number;
+  Data: string;
+  Titulo: string;
+  Manchete: string;
+  Texto: string;
+}
+
+export interface Temp_ESA_Informativo_Cursos {
+  Ind: number;
+  Data: string;
+  Horario: string | null;
+  Titulo: string;
+  Professor: string;
+  Descricao: string;
+  Certificado: string;
+  Tipo: string;
+  Valor: string | null;
+  Local: string | null;
+  Link_Desc: string;
+  Link_Insc: string;
+  Link_Img: string;
+}
+
+export interface Temp_Estatistica_Processos {
+  Orgao: string;
+  Classe: string;
+  SubClasse: string;
+  TotalAnterior: number;
+  Novos: number;
+  realocados: number;
+  Arquivados: number;
+  TotalAtual: number;
+  URLTotalAnterior: string | null;
+  URLNovos: string | null;
+  URLArquivados: string | null;
+  URLTotalAtual: string | null;
+}
+
+export interface Temp_Etiqueta_Processo {
+  Ind: number;
+  nr_documento: number;
+  impressao: string | null;
+}
+
+export interface Temp_Etiquetas_Corresp {
+  Nr_Oficio: number | null;
+  Dt_emissao: string | null;
+  Setor: string | null;
+  Responsavel: string | null;
+  Cd_tipo: string | null;
+}
+
+export interface Temp_ExameOrdem {
+  Nr_Inscricao: string | null;
+  Nome: string | null;
+  Sexo: string | null;
+  RG: string | null;
+  CPF: string | null;
+  Dt_Nascimento: string | null;
+  Endereco: string | null;
+  Numero: string | null;
+  Complemento: string | null;
+  Bairro: string | null;
+  Cidade: string | null;
+  UF: string | null;
+  CEP: string | null;
+  Nr_Telefone: string | null;
+  Nr_Celular: string | null;
+  Email: string | null;
+  Dt_Formatura: string | null;
+  Faculdade: string | null;
+  Area: string | null;
+  Subsecao: string | null;
+  Nota_Fase1: number | null;
+  Nota_Fase2: number | null;
+  Nota_Fase2_Int: number | null;
+  Situacao_Documentos: string | null;
+  Situacao_Objetiva: string | null;
+  Situacao_Pratica: string | null;
+  Recurso_Fase1: string | null;
+  Nota_Recurso_Fase1: string | null;
+  Recurso_Fase2: string | null;
+  Nota_Recurso_Fase2: string | null;
+  Resultado: string | null;
+}
+
+export interface Temp_Execucao {
+  Ind: number;
+  Nic: number | null;
+  Nome: string | null;
+  Cd_Situacao: string | null;
+  Cd_Subsecao: string | null;
+  Prefixo: string | null;
+  Vl_Origiginal: number | null;
+  Vl_Atualizado: number | null;
+  Quantidade: number | null;
+  VctoMaisNovo: string | null;
+  VctoMaisAntigo: string | null;
+}
+
+export interface Temp_Execucao2 {
+  Ind: number;
+  Nic: number | null;
+  Nr_Inscricao: string | null;
+  Nome: string | null;
+  Id_Titulocli: string | null;
+  Id_Titulo_Eve: string | null;
+  Dt_Vencimento: string | null;
+  Vl_Valor: number | null;
+}
+
+export interface TEMP_IMPORTA_DADOS_ESA_CREDITO {
+  Ind: number;
+  CPF: string;
+  DATA: string;
+  VALOR: number;
+  DIA: string | null;
+  MES: string | null;
+  ANO: string | null;
+}
+
+export interface TEMP_IMPORTA_DADOS_ESA_CREDITO_2 {
+  Ind: number;
+  CPF: string;
+  DATA: string;
+  VALOR: number;
+  DIA: string | null;
+  MES: string | null;
+  ANO: string | null;
+}
+
+export interface TEMP_IMPORTA_DADOS_ESA_CURSO {
+  Id: number;
+  CPF: string | null;
+  Aluno: string | null;
+  Curso: string | null;
+  Email: string | null;
+  Telefone: string | null;
+  DATA: string | null;
+}
+
+export interface temp_inss {
+  cpf: string | null;
+}
+
+export interface Temp_Interforum {
+  Ind: number;
+  Ind_interforum: number | null;
+}
+
+export interface Temp_Lista_Nic {
+  Ind: number;
+  Nic: number | null;
+  Id_Usuario: string | null;
+  Nm_Lista: string | null;
+}
+
+export interface Temp_Movimentacao {
+  Ind: number;
+  Nr_Documento: number;
+  Nic: number;
+  Cd_SetorOrigem: string | null;
+  Cd_SetorDestino: string;
+  Dt_Envio: string;
+  Id_Envio: string;
+  Tp_Movimentacao: number;
+  Historico: string;
+}
+
+export interface Temp_Movimentacao_Audit {
+  Ind: number | null;
+  Nr_Documento: number | null;
+  Nic: number | null;
+  Cd_SetorOrigem: string | null;
+  Cd_SetorDestino: string | null;
+  Dt_Envio: string | null;
+  Id_Envio: string | null;
+  Tp_Movimentacao: number | null;
+  Historico: string | null;
+  operacao: string | null;
+  data_operacao: string | null;
+  detalhes_operacao: string | null;
+  rowwnumber: number;
+}
+
+export interface temp_movimentacao_bkp {
+  Ind: number;
+  Nr_Documento: number;
+  Nic: number;
+  Cd_SetorOrigem: string | null;
+  Cd_SetorDestino: string;
+  Dt_Envio: string;
+  Id_Envio: string;
+  Tp_Movimentacao: number;
+  Historico: string;
+}
+
+export interface temp_nic_NMS {
+  nic: number | null;
+}
+
+export interface Temp_NrSeguranca {
+  numSeguranca: number;
+  SeccionalTitular: string;
+  SeccionalOriginaria: string;
+  TpInscricao: number;
+  nomCadastro: string;
+  nomPai: string | null;
+  nomMae: string;
+  dscNaturalidade: string | null;
+  NaturalidadeUF: string;
+  datNascimento: string;
+  nomNacionalidade: string;
+  datColacaoGrau: string | null;
+  numRG: string;
+  datEmissaoRG: string | null;
+  nomOrgaoEmissorRG: string | null;
+  numCPF: string;
+  BitDoador: boolean;
+  codImpedimento: string | null;
+  codEstadoCivil: number;
+  numTituloEleitor: string | null;
+  numZonaEleitor: string | null;
+  numSecaoEleitor: string | null;
+  dscCidadeEleitor: string | null;
+  ufEleitor: string | null;
+  bitSexo: boolean;
+  numCertificadoMilitar: string | null;
+  nomExpedidoraMilitar: string | null;
+  nomFaculdade: string | null;
+  codDeficiencia: number | null;
+  numPassaporte: string | null;
+  nomArquivoFoto: string | null;
+}
+
+export interface Temp_NS {
+  Nr_Seguranca: number | null;
+  CPF: number | null;
+}
+
+export interface Temp_Organizadores {
+  ND: number | null;
+}
+
+export interface Temp_Pagamento {
+  Ind: number;
+  Nic: number;
+  Cd_Recebimento: number | null;
+  Descricao: string;
+  Ano: number;
+  Parcela: string;
+  Dt_Pagamento: string | null;
+  Vlr_Atual: number;
+  Acrescimo: number;
+  Desconto: number;
+  Vlr_Recebido: number;
+  Conta: string;
+  Obs: string;
+  Dt_Credito: string | null;
+  In_Reparcelamento: string;
+  Tp_Registro: number;
+}
+
+export interface Temp_PasseLivre_Interforum {
+  Ind: number;
+  Cpf: string | null;
+  Nome: string | null;
+  Dt_Retirada: string | null;
+  Dt_Devolucao: string | null;
+  Id_Usuario: string | null;
+  Tel: string | null;
+  Cod: string | null;
+}
+
+export interface Temp_Pena {
+  Ind: number;
+  NIC: string | null;
+  TIPO: string | null;
+  DATA_INIC: string | null;
+  PRAZO: number | null;
+  CONDICAO: string | null;
+  DATA_FIM: string | null;
+  CUMPRIDA: boolean;
+  Nr_Processo: number | null;
+  Cd_Orgao: number | null;
+  INFRACAO: string | null;
+  OBS: string | null;
+}
+
+export interface Temp_Session {
+  Session: string | null;
+}
+
+export interface Temp_Session_BKP {
+  Session: string | null;
+}
+
+export interface Temp_SextoAno_Bloqueio {
+  Ind: number;
+  Nic: number;
+  Nome: string | null;
+  Dt_Bloqueio: string;
+  Usuario: string;
+}
+
+export interface Temp_Socios_Inativos {
+  Ind: number;
+  Nic: number | null;
+  Verificado: boolean | null;
+}
+
+export interface temp_suplementar {
+  nic: number;
+}
+
+export interface Temp_Tipopena {
+  CODIGO: string | null;
+  DESCRICAO: string | null;
+  TIPO: string | null;
+  SITUACAO: string | null;
+  Cd_Pena: number | null;
+}
+
+export interface Temp_TpDocumento_DePara {
+  Tipo_De: number;
+  SubTipo_De: number;
+  Desc_Tipo: string;
+  Desc_SubTipo: string;
+  Tipo_Para: number;
+  SubTipo_Para: number;
+  Descricao: string;
+}
+
+export interface TempNota {
+  Nic: number | null;
+  NotaADS: string | null;
+  NotaSQL: string | null;
+  InAds: number | null;
+  InSql: number | null;
+}
+
+export interface temporario_email_mkt {
+  ind: number;
+  email: string | null;
+}
+
+export interface temporario_email_mkt2 {
+  ind: number;
+  email: string;
+}
+
+export interface Tesouraria_Relatorio {
+  Ind: number;
+  Tp_Lancamento: string;
+  Descricao: string;
+  Valor: number;
+  Id_Ordem: number | null;
+}
+
+export interface Tesouraria_RemessaCEF {
+  Ind: number;
+  Tp_Arquivo: string;
+  Nm_Arquivo: string;
+  Dt_Download: string;
+}
+
+export interface Tesouraria_Tabela {
+  Ind: number;
+  Tp_Tabela: string | null;
+  Coluna1: string | null;
+  Coluna1_Obs: string | null;
+  Coluna2: string | null;
+  Coluna2_Obs: string | null;
+  Coluna3: string | null;
+  Id_Ordem: number | null;
+  Negrito: boolean;
+}
+
+export interface Tipo_Requerimento_Ato_Societario {
+  Ind: number;
+  Tp_Requerimento: number;
+  Ds_Requerimento: string | null;
+}
+
+export interface tmp_acom2 {
+  cd_cadastro: number;
+  razao: string;
+  nr_oab: string;
+  nic: number;
+  cgc_cpf: string;
+}
+
+export interface tmp_advogado_cpf {
+  cpf: string | null;
+}
+
+export interface tmp_advogado_senha {
+  Nic: number;
+  Senha: string | null;
+  Dt_Alteracao: string;
+  suser: string;
+  dt_rollback: string | null;
+}
+
+export interface tmp_cred_esa {
+  CPF: string;
+  ANO: string | null;
+  MES: string | null;
+  VALOR_TOTAL: number | null;
+}
+
+export interface tmp_cred_esa_2 {
+  CPF: string;
+  ANO: string | null;
+  MES: string | null;
+  VALOR_TOTAL: number | null;
+}
+
+export interface tmp_email_envio {
+  ind: number | null;
+  email: string | null;
+  nr_inscricao: string | null;
+  nic: string | null;
+}
+
+export interface TMP_EMAIL_MKT2 {
+  Email: string | null;
+}
+
+export interface TMP_EMAIL_MKT3 {
+  Email: string | null;
+}
+
+export interface TMP_OAB_RESOLVE {
+  nome: string | null;
+  nr_inscricao: string | null;
+  telefone: string | null;
+}
+
+export interface tmp_roberto {
+  Nome: string | null;
+  Nic: number | null;
+  Exercicio: string | null;
+  Tp_Processo: string | null;
+}
+
+export interface TMPBOLETO {
+  Ind: number;
+  Chave: number | null;
+  Referencia: string | null;
+  BDataVencimento: string | null;
+  BValor: number | null;
+  BValorCobrado: number | null;
+  BJurosMora: number | null;
+  BPercMulta: number | null;
+  BNossoNumero: string | null;
+  BNumeroDocumento: string | null;
+  BLocPag: string | null;
+  BDataMulta: string | null;
+  BValorMulta: number | null;
+  BIof: number | null;
+  BValorDesconto: number | null;
+  BDataDesconto: string | null;
+  BValorAbatimento: number | null;
+  BAceite: string | null;
+  BEspecieTitulo: string | null;
+  BDiasParaDevolucao: number | null;
+  CBanco: string | null;
+  CCnpjCpf: string;
+  CNome: string;
+  CAgencia: string;
+  CAgenciaDigito: string | null;
+  CConta: string;
+  CContaDigito: string | null;
+  CCarteira: string;
+  CConvenio: string;
+  CConvenioDigito: string | null;
+  CEndereco: string | null;
+  CInstrucao: string | null;
+  SNic: number | null;
+  SNr_Inscricao: string | null;
+  SCd_Curso: number | null;
+  SCd_Aluno: number | null;
+  SCnpjCpf: string;
+  SNome: string | null;
+  STp_Logradouro: string | null;
+  SNm_Logradouro: string | null;
+  SNumero: string | null;
+  SComplemento: string | null;
+  SBairro: string | null;
+  SCidade: string | null;
+  SCep: string | null;
+  SUf: string | null;
+  SEmail: string | null;
+  Dt: string;
+  DtDoc: string;
+  DtProc: string;
+  InRemessa: string | null;
+  InBaixado: string | null;
+  Lote: number | null;
+  Parcela: string | null;
+  Num_Parcela: string | null;
+  Dt_Exclusao: string | null;
+  Tipo: string | null;
+  GeradoNVezes: number | null;
+}
+
+export interface TMPBOLETOLOG {
+  Ind: number | null;
+  Chave: number | null;
+  Referencia: string | null;
+  BDataVencimento: string | null;
+  BValor: number | null;
+  BValorCobrado: number | null;
+  BJurosMora: number | null;
+  BPercMulta: number | null;
+  BNossoNumero: string | null;
+  BNumeroDocumento: string | null;
+  BLocPag: string | null;
+  BDataMulta: string | null;
+  BValorMulta: number | null;
+  BIof: number | null;
+  BValorDesconto: number | null;
+  BDataDesconto: string | null;
+  BValorAbatimento: number | null;
+  BAceite: string | null;
+  BEspecieTitulo: string | null;
+  BDiasParaDevolucao: number | null;
+  CBanco: string | null;
+  CCnpjCpf: string | null;
+  CNome: string | null;
+  CAgencia: string | null;
+  CAgenciaDigito: string | null;
+  CConta: string | null;
+  CContaDigito: string | null;
+  CCarteira: string | null;
+  CConvenio: string | null;
+  CConvenioDigito: string | null;
+  CEndereco: string | null;
+  CInstrucao: string | null;
+  SNic: number | null;
+  SNr_Inscricao: string | null;
+  SCd_Curso: number | null;
+  SCd_Aluno: number | null;
+  SCnpjCpf: string | null;
+  SNome: string | null;
+  STp_Logradouro: string | null;
+  SNm_Logradouro: string | null;
+  SNumero: string | null;
+  SComplemento: string | null;
+  SBairro: string | null;
+  SCidade: string | null;
+  SCep: string | null;
+  SUf: string | null;
+  SEmail: string | null;
+  Dt: string | null;
+  DtDoc: string | null;
+  DtProc: string | null;
+  InRemessa: string | null;
+  InBaixado: string | null;
+  Lote: number | null;
+  Parcela: string | null;
+  Num_Parcela: string | null;
+  Dt_Exclusao: string | null;
+  Tipo: string | null;
+  GeradoNVezes: number | null;
+}
+
+export interface TMPBOLETOSESSION {
+  Ind: number;
+  Id_Usuario: string;
+  Arq: string;
+  Log_Exec: string | null;
+  Dt: string | null;
+  ESA_RETORNO_Ind: number | null;
+  Teste: number | null;
+}
+
+export interface Totvs_correcao {
+  ind: number;
+  NIC: number;
+}
+
+export interface Totvs_Ibge {
+  ind: number;
+  CodIbge: string | null;
+  UF: string | null;
+  Cidade: string | null;
+}
+
+export interface Unidades_Concedentes {
+  Ind: number;
+  Unidade_Nic: number | null;
+  Unidade_Nome: string | null;
+  Unidade_Email: string | null;
+  Unidade_Telefone: string | null;
+  Unidade_Situacao: string | null;
+  Unidade_Numero_Advogados: number | null;
+  Unidade_Tipo: string | null;
+  Unidade_CEP: number | null;
+  Unidade_Endereco: string | null;
+  Unidade_Estado: string | null;
+  Unidade_Cidade: string | null;
+  Unidade_Bairro: string | null;
+  Unidade_Numero: string | null;
+  Unidade_Complemento: string | null;
+  Unidade_Dados_Corretos: boolean | null;
+  Unidade_Termo_Aceite: boolean | null;
+  Unidade_Dt_Criacao: string | null;
+  Unidade_Ativo: boolean | null;
+  Unidade_Livro: string | null;
+  Unidade_CNPJ: string | null;
+}
+
+export interface Unidades_Concedentes_Assinaturas {
+  Ind: number;
+  Nic: number | null;
+  Email: string | null;
+  Ativo: boolean | null;
+}
+
+export interface Unidades_Concedentes_Convite {
+  Ind: number;
+  Nic: string | null;
+  Lote_Convite: number | null;
+  Nr_Documento: string | null;
+  Ind_Andamento: number | null;
+  Ind_Unidade_Concedente: number | null;
+  Tipo_Documento: string | null;
+  Email: string | null;
+  Dt_Envio: string | null;
+  HASH: string | null;
+  Situacao: number | null;
+  Representante: boolean | null;
+  Dt_Situacao: string | null;
+}
+
+export interface Unidades_Concedentes_Estagiarios {
+  Ind: number;
+  Ind_Unidade_Concedente: number | null;
+  Estagiario_Nome: string | null;
+  Estagiario_CPF: string | null;
+  Estagiario_Celular: string | null;
+  Estagiario_Tipo_Vaga: string | null;
+  Estagiario_Instituicao: string | null;
+  Estagiario_Semestre: string | null;
+  Estagiario_Hora_Inicio: string | null;
+  Estagiario_Email: string | null;
+  Estagiario_Dt_Cadastro: string | null;
+  Estagiario_Id_Usuario: number | null;
+  Estagiario_Ativo: boolean | null;
+  Estagiario_Status: string | null;
+}
+
+export interface Unidades_Concedentes_Estagiarios_Senha {
+  Ind: number;
+  Cpf: string | null;
+  Senha: string | null;
+  Data_Senha: string | null;
+}
+
+export interface Unidades_Concedentes_Tipo {
+  Ind: number;
+  Unidade_Tipo: string | null;
+  Unidade_Tipo_Descricao: string | null;
+}
+
+export interface Unidades_Concedentes_Tipo_Documento {
+  Ind: number;
+  Cd_TipoDocumento: string | null;
+  Descricao: string | null;
+}
+
+export interface Unidades_Concedentes_Transferencia {
+  Ind: number;
+  Ind_Unidade_Concedente: number | null;
+  Transferencia_Id_Usuario: number | null;
+  Transferencia_Nic_Novo: number | null;
+  Transferencia_Data: string | null;
+  Transferencia_Status: string | null;
+  Transferencia_Ativa: boolean | null;
+}
+
+export interface URNA {
+  nic: string | null;
+  nr_inscricao: string | null;
+  nome: string | null;
+  subsecao: string | null;
+  cidadeendereco: string | null;
+  mincipiotabadv: string | null;
+  municipiovotacao: string | null;
+  n_urna: number | null;
+  seq_urna: number | null;
+  seq: number | null;
+  seq_urna_tse: number | null;
+  cd_subsecao: string | null;
+  cd_municipio: string | null;
+}
+
+export interface Usuario {
+  Ind: number;
+  Id_Usuario: string;
+  Nm_Usuario: string;
+  Cd_SubSecao: string;
+  Dt_Senha: string | null;
+  Adm: string;
+  Cd_Setor: string | null;
+  Nic: number;
+  Ramal: string | null;
+  Email: string | null;
+  Chefe: number;
+  Senha: string | null;
+  ind_ativo: number | null;
+}
+
+export interface Usuario_Afastamento {
+  id_afastamento: number;
+  id_motivo: number;
+  id_usuario: string;
+  periodo_ini: string;
+  periodo_fim: string;
+  ind_ativo: number | null;
+  dt_inclusao: string | null;
+  Id_Usuario_inclusao: string | null;
+  dt_atualizacao: string | null;
+  Id_Usuario_atualizacao: string | null;
+}
+
+export interface Usuario_Complementar {
+  Ind: number;
+  Id_Usuario: string | null;
+  Cargo: number | null;
+  Celular: string | null;
+  Email: string | null;
+  Tipo: string | null;
+  Localizacao: string | null;
+  Data_Registro: string | null;
+  Data_Cargo: string | null;
+  Matricula: number | null;
+  Codigo_Reenviosenha: string | null;
+  Data_Reenviosenha: string | null;
+  Ind_Imagem: number | null;
+}
+
+export interface usuario_complementar_tipo {
+  Ind: number;
+  Cd_Tipo: string | null;
+  Descricao: string | null;
+  Obrigatorio: boolean | null;
+}
+
+export interface Usuario_Distribuicao {
+  Ind: number;
+  Id_Usuario: string;
+}
+
+export interface Usuario_Excluido {
+  Ind: number;
+  Id_Usuario: string;
+  Nm_Usuario: string;
+  Cd_Subsecao: string;
+  Cd_Setor: string;
+  Dt_Exclusao: string;
+}
+
+export interface Usuario_Juiz {
+  Ind: number;
+  Nm_Juiz: string | null;
+  Id_UsuarioJ: string;
+  Senha: string;
+  Dt_Senha: string | null;
+  IP: string | null;
+  email: string | null;
+}
+
+export interface Usuario_Suporte {
+  Ind: number;
+  usuario: string;
+  senha: string;
+  dt_cadastro: string;
+}
+
+export interface Usuario_Vip {
+  Ind: number;
+  Id_Usuario: string;
+}
+
+export interface Votacao {
+  Ind: number;
+  Nome: string;
+  Questionamento: string | null;
+  Id_TipoVotacao: number;
+  Id_TipoLIsta: number;
+  Id_TipoEncerramento: number;
+  Id_Pauta: number | null;
+  Cd_Subsecao: string | null;
+  Nr_Documento: number | null;
+  Nr_VotosEncerramento: number | null;
+  Dt_Inicio: string | null;
+  Dt_Encerramento: string | null;
+  Exige_Confirmacao: number;
+  Abre_Confirmacao: number | null;
+  Encerra_Confirmacao: number | null;
+  Dt_AbreConfirmacao: string | null;
+  Dt_EncerraConfirmacao: string | null;
+  Abre_Votacao: number | null;
+  Encerra_Votacao: number | null;
+  Dt_AbreVotacao: string | null;
+  Dt_EncerraVotacao: string | null;
+  Pode_Reiniciar: number | null;
+  Rodada: number | null;
+  IdUsuario_Cadastro: string;
+  Dt_Cadastro: string;
+  IdUsuario_Alteracao: string | null;
+  Dt_Alteracao: string | null;
+  idUsuario_AbreConfirm: string | null;
+  idUsuario_EncerraConfirm: string | null;
+  idUsuario_AbreVotacao: string | null;
+  idUsuario_EncerraVotacao: string | null;
+  Ativo: number | null;
+  Abre_Desempate: number;
+  Encerra_Desempate: number;
+  Dt_AbreDesempate: string | null;
+  Dt_EncerraDesempate: string | null;
+  Id_TipoSituacao: number | null;
+  Id_Andamento: number | null;
+}
+
+export interface Votacao_Arquivos {
+  Ind: number;
+  Votacao_Ind: number;
+  Rodada: number;
+  Nic: number;
+  Extensao: string;
+  Arquivo: string;
+  Dt_Insercao: string;
+  IdUsuarioInsercao: string | null;
+  Dt_Exclusao: string | null;
+  IdUsuarioExclusao: string | null;
+  Ip_Inclusao: string | null;
+  Id_AndamentoPDF: number | null;
+}
+
+export interface Votacao_Confirmacao {
+  Ind: number;
+  Votacao_Ind: number;
+  rodada: number;
+  Nic: number;
+  Confirma: number | null;
+  Dt_Confirmacao: string | null;
+  In_Manual: number;
+  IdUsuarioInclusao: string | null;
+  In_Automatico: number;
+  Ativo: number;
+  IdUsuarioAlteracao: string | null;
+  Dt_Alteracao: string;
+  In_Relator: number;
+  In_Divergente: number;
+  In_Presidente: number;
+  Cd_CargoVotacao: number;
+  Cd_CargoIndicado: number | null;
+  Ip_Inclusao: string | null;
+  In_AdHoc: number;
+}
+
+export interface Votacao_Desempate {
+  Nic: number | null;
+  Votacao_Ind: number | null;
+  Id_TipoVotacao: number | null;
+  Rodada: number | null;
+  Dt_Desempate: string | null;
+}
+
+export interface Votacao_OpcoesVoto {
+  Ind: number;
+  Id_Opcao: number;
+  strOpcao: string;
+  idUsuario: string;
+  dt_Atualizacao: string;
+  ativo: number;
+  Usuario_Alteracao: string | null;
+  Dt_Alteracao: string | null;
+  Cor: string | null;
+}
+
+export interface Votacao_OrgaoSub {
+  Ind: number;
+  Ind_Votacao: number;
+  cd_orgao: number;
+  cd_suborgao: number;
+}
+
+export interface Votacao_PlenarioQuorum {
+  Ind: number;
+  Id_Pauta: number;
+  Nic: number;
+  Dt_Insercao: string;
+  Cd_CargoVotacao: number;
+  Cd_CargoIndicado: number | null;
+  Sequencia: number;
+}
+
+export interface Votacao_Rodada {
+  Ind: number;
+  Votacao_Ind: number;
+  Rodada: number;
+  Abre_Rodada: number;
+  Encerra_Rodada: number;
+  Dt_Abertura: string;
+  Dt_Encerramento: string | null;
+  UsuarioAbertura: string;
+  UsuarioEncerramento: string | null;
+}
+
+export interface Votacao_RodadaOpcoes {
+  Ind: number;
+  Votacao_ind: number;
+  Rodada: number;
+  Id_Opcao: number;
+}
+
+export interface Votacao_TipoEncerramento {
+  Ind: number;
+  Id_tipoEncerramento: number;
+  strTipoEncerramento: string;
+  strDescricao: string;
+  ativo: number;
+}
+
+export interface Votacao_TipoLista {
+  Ind: number;
+  Id_TipoLista: number;
+  strTipoLista: string;
+  Descricao: string | null;
+  Ativo: number;
+}
+
+export interface Votacao_TipoSituacao {
+  Id_TipoSituacao: number;
+  Descricao: string;
+  Ordem: number;
+}
+
+export interface Votacao_TipoVotacao {
+  Ind: number;
+  Id_TipoVotacao: number;
+  strNome: string;
+  situacao: string | null;
+}
+
+export interface Votacao_Votos {
+  Ind: number;
+  Votacao_Ind: number;
+  Nic: number;
+  Id_Opcao: number;
+  Rodada: number;
+  Dt_Voto: string;
+  In_Manual: number;
+  IdUsuario: string | null;
+  Dt_Alteracao: string | null;
+  Ativo: number;
+  In_Auto_Encerramento: number;
+  Ip_Inclusao: string | null;
+}
+
+export interface vox_municipios {
+  UF: string;
+  "MUNICÍPIO": string;
+  IBGE: number;
+  TOM: number | null;
+}
+
+export interface vw_ultima_fase_BI_TED {
+  Ind: number;
+  Nr_Documento: number | null;
+  Cd_Fase: number | null;
+  Dt_Fase: string | null;
+  Dt_Alteracao: string | null;
+  Id_Usuario: string | null;
+}
+
+export interface Web_NomeJornal {
+  Ind: number;
+  Nic: number | null;
+  Sugestao: string | null;
+  Dt_Sugestao: string | null;
+  Email: string | null;
+  IP: string | null;
+}
+
+export interface Web_Salas {
+  Ind: number;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Nm_Escritorio: string | null;
+  Endereco: string | null;
+  Telefone: string | null;
+  Email: string | null;
+  Contato: string | null;
+  Outras_Informacoes: string | null;
+  Desativar: number;
+  Dias: number;
+  Dt_Cadastro: string | null;
+  Dt_Publicacao: string | null;
+  Dt_Recusado: string | null;
+  IP: string | null;
+}
+
+export interface Web_Salas_Area {
+  Ind: number;
+  Id_Vaga: number | null;
+  Cd_Area: number | null;
+}
+
+export interface Web_Vagas {
+  Ind: number;
+  Nic: number | null;
+  Tp_Vaga: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Nm_Escritorio: string | null;
+  Endereco: string | null;
+  Telefone: string | null;
+  Descricao: string | null;
+  Email: string | null;
+  Contato: string | null;
+  Salario: string | null;
+  Convenio: string | null;
+  Vr: string | null;
+  Va: string | null;
+  Vt: string | null;
+  CestaBasica: string | null;
+  Cargo: string | null;
+  AtuacaoEspectativa: string | null;
+  Idioma: string | null;
+  Viagens: string | null;
+  Subsecao_Atuacao: string | null;
+  Municipio_Atuacao: string | null;
+  Cd_Faculdade: number | null;
+  Nm_Faculdade: string | null;
+  Periodo: string | null;
+  Outras_Informacoes: string | null;
+  Desativar: number;
+  Dias: number;
+  Dt_Cadastro: string | null;
+  Dt_Publicacao: string | null;
+  Dt_Recusado: string | null;
+  IP: string | null;
+  Contratacao: string | null;
+  MostrarSalario: string | null;
+  Caracteristica: string | null;
+}
+
+export interface Web_Vagas_Area {
+  Ind: number;
+  Id_Vaga: number | null;
+  Cd_Area: number | null;
+}
+
+export interface Web_Vagas_Email {
+  Ind: number;
+  Email: string;
+}
+
+export interface WebApi {
+  Ind: number;
+  parceiro: string;
+  token: string | null;
+  objetivo: string | null;
+  metodo: string;
+  consulta: string;
+  validade: string;
+  parametros: string | null;
+  campos: string;
+}
+
+export interface Wellhub_Advogados {
+  Name: string;
+  Email: string;
+  CPF: number | null;
+  OAB: number | null;
+  Department: string | null;
+  Payroll_ID: string | null;
+  Cost_Center: string | null;
+  Office_Zip_Code: string | null;
+  Payroll_Enabled: string | null;
+  Status: string;
+}
+
+export interface XDD_Advogado_Dativo {
+  Ind: number;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Compt: number | null;
+  Chave: string | null;
+  Plantao_Judicial: string | null;
+  Execucao_Penal: string | null;
+  IdUsr: string | null;
+}
+
+export interface XDD_Advogado_Dativo_Comarca {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Compt: number | null;
+  Chave: string | null;
+  IdUsr: string | null;
+}
+
+export interface XDD_Advogado_Dativo_Comarca_VigenteEXCLUIR {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Compt: number | null;
+  Chave: string | null;
+}
+
+export interface XDD_Advogado_Dativo_Controle {
+  Ind: number;
+  Ind_XDD_Advogado_Dativo: number;
+  Nic: number;
+  Ano: number | null;
+  Semestre: number | null;
+  Compt: number | null;
+  IdUsr: string | null;
+}
+
+export interface XDD_Advogado_Dativo_Exclusao {
+  Ind: number;
+  Nic: number;
+  Dt_Exclusao: string;
+  IP: string;
+  Compt: number | null;
+  IdUsr: string | null;
+}
+
+export interface XDD_Advogado_Dativo_Nomeacao {
+  Ind: number;
+  Nic: number;
+  Cd_Subsecao: string;
+  Cd_Municipio: string;
+  Vara: string;
+  Dt_Nomeacao: string;
+  Nr_Autos: string;
+  Tp_Processo: string;
+  Obs: string;
+  Id_UsuarioJ: string;
+  Dt_Atualizacao: string | null;
+  Compt: number;
+  Ind_Usuario_Juiz: number;
+}
+
+export interface XDD_Advogado_Dativo_VigenteEXCLUIR {
+  Ind: number;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Compt: number | null;
+  Chave: string | null;
+  Plantao_Judicial: string | null;
+  Execucao_Penal: string | null;
+  IdUsrAdmin: string | null;
+}
+
+export interface XDD_Advogado_Qtd {
+  Ind: number;
+  Nic: number;
+  Qtd: number | null;
+}
+
+export interface XDD_Competencia {
+  Ind: number;
+  Ano: number | null;
+  Parte: string | null;
+  Dt_IniCad: string | null;
+  Dt_FimCad: string | null;
+  Dt_IniNom: string | null;
+  Dt_FimNom: string | null;
+  Ativo: number | null;
+}
+
+export interface XDD_EspecialidadeEXCLUIR {
+  Ind: number;
+  Tp: string | null;
+  Nome: string | null;
+  Ativo: string | null;
+  Compt: number | null;
+}
+
+export interface XDD_Log_Advogado_Dativo {
+  Ind: number | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number | null;
+  Dt_Insercao: string | null;
+  Ip_Insercao: string | null;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Compt: number | null;
+  Chave: string | null;
+  Plantao_Judicial: string | null;
+  Execucao_Penal: string | null;
+  IdUsr: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface XDD_Log_Advogado_Dativo_Comarca {
+  Ind: number | null;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Compt: number | null;
+  Chave: string | null;
+  IdUsr: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface XDD_Log_Advogado_Dativo_Comarca_VigenteEXCLUIR {
+  Ind: number | null;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Compt: number | null;
+  Chave: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface XDD_Log_Advogado_Dativo_Exclusao {
+  Ind: number | null;
+  Nic: number | null;
+  Dt_Exclusao: string | null;
+  IP: string | null;
+  Compt: number | null;
+  IdUsr: string | null;
+  Tg_Action: string | null;
+  Dt: string;
+}
+
+export interface XDD_Log_Advogado_Dativo_Nomeacao {
+  Ind: number | null;
+  Nic: number | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Vara: string | null;
+  Dt_Nomeacao: string | null;
+  Nr_Autos: string | null;
+  Tp_Processo: string | null;
+  Obs: string | null;
+  Id_UsuarioJ: string | null;
+  Dt_Atualizacao: string | null;
+  Compt: number | null;
+  Ind_Usuario_Juiz: number | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface XDD_Log_Advogado_Dativo_VigenteEXCLUIR {
+  Ind: number | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Nic: number;
+  Dt_Insercao: string;
+  Ip_Insercao: string;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  Compt: number | null;
+  Chave: string | null;
+  Plantao_Judicial: string | null;
+  Execucao_Penal: string | null;
+  IdUsrAdmin: string | null;
+  Tg_Action: string | null;
+  Dt: string;
+}
+
+export interface XDD_Log_Usuario {
+  Ind: number;
+  Senha: string | null;
+  Dt_Senha: string | null;
+  Nome: string | null;
+  Admin_: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Dt_Insercao: string | null;
+  Ip_Insercao: string | null;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  IdUsr: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface XDD_Log_UsuarioJuiz {
+  Ind: number;
+  Senha: string | null;
+  Dt_Senha: string | null;
+  Nome: string | null;
+  Email: string | null;
+  Admin_: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Dt_Insercao: string | null;
+  Ip_Insercao: string | null;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  IdUsr: string | null;
+  SenhaK: string | null;
+  Tg_Action: string | null;
+  Dt: string | null;
+}
+
+export interface XDD_Plantao {
+  Ind: number;
+  Descricao: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Criminal: string | null;
+  Civel: string | null;
+  Tribunal_Juri: string | null;
+  Violencia_Mulher: string | null;
+  Infancia_Juventude: string | null;
+  Familia_Sucessoes: string | null;
+  Vagas: number | null;
+  Dt_: string;
+  Dt_Exclusao: string | null;
+  VagasTotal: number | null;
+  Mensagem: string | null;
+  Ind_Usuario: number | null;
+}
+
+export interface XDD_PlantaoAdv {
+  Ind: number;
+  Ind_Plantao: number;
+  Ind_PlantaoDatas: number | null;
+  Nic: number;
+  Chave: string;
+  Confirmou: number | null;
+  Dt_Exclusao: string | null;
+  Dt_: string | null;
+  Ip: string | null;
+  ErroEmail: string | null;
+}
+
+export interface XDD_PlantaoAdvAceite {
+  Ind: number;
+  Nic: number;
+  QtdIndicacao: number | null;
+  QtdAceite: number | null;
+}
+
+export interface XDD_PLANTAODATAS {
+  IND: number;
+  IND_PLANTAO: number | null;
+  DT_: string | null;
+  VAGAS: number | null;
+  DT_EXCLUSAO: string | null;
+  VAGASTOTAL: number | null;
+}
+
+export interface XDD_Usuario {
+  Ind: number;
+  Senha: string;
+  Dt_Senha: string | null;
+  Nome: string | null;
+  Admin_: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Dt_Insercao: string | null;
+  Ip_Insercao: string | null;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  IdUsr: string | null;
+}
+
+export interface XDD_UsuarioJuiz {
+  Ind: number;
+  Senha: string;
+  Dt_Senha: string | null;
+  Nome: string | null;
+  Email: string | null;
+  Admin_: string | null;
+  Cd_Subsecao: string | null;
+  Cd_Municipio: string | null;
+  Dt_Insercao: string | null;
+  Ip_Insercao: string | null;
+  Dt_Alteracao: string | null;
+  Ip_Alteracao: string | null;
+  Dt_Exclusao: string | null;
+  Ip_Exclusao: string | null;
+  IdUsr: string | null;
+  SenhaK: string | null;
+}
+
+export interface xFaixa {
+  Ind: number;
+  Faixa: number;
+  Nr_Acoes: number;
+}
+
+export interface xSimulacao {
+  Ind: number;
+  Simulacao: number;
+  Descricao: string;
+}
+
+export interface xSimulacaoP {
+  Ind: number;
+  Simulacao: number;
+  Descricao: string;
+  VlMin: number;
+  VlMax: number;
+}
+
+export interface xTabela {
+  Ind: number;
+  Valor_Causa: number;
+  Custas: number;
+  Simulacao: number | null;
+}
+
+export interface xTabelaP {
+  Ind: number;
+  Valor_Causa: number;
+  Custas: number;
+  Simulacao: number;
+}

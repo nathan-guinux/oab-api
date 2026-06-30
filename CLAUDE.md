@@ -105,11 +105,21 @@ espelho do de leitura, mas com travas próprias:
 ## Convenções de código
 
 - Estrutura: `src/endpoints/` (classes chanfana = controllers), `src/services/` (regra +
-  `queryGateway`), `src/queries/` (os SELECTs), `src/schemas/` (Zod). OpenAPI montado no entrypoint.
+  `queryGateway` + mappers DB→contrato), `src/queries/` (**funções builder Kysely**, tipadas),
+  `src/schemas/` (Zod), `src/db/` (acesso tipado ao banco). OpenAPI montado no entrypoint.
+- **Acesso ao banco é tipado, não SQL cru.** As queries usam **Kysely** sobre o schema **gerado**
+  (`src/db/schema.ts`) e são **compiladas** (`.compile()`, nunca executadas localmente) para
+  `{ sql, params }`. Tabela/coluna inexistente = **erro de compilação** (`yarn typecheck`).
+  - `src/db/schema.ts` é **gerado** por `yarn gen:schema` (lê o `INFORMATION_SCHEMA` pelo gateway) —
+    **nunca editar à mão**; regenerar quando o banco mudar.
+  - `src/db/client.ts` expõe o builder `dboab` e `execute(env, db, query)` — compila e chama o
+    gateway preservando o tipo do resultado (`InferResult`), renomeando os params para `@p1, @p2…`.
+  - `src/db/dialect.ts`: dialeto compile-only (`DummyDriver`) — Kysely só monta/compila, nunca conecta.
 - **Um helper único** (`queryGateway`) fala com o `leitura-db` e injeta o service token; nenhum
-  endpoint chama `fetch` no gateway direto.
-- Toda entrada e saída validada com **Zod**; respostas mantêm o **mesmo shape da v3** (paridade).
-- Validar local: `yarn dev` + `yarn tsc --noEmit`.
+  endpoint chama `fetch` no gateway direto. O `execute` do `client.ts` é o único que chama `queryGateway`.
+- Toda entrada e saída validada com **Zod**; o **mapper** (em `src/services/`) traduz a linha do banco
+  (nomes legados, ex.: `Nr_Inscricao`, `Dt_Inscricao`) para o **shape da v3** (`oab`, `dataInscricao`…).
+- Validar local: `yarn dev` + `yarn typecheck`.
 
 ## Segurança / LGPD
 
