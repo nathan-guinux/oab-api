@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "oab-api",
+  "account_id": "0aa7d448b398c15ce6f161bdddbd9d64",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "vars": {
+    "LEITURA_DB_URL": "https://leitura-db.oabpr.org.br"
+  }
+  // Later (after validation): serve from a custom domain
+  // "routes": [{ "pattern": "oab-api.oabpr.org.br/*", "zone_name": "oabpr.org.br" }]
+}

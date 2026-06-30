@@ -1,0 +1,4 @@
+# Service token do gateway leitura-db (Cloudflare Access). Local apenas.
+# Em produção: wrangler secret put CF_ACCESS_CLIENT_ID / CF_ACCESS_CLIENT_SECRET
+CF_ACCESS_CLIENT_ID=
+CF_ACCESS_CLIENT_SECRET=
