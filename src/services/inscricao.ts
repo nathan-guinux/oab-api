@@ -11,7 +11,8 @@ export async function getDadosInscricao(env: Env, oab: string): Promise<DadosIns
   const [row] = await execute(env, "DBOAB", dadosInscricaoQuery(oab));
   if (!row) return null;
   return {
-    dataInscricao: row.Dt_Inscricao ? row.Dt_Inscricao.slice(0, 10) : null,
+    dataInscricao: row.Dt_Inscricao,
     tipoInscricao: row.tipoInscricao,
+    subSecao: row.subSecao,
   };
 }
